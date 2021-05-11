@@ -1,0 +1,24 @@
+:menu:
+  - :text: Orders
+    :href: /order
+    :iconCls: icon-package
+  - :text: Companies
+    :href: /company
+    :iconCls: icon-building
+  - :text: Accounting
+    :href: /accounting
+    :iconCls: icon-money
+  - :text: Templates
+    :href: /template
+    :iconCls: icon-page-white-stack
+  - :text: Reports
+    :href: /report
+    :iconCls: icon-application-view_columns
+  - '-'
+  - :text: My Account
+    :href: /account/view
+    :iconCls: icon-user
+  - '-'
+  - :text: Logout
+    :href: /auth/logout
+    :iconCls: icon-disconnect

@@ -1,0 +1,693 @@
+<!--%canvas:page.htm%-->
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="i/docs.css">
+
+<style>
+<!--
+DIV.Section1 {
+	page: Section1
+}
+-->
+</style>
+</head>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top" class="content" width="99%">
+
+
+<h3>PD4ML Pro 3.2.3b2 Release Notes</h3>
+<b>Release Date: Mar 04, 2008</b>
+
+<h4><u>New in PD4ML Pro 3.2.3b2</u></h4>
+
+<ul style="text-align: left">
+    <li>
+	<b>&lt;textarea&gt;</b> assumes <b>wrap=&quot;soft&quot;</b> attribute value by default<li>
+	<b>floats</b> positioning module completely refactored<li>
+	refined <b>&quot;justify&quot;</b> text alignment algorithms<li>Fixed bugs:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <b>&lt;base href=&quot;...&quot;&gt;</b> tag is 
+	ignored under particular conditions<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <b>cellpadding</b> of <b>
+	&lt;table&gt;</b> attribute does not work if table borders are set to collapse<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - missing of <b>height</b> or <b>
+	width</b> attribute can cause image aspect ratio distortion<br>
+    &nbsp;</ul>
+<h4><u>New in PD4ML Pro 3.2.2</u></h4>
+
+<ul style="text-align: left">
+    <li>GUI HTML-to-PDF converting tool (PD4Browser) updated</ul>
+
+<h4><u>New in PD4ML Pro 3.2.2b5</u></h4>
+
+<ul style="text-align: left">
+    <li>memory footprint optimization<li>Fixed bugs:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - small fractional widths like <b>
+	&quot;.5pt&quot; </b>are interpreted as <b>&quot;0&quot;</b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - table column widths balancing 
+	can fails if there are block elements in the table cells (introduced in 
+	v322b4)<br>
+    </ul>
+
+<h4><u>New in PD4ML Pro 3.2.2b4</u></h4>
+
+<ul style="text-align: left">
+    <li><b>pd4fonts.properties</b> can point to remote font directory by <b>
+	font.dir.location</b> property.<li>Fixed bugs:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <b>line-height</b> absolute 
+	values ignored<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <b>render() </b>ignores<b> </b>
+	character encoding of<b> InputStreamReader</b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <b>&amp;apos;</b> entity wrong 
+	interpretation<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <b>&quot;display: none&quot;</b> property 
+	can affect neighbor components.<br>
+    </ul>
+
+<h4><u>New in PD4ML Pro 3.2.2b2</u></h4>
+
+<ul style="text-align: left">
+    <li><b>skiplast</b> parameter for <b>scope</b> attribute of <b>
+	&lt;pd4ml:page.header&gt;</b> and <b>&lt;pd4ml:page.footer&gt;</b>.<li>Fixed bugs:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <b>scope</b> attribute value 
+	parsing errors of <b>&lt;pd4ml:page.header&gt;</b> and <b>&lt;pd4ml:page.footer&gt;</b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wrong (mirrored) rendering of 
+	headers and footers under special conditions.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <b>align</b> attrribute of <b>&lt;th&gt;</b> 
+	ignored.<br>
+    </ul>
+
+<h4><u>New in PD4ML Pro 3.2.2b1</u></h4>
+
+<ul style="text-align: left">
+    <li>Correct cell borders drawing after a table row wrapped to the next page.<li>Fixed bugs:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - table-wide cellpadding overrides 
+	cell-specific paddingd if the table has <b>border-collapse: collapse</b> 
+	setting<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - invalid table height 
+	calculation if the table combines rows with rowspans and no content.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - multiple minor issues<br>
+    </ul>
+
+<h4><u>New in PD4ML Pro 3.2.1</u></h4>
+
+<ul style="text-align: left">
+    <li><b>border-collapse </b>CSS property support
+    </ul>
+
+<h4><u>New in PD4ML Pro 3.2.1b4</u></h4>
+
+<ul style="text-align: left">
+    <li>CSS property support <b>float: left</b> and <b>float: 
+	right</b> for tables, images and DIVs.
+    <li>Fixed bugs:<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Minor text alignment issues<br>
+    &nbsp;</ul>
+
+<h4><u>New in PD4ML Pro 3.2.1b2</u></h4>
+
+<ul style="text-align: left">
+    <li>CSS property <b>page-break-before: always </b>and <b>page-break-after: 
+	always </b>supported
+    by the main elements
+    <li>Simplified RFC 2397 data source support for &lt;pd4ml:attachment&gt; tag.
+    <li>Fixed bugs:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Invalid interpretation of 
+	complex CSS selectors like &quot;<b>TABLE.style1 &gt; TR:first-child &gt; TD</b>&quot;<br>
+    &nbsp;</ul>
+
+<h4><u>New in PD4ML Pro 3.2.1b1</u></h4>
+
+<ul style="text-align: left">
+    <li>CSS property <b>word-wrap: break-word</b> supported
+    <li>Default vertical block margins calculation refined
+    <li>Fixed bugs:<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Invalid percentual font size calculations<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Occasional invalid footer positioning on the first page<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Occasional ignoring of <b>&lt;ol&gt;</b> numbering type properties<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Minor issues<br>
+</ul>
+
+<h4><u>New in PD4ML Pro 3.2.0</u></h4>
+
+<ul style="text-align: left">
+    <li>New servlet context resource loader allows to load images by absolute web application paths.
+    <li><b>text-transform</b> CSS property support
+    <li>Fixed bugs:<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Occasional table cell background and borders corruption after <b>&lt;pd4ml:page.break pageFormat="..."&gt;</b> tag<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Actual PDF meta data format confuses some third-party PDF tools to count document pages<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Invalid style application to <b>&lt;a&gt;</b> tag<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - <b>jsessionid</b> URL suffix is not understandable by some web servers<br>
+</ul>
+
+<h4><u>New in PD4ML Pro 3.2.0b5</u></h4>
+
+<ul style="text-align: left">
+    <li>New attribute <b>scope</b> supported by <b>&lt;pd4ml:page.header&gt;</b> and
+    <b>&lt;pd4ml:page.footer&gt;</b> tags.
+    <li><b>&lt;pd4ml:savefile&gt;</b> JSP custom tag allows to control redirect method
+    with <b>redirectMethod</b> attribute (as "redirect" or "forward")
+</ul>
+
+<h4><u>New in PD4ML Pro 3.2.0b4</u></h4>
+
+<ul style="text-align: left">
+    <li>Supports dynamic placeholders (<b>$[var]</b>) substitution in HTML. <b>pd4ml.setDynamicParams(Map)</b> allows to define the dynamic data.
+    <li>Allows to change PDF page format after page break with <b>&lt;pd4ml:page.break pageFormat="rotate"&gt;</b>
+    or <b>&lt;pd4ml:page.break pageFormat="612x792"&gt;</b>
+    <li>Supports inline overridable page header/footer definitions in HTML: <b>&lt;pd4ml:page.header&gt; ... &lt;/pd4ml:page.header&gt;</b> or
+    <b>&lt;pd4ml:page.footer&gt; ... &lt;/pd4ml:page.footer&gt;</b>
+    <li>Fixed bugs:<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - PD4ML crashes if height attribute specified for HTML table with a single row<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Suppresses a visual appearance of tags start with <b>"&lt;?"</b>. <br>
+</ul>
+
+<h4><u>New in PD4ML Pro 3.2.0b2</u></h4>
+
+<ul style="text-align: left">
+    <li>Implements Mozilla's table column width balancing algorithm
+    <li>Allows to define PDF page background colors and images
+    <li>Fixed bugs:<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - performance degradation by conversion of huge preformatted blocks of text<br>
+</ul>
+
+<h4><u>New in PD4ML Pro 3.1.0</u></h4>
+
+<ul style="text-align: left">
+    <li>Configurable icon types for PDF attachments
+</ul>
+
+<h4><u>New in PD4ML Pro 3.1.0b10</u></h4>
+
+<ul style="text-align: left">
+    <li><b>&lt;meta&gt;</b> tag support.
+    <li>Fixed bugs:<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - <b>page-break-inside: avoid</b> fails for nested tables<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - minor issues<br>
+</ul>
+
+<h4><u>New in PD4ML Pro 3.1.0b7</u></h4>
+
+<ul style="text-align: left">
+    <li>Support for <b>rules</b> and <b>frame</b> attributes of <b>&lt;table&gt;</b>
+    <li>PDF attachments are supported with new tag <b>&lt;pd4ml:attachment src="" description=""&gt;</b>
+    <li>Supported local links to block elements by ID. (In previous versions it was possible to address <b>&lt;a name="anchor"&gt;</b> only)
+    <li>addStyle() API call allows to add extra stylesheets to be interpreted before or after CSS
+    defined in <b>&lt;head&gt;</b> section of HTML.
+    <li>Fixed bugs:<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Table border / cell border conflict under some circumstances.<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - JDK1.6 minor compatibility issues<br>
+</ul>
+
+<h4><u>New in PD4ML Pro 3.1.0b2</u></h4>
+
+<ul style="text-align: left">
+    <li>Word wrap in CJK scripts
+    <li>Emulation of italic and bold font styles (if missing)
+    <li>Fixed bugs:<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - ${title} substitution problem in headers and footers.<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Hidden input elements affect page layout.<br>
+</ul>
+
+<h4><u>New in PD4ML Pro 3.0.4</u> (maintenance release)</h4>
+
+<ul style="text-align: left">
+    <li>Partial RFC 2397 support
+    <li>Fixed bugs:<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Clipping area from one page can be propagated to the subsequent pages under some conditions.
+    Result: occasional blank regions on the pages.<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Invalid alignments of standalone input elements in table cells.<br>
+</ul>
+
+<h4><u>New in PD4ML Pro 3.0.3</u></h4>
+
+<ul style="text-align: left">
+    <li>Fixed bugs:<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Occasional content cut after htmlWidth change<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Two <b>&lt;pd4ml:page.break&gt;</b> tags with no content
+	in-between corrupt the last PDF page.<br>
+</ul>
+
+<h4><u>New in PD4ML Pro 3.0.3b8</u></h4>
+
+<ul style="text-align: left">
+    <li>New API method <b>fitPageVertically()</b> forces PD4ML to put entire HTML content to a single PDF page<br>
+    <li>New API method <b>protectPhysicalUnitDimensions()</b> makes PD4ML to output PDF objects respecting dimensions/font sizes given in "in", "pt", "cm" etc. (WARNING: the mode can cause broken layout; see the <a href="api/">documentation</a>)<br>
+    <li><b>&lt;pd4ml:page.break&gt;</b> can be conditional with the new attribute "ifSpaceBelowLessThan"<br>
+    <li>Fixed bugs:<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - JDK1.3: corrupted PDF output if image width or height is
+	explicitly set to "0"<br>
+</ul>
+
+<h4><u>New in PD4ML Pro 3.0.3b5</u></h4>
+
+<ul style="text-align: left">
+    <li>Support for <b>dotted</b> and <b>dashed</b> border styles.<br>
+
+    <li>The default TOC style changed.<br>
+    <li>Fixed bugs:<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - minor issues<br>
+</ul>
+
+<h4><u>New in PD4ML Pro 3.0.3b2</u></h4>
+
+<ul style="text-align: left">
+    <li>New <b>&lt;pd4ml:toc&gt;</b> tag allows to generate table of contents (TOC)
+    from HTML headings structure (&lt;<b>H1</b>&gt;-&lt;<b>H6</b>&gt;). The tag can be used
+    in HTML and JSP.<br>
+
+    <li>Support for <b>&quot;page-break-inside: avoid&quot;</b> CSS directive for tables
+    and table rows.<br>
+</ul>
+
+
+<h4><u>New in PD4ML Pro 3.0.2</u></h4>
+
+<ul style="text-align: left">
+    <li>New API methods:<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - adjustHtmlWidth()<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - setCookie(name,value)<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - setDefaultTTFs(serif,sansserif,monospace)<br>
+
+    <li>Fixed bugs:<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - ClassCastException by SSL connections<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - minor issues<br>
+</ul>
+
+
+<h4><u>New in PD4ML Pro 3.0.1</u></h4>
+
+<ul style="text-align: left">
+    <li>Fixed bugs:<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - NullPointerException after render(InputStreamReader,OutputStream) API call<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - minor issues in PNG embedding<br>
+</ul>
+
+
+<h4><u>New in PD4ML Pro 3.0.0</u></h4>
+
+<ul style="text-align: left">
+    <li>Support for JDK 1.3
+    <li>Fixed bugs:<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - PNG image embedding<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Skip of table cell content if it is shorter as 2 characters (bug of PD4ML Pro 3.0.0b2)<br>
+</ul>
+
+
+<h4><u>New in PD4ML Pro 3.0.0b2</u></h4>
+
+<ul style="text-align: left">
+    <li>Basic right-to-left scripts support added to the new renderer.
+    <li>A bug with an ignoring of <b>&lt;pd4ml:page.break&gt;</b> under special conditions is fixed.
+    <li><b>$[var]</b> placeholder format is supported along with <b>${var}</b>. It is done in order
+    to avoid notation conflicts with the newest servlet APIs.
+    <li><b>align="justify"</b> accuracy refined.
+</ul>
+
+<h4><u>New in PD4ML Pro 3.0.0b1</u></h4>
+
+<ul style="text-align: left">
+    <li>It is a new generation of PD4ML tools based on a custom HTML rendering engine, which is tuned for an efficient and accurate
+    HTML-to-PDF transformation. See <a href="http://pd4ml.com//newgen.htm">the detailed description</a>
+    for more info.
+</ul>
+
+<h4><u>New in PD4ML 1.2.8 / Pro 2.1.4</u></h4>
+
+<ul style="text-align: left">
+
+    <li>New tag <b>&lt;pd4ml:savefile&gt;</b> allows to save generated PDFs on the server side. The tag can
+    optionally forward current HTTP request to another JSP for PDF postprocessing or to the saved PDF file itself
+    for direct downloads.
+
+    <li>New tag <b>&lt;pd4ml:fix_base_path&gt;</b> allows on-a-fly to replace unsupported absolute resource paths
+    (ie, "/folder/image.gif") with compatible ones ("../../folder/image.gif" or "http://myserver/folder/image.gif").
+    The feature solves some of compatibility issues with third-party graphics or chart JSP tag libraries,
+    that outputs non-customizable image paths.
+
+    <li>New attribute <b>enable</b> of <b>&lt;pd4ml:transform&gt;</b> enables or disables PDF transformation.
+    The attribute helps to build "dual-purpose" JSPs: to be viewed as HTML or as PDF.
+
+</ul>
+
+<h4><u>New in PD4ML 1.2.6 / Pro 2.1.2</u></h4>
+
+<ul style="text-align: left">
+
+    <li>Fixed bugs:<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - Occasional HTML header/footer output skip. (re)<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Monochrome JPEG embedding problem.<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Minor bugfixing and code optimization.<br>
+         <br>&nbsp;<br>
+    <li>Known issues:<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - second parameter of <tt>useTTF(String pathToFontDirs, boolean embed)</tt> has no effect<br>
+
+</ul>
+
+<h4><u>New in PD4ML 1.2.5 / Pro 2.1.0</u></h4>
+
+<ul style="text-align: left">
+
+    <li>Fixed bugs:<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - Occasional ignoring of useAFM attribute value.<br>
+         <br>&nbsp;<br>
+    <li>Known issues:<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - second parameter of <tt>useTTF(String pathToFontDirs, boolean embed)</tt> has no effect<br>
+
+</ul>
+
+<h4><u>New in PD4ML Pro 2.1.0b3</u></h4>
+
+<ul style="text-align: left">
+
+    <li>New utility tag <b>&lt;pd4ml:clean_xhtml&gt;</b> replaces all
+	occurrences of '/&gt;' with '&gt;'
+    in order to make JSP output PD4ML-friendly.
+    <li>Fixed bugs:<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - JDK's fontmanager.dll bug workaround.<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Incorrect cache control for dynamic images.<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Occasional PDF file format corruption if default file.encoding=UTF-8.<br>
+         <br>&nbsp;<br>
+    <li>Known issues:<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - second parameter of <tt>useTTF(String pathToFontDirs, boolean embed)</tt> has no effect<br>
+
+</ul>
+
+<h4><u>New in PD4ML Pro 2.1.0b</u></h4>
+
+<ul style="text-align: left">
+
+    <li>Watermark images support.
+    <li>Fixed bugs:<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - Occasional header/footer output skip.<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Undesired character encoding conversions in PD4ML taglib.<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Default 3D table borders optically refined.<br>
+         <br>&nbsp;<br>
+    <li>Known issues:<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - second parameter of <tt>useTTF(String pathToFontDirs, boolean embed)</tt> has no effect<br>
+
+</ul>
+
+
+<h4><u>New in PD4ML Pro 2.0.0</u></h4>
+
+<ul style="text-align: left">
+
+    <li>Page headers and footers can be defined in HTML format (including image references).
+    <li>TTF font directories can be addressed by URLs
+    <li>A special URL protocol "java:" allows to load TTF fonts from classpath locations (including JARs).
+    <li>Scaling of table background images supported.
+    <li>Fixed bugs:<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - workaround for Adobe Acrobat Reader 7 image transparency interpretation error.<br>
+         <br>&nbsp;<br>
+    <li>Known issues:<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - second parameter of <tt>useTTF(String pathToFontDirs, boolean embed)</tt> has no effect<br>
+
+</ul>
+
+<h4><u>New in PD4ML Pro 2.0.0b</u></h4>
+
+<ul style="text-align: left">
+
+    <li>TTF Font embedding support
+    <li>Support for national character sets (with some exceptions)
+
+
+</ul>
+
+<hr>
+
+<h4><u>New in PD4ML 1.2.5b1</u></h4>
+
+<ul style="text-align: left">
+
+    <li>Starting with the version PD4ML Standard, Web and Professional source code branches have been merged.
+    See release notes for PD4ML Pro 2.1.0b3.
+
+</ul>
+
+<h4><u>New in PD4ML 1.2.4</u></h4>
+
+<ul style="text-align: left">
+
+    <li>Fixed bugs:<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - Default 3D table borders optically refined.<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - workaround for Adobe Acrobat Reader 7 image transparency interpretation error.<br>
+
+</ul>
+
+
+<h4><u>New in PD4ML 1.2.2</u></h4>
+
+<ul style="text-align: left">
+
+    <li>Optimizes outlines tree structure.
+    <li>Fixed bugs:<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - Header/footer font definition problem.<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; - Minor bugfixing and code optimization.<br>
+
+</ul>
+
+
+<h4><u>New in PD4ML 1.2.0</u></h4>
+
+<ul style="text-align: left">
+
+    <li>Fixed bugs:<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - HTTPS delivery problems to some versions of MS Internet Explorer.<br>
+
+</ul>
+
+
+
+<h4><u>New in PD4ML 1.2.0b2</u></h4>
+
+<ul style="text-align: left">
+
+    <li>Font face and style control for headers and footers.
+
+    <li>Fixed bugs:<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - Invalid text alignment in graphical representations of form elements.<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - Invalid dash character glyph width in font metrics.<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - <i>ServletResponse.resetBuffer()</i> is replaced with <i>ServletResponse.reset()</i> in the taglib
+
+    for compatibility with older servlet engines.<br>
+
+
+
+</ul>
+
+
+
+<h4><u>New in PD4ML 1.2.0b</u></h4>
+
+<ul style="text-align: left">
+
+    <li>PDF document navigation. PDF outlines (bookmarks) generation mechanism added. Now it is possible to convert to
+
+     outlines a list of named anchors (<b>&lt;a name="anchor_id"&gt;label&lt;/a&gt;</b>) or a headings
+
+     structure (<b>&lt;h1&gt;...&lt;h6&gt;</b>).
+
+    <li>Transforming of HTML hyperlinks to PDF hyperlinks (if not explicitely disabled).
+
+    Hyperlink jumps within the same document are supported as well.
+
+    <li>Multiline header/footer support.
+
+    <li>Opaque PNG images are embedded to resulting PDFs "as is".
+
+    <li>Debug switch method added to localize image path / document base problems.
+
+    <li>Fixed bugs:<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - Image path problems in PD4ML taglib.<br>
+
+
+
+</ul>
+
+
+
+
+
+<h4><u>New in PD4ML 1.1.0</u></h4>
+
+<ul style="text-align: left">
+
+    <li>JPEG images are embedded to resulting PDFs "as is". In most of cases it reduces the documents size.
+
+    <li>Fixed bugs:<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - Incorrect default page fonts if Acrobat Reader's font metrics are used.<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - Invalid representation of <b>&lt;LI type=DISC&gt;</b> and <b>&lt;LI type=CIRCLE&gt;</b> in PDF
+
+</ul>
+
+
+
+<h4><u>New in PD4ML 1.1.0b3</u></h4>
+
+<ul style="text-align: left">
+
+    <li>Significant performance improvement for multipage PDF document generation.
+
+    <li>Jrun4 / ColdFusion 6.1 compatibility.
+
+    <li>Fixed bugs:<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - Occasional ignoring of header/footer settings.<br>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; - Loosing of page content under particular conditions.<br>
+
+</ul>
+
+
+
+
+
+<h4><u>New in PD4ML 1.1.0b</u></h4>
+
+<ul style="text-align: left">
+
+    <li>Encryption and permission control added.
+
+    <li>Added rendering possibility using Acrobat Reader's font metrics instead of the ones offered by Java.
+
+    That makes PDF rendering more accurate if HTML layout consists of long text strings.
+
+    <li>Struts compatibility workaround implemented.
+
+    <li>New JSP custom tag <b>&lt;pd4ml:permissions&gt;</b> added in order to reflect PD4ML API changes.
+
+    <li>"Umlauts + Russian locale" issue solved.
+
+</ul>
+
+
+
+<h4><u>New in PD4ML 1.0.5</u></h4>
+
+<ul style="text-align: left">
+
+    <li><b>${total}</b> placeholder is replaced correctly with total number of pages in page header or footer.
+
+    <li>Header and footer dialog option panels are unlocked in <b>PD4ML Browser / Converter</b>.
+
+    <li>Some minor rendering refinements
+
+</ul>
+
+
+
+<h4><u>New in PD4ML 1.0.5b</u></h4>
+
+<ul style="text-align: left">
+
+    <li>Customizable PDF page header and footer support included.
+
+    <li>PD4ML API allows now to control PDF document properties: <b>document title</b> (allows to override
+
+    default value taken from HTML document title), <b>document author</b>.
+
+    <li><b>interpolate images</b> option is available.
+
+    <li>New JSP custom tags <b>&lt;pd4ml:header&gt;</b> and <b>&lt;pd4ml:footer&gt;</b> added.
+
+    <li>JSP custom tag <b>&lt;pd4ml:transform&gt;</b> reflects to the recent PD4ML API changes.
+
+    <li>Table cell background image bug fixed.
+
+</ul>
+
+
+
+
+
+<h4><u>New in PD4ML 1.0.4</u></h4>
+
+<p><b>PD4ML 1.0.4 is a maintenance release to fix bugs found in release 1.0.2 and 1.0.3</b><p>
+
+<ul style="text-align: left">
+
+    <li>PD4ML-specific <b>&lt;pd4ml:page.break&gt;</b> tag added (supported in JSP as well as in HTML context)
+
+    <li>JSP Custom tag libraries support added
+
+    <li>Fixes problem with resource sharing in multithread environment
+
+    <li>Other minor bugfixes
+
+</ul>
+
+
+
+
+
+<br>
+
+<h4>Feedback</h4>
+
+You can get support by mailing the PD4ML Team directly<img align="top" src="i/suppo.gif" width="108" height="14">.
+
+
+
+Its easier for us to help you if you include the following information in your
+
+post:
+
+<ul style="text-align: left">
+
+   Java Runtime version<br>
+
+   PD4ML version<br>
+
+   Operating system<br>
+
+   Hosting app server (if any)<br>
+
+   Source HTML that causes problems<br>
+
+   Java Exception stack trace (if any)<br>
+
+   Generated PDF file (if can not be shown by PDF Viewer application)
+
+</UL>
+
+
+
+<h4>Sales</h4>
+
+For PD4ML sales or licensing questions, please email us at:
+
+<ul style="text-align: left">
+
+<img align="top" src="i/sale.gif" width="98" height="14"><br>
+
+</ul>
+
+
+
+</p>
+
+</td></tr></table>

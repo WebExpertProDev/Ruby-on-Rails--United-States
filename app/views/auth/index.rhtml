@@ -1,0 +1,23 @@
+
+
+<img id="logo-transmanage" src="/images/logo.gif" class="x-hidden" />
+
+<script>       
+    Ext.onReady(function() {
+        var logo = Ext.get('logo-transmanage');
+               
+        var login = new RExt.LoginForm({
+            title: 'Transmanage Login',            
+            resistorLogo: '/images/logo-resistor.gif'         
+        });
+        login.on('ready', function() {
+            alignLogo();  
+            logo.fadeIn();
+            
+        });
+        login.on('center', alignLogo);
+        function alignLogo() {
+            logo.alignTo(login.el, "b-tr", [0, 61]);             
+        }                                                 
+    });
+</script>             

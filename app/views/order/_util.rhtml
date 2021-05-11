@@ -1,0 +1,163 @@
+<script>
+    
+/***
+ * Apollo.order.Util
+ * global data for comboBoxes.
+ *
+ */
+Apollo.order.Util = function() {
+    
+    var orders = new Ext.util.MixedCollection();
+    
+    return {
+        
+        /*** MixedCollection of Ext.XTemplate instances shared by all tabs ***/       
+        templates : new Ext.util.MixedCollection(),
+                       
+        /*** multiplier: cubic inches to cubic feet ***/
+        INCH_TO_FOOT : 0.000578703704,
+        
+        /*** multiplier: cubic inches to cubic meters ***/
+        INCH_TO_METER : 0.000016387064,
+        
+        /*** google maps instance ***/
+    	gmap : null,
+        
+        /***
+         * getMap
+         * return gmap instance
+         */
+    	getMap : function() {            
+            if (this.gmap == null) {
+                this.gmap = new RExt.google.GMap({
+            		id: 'gmap',
+            		renderTo: 'gmap',
+            		header: false,
+            		width: 400,
+            		height: 400,
+            		title: 'Google Map',
+            		deferredRender: false
+            	});
+            } 
+            return this.gmap;
+        },
+                        
+        /***
+         * getDimFactors
+         */
+        getDimFactors : function() {
+            return [[166], [194], [205], [210], [215], [216], [225], [250], [266], [300]];
+        },
+        
+    	/***
+    	 * getBillingMethods
+    	 * returns a list of all available billing methods
+    	 * @return {Array}
+    	 */
+    	getBillingMethods : function() {
+    		return <%=BillingMethod.to_a.to_json%>;
+    	},
+    
+    	/***
+    	 * getCreditCardTypes
+    	 */
+    	getCreditCardTypes : function() {
+    		return <%=SystemCc.find(:all).collect { |cc| [cc.id, cc.name] }.to_json %>;
+    	},
+                
+    	/***
+    	 * getCreditCardExpiryDates
+    	 * return a range of cc expiry dates for combobox
+    	 *
+    	 */
+    	getCreditCardExpiryDates : function() {
+    		var now = new Date();
+    		var year = now.getFullYear();
+    		    
+    		var list = []
+    		for (var n=0,len=10;n<len;n++) {
+    			var y = year++;
+    			y+=''; // <-- convert int to str
+    			list.push([y, y.substr(2)]); 	// <-- 2-digit year
+    		}            
+    		return list;
+    	},
+    
+    	/***
+    	 * getShippingMethods
+    	 * returns a list of all available shipping methods
+    	 * @return {Array}
+    	 */
+    	getShippingMethods : function() {
+    		return <%= ShippingMethod.to_a.to_json%>;
+    	},
+    
+    	/***
+    	 * getShippingCommodities
+    	 * returns a list of all available shipping commodities
+    	 * @return {Array}
+    	 */
+    	getShippingCommodities : function() {
+    		return <%= ShippingCommodity.to_a.to_json%>;
+    	},
+    
+    	/***
+    	 * getShippingCosts
+    	 * returns a list of all available shipping cost items
+    	 * @return {Array}
+    	 */
+    	getShippingCosts : function() {
+    		return <%= ShippingCost.to_a.to_json %>;
+    	},
+        
+        /***
+         * getSystemRevenuTypes
+         */
+        getSystemRevenuTypes : function() {
+            return <%= SystemRevenuType.find(:all).collect {|sr| sr.to_h}.to_json %>;    
+        },
+        
+    	/***
+    	 * getShippingStatusData
+    	 * returns a list of all available order statuses
+    	 * @return {Array}
+    	 */
+    	getShippingStatusData : function() {
+    		return <%= ShippingStatus.to_a.to_json %>;
+    	},
+       	
+        /***
+         * getOrderStatusData
+         */
+        getOrderStatusData : function() {
+            return <%= OrderStatus.find(:all, :conditions => "name != 'open'").collect {|s| s.to_h}.to_json %>;
+        },
+        
+        /***
+         * getGroundDomainId
+         * get the id of the domain named "ground"
+         */
+        getGroundDomainId : function() {
+            alert('getGroundDomainId wtf?');            
+        },
+        
+        /***
+         * getOrderLogTypes
+         * returns a list of OrderLogType
+         */
+        getOrderLogTypes : function() {
+            var data = <%= OrderLogType.find(:all).collect {|t| [t.id, t.name]}.to_json %>;
+            data.push(['ALL', 'ALL']);
+            return data.reverse();
+        },
+        
+        /***
+         * getDocs returns a list of order-document templates.
+         * @return {Array}
+         */
+        getDocs : function() {
+            return <%= Template.find_by_model('Order').collect {|t| t.to_h}.to_json %>;
+        }
+    };
+}();
+</script>

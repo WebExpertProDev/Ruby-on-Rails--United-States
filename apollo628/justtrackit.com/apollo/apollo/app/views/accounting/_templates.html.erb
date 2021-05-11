@@ -1,0 +1,156 @@
+<!-- invoice-dashboard-template -->
+<textarea id="invoice-dashboard-template" style="display:none;">
+    <div id="status-box-{id}" class="invoice-dashboard">        
+        <div class="yui-gb"> 
+	        <div class="yui-u first">  
+                <fieldset class="x-fieldset">
+                    <legend><img src="javascripts/ext-2.0/resources/images/default/s.gif" class="x-panel-inline-icon icon-package"/>{[values.getOrder().bill_number]}</legend>                               
+    	            <table>	                                                                     
+                        <tr><th>Total:</th><td>{[Ext.util.Format.usMoney(values.getTotal())]}</td></tr>                                                                                 
+                        <tr><th>Invoice status:</th><td><span class="invoice-status" id="invoice-status-{id}">{[values.getStatus()]}</span></td></tr>
+                    </table> 
+                </fieldset>                        
+	        </div> 
+            <div class="yui-u"> 
+	            <fieldset class="x-fieldset">
+                    <legend><img src="javascripts/ext-2.0/resources/images/default/s.gif" class="x-panel-inline-icon icon-date"/>Invoice date</legend>                                        
+                    <table>                        
+                        <tr>
+                            <th>Created at:</th>
+                            <td>{[new Date(values.getCreatedAt()).format("F j, Y")]}</td>
+                        </tr>
+                        <tr>
+                            <th>Last invoiced:</th>
+                            <td>{[(values.getLastInvoicedDate()) ? values.getLastInvoicedDate().format("F j, Y") : "NOT INVOICED"]}</td>
+                        </tr>                    
+                    </table>
+                </fieldset>                  
+	        </div> 
+            <div class="yui-u"> 
+                <fieldset class="x-fieldset">
+                    <legend><img src="javascripts/ext-2.0/resources/images/default/s.gif" class="x-panel-inline-icon icon-door-in"/>legend</legend>                                        
+                    <table>                        
+                        <tr>
+                            <th>Delivery date:</th>
+                            <td>value</td>
+                        </tr>
+                        <tr>
+                            <th>Ready/Close:</th>
+                            <td>value</td>
+                        </tr>                    
+                    </table>
+                </fieldset>	        	
+	        </div> 
+	    </div>         
+    </div>           
+</textarea>
+
+<!-- invoice-client-template -->
+<textarea id="invoice-client-template" class="x-hidden">
+    <tpl for="getClient()">
+        <h2>{name}</h2>
+        <tpl for="location">
+            <address>
+                {addr1} {addr2}<br />
+                {[values.city.name]}, {[values.region.iso]}, {[values.country.iso]}<br />
+                {zip}
+		    </address>
+            <table style="width: 100%;margin-top:5px;" class="x-grid3 r-properties">                        
+                <tr class="x-grid3-row">
+                    <td class="x-grid3-hd x-grid3-cell" width="55">
+                        <div class="x-grid3-cell-inner" unselectable="on">Phone1:</div>
+                    </th>
+                    <td class="x-grid3-col x-grid3-cell" width="auto">
+                        <div class="x-grid3-cell-inner" unselectable="on">{phone1}</div>
+                    </td>                            
+                </tr> 
+                <tr class="x-grid3-row">
+                    <td class="x-grid3-hd x-grid3-cell">
+                        <div class="x-grid3-cell-inner" unselectable="on">Phone2:</div>
+                    </th>
+                    <td class="x-grid3-col x-grid3-cell">
+                        <div class="x-grid3-cell-inner" unselectable="on">{phone2}</div>
+                    </td>                            
+                </tr>  
+                <tr class="x-grid3-row">
+                    <td class="x-grid3-hd x-grid3-cell">
+                        <div class="x-grid3-cell-inner" unselectable="on">Fax:</div>
+                    </th>
+                    <td class="x-grid3-col x-grid3-cell">
+                        <div class="x-grid3-cell-inner" unselectable="on">{fax}</div>
+                    </td>                            
+                </tr> 
+                <tr class="x-grid3-row">
+                    <td class="x-grid3-hd x-grid3-cell">
+                        <div class="x-grid3-cell-inner" unselectable="on">Email:</div>
+                    </th>
+                    <td class="x-grid3-col x-grid3-cell">
+                        <div class="x-grid3-cell-inner" unselectable="on">{email}</div>
+                    </td>                            
+                </tr>                                                 
+            </table>      
+        </tpl>   
+    </tpl>
+    
+    <tpl for="getAccountant()">                
+        <fieldset class="x-fieldset">
+            <legend><img src="javascripts/ext-2.0/resources/images/default/s.gif" class="x-panel-inline-icon icon-user"/>Accountant</legend>                               
+            {first} {last}
+            <table style="width: 100%;margin-top:5px;" class="x-grid3 r-properties">                        
+                <tr class="x-grid3-row">
+                    <td class="x-grid3-hd x-grid3-cell" width="55">
+                        <div class="x-grid3-cell-inner" unselectable="on">Phone1:</div>
+                    </th>
+                    <td class="x-grid3-col x-grid3-cell" width="auto">
+                        <div class="x-grid3-cell-inner" unselectable="on">{phone1}</div>
+                    </td>                            
+                </tr> 
+                <tr class="x-grid3-row">
+                    <td class="x-grid3-hd x-grid3-cell">
+                        <div class="x-grid3-cell-inner" unselectable="on">Phone2:</div>
+                    </th>
+                    <td class="x-grid3-col x-grid3-cell">
+                        <div class="x-grid3-cell-inner" unselectable="on">{phone2}</div>
+                    </td>                            
+                </tr>  
+                <tr class="x-grid3-row">
+                    <td class="x-grid3-hd x-grid3-cell">
+                        <div class="x-grid3-cell-inner" unselectable="on">Fax:</div>
+                    </th>
+                    <td class="x-grid3-col x-grid3-cell">
+                        <div class="x-grid3-cell-inner" unselectable="on">{fax}</div>
+                    </td>                            
+                </tr> 
+                <tr class="x-grid3-row">
+                    <td class="x-grid3-hd x-grid3-cell">
+                        <div class="x-grid3-cell-inner" unselectable="on">Email:</div>
+                    </th>
+                    <td class="x-grid3-col x-grid3-cell">
+                        <div class="x-grid3-cell-inner" unselectable="on">{email}</div>
+                    </td>                            
+                </tr>                                                 
+            </table> 
+        </fieldset>                               
+    </tpl>         
+</textarea>
+
+<!-- invoice-transaction-view-template -->
+<textarea id="invoice-transaction-template" style="display:none;">   
+    <tpl for=".">
+        <div id="invoice-transaction-{id}" class="x-grid3-row invoice-transaction" title="double-click to open">                                   		                      
+            <div class="x-grid3-cell-inner">  
+                <div class="hd">              
+                    <h3>{[values.method.name]} {[values.type.name]}: {[Ext.util.Format.usMoney(values.amount)]}</h3>
+                    <p class="stats">Created by: {created_by}, Updated by: {updated_by}</p>
+                </div>          
+                <div class="bd">
+                    <tpl if="method_number !== null && method_date !== null">
+                        <strong>{[values.method.name]}#:</strong>&nbsp;{method_number}, <strong>Date:</strong>&nbsp;{[new Date(values.method_date).format("F j, Y")]}<br />    
+                    </tpl>
+                    <p>{comment}</p>
+                </div>      
+           </div>                           
+        </div>
+    </tpl>    	
+</textarea>
+     

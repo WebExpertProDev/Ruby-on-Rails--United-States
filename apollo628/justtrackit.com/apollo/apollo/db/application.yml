@@ -1,0 +1,539 @@
+---
+# The corporation hosting the application
+:corp:
+  :name: Transmanage Worldwide Inc.
+  :description: Headquarters
+  :locations:
+  - :phone1: (800) 959-1390
+    :fax: (479) 770-1293
+    :addr1: 117 Parkwood, Suite #6
+    :city_id: Lowell
+    :airport_id: LAX
+    :region_id: AK
+    :country_id: US
+    :zip: 72745  
+  :domain: corp
+                  
+# The Admin account
+:admin:
+  :company_id: 1
+  :username: admin
+  :password: admin911
+  :password_confirmation: admin911
+  :first: admin
+  :last: admin
+  :email: info@test.net
+  :phone: 514.495.9992  
+  
+# system_log_type
+:system_log_type:
+- :name: comment
+  :label: comment
+  :icon: icon-user-comment
+- :name: notification
+  :label: notification
+  :icon: icon-email-go
+- :name: status
+  :label: status
+  :icon: icon-flag-green
+- :name: re-weigh
+  :label: re-weigh
+  :icon: icon-shape-align-bottom
+- :name: pod
+  :label: Proof of Delivery
+  :icon: icon-door-in       
+- :name: invoice_item_adjustment
+  :label: Invoice adjustment
+  :icon: icon-pencil
+       
+# static permission
+:static_permission:
+
+# roles
+:role: 
+  # corp roles
+- :identifier: admin
+  :label: Administrator
+- :identifier: corp.employee
+  :label: Employee
+- :identifier: corp.tsa_manager
+  :label: TSA Manager
+- :identifier: corp.sales
+  :label: Sales
+        
+  # client roles
+- :identifier: client.known_shipper
+  :label: Known Shipper
+  :fields:
+  - :name: validation_number  
+    :label: Validation#
+    :required: true
+    :config: {}                            
+    :field_type: string
+            
+- :identifier: accountant
+  :label: Accountant
+  
+  # vendor.agent roles
+- :identifier: vendor.agent.tsa_approved
+  :label: TSA Approved
+  :fields:          
+  - :name: approval_date
+    :label: Approval date
+    :required: true,
+    :config: {}
+    :field_type: date
+                
+- :identifier: vendor.agent.after_hours
+  :label: After-hours
+- :identifier: vendor.agent.weekends
+  :label: Weekends
+- :identifier: vendor.agent.manager
+  :label: Manager       
+                
+  #carrier roles
+- :identifier: vendor.carrier.ground
+  :label: Ground
+- :identifier: vendor.carrier.air_freight
+  :label: Air Freight
+- :identifier: vendor.carrier.air_commercial
+  :label: Air Commercial        
+  
+  # sales-agent roles
+- :identifier: vendor.sales_agent
+  :label: Sales-agent
+  :fields: 
+  - :name: commission
+    :label: Commission
+    :required: true
+    :field_type: integer
+    :config:
+      :minValue: 1,                
+      :minText: Commission must be > 0
+      :maxValue: 75
+      :maxText: Commission cannot exceed 75%
+      :value: 50          
+        
+- :identifier: vendor.sales_agent.commission_bonus
+  :label: Commission Bonus
+  :fields:
+  - :name: bonus  
+    :label: Bonus
+    :required: true
+    :field_type: integer
+    :config:            
+      :minValue: 1
+      :minText: Bonus must be > 0
+      :maxValue: 10
+      :maxText: Bonus cannot exceed 10%                                                     
+       
+  - :name: expiry
+    :label: Expiry date
+    :required: true
+    :config: {}
+    :field_type: date
+                                                                                  
+# domains
+:domain:
+  # corp
+- :name: corp
+  :label: CORP
+  :parent_id: 0
+  :account_roles:
+  - admin
+  - corp.employee
+  - corp.tsa_manager
+  - corp.sales
+  - accountant
+    
+  :fields:
+    # IACCERT NUMBER
+  - :name: iaccert_number
+    :label: IACCERT number
+    :required: true
+    :field_type: string
+    :config: {}                       
+    # IACCERT EXPIRATION        
+  - :name: iaccert_expiration
+    :label: IACCERT expiration
+    :required: true
+    :field_type: date
+    :config:
+      :format: m/d/Y    
+         
+  # client domain              
+- :name: client
+  :label: Client
+  :parent_id: 0
+  :account_roles:
+  - accountant  
+  :company_roles:
+  - client.known_shipper       
+  :fields:
+  - :name: fuel_security_surcharge
+    :label: Fuel & security surcharge(%)
+    :required: true
+    :field_type: number
+    :config:
+      :minValue: 10
+      :maxValue: 35
+      :value: 20   
+  - :name: markup
+    :label: Markup(%)
+    :required: true
+    :field_type: number
+    :config:
+      :minValue: 25
+      :maxValue: 75
+      :value: 50
+  - :name: insurance
+    :label: Declared-value insurance(c/lb)
+    :required: true
+    :field_type: number
+    :config:    
+      :minValue: 0.07
+      :maxValue: 0.15
+      :value: 0.10    
+               
+  # vendor
+- :name: vendor
+  :label: Vendor
+  :parent_id: 0
+  :account_roles:
+  - accountant
+  :children:
+  
+    #carrier
+  - :name: carrier
+    :label: Carrier  
+    :company_roles:
+    - vendor.carrier.ground
+    - vendor.carrier.air_commercial
+    - vendor.carrier.air_freight
+    :fields:
+    - :name: account_number
+      :label: Account#
+      :required: false
+      :field_type: string            
+    - :name: iata_code
+      :label: IATA code
+      :required: false
+      :field_type: string            
+              
+    #agent
+  - :name: agent
+    :label: Carting-agent    
+    :account_roles:
+    - vendor.agent.after_hours
+    - vendor.agent.manager
+    - vendor.agent.weekends
+    
+    :company_roles:
+    - vendor.agent.tsa_approved
+  
+    # customs broker
+  - :name: customs_broker
+    :label: Customs Broker    
+
+    # packing-service
+  - :name: packing_service
+    :label: Packing Service    
+    
+    # sales-agency
+  - :name: sales_agency
+    :label: Sales-agency    
+    :account_roles:
+    - vendor.sales_agent
+    - vendor.sales_agent.commission_bonus
+  
+  
+        
+# shipping methods  
+:shipping_method:
+- :name: Same day
+- :name: Next day
+- :name: 2nd day
+- :name: 3-5 day (deferred)
+- :name: Local
+
+# billing methods
+:billing_method:
+- :name: credit
+  :label: Credit card
+- :name: prepay
+  :label: Pre-pay
+
+# shipping_status
+:shipping_status:
+- :name: APPOINTMENT CHANGED
+- :name: APPOINTMENT MADE
+- :name: ARRIVED AT DESTINATION (NOT ON-HAND YET
+- :name: ATTEMPTED PICKUP
+- :name: BEYOND TRANSFER
+- :name: CANCELLED PER CUSTOMER
+- :name: CONFIRMED ON-BOARD
+- :name: WEATHER DELAY
+- :name: DELIVERED
+- :name: DELIVERY ATTEMPTED
+- :name: DISPATCHED
+- :name: DRIVER ON-SITE SHIPPER
+- :name: DRIVER ON-SITE W/ADVISE POD ASAP
+- :name: DROPPED AT CARRIER
+- :name: DUPLICATE HWB
+- :name: FREIGHT AT CUSTOMS, AWAITING CLEARANCE
+- :name: FREIGHT DELIVERED, AWAITING POD INFORM
+- :name: HOLD FOR PICK-UP
+- :name: IN STORAGE AT DESTINATION
+- :name: IN STORAGE AT ORIGIN
+- :name: IN TRANSIT
+- :name: NEW HWB, AGENT TO ADVISE DETAILS
+- :name: NO FREIGHT / FREIGHT FORCED
+- :name: NO LONGER WITH COMPANY TO BE REDIRECTED
+- :name: NO RESPONSE
+- :name: ON-HAND DESTINATION A/P
+- :name: ON-HAND DESTINATION AGENT
+- :name: ON-HAND ORIGIN
+- :name: ON-HAND PICK-UP AGENT DROPPING NOW
+- :name: ON-HAND REP NOTIFIED VIA PHONE
+- :name: ON-HAND REP ON-LEAVE
+- :name: ON-HAND TRANSFER STATION
+- :name: ON-HOLD BY EXCISE TAX OFF IN SAN JUAN
+- :name: OS&D
+- :name: OUT FOR DELIVER
+- :name: PARTIAL REFUSAL
+- :name: PICK-UP CANCELLED
+- :name: PICK-UP CONFIRMED
+- :name: PICK-UP ON-BOARD
+- :name: PICK-UP SCHEDULED
+- :name: PICKED UP FROM SHIPPER
+- :name: RECOVERING; WILL ADVISE
+- :name: REDIRECTED
+- :name: REFUSED
+- :name: RETURN TO SHIPPER
+- :name: TERMINATED
+- :name: TRAILER DROPPED AT SHIPPER FOR LOADING
+
+# shipping_commodity
+:shipping_commodity:
+- :name: AUTO PARTS
+- :name: AIRCRAFT PARTS
+- :name: ART WORK
+- :name: BUILDING MATERIALS
+- :name: COMPUTER EQUIPMENT
+- :name: CONVENTION MATERIALS
+- :name: CO-MAT (NON-REVENUE)
+- :name: DISH MACHINE
+- :name: ELECTRONIC EQUIPMENT
+- :name: HEALTH & BEAUTY
+- :name: HOUSEWARES
+- :name: HAZARDOUS MATERIALS
+- :name: INTL DOCUMENTS
+- :name: MISCELLANEOUS ONLY
+- :name: MEDICAL EQUIPMENT
+- :name: MACHINE PARTS
+- :name: PERISHABLES
+- :name: PERSONAL EFFECTS
+- :name: PIECE GOODS & FABRIC
+- :name: PHARMACEUTICALS
+- :name: PRINTED MATTER
+- :name: PROMOTIONAL MATERIAL
+- :name: SIGNS
+- :name: SHOES
+- :name: TEST EQUIPMENT
+- :name: TECHNOLOGY
+- :name: TOYS
+- :name: VIDEO GAMES or CDs
+- :name: APPAREL
+
+# shipping_cost                
+:shipping_cost:
+- :name: Carrier Charge
+- :name: 2-Man Delivery
+- :name: 2-Man Pick-up
+- :name: Advance Origin Fee
+- :name: Airport Drop
+- :name: Appointments
+- :name: Attempted Deliver
+- :name: Attempted Pick-up
+- :name: Beyond Pick-up
+- :name: Carton Supply
+- :name: COD Fee
+- :name: Containerization/Packaging
+- :name: Convention Delivery
+- :name: Convention Pick-up
+- :name: Customer Drop/Handling
+- :name: Customs Fees / Clearance / Handling
+- :name: Declared Value Fee
+- :name: Delivery Charge
+- :name: De-trash
+- :name: Dismantle Fee
+- :name: Excise Tax Advance Fee
+- :name: Excise Taxes Advanced
+- :name: Freight Charges
+- :name: Fuel Surcharge
+- :name: Haz-Mat Charge
+- :name: Hold-for-Pick-up Fee
+- :name: Hotel Delivery
+- :name: Hotel Pick-up
+- :name: Inside Delivery
+- :name: Inside Pick-up
+- :name: Insurance
+- :name: Lift-gate Pick-up
+- :name: Lift-gate Delivery
+- :name: OTC Recovery
+- :name: Over-size Charge
+- :name: P.O.D. (Proof of Delivery)
+- :name: Packing and/or Re-packing
+- :name: Pallet / Shrinkwrap Fee
+- :name: Pallet-jack Delivery
+- :name: Pallet-jack Pick-up
+- :name: Pick-up Charge
+- :name: Recovery
+- :name: Residential Delivery
+- :name: Residential Pick-up
+- :name: Saturday Delivery
+- :name: Saturday Pick-up
+- :name: Saturday PM Special Delivery
+- :name: Saturday PM Special Pick-up
+- :name: Special Delivery
+- :name: Special Evening Delivery
+- :name: Special Evening Pick-up
+- :name: Special Holiday Delivery
+- :name: Special Holiday Pick-up
+- :name: Special Pick-up
+- :name: Special Delivery
+- :name: Special Transfer
+- :name: Storage
+- :name: Sunday Special Delivery
+- :name: Sunday Special Pick-up
+- :name: Transfer Charge
+- :name: Un-crating
+- :name: Waiting Time
+- :name: Waiting Time Delivery
+- :name: Warehousing
+- :name: Wharf Delivery
+               
+# order-types
+:order_type:
+- :name: hwb
+  :label: House Waybill           
+  :entities:
+  - :domain: client
+    :name: shipper
+    :label: Shipper
+  - :domain: client
+    :name: consignee
+    :label: Consignee
+    
+- :name: hawb_quote
+  :label: Quote   
+  :entities: 
+  - :domain: client
+    :name: shipper
+    :label: Shipper
+  - :domain: client
+    :name: consignee
+    :label: Consignee    
+         
+- :name: mawb
+  :label: Master Waybill
+  :entities: 
+  - :domain: agent
+    :name: shipper
+    :label: Pickup agent
+  - :domain: agent
+    :name: consignee
+    :label: Delivery-agent
+  - :domain: carrier
+    :name: carrier
+    :label: Carrier
+            
+- :name: local
+  :label: Local
+  :entities:
+  - :domain: agent
+    :name: carrier
+    :label: Carrier
+    
+- :name: route
+  :label: Route
+  :entities:
+  - :domain: agent
+    :name: shipper
+    :label: Pickup agent
+  - :domain: agent
+    :name: consignee
+    :label: Delivery agent
+  - :domain: carrier
+    :name: carrier
+    :label: Carrier     
+
+# order_log_type
+:order_log_type:
+- :name: comment
+  :label: comment
+- :name: notification
+  :label: notification
+- :name: status
+  :label: status
+- :name: re-weigh
+  :label: re-weigh
+- :name: pod
+  :label: Proof of Delivery
+
+# order_status
+:order_status:
+- :name: open
+  :label: open       
+- :name: cancelled
+  :label: cancelled
+- :name: delivered
+  :label: delivered
+         
+# template_type
+:template_type:
+- :name: theme
+  :label: Themes
+- :name: view
+  :label: Views
+- :name: partial
+  :label: Partials
+  
+##############
+# accounting
+##############
+:system_revenu_type:
+- :name: percentage
+- :name: fee
+- :name: multiplier
+
+# system_revenu
+:system_revenu:
+- :name: markup
+  :label: Markup
+  :invoice_label: Freight charge            
+- :name: fuel_security_surcharge
+  :label: Fuel & security surcharge
+  :invoice_label: Fuel & security surcharge
+- :name: insurance
+  :label: Declared-value insurance          
+  :invoice_label: Declared-value insurance  
+  
+# transaction_type
+:transaction_type:
+- :name: payment
+- :name: refund
+
+# transaction_method
+:transaction_method:
+- :name: cheque
+- :name: creditcard
+- :name: debit
+
+# invoice_status
+:invoice_status:
+- :name: new
+- :name: invoiced
+- :name: paid
+- :name: cancelled
+                   

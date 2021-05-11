@@ -1,0 +1,119 @@
+
+
+<script>
+    Apollo.Invoice = function() {
+        this.id = <%= @id %>;
+        
+        this.items = new Ext.util.MixedCollection();
+        this.items.addAll(<%= @invoice.items.collect {|ii| ii.to_h }.to_json %>);     
+        
+        this.payables = new Ext.util.MixedCollection();
+        this.payables.addAll(<%= @invoice.payables.collect { |p| p.to_h }.to_json %>);
+                     
+    };
+    Apollo.Invoice.prototype = {
+        
+        // invoice status
+        status : "<%= @invoice.status.name %>",
+        
+        // total
+        total : <%= @invoice.total %>,
+        
+        /**
+         * getCreatedAt
+         */
+        getCreatedAt : function() {
+            return '<%= @invoice.created_at %>';    
+        },
+        
+        /**
+         * getLastInvoicedDate
+         * @return {Date}
+         */
+        getLastInvoicedDate : function() {
+            var last = <%= @invoice.last_invoiced_date.to_json %>;
+            return (last != false) ? new Date(last) : last;    
+        },
+        
+        /**
+         * getItems
+         * returns the order's line-items
+         * @return {Ext.util.MixedCollection
+         */
+        getItems : function() { return this.items; },
+        
+        /**
+         * getPayables        
+         */
+        getPayables : function() { return this.payables; },
+        
+        /**
+         * getTransactions
+         * @return {Array}
+         */
+        getTransactions : function() {
+            return <%= @transactions.to_json %>;    
+        },
+        
+        /**
+         * getAdjustments
+         * @return {Array}
+         */
+        getAdjustments : function() {
+            return [];
+        },
+       
+        /**
+         * getLog  
+         * @return {Array}      
+         */
+        getLog : function() { return <%= @log.to_json %>; },
+        
+        /**
+         * getTotal
+         * @return {Float}
+         */
+        getTotal : function() { return this.total; },
+        
+        /**
+         * setTotal
+         */
+        setTotal : function(v) { this.total = v; },
+        
+        /**
+         * getStatus
+         * @return {String}
+         */
+        getStatus : function() { return this.status; },
+        setStatus : function(v) { 
+            this.status = v;
+            var el = Ext.fly('invoice-status-' + this.id);
+            if (el) {
+                el.dom.innerHTML = v;
+                el.frame('#0c0');                
+            }
+        },
+        
+        /**
+         * getClient
+         * returns the order's bill_to company
+         * @return {Hash}
+         */
+        getClient : function() {
+            return <%= @order.bill_to.to_h.merge(:location => @order.bill_to.billing_address.to_h).to_json %>;
+        },  
+        
+        /**
+         * getAccountant
+         */
+        getAccountant : function() {
+            return <%= @order.bill_to.accountant.contact.to_json %>;    
+        },
+    
+        getOrder : function() {
+            return <%= @order.to_h.to_json %>;
+        }
+        
+    };
+    
+</script>

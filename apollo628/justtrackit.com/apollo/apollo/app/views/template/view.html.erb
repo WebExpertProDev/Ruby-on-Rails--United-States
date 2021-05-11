@@ -1,0 +1,34 @@
+
+
+<script>
+    /***
+     * RExt.Template
+     * A data-wrapper for the rails view action
+     * @author Chris Scott
+     */
+    RExt.Template = function() {};
+    RExt.Template.prototype = {
+        id: <%= @tpl.id %>,
+        name: "<%= @tpl.name %>",
+        label: "<%= @tpl.label %>",
+        content: <%= @tpl.content.to_json %>,   
+        type: "<%= @tpl.type.name %>",      
+        theme: <%= @theme.to_json %>,
+        methods : <%= @tpl.get_methods.to_json %>,
+        
+        /***
+         * getTheme
+         */
+        getTheme : function() {
+            return this.theme;
+        },
+        
+        /***
+         * getMethods
+         * @return {Object || false} 
+         */
+        getMethods : function() {            
+            return (typeof(this.methods) == 'object') ? this.methods : false
+        }
+    };
+</script>

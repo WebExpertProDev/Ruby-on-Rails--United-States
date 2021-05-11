@@ -1,0 +1,25 @@
+<script>
+    Apollo.Report = function() {
+        
+    }
+    Apollo.Report.prototype = {
+        id : <%= @report.id %>,
+        name: "<%= @report.name %>",
+        label: "<%= @report.label %>",
+        model: "<%= @report.model %>",        
+        criteria : <%= @report.criteria.to_json %>,
+        columns : RExt.grid.Builder.prepareColumnModel(<%= RExt::Grid::ColumnModel.to_ext(@report.columns).to_json %>),        
+        record : <%= @report.record.to_json %>,
+                        
+        getName : function() { return this.name; },
+        getModel : function() { return this.model; },
+        getLabel : function() { return this.label; },                                       
+        getColumns : function() { return this.columns; },
+        setColumns : function(c) { this.columns = RExt.grid.Builder.prepareColumnModel(c); },
+        getCriteria : function() { return this.criteria; },                
+        setCriteria : function(data) {
+            this.criteria = data;            
+        }
+    };
+    
+</script>

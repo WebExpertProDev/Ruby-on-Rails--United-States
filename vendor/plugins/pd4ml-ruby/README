@@ -1,0 +1,14 @@
+PdfBuilder
+==========
+
+download pd4ml and place the .jar file along with ss_css2.jar into /lib.
+
+you have to edit the constant PdfBuilder::JAR in pdf_builder.rb to reflect the name of your jar file (ie: evaluation copy or purchased version)
+
+This is all very, very raw.  caveat emptor.
+
+
+Example
+=======
+
+Copyright (c) 2008 Chris Scott, released under the MIT license

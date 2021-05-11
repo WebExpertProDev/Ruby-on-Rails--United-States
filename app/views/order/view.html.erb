@@ -1,0 +1,281 @@
+
+
+<script type="text/javascript">
+
+
+/***
+ * Apollo.Order instance
+ *
+ */
+Apollo.Order = function() {
+
+	// constructor
+	this.id = <%= @id %>;
+
+	this.entities = new Ext.util.MixedCollection();
+
+	this.entities.add(<%= @shipper.to_h.to_json %>);
+    <% if @consignee != nil %>
+    this.entities.add(<%= @consignee.to_h.to_json %>);    
+    <% end %>
+	        
+	//this.routes, {Ext.util.MixedCollection} ***/
+	this.routes = new Ext.util.MixedCollection();
+	var routes = <%= @order.get_routes.to_json %>;
+	for (var n=0,len=routes.length;n<len;n++) {
+		this.addRoute(routes[n]);                
+	}	    
+};
+Apollo.Order.prototype = {
+    
+    bill_number: '<%= @order.bill_number %>',
+    bill_to : <%= @bill_to.to_json %>,    
+    shipping_method_id: <%= @order.shipping_method_id%>,    
+    shipping_method: '<%= @order.shipping_method.name %>',
+    shipping_status : '<%=@order.status.name%>',
+    
+    /** OrderRevnu **/
+    revenus : <%= @order.revenus.collect { |r| r.to_h}.to_json %>,
+    total_revenu : 0,
+    
+    /** proof-of-delivery **/
+    pod : <%= @order.get_pod.to_json %>,
+    
+    /** total order-cost **/
+    total_cost: 0,
+    
+    /***
+     * getPod
+     * get proof-of-delivery info (false if not yet set)
+     * @return {Object || false}
+     */   
+     getPod : function() {
+         return this.pod;    
+     },
+     
+     /**
+      * setPod
+      * @param {Object} route
+      */
+     setPod : function(v) {
+         this.pod = v;
+     },
+     
+    /***
+     * addRoute
+     * @param {Object} route
+     * @return {Object} route
+     */
+    addRoute : function(route) {        
+		var route = this.routes.add(route.id, this.createRoute(route));
+        if (typeof(route.index) == 'undefined') {
+            route.index = this.routes.indexOf(route) + 1;
+        }
+        return route;
+    },
+    
+    /***
+     * removeRoute
+     */
+    removeRoute: function(route) {
+        return this.routes.remove(route);       
+    },
+    
+    /***
+     * createRoute
+     * render raw response from server and 
+     * @param {Object} route
+     * @return {Object} route
+     */
+    createRoute : function(route) {
+        var entities = new Ext.util.MixedCollection();	// <-- make a nested Collection of entities.
+		for (var t=0,lent=route.entities.length;t<lent;t++) {
+            route.entities[t].date_in = new Date(route.entities[t].date_in);
+            route.entities[t].date_out = new Date(route.entities[t].date_out);
+			entities.add(route.entities[t].id, route.entities[t]);
+		}
+		route.entities = entities;  
+        return route;  
+    },
+    
+    /***
+     * replaceRoute
+     * replace an update route in routes collection.
+     * @param {Object} route
+     * @return {Object} route
+     */
+    replaceRoute : function(route) {
+        var existing = this.routes.get(route.id);
+        var updated = this.routes.replace(route.id, this.createRoute(route));  
+        updated.index = existing.index; 
+        return updated;
+    },
+    
+    /***
+     * replaceEntity
+     * replace an updated entity
+     */
+    replaceEntity : function(entity) {
+        return this.entities.replace(entity.id, entity);    
+    },
+    
+    /***
+     * getId
+     */
+	getId : function() {
+		return this.id;
+	},
+
+    /***
+     * getShippingStatus
+     */
+	getCurrentShippingStatus : function() {
+	    return this.shipping_status;	
+	},
+    setShippingStatus : function(v) { this.shipping_status = v; },
+                
+    /***
+     * getCosts
+     */
+    getCosts : function() {
+        return <%= @order.get_route_costs.to_json %>;
+    },
+    
+    /***
+     * getRevenus
+     */
+    getRevenus : function() {
+        return this.revenus;    
+    },
+        
+    setRevenus : function(v) { this.revenus = v; },
+    
+    getTotalRevenu : function() { return this.total_revenu; },
+    setTotalRevenu : function(v) { this.total_revenu = v; },
+    
+    /***
+     * getLog
+     */
+    getLog : function() {
+        return <%= @order.get_log.to_json %>;
+    },
+    
+    /***
+     * setTotalCost
+     */
+    setTotalCost : function(v) { this.total_cost = v; },
+    /***
+     * getTotalCost
+     */
+	getTotalCost : function() { return this.total_cost; },
+            
+    /***
+     * getRoutes
+     */
+	getRoutes : function() {
+		return this.routes;
+	},
+
+    /***
+     * getAllowedRoutingTypes
+     */
+	getAllowedRoutingTypes : function() {
+		return <%= get_allowed_routing_types %>;
+	},
+
+    /***
+     * getShipper
+     */
+	getShipper : function() {
+		return this.entities.find(function(e) {return (e.role == 'shipper') ? true : false});
+	},
+            
+    /***
+     * getConsignee
+     */
+	getConsignee : function() {
+	    return this.entities.find(function(e) {return (e.role == 'consignee') ? true : false});	
+	},
+    
+    /***
+     * getBillTo
+     */
+    getBillTo : function() {
+        return this.bill_to;
+    },
+    
+    setBillTo : function(o) {
+        this.bill_to = o;    
+    },
+    
+    setShippingMethod : function(o) {
+        this.shipping_method = o.name;
+        this.shipping_method_id = o.id;    
+    },
+    
+    /***
+     * getShipment
+     * @return {Hash} 
+     */
+    getShipment : function() {
+        
+        //var items = new RExt.util.RecordCollection();
+        var items = [];
+        var data = <%= @order.get_items.to_json %>;
+        if (data.length) {
+            var grid = Ext.getCmp('dims').grid;
+            if (grid) {
+                var reader = grid.getStore().reader;
+                items = reader.readRecords(data).records;
+            }   
+            else {
+                alert('Apollo.Order.getShipment -- could not find dims grid');
+                return false;
+            } 
+        }    
+        var values = <%= {
+            :commodity => @order.commodity.name,
+            :commodity_id => @order.commodity.id,
+            :pieces => @order.pieces,
+            :weight => @order.weight,
+            :declared_value => @order.declared_value 
+        }.to_json %>;
+        
+        return {
+            values: values,
+            dims: items
+        };
+        
+        
+    },
+    
+    /***
+     * getCarrierOrigin
+     */
+	getCarrierOrigin : function() {
+		if (this.routes.getCount() == 0) {
+			var loc = this.getShipperLocation();
+			return loc.city.name + ',' + loc.region.id + ',' + loc.country.id;
+		}
+		else {
+			return this.routes.last().carrier.destination;
+		}
+	},
+
+    /***
+     * findByEntityId
+     * @param {Object} id
+     */
+    findEntityById : function(id) {
+        return (this.entities.containsKey(id)) ? this.entities.get(id) : this.routes.find(function(r) {
+            return (r.entities.containsKey(id)) ? true : false;
+        }).entities.get(id);
+
+    },
+    
+    getPickupLocations : function() {
+        return <%= (!@order.pickup_locations.nil?) ? @order.pickup_locations.to_json : false.to_json %>; 
+    }
+};
+
+</script>

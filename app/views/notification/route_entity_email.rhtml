@@ -1,0 +1,25 @@
+<%= render(:partial => "./styles") %>
+<%
+	@order = @entity.order
+	@from = @order.parent.created_by
+	@company = @from.company
+	@account = @entity.account
+	@today = Date.today
+	@carrier = @order.find_entity_by_type('carrier')
+	
+%>
+
+<h1><%=@company.name.capitalize%> Order Notification Test</h1>
+<p>Carrier: <%= @carrier.account.company.name.capitalize %></p>
+<p>Pickup time: <%= @carrier.date_in.strftime("%B %d, %Y") + ', ' + @carrier.date_in.strftime("%I:%M") + " (#{(@carrier.date_in.to_date - @today).to_i.to_s} days)" %></p>
+<p>Delivery time: <%= @carrier.date_out.strftime("%B %d, %Y") + ', ' + @carrier.date_out.strftime("%I:%M") + " (#{(@carrier.date_out.to_date - @today).to_i.to_s} days)" %></p>
+
+<p>Instructions: <%= @entity.attn%></p>
+
+<hr>
+<p>If you have any questions concerning this order-notification, please contact <%= @from.company.name.capitalize %> immediately:</p>
+<h3><%= @from.first.capitalize + ' ' + @from.last.capitalize %>, <%= @from.company.name.capitalize %></h3>
+<p><strong>Email:</strong> <%= @from.email %></p>
+<p><strong>Phone</strong>: <%= @from.phone %></p>
+<p><strong>Fax:</strong><%= @from.fax %></p>
+<hr>

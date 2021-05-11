@@ -1,0 +1,212 @@
+body{text-align: left;}
+ 
+/***
+* application header
+*/
+#header {
+    background: #fff url(/images/logo_header.gif) no-repeat;
+    height: 75px;
+}
+#header-status {
+    padding: 3px;        
+}
+#header-status table {          
+    font-size: 88%;      
+}
+#header-status table th {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 5px;
+}
+#header-status table td {
+    text-align: left;
+}
+#footer {
+    background: #fff url(/images/logo-resistor.gif) no-repeat;
+    height: 25px;
+}
+.node-domain { background: url(/images/icons/world.png) no-repeat !important; }
+.node-company { background: url(/images/icons/building.png) no-repeat !important; }
+.node-account { background: url(/images/icons/user.png) no-repeat !important; }
+
+/***
+* fix no-cursor on forms on dialogs
+*
+*/
+
+.x-window, .r-form-popup, .r-form-poup .x-window {    
+  	position: fixed;
+	position: expression("absolute");
+	overflow: auto;
+}
+
+
+/***
+* role icons
+*
+*/
+
+.search-item {    
+    border: 1px solid #fff;
+}
+/*** roles-icon container ***/
+.roles .icon {
+    width: 16px !important;
+    height: 16px !important;                
+}
+ 
+.account-panel .roles {
+    /*float: left;*/
+}
+.account-panel .name {
+    /*float: left;*/
+    font-size: 12px;
+    font-weight: normal;
+    color: black;
+}
+
+/*** this is the actual item in list ***/
+.search-item .item { margin-left: 2px; }
+
+/*** position role-icon to-right-of checkbox ***/
+.roles .x-form-check-wrap {     
+    background-position: 16px 0px !important;    
+}
+
+/*** admin ***/
+.roles .role-admin .x-form-check-wrap,
+img.role-admin {
+    background-image: url(/images/icons/shield.png) !important;
+    background-repeat: no-repeat;
+}
+/*** admin-employee ***/
+img.role-employee,
+.roles .role-admin-employee .x-form-check-wrap {
+    background-image: url(/images/icons/user_suit.png) !important;
+    background-repeat: no-repeat;
+}
+
+/*** vendor-agent-tsa_approved ***/
+img.role-vendor-agent-tsa_approved,
+.roles .role-vendor-agent-tsa_approved .x-form-check-wrap {
+    background-image: url(/images/icons/award_star_gold_2.png) !important;    
+    background-repeat: no-repeat;
+}
+
+
+/*** vendor-sales_agent ***/
+img.role-vendor-sales_agent,
+.roles .role-vendor-sales_agent .x-form-check-wrap {
+    background-image: url(/images/icons/money_dollar.png) !important;    
+    background-repeat: no-repeat;
+}
+
+
+/*** vendor-sales_agent.commission_bonus ***/
+.roles .role-vendor-sales_agent-commission_bonus .x-form-check-wrap,
+img.role-vendor-sales_agent-commission_bonus {
+    background-image: url(/images/icons/medal_gold_2.png) !important;    
+    background-repeat: no-repeat;
+}
+
+/*** client-known_shipper ***/
+.roles .role-client-known_shipper .x-form-check-wrap,
+img.role-client-known_shipper {
+    background-image: url(/images/icons/award_star_gold_3.png) !important;
+    background-repeat: no-repeat;   
+}
+/*** accountant ***/
+.roles .role-accountant .x-form-check-wrap,
+img.role-accountant {
+    background-image: url(/images/icons/money.png) !important;
+    background-repeat: no-repeat; 
+}
+/*** vendor.agent.weekends ***/
+.roles .role-vendor-agent-weekends .x-form-check-wrap,
+img.role-vendor-agent-weekends {
+    background-image: url(/images/icons/calendar_view_week.png) !important;
+    background-repeat: no-repeat; 
+}
+/*** vendor.agent.manager ***/
+.roles .role-vendor-agent-manager .x-form-check-wrap,
+img.role-vendor-agent-manager {
+    background-image: url(/images/icons/silk_companion/user_brown.png) !important;
+    background-repeat: no-repeat; 
+}
+/*** vendor.agent.after_hours ***/
+.roles .role-vendor-agent-after_hours .x-form-check-wrap,
+img.role-vendor-agent-after_hours {
+    background-image: url(/images/icons/clock_red.png) !important;
+    background-repeat: no-repeat; 
+}
+
+roles label.x-form-cb-label { padding-left: 16px; } 
+ 
+/*** vendor-carrier-ground ***/
+.roles .role-vendor-carrier-ground .x-form-check-wrap,
+.roles label.role-vendor-carrier-ground,
+img.role-vendor-carrier-ground {
+    background-image: url(/images/icons/lorry_flatbed.png) !important;
+    background-repeat: no-repeat;   
+}
+
+/*** vendor-carrier-air_commercial ***/
+.roles .role-vendor-carrier-air_commercial .x-form-check-wrap,
+.roles label.role-vendor-carrier-air_commercial,
+img.role-vendor-carrier-air_commercial {
+    background-image: url(/images/icons/bomb.png) !important;
+    background-repeat: no-repeat;   
+}
+
+/*** vendor-carrier-air_freight ***/
+.roles .role-vendor-carrier-air_freight .x-form-check-wrap,
+.roles label.role-vendor-carrier-air_freight,
+img.role-vendor-carrier-air_freight {
+    background-image: url(/images/icons/box.png) !important;
+    background-repeat: no-repeat;   
+}
+/*** is-primary (head office) ***/
+.roles .role-is_primary .x-form-check-wrap,
+img.role-is_primary {
+    background-image: url(/images/icons/asterisk_orange.png) !important;
+    background-repeat: no-repeat;
+}
+/*** is_billing (location is billing-address ***/
+.roles .role-is_billing .x-form-check-wrap,
+img.role-is_billing {
+    background-image: url(/images/icons/creditcards.png) !important;
+    background-repeat: no-repeat;
+}
+/***
+* order-status icons
+*/
+/*** cancelled ***/
+.order-status-cancelled { background-image: url(/images/icons/cancel.png) !important; background-repeat: no-repeat; }
+/*** delivered ***/
+.order-status-delivered { background-image: url(/images/icons/accept.png) !important; background-repeat: no-repeat; }
+
+/**
+* gmap-info-popup
+* style for google maps bubble-popup
+*/
+.gmap-info-popup h2 {
+    font-size: 12px;
+    font-weight: bold;
+}
+.gmap-info-popup address {
+        
+}
+
+/**
+* form table
+* a table for rendering inline editors
+*/
+table.form { width: 100%;}
+table.form td,  table.form th { font-size:12px; padding: 0 0 5px 2px; }
+table.form th { width:60%;text-align: right; }
+table.form td { width:40%; }
+table.form label {
+    display: block;
+    font-size: 12px;
+}
+ 

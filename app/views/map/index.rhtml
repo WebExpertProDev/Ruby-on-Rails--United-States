@@ -1,0 +1,12 @@
+	<div id="map" style="width:500px;height:500px"></div>
+    <script type="text/javascript">
+
+    //<![CDATA[
+
+    Ext.onReady(function() {
+    	var map = new GMap2(Ext.get("map").dom);
+        map.setCenter(new GLatLng(37.4419, -122.1419), 13);
+    });
+
+    //]]>
+    </script>

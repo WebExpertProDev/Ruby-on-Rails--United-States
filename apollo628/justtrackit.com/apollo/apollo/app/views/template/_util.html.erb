@@ -1,0 +1,16 @@
+<script>
+/***
+ * RExt.template.Util
+ * @singleton
+ */
+RExt.template.Util = (function() {
+    return {
+        getTypes : function() {
+            return <%= TemplateType.find(:all).collect {|t| [t.id, t.name] }.to_json %>;
+        },
+        getModels : function() {
+            return <%= Resistor::System::ModelScanner.get_models.to_json %>;
+        }    
+    }    
+})();
+</script>

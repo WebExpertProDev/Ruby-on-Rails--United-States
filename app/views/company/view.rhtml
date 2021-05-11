@@ -1,0 +1,40 @@
+
+<script>
+
+    /***
+     * Apollo.Company
+     * @param {Object} id
+     */
+    Apollo.Company = function(id) {
+       
+    };
+    Apollo.Company.prototype = {
+        id : <%= @id %>,
+        name : '<%= @company.name %>',
+        
+        domain :  <%= @company.get_domain.to_json %>,
+        
+        data : <%= @company.on_edit.to_json %>,
+                
+        getDomain : function() {
+            return this.domain;
+        },
+        
+        getAccounts : function() {
+            return this.data.accounts;
+        },
+
+        getDomainAccountRoles : function() {
+            return <%= @company.get_domain_account_roles.to_json %>;
+        },
+
+        getDomainCompanyRoles : function() {
+            return <%= @company.get_domain_company_roles.to_json %>;
+        },
+        
+        getLocation: function() {
+            return this.data.locations;
+        }
+    };
+
+</script>

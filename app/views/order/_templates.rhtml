@@ -1,0 +1,687 @@
+
+
+
+<!-- order-route-local-template, template for local order-routes -->
+<textarea id="order-route-local-template" class="x-hidden">
+    <tpl for=".">
+    <div class="route">           	        			        
+        <tpl for="entities.first()">
+        <div class="order-entity carrier" id="order-entity-local-{id}">
+    		<div class="yui-g">
+    		    <div class="yui-u first">	
+                    <h1><a id="btn-edit-entity-{id}" href="#" class="btn-edit-company">{[values.company.name]}</a></h1>
+                    <tpl for="location">
+                    <address>
+                        <tpl if="addr1">{addr1}<br /></tpl>
+                        <tpl if="addr2">{addr2}<br /></tpl>
+                        {[values.city.name + ", " + values.region.iso + ", " + values.country.iso + " (" + values.airport.iso + ")"]}<br />
+                        <tpl if="zip">{zip}</tpl>          
+                    </address>
+                    <table style="width: 100%;" class="x-grid3 r-properties">                        
+                        <tr class="x-grid3-row">
+                            <td class="x-grid3-hd x-grid3-cell" width="55">
+                                <div class="x-grid3-cell-inner" unselectable="on">Phone1:</div>
+                            </th>
+                            <td class="x-grid3-col x-grid3-cell" width="auto">
+                                <div class="x-grid3-cell-inner" unselectable="on">{phone1}</div>
+                            </td>                            
+                        </tr> 
+                        <tr class="x-grid3-row">
+                            <td class="x-grid3-hd x-grid3-cell">
+                                <div class="x-grid3-cell-inner" unselectable="on">Phone2:</div>
+                            </th>
+                            <td class="x-grid3-col x-grid3-cell">
+                                <div class="x-grid3-cell-inner" unselectable="on">{phone2}</div>
+                            </td>                            
+                        </tr>  
+                        <tr class="x-grid3-row">
+                            <td class="x-grid3-hd x-grid3-cell">
+                                <div class="x-grid3-cell-inner" unselectable="on">Fax:</div>
+                            </th>
+                            <td class="x-grid3-col x-grid3-cell">
+                                <div class="x-grid3-cell-inner" unselectable="on">{fax}</div>
+                            </td>                            
+                        </tr>                                                 
+                    </table>        
+                    </tpl>
+                </div>
+                <div class="yui-u">
+                    <div class="x-grid3-cell-inner x-small-editor bill-number" unselectable="on">
+                        <label>Bill#:</label>
+                        <input id="order-view-order-bill_number-{parent.id}" alt="emptyText:'set bill number', allowBlank:true" class="x-form-inline-field" value="{parent.bill_number}" />                            
+                    </div>                        
+                </div>
+            </div>
+        </tpl>        
+    </div>
+    </tpl>
+    
+</textarea>
+<!-- order-shipment-template -->
+<textarea id="order-shipment-template" class="x-hidden">
+    <div id="order-view-panel-shipment-<%=@id%>" class="panel">   
+        <h3>{commodity}</h3> 
+        <table style="width: 100%;margin-bottom: 5px" class="x-grid3 r-properties">                        
+            <tr class="x-grid3-row">
+                <td class="x-grid3-hd x-grid3-cell" width="70">
+                    <div class="x-grid3-cell-inner" unselectable="on">Pieces:</div>
+                </th>
+                <td class="x-grid3-col x-grid3-cell" width="auto">
+                    <div class="x-grid3-cell-inner" unselectable="on">{pieces}</div>
+                </td>                            
+            </tr> 
+            <tr class="x-grid3-row">
+                <td class="x-grid3-hd x-grid3-cell">
+                    <div class="x-grid3-cell-inner" unselectable="on">Weight:</div>
+                </th>
+                <td class="x-grid3-col x-grid3-cell">
+                    <div class="x-grid3-cell-inner" unselectable="on">{weight}</div>
+                </td>                            
+            </tr>  
+            <tr class="x-grid3-row">
+                <td class="x-grid3-hd x-grid3-cell">
+                    <div class="x-grid3-cell-inner" unselectable="on">Decl. value:</div>
+                </th>
+                <td class="x-grid3-col x-grid3-cell">
+                    <div class="x-grid3-cell-inner" unselectable="on">{[Ext.util.Format.usMoney(values.declared_value)]}</div>
+                </td>                            
+            </tr>                                                 
+        </table> 
+                                    				    
+	    <h3>DIMs</h3>
+        <table class="x-grid3" style="width:100%">
+            <tr class="x-grid3-hd-row x-grid3-header"><td class="x-grid3-hd x-grid3-cell"><div class="x-grid3-hd-inner" unselectable="on">Pieces</div></td><td class="x-grid3-hd x-grid3-cell"><div class="x-grid3-hd-inner" unselectable="on">Length</div></td><td class="x-grid3-hd x-grid3-cell"><div class="x-grid3-hd-inner" unselectable="on">Width</div></td><td class="x-grid3-hd x-grid3-cell"><div class="x-grid3-hd-inner" unselectable="on">Height</div></td></tr>
+            <tpl for="items"><tr class="x-grid3-row"><td class="x-grid3-col x-grid3-cell"><div unselectable="on" class="x-grid3-cell-inner">{pieces}</div></td><td><div unselectable="on" class="x-grid3-cell-inner">{length}</div></td><td><div unselectable="on" class="x-grid3-cell-inner">{width}</div></td><td><div unselectable="on" class="x-grid3-cell-inner">{height}</div></td></tr></tpl>
+        </table>	        	
+	</div>
+</textarea>
+
+<!-- billing-template -->
+<textarea id="billing-template" class="x-hidden">
+    <div class="panel">  
+        <h3>Service level: </strong>{[values.shipping_method]}</h3>
+        <h3>{[values.bill_to.name]}</h3>
+        <address>      		            
+            {[values.bill_to.location.addr1]}<br />
+            <tpl if="bill_to.location.addr2">{[values.bill_to.location.addr2]}<br /></tpl>
+            {[values.bill_to.location.city.name]}, {[values.bill_to.location.region.iso]}, {[values.bill_to.location.country.iso]}
+        </address>
+        <tpl for="location">
+        <table style="width: 100%;" class="x-grid3 r-properties">                        
+            <tr class="x-grid3-row">
+                <td class="x-grid3-hd x-grid3-cell" width="55">
+                    <div class="x-grid3-cell-inner" unselectable="on">Phone1:</div>
+                </th>
+                <td class="x-grid3-col x-grid3-cell" width="auto">
+                    <div class="x-grid3-cell-inner" unselectable="on">{phone1}</div>
+                </td>                            
+            </tr> 
+            <tr class="x-grid3-row">
+                <td class="x-grid3-hd x-grid3-cell">
+                    <div class="x-grid3-cell-inner" unselectable="on">Phone2:</div>
+                </th>
+                <td class="x-grid3-col x-grid3-cell">
+                    <div class="x-grid3-cell-inner" unselectable="on">{phone2}</div>
+                </td>                            
+            </tr>  
+            <tr class="x-grid3-row">
+                <td class="x-grid3-hd x-grid3-cell">
+                    <div class="x-grid3-cell-inner" unselectable="on">Fax:</div>
+                </th>
+                <td class="x-grid3-col x-grid3-cell">
+                    <div class="x-grid3-cell-inner" unselectable="on">{fax}</div>
+                </td>                            
+            </tr> 
+            <tr class="x-grid3-row">
+                <td class="x-grid3-hd x-grid3-cell">
+                    <div class="x-grid3-cell-inner" unselectable="on">Email:</div>
+                </th>
+                <td class="x-grid3-col x-grid3-cell">
+                    <div class="x-grid3-cell-inner" unselectable="on">{email}</div>
+                </td>                            
+            </tr>                                                 
+        </table>      
+        </tpl>
+        <strong>Accountant:</strong> {[values.bill_to.accountant.first + " "  + values.bill_to.accountant.last]}        
+        <table style="width: 100%;" class="x-grid3 r-properties">                        
+            <tr class="x-grid3-row">
+                <td class="x-grid3-hd x-grid3-cell" width="55">
+                    <div class="x-grid3-cell-inner" unselectable="on">Phone:</div>
+                </th>
+                <td class="x-grid3-col x-grid3-cell" width="auto">
+                    <div class="x-grid3-cell-inner" unselectable="on">{[values.bill_to.accountant.phone]}</div>
+                </td>                            
+            </tr>               
+            <tr class="x-grid3-row">
+                <td class="x-grid3-hd x-grid3-cell">
+                    <div class="x-grid3-cell-inner" unselectable="on">Fax:</div>
+                </th>
+                <td class="x-grid3-col x-grid3-cell">
+                    <div class="x-grid3-cell-inner" unselectable="on">{[values.bill_to.accountant.fax]}</div>
+                </td>                            
+            </tr> 
+            <tr class="x-grid3-row">
+                <td class="x-grid3-hd x-grid3-cell">
+                    <div class="x-grid3-cell-inner" unselectable="on">Email:</div>
+                </th>
+                <td class="x-grid3-col x-grid3-cell">
+                    <div class="x-grid3-cell-inner" unselectable="on">{[values.bill_to.accountant.email]}</div>
+                </td>                            
+            </tr>                                                 
+        </table>                	                                   	
+	</div>
+</textarea>
+
+<!-- order-dashboard in header -->
+<textarea id="order-dashboard-template" class="x-hidden">
+    <div id="status-box-{id}" class="order-dashboard">        
+        <div class="yui-gb"> 
+	        <div class="yui-u first">  
+                <fieldset class="x-fieldset">
+                    <legend><tpl if="bill_number"><img src="javascripts/ext-2.0/resources/images/default/s.gif" class="x-panel-inline-icon icon-package"/>{bill_number}</tpl><tpl if="!bill_number">Quote#: {id}</tpl> ({[values.getCurrentShippingStatus()]})</legend>                               
+    	            <table>	                                                                     
+                        <tr><th>Service level:</th><td>{[values.shipping_method]}</td></tr>                                                         
+                        <tr><th>Cost (Revenu):</th><td><span class="total-cost">{[Ext.util.Format.usMoney(values.getTotalCost())]}</span>&nbsp;<span class="total-revenu">({[Ext.util.Format.usMoney(values.getTotalRevenu())]})</span></td></tr>
+                    </table> 
+                </fieldset>                        
+	        </div> 
+            <div class="yui-u"> 
+	            <fieldset class="x-fieldset">
+                    <legend><img src="javascripts/ext-2.0/resources/images/default/s.gif" class="x-panel-inline-icon icon-door-out"/>{[values.getShipper().company.name]} ({[values.getShipper().location.airport.iso]})</legend>                                        
+                    <table>                        
+                        <tr>
+                            <th>Pickup date:</th>
+                            <td>{[new Date(values.getShipper().date_out).format("M d")]} ({[this.getDuration(values.getShipper().date_out)]})</td>
+                        </tr>
+                        <tr>
+                            <th>Ready/Close:</th>
+                            <td>{[new Date(values.getShipper().date_in).format("H:i") + " / "  + new Date(values.getShipper().date_out).format("H:i")]}</td>
+                        </tr>                    
+                    </table>
+                </fieldset>                  
+	        </div> 
+            <div class="yui-u"> 
+                <fieldset class="x-fieldset">
+                    <legend><img src="javascripts/ext-2.0/resources/images/default/s.gif" class="x-panel-inline-icon icon-door-in"/>{[values.getConsignee().company.name]} ({[values.getConsignee().location.airport.iso]})</legend>                                        
+                    <table>                        
+                        <tr>
+                            <th>Delivery date:</th>
+                            <td>{[new Date(values.getConsignee().date_in).format("M d")]} ({[this.getDuration(values.getConsignee().date_in)]})</td>
+                        </tr>
+                        <tr>
+                            <th>Ready/Close:</th>
+                            <td>{[new Date(values.getConsignee().date_in).format("H:i") + " / "  + new Date(values.getConsignee().date_out).format("H:i")]}</td>
+                        </tr>                    
+                    </table>
+                </fieldset>	        	
+	        </div> 
+	    </div>         
+    </div>           
+</textarea>
+
+
+<script>
+Ext.onReady(function() {  
+    
+    //order-search-template
+    RExt.util.TemplateMgr.add('order-search-template', new Ext.XTemplate(           
+        '<tpl for=".">',
+            '<div id="order-result-{id}" class="x-grid3-row x-unselectable" title="double-click to open">',                                   		                      
+                '<div class="x-grid3-cell-inner">',
+                    '<h2>{bill_number} ({status})</h2>',
+                    '<p class="stats">Created by: {[values.created_by.first + " " + values.created_by.last]}</p>',
+                    '<tpl for="shipper">',
+                        '<fieldset>',
+                            '<legend><img src="javascripts/ext-2.0/resources/images/default/s.gif" class="x-panel-inline-icon icon-door-out"/>{name} ({airport})</legend>',                        
+                            '<p class="stats">{date_out}</p>',
+                        '</fieldset>',            
+                    '</tpl>',
+                    '<img src="javascripts/ext-2.0/resources/images/default/s.gif" class="x-panel-inline-icon icon-arrow-right"/>',                
+                    '<tpl for="consignee">',
+                        '<fieldset>',
+                            '<legend><img src="javascripts/ext-2.0/resources/images/default/s.gif" class="x-panel-inline-icon icon-door-in"/>{name} ({airport})</legend>',
+                            '<p class="stats">{date_in}</p>',
+                        '</fieldset>',
+                    '</tpl>',
+                    '</div>',
+                    '<div class="clear">&nbsp;</div>',
+               '</div>',
+            '</div>',
+        '</tpl>')
+    );
+    
+    //order-entity-template
+    RExt.util.TemplateMgr.add('order-entity-template', new Ext.XTemplate(               
+        '<div class="order-entity {role}" id="order-entity-{id}">',		
+    		'<div class="" title="Company">',
+    			'<tpl for="company">',
+    				'<h3><a href="#" id="btn-edit-company-{parent.id}" class="company-link">{name}</a></h3>',
+                '</tpl>',
+                '<tpl for="location">',
+                    '<address><a href="#" id="btn-gmap-entity-{parent.id}" class="gmap">',
+                        '<tpl if="addr1">{addr1}<br /></tpl>',
+                        '<tpl if="addr2">{addr2}<br /></tpl>',
+                        '{[values.city.name + ", " + values.region.iso + ", " + values.country.iso + " (" + values.airport.iso + ")"]}<br />',
+                        '<tpl if="zip">{zip}<br /></tpl>',                    
+                    '</a></address>',	
+                    '<tpl if="www"><a href="http://{www}" target="_blank">http://{www}</a></tpl>',			
+                    '<table style="width: 100%;" class="x-grid3 r-properties">',                        
+                        '<tr class="x-grid3-row">',
+                            '<td class="x-grid3-hd x-grid3-cell" width="55">',
+                                '<div class="x-grid3-cell-inner" unselectable="on">Phone1:</div>',
+                            '</th>',
+                            '<td class="x-grid3-col x-grid3-cell" width="auto">',
+                                '<div class="x-grid3-cell-inner" unselectable="on">{phone1}</div>',
+                            '</td>',                            
+                        '</tr>', 
+                        '<tr class="x-grid3-row">',
+                            '<td class="x-grid3-hd x-grid3-cell">',
+                                '<div class="x-grid3-cell-inner" unselectable="on">Phone2:</div>',
+                            '</th>',
+                            '<td class="x-grid3-col x-grid3-cell">',
+                                '<div class="x-grid3-cell-inner" unselectable="on">{phone2}</div>',
+                            '</td>',                            
+                        '</tr>',  
+                        '<tr class="x-grid3-row">',
+                            '<td class="x-grid3-hd x-grid3-cell">',
+                                '<div class="x-grid3-cell-inner" unselectable="on">Fax:</div>',
+                            '</th>',
+                            '<td class="x-grid3-col x-grid3-cell">',
+                                '<div class="x-grid3-cell-inner" unselectable="on">{fax}</div>',
+                            '</td>',                            
+                        '</tr>', 
+                        '<tr class="x-grid3-row">',
+                            '<td class="x-grid3-hd x-grid3-cell">',
+                                '<div class="x-grid3-cell-inner" unselectable="on">Email:</div>',
+                            '</th>',
+                            '<td class="x-grid3-col x-grid3-cell">',
+                                '<div class="x-grid3-cell-inner" unselectable="on">{email}</div>',
+                            '</td>',                            
+                        '</tr>',                                                 
+                    '</table>',      				                
+    			'</tpl>',
+    		'</div>',        
+            '<div class="" title="Contact">',            
+    			'<tpl for="account">',
+    				'<h3><a href="#" id="btn-edit-account-{id}" class="btn-edit-company">{first} {last}</a></h3>',
+    				'<table style="width: 100%;" class="x-grid3 r-properties">',                        
+                        '<tr class="x-grid3-row">',
+                            '<td class="x-grid3-hd x-grid3-cell" width="55">',
+                                '<div class="x-grid3-cell-inner" unselectable="on">Phone:</div>',
+                            '</th>',
+                            '<td class="x-grid3-col x-grid3-cell" width="auto">',
+                                '<div class="x-grid3-cell-inner" unselectable="on">{phone}</div>',
+                            '</td>',                            
+                        '</tr>', 
+                        '<tr class="x-grid3-row">',
+                            '<td class="x-grid3-hd x-grid3-cell">',
+                                '<div class="x-grid3-cell-inner" unselectable="on">Mobile:</div>',
+                            '</th>',
+                            '<td class="x-grid3-col x-grid3-cell">',
+                                '<div class="x-grid3-cell-inner" unselectable="on">{mobile}</div>',
+                            '</td>',                            
+                        '</tr>',  
+                        '<tr class="x-grid3-row">',
+                            '<td class="x-grid3-hd x-grid3-cell">',
+                                '<div class="x-grid3-cell-inner" unselectable="on">Fax:</div>',
+                            '</th>',
+                            '<td class="x-grid3-col x-grid3-cell">',
+                                '<div class="x-grid3-cell-inner" unselectable="on">{fax}</div>',
+                            '</td>',                            
+                        '</tr>',                                                 
+                        '<tr class="x-grid3-row">',
+                            '<td class="x-grid3-hd x-grid3-cell">',
+                                '<div class="x-grid3-cell-inner" unselectable="on">Email:</div>',
+                            '</th>',
+                            '<td class="x-grid3-col x-grid3-cell">',
+                                '<div class="x-grid3-cell-inner" unselectable="on">{email}</div>',
+                            '</td>',                            
+                        '</tr>',
+                    '</table>',                   
+    			'</tpl>',             
+    		'</div>',        
+    		'<div class="" title="<tpl if="role == \'shipper\'">Remarks</tpl><tpl if="role == \'consignee\'">Remarks</tpl>">',
+    		    '<h3><tpl if="role == \'shipper\'">Pickup</tpl><tpl if="role == \'consignee\'">Delivery</tpl> remarks</h3>',
+    			'<{textarea_tag} class="x-form-inline-field" alt="allowBlank:true,anchor:\'95%\'" name="attn" id="order-entity-attn-{id}">{attn}</{textarea_tag}>',
+    		'</div>',
+    	'</div>')
+    );
+            
+    //route-template
+    RExt.util.TemplateMgr.add('route-template', new Ext.XTemplate(   
+        '<div class="route">',
+        	'<div class="order-entity carrier" id="order-entity-route-carrier-{id}">',
+        		'<div class="yui-g">',
+        		    '<div class="yui-u first">',		        			    
+                        '<tpl for="carrier">',                
+                            '<tpl for="company">',
+                                '<h1><a id="btn-edit-entity-{parent.id}" href="#" class="btn-edit-company">{name}</a></h1>',                              
+                            '</tpl>',                            
+                            '<table style="margin-top:5px;width: 100%;" class="x-grid3 r-properties">',                        
+                            '<tr class="x-grid3-row">',
+                                '<td class="x-grid3-hd x-grid3-cell" width="75">',
+                                    '<div class="x-grid3-cell-inner" unselectable="on">Departure:</div>',
+                                '</th>',
+                                '<td class="x-grid3-col x-grid3-cell" width="auto">',
+                                    '<div class="x-grid3-cell-inner" unselectable="on">{[new Date(values.date_in).format("M d, H:i")]} ({[this.getDuration(values.date_in)]})</div>',
+                                '</td>',                            
+                            '</tr>', 
+                            '<tr class="x-grid3-row">',
+                                '<td class="x-grid3-hd x-grid3-cell">',
+                                    '<div class="x-grid3-cell-inner" unselectable="on">Arrival:</div>',
+                                '</th>',
+                                '<td class="x-grid3-col x-grid3-cell">',
+                                    '<div class="x-grid3-cell-inner" unselectable="on">{[new Date(values.date_out).format("M d, H:i")]} ({[this.getDuration(values.date_out)]})</div>',
+                                '</td>',                            
+                            '</tr>',                                                         
+                        '</table>',  
+                        '</tpl>',
+                    '</div>',
+                    '<div class="yui-u">',
+                        '<div class="x-grid3-cell-inner x-small-editor bill-number" unselectable="on">',
+                            '<label>Bill#:</label>',
+                            '<input id="order-view-order-bill_number-{id}" alt="emptyText:\'set bill number\', allowBlank:true" class="x-form-inline-field" value="{bill_number}" />',                            
+                        '</div>',  
+                        '<div class="x-grid3-cell-inner x-small-editor bill-number" unselectable="on">',
+                            '<label>Flight info:</label>',
+                            '<{["textarea"]} class="x-form-inline-field" alt="allowBlank:true,width:150,grow:false" name="attn" id="order-entity-attn-{[values.carrier.id]}">{attn}</{["textarea"]}>',
+                        '</div>',                       
+                    '</div>',
+                '</div>',
+        	'</div>',            
+            '<div class="yui-g pickup-delivery">',
+        		'<div class="yui-u first">',    		    
+        		    '<fieldset class="x-fieldset route-entity pickup">',
+        		        '<legend>',
+        		            '<img class="x-panel-inline-icon icon-door-out" src="javascripts/ext-2.0/resources/images/default/s.gif"/>',
+                            '<span class="x-fieldset-header-text">Pickup <tpl if="pickup_mode == \'agent\'"> Agent</tpl></span>',
+                        '</legend>',
+                        '<tpl if="pickup_mode == \'agent\'">',
+                            '<tpl for="shipper">',
+                                '<tpl for="company">',
+                    				'<h3><a id="btn-edit-entity-{parent.id}" href="#" class="btn-edit-company">{name}</a></h3>',
+                                '</tpl>',
+                                '<tpl for="location">',
+                                    '<address>',                                
+                                    '<a href="#" id="btn-gmap-entity-{parent.id}" class="gmap">',                        
+                    				    '<tpl if="addr1">{addr1}<br /></tpl>',                	
+                        			    '<tpl if="addr2">{addr2}<br /></tpl>',
+                                        '{[values.city.name]}, {[values.region.iso]}, {[values.country.iso]} ({[values.airport.iso]})<br />',
+                    				    '{zip}<br />',
+                                    '</a>',
+                                    '</address>',
+                                    '<tpl if="www"><a href="http://{www}" target="_blank">http://{www}</a></tpl>',
+                                    '<table style="width: 100%;" class="x-grid3 r-properties">',                        
+                                        '<tr class="x-grid3-row">',
+                                            '<td class="x-grid3-hd x-grid3-cell" width="55">',
+                                                '<div class="x-grid3-cell-inner" unselectable="on">Phone1:</div>',
+                                            '</th>',
+                                            '<td class="x-grid3-col x-grid3-cell" width="auto">',
+                                                '<div class="x-grid3-cell-inner" unselectable="on">{phone1}</div>',
+                                            '</td>',                            
+                                        '</tr>', 
+                                        '<tr class="x-grid3-row">',
+                                            '<td class="x-grid3-hd x-grid3-cell">',
+                                                '<div class="x-grid3-cell-inner" unselectable="on">Phone2:</div>',
+                                            '</th>',
+                                            '<td class="x-grid3-col x-grid3-cell">',
+                                                '<div class="x-grid3-cell-inner" unselectable="on">{phone2}</div>',
+                                            '</td>',                            
+                                        '</tr>',  
+                                        '<tr class="x-grid3-row">',
+                                            '<td class="x-grid3-hd x-grid3-cell">',
+                                                '<div class="x-grid3-cell-inner" unselectable="on">Fax:</div>',
+                                            '</th>',
+                                            '<td class="x-grid3-col x-grid3-cell">',
+                                                '<div class="x-grid3-cell-inner" unselectable="on">{fax}</div>',
+                                            '</td>',                            
+                                        '</tr>',                                                 
+                                    '</table>',                                                     				
+                    			'</tpl>',    
+                            '</tpl>',
+                        '</tpl>',
+                        '<tpl if="pickup_mode == \'carrier\'">',
+                            '<h2>{pickup_mode_message}</h2>',
+                        '</tpl>',
+                        '<tpl if="pickup_mode == \'shipper\'">',
+                            '<h2>{pickup_mode_message}</h2>',
+                        '</tpl>',
+        		    '</fieldset>',           
+                '</div>',
+            	'<div class="yui-u">',
+             		'<fieldset class="x-fieldset route-entity delivery">',
+             		    '<legend>',
+             		        '<img class="x-panel-inline-icon icon-door-in" src="javascripts/ext-2.0/resources/images/default/s.gif"/>',
+                            '<span class="x-fieldset-header-text">Delivery <tpl if="delivery_mode == \'agent\'"> Agent</tpl></span>',
+             		    '</legend>',
+                        '<tpl if="delivery_mode == \'agent\'">',
+                            '<tpl for="consignee">',
+                                '<tpl for="company">',
+                    				'<h3><a id="btn-edit-entity-{parent.id}" href="#" class="btn-edit-company">{name}</a></h3>',    
+                                '</tpl>',
+                                '<tpl for="location">',                    
+                    				'<address><a href="#" id="btn-gmap-entity-{parent.id}" class="gmap">',                   
+                    				    '<tpl if="addr1">{addr1}<br /></tpl>',                	
+                        			    '<tpl if="addr2">{addr2}<br /></tpl>',
+                                        '{[values.city.name]}, {[values.region.iso]}, {[values.country.iso]} ({[values.airport.iso]})<br />',
+                    				    '{zip}<br />',
+                                    '</a></address>',
+                                    '<tpl if="www"><a href="http://{www}" target="_blank">http://{www}</a></tpl>',
+                    				'<table style="width: 100%;" class="x-grid3 r-properties">',                        
+                                        '<tr class="x-grid3-row">',
+                                            '<td class="x-grid3-hd x-grid3-cell" width="55">',
+                                                '<div class="x-grid3-cell-inner" unselectable="on">Phone1:</div>',
+                                            '</th>',
+                                            '<td class="x-grid3-col x-grid3-cell" width="auto">',
+                                                '<div class="x-grid3-cell-inner" unselectable="on">{phone1}</div>',
+                                            '</td>',                            
+                                        '</tr>', 
+                                        '<tr class="x-grid3-row">',
+                                            '<td class="x-grid3-hd x-grid3-cell">',
+                                                '<div class="x-grid3-cell-inner" unselectable="on">Phone2:</div>',
+                                            '</th>',
+                                            '<td class="x-grid3-col x-grid3-cell">',
+                                                '<div class="x-grid3-cell-inner" unselectable="on">{phone2}</div>',
+                                            '</td>',                            
+                                        '</tr>',  
+                                        '<tr class="x-grid3-row">',
+                                            '<td class="x-grid3-hd x-grid3-cell">',
+                                                '<div class="x-grid3-cell-inner" unselectable="on">Fax:</div>',
+                                            '</th>',
+                                            '<td class="x-grid3-col x-grid3-cell">',
+                                                '<div class="x-grid3-cell-inner" unselectable="on">{fax}</div>',
+                                            '</td>',                            
+                                        '</tr>',                                                 
+                                    '</table>',                                   
+                    			'</tpl>',    
+                            '</tpl>',
+                        '</tpl>',
+                        '<tpl if="delivery_mode == \'carrier\'">',
+                            '<h2>{delivery_mode_message}</h2>',
+                        '</tpl>',                    
+             		'</fieldset>',
+                '</div>',
+        	'</div>',
+        '</div>')
+    );    
+
+    // order-entity-cost-template  
+    RExt.util.TemplateMgr.add('order-entity-cost-template', new Ext.XTemplate(
+        '<div class="order-entity-costs">',
+        '<tpl for=".">',                
+            '<fieldset class="x-fieldset">',   
+                '<tpl if="type != \'local\'">',     
+                    '<legend>MAWB ({[values.entities.find(function(e) {return (e.role =="shipper")?true:false;}).location.airport.iso + "->" + values.entities.find(function(e){return (e.role=="consignee")?true:false;}).location.airport.iso]})</legend>',
+                '</tpl>',
+                '<tpl if="type == \'local\'"><legend>Local ({[values.entities.find(function(e) {return (e.role=="carrier") ? true : false;}).location.airport.iso]})</legend></tpl>',               
+                '<table class="form">', 
+                    '<tpl for="entities.find(function(e) {return (e.role==\'carrier\') ? true : false;})">',
+            	    '<tr>',
+            	        '<th>',            	     
+            	            '<label class="x-form-item-label">{[values.company.name]} <img src="javascripts/ext-2.0/resources/images/default/s.gif" class="x-panel-inline-icon icon-lorry"/></label>',
+                        '</th>',
+                        '<td>',
+                            '$<input id="order-entity-cost-{id}" alt="emptyText:\'cost?\', allowBlank:true, width: 75" class="x-form-inline-field number" value="{cost}" />',        
+                        '</td>',
+                    '</tr>',
+                    '</tpl>',
+                    '<tpl if="pickup_mode == \'agent\'">',
+                        '<tpl for="entities.find(function(e) {return (e.role==\'shipper\') ? true : false;})">',
+                        '<tr>',
+                            '<th>',
+                                '<label class="x-form-item-label">{[values.company.name]} <img src="javascripts/ext-2.0/resources/images/default/s.gif" class="x-panel-inline-icon icon-door-out"/></label>',    
+                            '</th>',
+                            '<td>',
+                                '$<input id="order-entity-cost-{id}" alt="emptyText:\'cost?\', allowBlank:true, width: 75" class="x-form-inline-field number" value="{cost}" />',                        
+                            '</td>',
+                        '</tr>',
+                        '</tpl>',                    
+                    '</tpl>',
+                    '<tpl if="delivery_mode == \'agent\'">',
+                        '<tpl for="entities.find(function(e) {return (e.role==\'consignee\') ? true : false;})">',
+                        '<tr>',
+                            '<th>',
+                                '<label class="x-form-item-label">{[values.company.name]} <img src="javascripts/ext-2.0/resources/images/default/s.gif" class="x-panel-inline-icon icon-door-in"/></label>',    
+                            '</th>',
+                            '<td>',
+                                '$<input id="order-entity-cost-{id}" alt="emptyText:\'cost?\', allowBlank:true, width: 75" class="x-form-inline-field number" value="{cost}" />',    
+                            '</td>',
+                        '</tr>',
+                        '</tpl>',
+                    '</tpl>',                                                             	             	    
+            	'</table>',             
+            '</fieldset>',
+        '</tpl>',
+        '</div>')
+    );
+    
+    // order-revenu-properties-template
+	var tpl = new Ext.XTemplate(
+    	'<tpl for=".">',
+        '<fieldset class="x-fieldset">',
+            '<legend>Revenue generators</legend>',
+            '<table class="form">',
+                '<tpl for="getRevenus()">',
+                '<tr>',
+                    '<th>{[values.item.label]}:</th>',                
+                    '<td><input id="order-order_revenu-value-{id}" alt={[Ext.encode(Ext.apply({"width":80}, values.config))]} class="x-form-inline-field number" value="{value}" /></td>',
+                '</tr>',
+                '</tpl>',
+            '</table>',
+        '</fieldset>',
+        '</tpl>'
+	);
+	RExt.util.TemplateMgr.add('order-revenu-properties-template', tpl);
+    
+    //order-revenu-summary-template
+    RExt.util.TemplateMgr.add('order-revenu-summary-template', new Ext.XTemplate(
+         '<tpl for=".">',
+         '<div class="x-grid3-body revenu-summary" style="width:100%">',
+            '<div class="x-grid-group">',
+                '<div class="x-grid-group-hd">',
+                    '<div id="ext-gen88">Costs</div>',
+                '</div>',
+                '<div class="x-grid-group-body">',
+                    '<div class="x-grid3-row" style="width:100%">',                            
+                        '<table cellspacing="0" cellpadding="0" border="0" style="width:100%;" class="x-grid3-row-table">',
+                            '<tr>',
+                                '<td tabindex="0" style="width: 80%" class="x-grid3-col x-grid3-cell x-grid3-td-description x-grid3-cell-first">',
+                                    '<div unselectable="on" class="x-grid3-cell-inner x-grid3-col-description">Accessorial Costs</div>',
+                                '</td>',                            
+                                '<td tabindex="0" style="width: 20%;" class="x-grid3-col x-grid3-cell x-grid3-td-cost x-grid3-cell-last">',
+                                    '<div unselectable="on" class="x-grid3-cell-inner x-grid3-col-cost">{accessorial_costs}</div>',
+                                '</td>',
+                            '</tr>',
+                        '</table>',
+                    '</div>',
+                    '<div class="x-grid3-row" style="width:100%">',                            
+                        '<table cellspacing="0" cellpadding="0" border="0" style="width:100%;" class="x-grid3-row-table">',
+                            '<tr>',
+                                '<td tabindex="0" style="width: 80%" class="x-grid3-col x-grid3-cell x-grid3-td-description x-grid3-cell-first">',
+                                    '<div unselectable="on" class="x-grid3-cell-inner x-grid3-col-description">Carrier / cartage-agent charges</div>',
+                                '</td>',                            
+                                '<td tabindex="0" style="width: 20%;" class="x-grid3-col x-grid3-cell x-grid3-td-cost x-grid3-cell-last">',
+                                    '<div unselectable="on" class="x-grid3-cell-inner x-grid3-col-cost">{entity_costs}</div>',
+                                '</td>',
+                            '</tr>',
+                        '</table>',
+                    '</div>',                
+                    '<div class="x-grid3-summary-row" style="width:100%">',
+                        '<table cellspacing="0" cellpadding="0" border="0" style="width:100%" class="x-grid3-summary-table">',
+                            '<tr>',
+                                '<td style="width: 80%;" class="x-grid3-col x-grid3-cell x-grid3-td-description x-grid3-cell-first">',
+                                    '<div unselectable="on" class="x-grid3-cell-inner x-grid3-col-description">Total cost</div>',
+                                '</td>',                            
+                                '<td style="width: 20%;" class="x-grid3-col x-grid3-cell x-grid3-td-cost x-grid3-cell-last" id="ext-gen110">',
+                                    '<div unselectable="on" class="x-grid3-cell-inner x-grid3-col-cost">{total_cost}</div>',
+                                '</td>',
+                            '</tr>',
+                        '</table>',
+                    '</div>',                
+                '</div>',
+            '</div>',        
+            '<div class="x-grid-group">',
+                '<div class="x-grid-group-hd">',
+                    '<div id="ext-gen88">Revenu</div>',
+                '</div>',
+                '<div class="x-grid-group-body">',
+                    '<tpl for="revenus">',
+                    '<div class="x-grid3-row">',                            
+                        '<table cellspacing="0" cellpadding="0" border="0" style="width:100%;" class="x-grid3-row-table">',
+                            '<tr>',
+                                '<td tabindex="0" style="width: 80%" class="x-grid3-col x-grid3-cell x-grid3-td-description x-grid3-cell-first">',
+                                    '<div unselectable="on" class="x-grid3-cell-inner x-grid3-col-description" id="ext-gen101">{[values.item.label]} ({[(values.type.name == "percentage") ? values.value + "%" : "$" + values.value]})</div>',
+                                '</td>',                            
+                                '<td tabindex="0" style="width: 20%;" class="x-grid3-col x-grid3-cell x-grid3-td-cost x-grid3-cell-last">',
+                                    '<div unselectable="on" class="x-grid3-cell-inner x-grid3-col-cost">{[Ext.util.Format.usMoney(values.total)]}</div>',
+                                '</td>',
+                            '</tr>',
+                        '</table>',
+                    '</div>',
+                    '</tpl>',                
+                    '<div class="x-grid3-summary-row" style="width:100%">',
+                        '<table cellspacing="0" cellpadding="0" border="0" style="width:100%" class="x-grid3-summary-table">',
+                            '<tr>',
+                                '<td style="width: 80%;" class="x-grid3-col x-grid3-cell x-grid3-td-description x-grid3-cell-first">',
+                                    '<div unselectable="on" class="x-grid3-cell-inner x-grid3-col-description">Total revenu:</div>',
+                                '</td>',                            
+                                '<td style="width: 20%;" class="x-grid3-col x-grid3-cell x-grid3-td-cost x-grid3-cell-last" id="ext-gen110">',
+                                    '<div unselectable="on" class="x-grid3-cell-inner x-grid3-col-cost">{total_revenu}</div>',
+                                '</td>',                        
+                            '</tr>',
+                        '</table>',                                
+                    '</div>',  
+                    '<div class="x-grid3-summary-row" style="width:100%;border-top:1px solid #333">',
+                        '<table cellspacing="0" cellpadding="0" border="0" style="width:100%" class="x-grid3-summary-table">',
+                            '<tr>',
+                                '<td style="width: 80%;" class="x-grid3-col x-grid3-cell x-grid3-td-description x-grid3-cell-first">',
+                                    '<div unselectable="on" class="x-grid3-cell-inner x-grid3-col-description">Invoice (total cost + total revenue):</div>',
+                                '</td>',                            
+                                '<td style="width: 20%;" class="x-grid3-col x-grid3-cell x-grid3-td-cost x-grid3-cell-last" id="ext-gen110">',
+                                    '<div unselectable="on" class="x-grid3-cell-inner x-grid3-col-cost">{total_invoice}</div>',
+                                '</td>',
+                            '</tr>',
+                        '</table>',
+                    '</div>',                                  
+                '</div>',
+            '</div>',     
+        '</div>',           
+        '</tpl>'));     
+        
+        RExt.util.TemplateMgr.add('order-proof-of-delivery-template', new Ext.XTemplate(
+            '<tpl for=".">',
+                '<tpl if="pod">',
+                    '<tpl for="pod">',
+                    '<h3>Delivery confirmed:</h3>',
+                    '<strong>Name:</strong> {pod_name}<br />',
+                    '<strong>Date:</strong> {[new Date(values.pod_date).format("M d, H:i")]}',
+                    '</tpl>',
+                '</tpl>',
+                '<tpl if="!pod">',
+                    '<h3>UNCONFIRMED</h3>',
+                '</tpl>',
+            '</tpl>')    
+        );
+});
+</script>
+

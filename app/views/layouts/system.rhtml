@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xml:lang="en" lang="en">
+    <head>
+        <title><%= @page_title %></title>
+        
+        <%= include_registered_js %>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <style type="text/css" media="all">
+            <!--
+            @import url(/stylesheets/reset-fonts-grids.css);
+			@import url(/javascripts/ext-2.0/resources/css/ext-all.css);
+            @import url(/stylesheets/app.css);
+			@import url(/javascripts/resistor-ext2/resources/css/rext.css);
+            @import url(/javascripts/resistor-ext2/resources/css/buttons.css);
+            -->
+
+        </style>
+    </head>
+    <body onunload="">
+        
+        <div id="loading">
+            <div class="loading-indicator">Loading...</div>
+        </div>
+  
+
+        <div id="center">
+            <%= yield %>
+        </div>
+
+    </body>
+</html>

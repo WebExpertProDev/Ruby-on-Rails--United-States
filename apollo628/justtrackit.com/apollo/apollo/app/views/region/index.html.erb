@@ -1,0 +1,134 @@
+gu<!-- google AJAX API -->
+<script type="text/javascript" src="http://www.google.com/jsapi?key=<%= google_maps_key %>"></script>
+<!-- google maps API -->
+<script type="text/javascript">google.load("maps", "2");</script>
+
+<h1>Transmanage Database Importer</h1>
+<div id="agents-grid"></div>
+
+<script>
+    Ext.onReady(function() {
+        var agents = <%= @agents %>;
+        var geocoder = new GClientGeocoder();
+        var cache = new GGeocodeCache();
+        
+        var filename = 'agents';    
+        var data = [];
+               
+        for (var n=0,len=agents.length;n<len;n++) {
+            var company = agents[n];
+            for (var i=0,leni=company.locations.length;i<leni;i++) {
+                var location = company.locations[i];
+                location.company = company.name  
+                data.push(location);                                                                                         
+            }                        
+        }        
+        
+        // create the data store
+        var store = new Ext.data.SimpleStore({
+            fields: [
+               {name: 'company', mapping: 'company'},
+               {name: 'number', mapping: 'number'},               
+               {name: 'addr1', mapping: 'addr1'},
+               {name: 'addr2', mapping: 'addr2'},               
+               {name: 'city', mapping: 'city'},
+               {name: 'region', mapping: 'region'},
+               {name: 'country', mapping: 'country'},
+               {name: 'airport', mapping: 'airport'},
+               {name: 'zip', mapping: 'zip'},
+               {name: 'lat'},
+               {name: 'lng'}            
+            ]
+        });
+        store.loadData(data);
+    
+        // create the Grid
+        var grid = new Ext.grid.GridPanel({
+            id: 'agents_grid',
+            store: store,
+            columns: [
+                {id:'company',header: "Company", width: 160, sortable: true, dataIndex: 'company'},
+                {header: "Number", width: 100, sortable: true, dataIndex: 'number'},
+                {header: "Addr1", width: 200, sortable: true, dataIndex: 'addr1'},             
+                {header: "Addr2", width: 50, sortable: true, dataIndex: 'addr2'},
+                {header: "City", width: 70, sortable: true, dataIndex: 'city'},
+                {header: "Region", width: 70, sortable: true, dataIndex: 'region'},
+                {header: "Country", width: 10, sortable: true, dataIndex: 'country'},
+                {header: "Airport", width: 10, sortable: true, dataIndex: 'airport'}
+            ],
+            tbar: [
+                {text: "GeoCode", handler: doGeo}, '-',
+                {text: "Save", handler: doSave}                
+            ],
+            stripeRows: true,
+            autoExpandColumn: 'company',
+            height:400,
+            width:1000,
+            title:'Agents'
+        });
+    
+        grid.render('agents-grid');
+    
+        /**
+         * doGeo
+         * @param {Object} company
+         * @param {Object} location
+         * @param {Object} index
+         */
+        function doGeo(filename, company, location, index) {
+            var sm = grid.getSelectionModel();            
+            var selected = sm.getSelected();
+                        
+            //var query = selected.data.city + ' ' + selected.data.region + ' ' + selected.data.country;
+            var query = selected.data.airport;
+             
+            geocoder.setBaseCountryCode(selected.data.country);                                         
+            geocoder.getLocations(cache.toCanonical(query), function(res){                    
+                if (res.Status.code == 200) {  
+                    console.log(res);
+                                                                                                                                                 
+                    var latlng = res.Placemark[0].Point.coordinates; 
+                    selected.beginEdit();                                                                                
+                    selected.set('lat', latlng[1]);
+                    selected.set('lng', latlng[0]);
+                    selected.endEdit();   
+                                        
+                    if (sm.hasNext()) {
+                        sm.selectNext();
+                        doGeo();
+                    }                    
+                                                                                                                                                           
+                }
+                else {
+                    console.warn('google did NOT give us a geocode :( ', res);
+                    
+                }                                                          
+            });                                                                               
+        }
+        
+        function doSave(btn, ev) {
+            var modified = grid.store.getModifiedRecords();
+            var data = [];
+            for (var n=0,len=modified.length;n<len;n++) {
+                data.push(modified[n].data);    
+            }
+            Ext.Ajax.request({
+                url: '/region/update_geo/',
+                method: "POST",
+                params: {
+                    filename: "agents",
+                    modified : Ext.encode(data)
+                },
+                success : function(conn, response, options) {
+                    var res = Ext.decode(conn.responseText);
+                    console.log('success: ', res);                    
+                }
+            });
+        }
+    
+        
+    });
+    
+    
+    
+</script>

@@ -1,0 +1,357 @@
+/**
+* structure
+*
+*/
+body {
+	background: white;       
+    font-family: tahoma, arial, helvetica, sans-serif;             
+}
+#doc2 { 
+    padding: 10pt 23pt 5pt 20pt;
+}
+#hd {
+    height: 200px;    
+    background: #fff url(http://www.freightoperations.com/images/logo_pdf.gif) no-repeat;   
+}
+/** IMPORTANT -- seems to be cross-talk with nested yui-grids.  **/
+#hd-east .yui-g { }
+
+/**
+* typography
+*/
+
+/*** print fonts ***/
+h1 {
+    font-size: 26pt;   
+    font-weight: bold;
+}
+h2 {
+   font-size: 11pt;
+    font-weight: bold;
+}
+h3 {   
+   font-weight: bold;
+}
+
+.icon-text { padding-left: 22pt;}
+
+.error { 
+    padding-left: 24px;
+    font-weight: bold;
+    background: transparent url(http://www.freightoperations.com/images/icons/other/iconWarningMedium.gif) no-repeat center left;
+    color: #c00; 
+}
+
+/**
+* document title
+*
+*/
+h1.document-title {
+    text-align: center;
+    font-size: 300%;
+    font-weight: bold;    
+    font-family: "Times";
+    margin: 0pt 10pt 10pt 10pt;
+}
+.document-blurb {
+    font-style: italic;
+    font-size: 14pt;    
+    text-align: left; 
+    margin: -10pt 0 15pt 0;  
+    font-family : "Times"; 
+}
+/**
+* corp address in header-west
+*
+*/
+.corp-address { 
+    margin-left: 2pt; 
+    margin-top: 100pt; 
+    font-size: 10pt;
+    font-weight: bold;
+    font-style: italic;      
+}
+.address { font-style: italic; }
+
+/**
+* doc-properties in header-east
+*
+*/
+.doc-properties {
+    padding-top: 13pt;        
+}
+.doc-properties .grid-viewport {    
+    width: 100%;    
+}
+.doc-properties table {
+    width: 100%;   
+}
+
+/**
+* properties table
+*/
+.properties {
+    width: 100%;    
+}
+.properties th, .properties td { white-space: nowrap; }
+.properties th {     
+    text-align: right;
+    font-weight: bold;
+    border-right: 1px solid #ccc;
+    border-left: 10px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: #ededed;
+    width: 40%;   
+    padding-left: 10pt; 
+    padding-right: 1pt !important;
+               
+}
+.properties td {      
+    width: 60%;  
+    padding-left: 3pt !important;
+    border-left: 1px solid #ededed !important;   
+    border-right: 1px solid red; 
+}
+.properties tr.first th { border-top: 1px solid #ccc; }
+.properties tr.first td { border-top: 1px solid #ccc; }
+.properties tr.last td { border-bottom: 1px solid #ccc;}
+
+/**
+* box
+*
+*/
+.container {
+    padding: 3px;
+}
+
+.box {    
+    margin-bottom: 10pt;    
+    border: 1px solid #ccc;
+    background: #fff;     
+    
+}
+.box .hd {    
+    vertical-align: middle;
+    padding: 3pt;
+    border-bottom: 1px solid #ccc;
+    background: #ededed;    
+}
+.box .hd h2 { font: bold 12pt arial, tahoma, arial, sans-serif; vertical-align: middle;}
+.box .bd {
+    padding: 5pt;
+    font-size: 11pt;
+}
+.box .bd h3, strong { font-style: italic; }
+.box .bd h3 {
+    font: italic bold 12pt arial, tahoma, arial, sans-serif;
+}
+/**
+* box-plain
+* A more basic box without borders and header background-color
+*/
+.box-plain { 
+    border: 1px solid #ededed;
+    background: #f9f9f9;
+    padding: 5pt 10pt 10pt 10pt;     
+    margin-bottom: 10pt;
+}
+.box-plain .hd {  
+    vertical-align: middle;              
+}
+.box-plain h2 {        
+    font: bold 16pt arial, tahoma, arial, sans-serif;       
+    vertical-align: middle;           
+}
+
+
+strong { font-weight: bold;}
+
+/**
+ * order-properties
+ */
+#order-properties .hd h2 { text-align: right; }
+
+/**
+* attention box
+*
+*/
+.box-attention { 
+    border: 1pt solid black;
+    padding: 10pt;    
+}
+
+.box-attention li { 
+    list-style-type: disc; 
+    list-style-position: inside;    
+}
+.box-attention .bd {
+    font-size: 11pt;
+    min-height: 32px;
+    padding-left: 40pt;
+    background: transparent url(http://www.freightoperations.com/images/icons/other/iconWarningLarge.gif) no-repeat;
+}
+
+/**
+* grid
+*
+*/
+.grid-viewport { 
+    border: 1px solid #ccc;
+    
+    background: #f9f9f9;         
+}
+.grid { width: 100%; }
+.grid-hd-row {
+    background: #ededed;     
+}
+.grid .grid-hd-row td { 
+    color:#000;
+    font-weight: bold; 
+    padding: 5pt 2pt 5pt 2pt;
+    border-bottom: 3px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.grid .grid-hd-row td.grid-cell-last { border-right: 0;}
+
+.grid td { border-right: 1px solid #ccc;}
+
+.grid td {
+	font:normal 10pt arial, tahoma, helvetica, sans-serif;  
+    padding: 2pt;  
+    border-bottom: 1px solid #ededed;                
+}
+.grid td.grid-cell-last { border-right: 0px solid #ccc;}
+.grid-col-cost { text-align: right;}
+.grid .grid-row-odd { background: #fff; }
+
+/** last row **/
+.grid tr.grid-row-last { background: #ccc;}
+.grid tr.grid-row-last td { border-bottom: 0; }
+.grid tr.grid-row-last td .grid-cell-inner { font-weight: bold; }
+
+/**
+ * form css
+ */
+.form { 
+    width: 100%;
+    margin-top: 5pt;
+    font-size:10pt;        
+}
+.form td, .form th { width: 75pt; border-bottom: 10pt solid #f9f9f9; vertical-align: bottom;white-space:nowrap;}
+.form tr.last td, .form tr.last th { border-bottom: 0; }
+
+.form td {        
+    padding: 0 0 0 0;
+    background: #fff;     
+}
+
+.form td p { 
+    font-weight: bold; 
+    font-style: italic;
+    font: normal 14pt "Times";
+    vertical-align: bottom;
+    width: 100%;    
+    padding-top: 16pt;
+    height: 16pt;
+    border: 1px solid #ededed;        
+}
+.form td .x { font-weight: bold; font-style: italic; font-size: 11pt;}
+
+.form th {
+    padding-left: 10pt;
+    padding-right: 2pt;
+    text-align: right;
+    font-weight: bold;        
+}
+
+/**
+ * devlivery-instructions
+ */
+#instructions .hd h2 {
+    background: transparent url(http://www.freightoperations.com/images/icons/other/iconInformationMedium.gif) no-repeat center left;
+    padding-left: 22pt;
+}
+#instructions .bd { font-size: 11pt; }
+
+/**
+ * pod
+ */
+#pod .hd h2 { 
+    background: transparent url(http://www.freightoperations.com/images/icons/other/iconOKMedium.gif) no-repeat center left;
+    padding-left: 20pt; 
+}
+
+/**
+* order-shipment grid
+*
+*/
+.order-shipment { width: 200pt; }
+
+/**
+* order-items grid
+*
+*/
+.order-items td { text-align: center; }
+.order-items .grid-cell-first { width: 10%;}               
+.order-items .grid-cell-1 { width: 60%;}
+.order-items .grid-cell-2 { width: 10%;}
+.order-items .grid-cell-3 { width: 10%;}
+.order-items .grid-cell-last { width: 10%;}
+
+/**
+* order-costs grid
+*/
+.order-costs .grid .grid-cell-first { width: 10%;}
+.order-costs .grid .grid-cell-1 { width: 80%;}
+.order-costs .grid .grid-cell-last { width: 10%;}
+.order-costs .grid .grid-cell-first { text-align: right; }
+
+/**
+* order-routing
+*/
+.order-routing .route {
+    padding: 5pt;
+    background: #f9f9f9;
+    border: 1px solid #ededed;
+    border-left: 10px solid #ededed;
+    margin-bottom: 5pt;
+}
+.order-routing .route-last { margin-bottom: 0;}
+
+/***
+ * shipper/driver certification form on Bill-of-Lading column widths.
+ * 
+ */
+.shipper-driver-certification .col-first{ width:100pt; }
+.shipper-driver-certification .col-1{ width: 300pt; }
+.shipper-driver-certification .col-2{  }
+.shipper-driver-certification .col-3{ width: 100pt; }        
+.shipper-driver-certification .col-4{ }
+.shipper-driver-certification .col-5{ width: 100pt;  }
+.shipper-driver-certification .col-6{  }
+
+/***
+ * tsa-form
+ */
+#tsa-properties .grid th, #tsa-properties .grid td {
+    font-size: 14pt;
+}
+#tsa-form { }
+#tsa-form-corp .form .col-first { width: 120pt; white-space:normal; }
+#tsa-form-corp .form .col-1 { width: 360pt; }
+#tsa-form-corp .form .col-2 { width: 40pt; }
+#tsa-form-corp .form .col-last { width: 100pt; }
+
+#tsa-form-carrier .form .col-first { width: 100pt;}
+#tsa-form-carrier .form .col-1 { width: 300pt;}
+#tsa-form-carrier .form .col-2 { width: 50pt;}
+
+/**
+ * Re-weigh form
+ */
+#consignee-form .col-first { width: 70pt;}
+#consignee-form .col-1 { width: auto; }
+#consignee-form .col-2 { width: 40pt; }
+#consignee-form .col-last { width: 100pt; }
+
+

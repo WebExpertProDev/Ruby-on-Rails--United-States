@@ -1,0 +1,221 @@
+/**
+* order-view splitter
+*/
+.order-view .x-layout-split-east {
+    border-left: 1px solid #99bbe8;    
+} 
+/***
+* order-dashboard
+*/
+.order-dashboard {
+    
+}
+.order-dashboard .x-fieldset {    
+    padding-top: 5px;
+    margin-bottom: 0;
+    border-color: #d0d0d0;
+}
+.order-dashboard .x-fieldset legend {
+    color: #666;
+}
+.order-dashboard .total-cost {
+    color: #e00;
+    font-weight: bold;
+    font-size: 12px;
+    
+}
+.order-dashboard .total-revenu {        
+    font-size: 12px;
+    
+}
+/***
+* order_log styles
+*
+*/
+.order-log-entry {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.order-log-entry .hd .subject {
+    margin-bottom: 1px;
+}
+.order-log-entry h3 {
+    font-size:14px;
+    padding-left: 18px;
+}
+
+.order-log-entry .hd .author-info {
+    color: #666;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+.order-log-entry .hd .author-info .author {
+
+}
+.order-log-entry .hd .author-info .timestamp {
+
+}
+.order-log-entry-over {
+    background: #eee;
+}
+.order-log-entry-selected {
+    background: blue;
+}
+.order-status .first{
+	text-align: right;
+	font-weight: bold;
+	padding-right: 10px;
+}
+/***
+* log-type icon definitions
+*/
+.order-log-entry .notification {
+    background-image: url(/images/icons/email_go.png) !important; background-repeat: no-repeat;
+}
+.order-log-entry .status {
+    background-image: url(/images/icons/flag_green.png) !important; background-repeat: no-repeat;
+}
+.order-log-entry .comment {
+    background-image: url(/images/icons/user_comment.png) !important; background-repeat: no-repeat;
+}
+.order-log-entry .re-weigh {
+    background-image: url(/images/icons/shape_align_bottom.png) !important; background-repeat: no-repeat;    
+}
+.order-log-entry .pod {
+    background-image: url(/images/icons/door_in.png) !important; background-repeat: no-repeat;    
+}
+
+/***
+* order view
+*
+*/
+.container {
+	padding: 5px;
+}
+
+/***
+* panel
+*
+*/
+.panel {
+	margin-bottom: 5px;
+}
+
+.order-status {
+	float: right;
+}
+.order-status .total {
+	font-weight: bold;
+	color: #c00;
+}
+/***
+* order-entity
+*
+*/
+.order-entity h3 {
+    font-size: 12px;    
+    font-weight: bold;
+}
+
+.route {
+	
+}
+
+
+/***
+* routing template
+*
+*/
+.route .title {
+
+}
+
+.route .title h1 {
+	font-size: 16px;
+    
+}
+.route strong {
+	font-weight: bold;
+}
+.route .bill-number {
+    padding-top: 5px;
+    vertical-align: middle; 
+    text-align: right; 
+}
+.route .bill-number label { font-weight: bold;font-size:11px;}
+.route .r-properties { margin-bottom: 5px;}
+.route .route-entity .r-properties, .order-entity .r-properties { margin-top: 5px;}
+
+/***
+* route-panel
+*/
+.route-panel .x-accordion-hd {    
+    padding: 7px 5px 5px 5px;
+}
+.route-panel .x-panel-header-text {
+    font-size: 22px;
+    color: #15428b;
+    font-weight: bold;                
+}
+
+/**
+* RoutingForm carrer domain-checkboxes
+*/
+.roles label.x-form-cb-label { padding-left: 18px; background-repeat: no-repeat;} 
+ 
+/*** vendor-carrier-ground ***/
+.roles label.role-vendor-carrier-ground { background-image: url(/images/icons/lorry_flatbed.png) !important; }
+
+/*** vendor-carrier-air_commercial ***/
+.roles label.role-vendor-carrier-air_commercial { background-image: url(/images/icons/bomb.png) !important; }
+
+/*** vendor-carrier-air_freight ***/
+.roles label.role-vendor-carrier-air_freight { background-image: url(/images/icons/box.png) !important; }
+
+/***
+* add margin-bottom to panel on east
+*
+*/
+.order-layout-east .rpanel {
+    margin-bottom: 5px;
+}
+
+/***
+* order-search results
+*/
+.order-search-result .x-grid3 h2 {    
+    font-size: 14px;
+    color: #333;    
+}
+.order-search-result fieldset {
+    float: left;        
+    padding-top: 2px;
+}
+.order-search-result fieldset legend {
+    font-size: 14px;        
+}
+.order-search-result img.icon-arrow-right { float: left;margin:0 10px 0 10px}
+.order-search-result .stats {
+    font-size: 12px;    
+    color: #666;    
+    margin-bottom: 5px;
+}
+
+/***
+* gmap-info-panel
+* The east region of GMap
+*/
+.gmap-info-panel .r-link-button {
+    margin-bottom: 10px;
+}
+
+/**
+* revenu summary table
+*/
+.revenu-summary .x-grid3-row .x-grid3-td-cost {
+    background-color:#f1f2f4;
+}
+.revenu-summary .x-grid3-summary-row .x-grid3-td-cost {
+    background-color:#e1e2e4;
+}
+.revenu-summary .x-grid-group-hd div { background-image: none; }

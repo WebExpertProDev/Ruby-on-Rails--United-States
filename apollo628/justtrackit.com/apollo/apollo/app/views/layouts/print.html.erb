@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en">
+    <head>
+        <title><%= @page_title %></title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        
+        <style type="text/css" media="all">
+            <!--            
+            @import url(/stylesheets/reset-fonts-grids.css);
+            @import url(/stylesheets/print.css);
+            @import url(/stylesheets/app.css);
+            @import url(/javascripts/resistor-ext2/resources/css/rext.css);
+            -->
+        </style>
+        
+    </head>
+    <body>
+        
+    <div id="doc" class="yui-t7 print"> 
+	    <div id="hd">
+	        <img id="logo" src="/images/logo_small.gif" />
+            <span id="contact">
+                <h1>Transmanage Worldwide Inc.</h1>
+                <p>117 Parkwood, Suite #6</p>
+                <p>Lowell, Arkansas, 72745</p>
+                <p>Phone (800) 959-1390, FAX: (479) 770-1293</p>
+            </span> 
+            <div class="clear">&nbsp;</div>
+	    </div>   
+        <div id="bd"> 
+	        <%= yield %> 
+        </div> 
+   
+       <div id="ft">Footer is here.</div> 
+	</div> 
+            
+        
+        
+    </body>
+</html>

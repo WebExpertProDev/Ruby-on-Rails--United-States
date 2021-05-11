@@ -1,0 +1,7452 @@
+--- 
+- :contact: DAWN  CORDELL
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: SEAWING CARGO SERVICES
+  :locations: 
+  - :fax: 001 44 (0)175 376
+    :region: New York
+    :addr1: UNIT 1, LAKESIDE IND. ESTATE
+    :city: Ronkonkoma
+    :addr2: ""
+    :name: SEAWING CARGO SERVICES
+    :airport: LHR
+    :city_state_zip: RONKONKOMA , NY.  11779
+    :zip: "11779"
+    :number: SEAW30111
+    :url: www.seawing.co.uk
+    :phone: 011 44 (0) 175 37
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "3"
+  :accounting_code: |
+    601
+
+  :name: VALLEY TRANSPORTATION *BI
+  :locations: 
+  - :fax: blank
+    :region: Connecticut
+    :addr1: PO BOX 12663
+    :city: Windsor Locks
+    :addr2: ""
+    :name: VALLEY TRANSPORTATION *BI
+    :airport: FAT
+    :city_state_zip: WINDSOR LOCKS,  CT.  06096
+    :zip: 06096
+    :number: VALL93778
+    :url: blank
+    :phone: 559-266-6674
+    :country: US
+  - :fax: 559-266-6118
+    :region: North Carolina
+    :addr1: 2837 SOUTH EAST AVENUE
+    :city: Wilmington
+    :addr2: ""
+    :name: VALLEY TRANSPORTATION INC
+    :airport: FAT
+    :city_state_zip: WILMINGTON,  NC.  28401
+    :zip: "28401"
+    :number: VALL93725
+    :url: www.valleytransportation.com
+    :phone: 559-266-6674
+    :country: US
+  :faa: blank
+- :contact: ANDRE RIVERA  JR.
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: TOP OF THE LINE TRANSPORT
+  :locations: 
+  - :fax: 866-729-7960
+    :region: Louisiana
+    :addr1: P.O. BOX 301931
+    :city: Shreveport
+    :addr2: ""
+    :name: TOP OF THE LINE TRANSPORT
+    :airport: STT
+    :city_state_zip: SHREVEPORT, LA.  71129
+    :zip: "71129"
+    :number: TOPO00803
+    :url: blank
+    :phone: 866-729-7960
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: SPECIAL SERVICE
+  :locations: 
+  - :fax: 704-587-0966
+    :region: Utah
+    :addr1: PO BOX 19508
+    :city: Salt Lake City
+    :addr2: ""
+    :name: SPECIAL SERVICE
+    :airport: CHS
+    :city_state_zip: SALT LAKE CITY, UT. 84119
+    :zip: "84119"
+    :number: SPEC28219
+    :url: blank
+    :phone: 843-207-9400
+    :country: US
+  - :fax: 910-251-0730
+    :region: Utah
+    :addr1: 118 BRENTWOOD DR
+    :city: Salt Lake City
+    :addr2: ""
+    :name: SPECIAL SERVICE
+    :airport: ILM
+    :city_state_zip: SALT LAKE CITY , UT.  84104
+    :zip: "84104"
+    :number: SPEC28401
+    :url: SPECIALSERVICE.NET
+    :phone: 910-762-8869
+    :country: US
+  - :fax: 843-207-0508
+    :region: Utah
+    :addr1: 7178 CROSS COUNTY ROAD
+    :city: Salt Lake City
+    :addr2: ""
+    :name: SPECIAL SERVICE
+    :airport: CHS
+    :city_state_zip: SALT LAKE CITY , UT.  84120
+    :zip: "84120"
+    :number: SPEC29418
+    :url: blank
+    :phone: 843-207-9400
+    :country: US
+  - :fax: blank
+    :region: Texas
+    :addr1: PO BOX 19508
+    :city: San Antonio
+    :addr2: ""
+    :name: "SPECIAL SERVICE "
+    :airport: CLT
+    :city_state_zip: SAN ANTONIO, TX.  78218
+    :zip: "78218"
+    :number: "754431"
+    :url: blank
+    :phone: 800-777-6068
+    :country: US
+  - :fax: 828-687-9674
+    :region: Texas
+    :addr1: 63 FLETCHER COMMERCIAL DRIVE
+    :city: San Antonio
+    :addr2: ""
+    :name: SPECIAL SERVICE -AVL
+    :airport: AVL
+    :city_state_zip: SAN ANTONIO, TX.  78247
+    :zip: "78247"
+    :number: SPEC28792
+    :url: blank
+    :phone: 800-688-9280
+    :country: US
+  :billing_location: "754431"
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: J&B FAST FREIGHT
+  :locations: 
+  - :fax: blank
+    :region: Nevada
+    :addr1: 220 FLAT CREEK LANE
+    :city: North Las Vegas
+    :addr2: ""
+    :name: J&B FAST FREIGHT
+    :airport: TRI
+    :city_state_zip: LAS VEGAS, NV. 89119
+    :zip: "89119"
+    :number: JBFA37617
+    :url: www.jbfastfreight.com
+    :phone: 423-323-1224
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: CW TRANSFER
+  :locations: 
+  - :fax: 404-669-0926
+    :region: Iowa
+    :addr1: 4851 GEORGIA HIGHWAY 85
+    :city: Des Moines
+    :addr2: ""
+    :name: CW TRANSFER
+    :airport: ATL
+    :city_state_zip: DES MOINES ,  IA.  50313
+    :zip: "50313"
+    :number: CWTR30297
+    :url: blank
+    :phone: 404-669-0925
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "5"
+  :accounting_code: |
+    601
+
+  :name: J.D.C INTERNATIONAL
+  :locations: 
+  - :fax: 847-228-7750
+    :region: Nevada
+    :addr1: 457 CROSSEN
+    :city: North Las Vegas
+    :addr2: ""
+    :name: J.D.C INTERNATIONAL
+    :airport: ORD
+    :city_state_zip: LAS VEGAS, NV. 89119
+    :zip: "89119"
+    :number: JDCI60007
+    :url: blank
+    :phone: 847-228-7770
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "2"
+  :accounting_code: |
+    601
+
+  :name: WORCESTER COUNTY A/F
+  :locations: 
+  - :fax: 508-752-7360
+    :region: Manitoba
+    :addr1: P.O. BOX 374
+    :city: Winnipeg
+    :addr2: ""
+    :name: WORCESTER COUNTY A/F
+    :airport: BOS
+    :city_state_zip: WINNIPEG,  MB.  R2J  1G3
+    :zip: R2J  1G3
+    :number: WORC01501
+    :url: blank
+    :phone: 508-755-8572
+    :country: CA
+  :faa: blank
+- :contact: RAY
+  :rank: "2"
+  :accounting_code: |
+    601
+
+  :name: CARISMA WESTLOOP TOWING
+  :locations: 
+  - :fax: 817-439-1805
+    :region: Ohio
+    :addr1: 1150 BLUE MOUND RD. W
+    :city: Columbus
+    :addr2: ""
+    :name: CARISMA WESTLOOP TOWING
+    :airport: DFW
+    :city_state_zip: COLUMBUS, OH.  43204
+    :zip: "43204"
+    :number: CARI76052
+    :url: www.carisma-westlooptowing.com
+    :phone: 866-806-5899
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: YOUNG EXPRESS
+  :locations: 
+  - :fax: 404-761-7144
+    :region: Manitoba
+    :addr1: 775 ATLANTA SOUTH PKWY
+    :city: Winnipeg
+    :addr2: ""
+    :name: YOUNG EXPRESS
+    :airport: ATL
+    :city_state_zip: WINNIPEG,  MB.  R3H  1H6
+    :zip: R3H  1H6
+    :number: YOUN30349
+    :url: blank
+    :phone: 404-761-5575
+    :country: CA
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: REACT TRANSPORT
+  :locations: 
+  - :fax: blank
+    :region: Massachusetts
+    :addr1: 24 WEST SHORE ROAD
+    :city: Revere
+    :addr2: ""
+    :name: REACT TRANSPORT
+    :airport: EDI
+    :city_state_zip: REVERE, MA.  02151
+    :zip: "02151"
+    :number: REAC51111
+    :url: www.react-transport.co.uk
+    :phone: 44-131-551-5531
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: GLOBAL FREIGHT SERVICE
+  :locations: 
+  - :fax: 210-490-0927
+    :region: Missouri
+    :addr1: 3623 METRO PARKWAY
+    :city: Kansas City
+    :addr2: ""
+    :name: GLOBAL FREIGHT SERVICE
+    :airport: SAT
+    :city_state_zip: KANSAS CITY , MO. 64153
+    :zip: "64153"
+    :number: GLOB78247
+    :url: blank
+    :phone: 210-490-9831
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: JAMES AIR CARGO
+  :locations: 
+  - :fax: 440-243-9288
+    :region: Nevada
+    :addr1: 6519 EASTLAND RD
+    :city: North Las Vegas
+    :addr2: ""
+    :name: JAMES AIR CARGO
+    :airport: CLE
+    :city_state_zip: LAS VEGAS, NV. 89119
+    :zip: "89119"
+    :number: JAME44142
+    :url: blank
+    :phone: 440-243-9095
+    :country: US
+  :faa: blank
+- :contact: Santiago
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: DAVIS TRUCKING, LLC.
+  :locations: 
+  - :fax: 702-739-7984
+    :region: Virginia
+    :addr1: 3250 W ALI BABA LANE
+    :city: Dulles
+    :addr2: ""
+    :name: DAVIS TRUCKING, LLC.
+    :airport: LAS
+    :city_state_zip: DULLES, VA. 20166
+    :zip: "20166"
+    :number: DAVI89118
+    :url: blank
+    :phone: 702-262-9857
+    :country: US
+  :faa: 09/29/2005
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: LAND AIR EXPRESS (CORPORA
+  :locations: 
+  - :fax: 270-781-0579
+    :region: Ontario
+    :addr1: P.O. BOX 2250
+    :city: Mississauga
+    :addr2: ""
+    :name: LAND AIR EXPRESS (CORPORA
+    :airport: BXS
+    :city_state_zip: MISSISSAUGA, ON.  L4V1S1
+    :zip: L4V1S1
+    :number: LAND42102
+    :url: blank
+    :phone: 270-781-0655
+    :country: CA
+  - :fax: blank
+    :region: Virginia
+    :addr1: 2930 AIRPORT DRIVE
+    :city: Lynchburg
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: BRO
+    :city_state_zip: LYNCHBURG, VA. 23455
+    :zip: "23455"
+    :number: LAND78550
+    :url: blank
+    :phone: 956-838-1962
+    :country: US
+  - :fax: 512-447-6045
+    :region: Georgia
+    :addr1: 8606 WALL STREET
+    :city: Macon
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: AUS
+    :city_state_zip: MACON, GA. 31220
+    :zip: "31220"
+    :number: LAND78754
+    :url: blank
+    :phone: 512-448-4418
+    :country: US
+  - :fax: 702-435-4367
+    :region: Ohio
+    :addr1: 1650 HELM, SUITE 900
+    :city: Maumee
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: LAS
+    :city_state_zip: MAUMEE, OH.  43537
+    :zip: "43537"
+    :number: LAND89119
+    :url: blank
+    :phone: 702-435-4260
+    :country: US
+  - :fax: 208-338-0181
+    :region: Ohio
+    :addr1: 925 WEST AMITY ROAD
+    :city: Medina
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: BOI
+    :city_state_zip: MEDINA, OH.  44256
+    :zip: "44256"
+    :number: LAND83705
+    :url: blank
+    :phone: 208-338-0180
+    :country: US
+  - :fax: 816-891-9139
+    :region: Arkansas
+    :addr1: 9660 NORTH SEYMOUR
+    :city: Melbourne
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: MCI
+    :city_state_zip: MELBOURNE,  VICTORIA.  3043
+    :zip: "3043"
+    :number: LAND64153
+    :url: blank
+    :phone: 816-891-8686
+    :country: US
+  - :fax: 405-670-3953
+    :region: Tennessee
+    :addr1: 1905 E. SKYLINE DR
+    :city: Memphis
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: OKC
+    :city_state_zip: MEMPHIS,  TN.  38115
+    :zip: "38115"
+    :number: LAND73129
+    :url: blank
+    :phone: 405-670-3953
+    :country: US
+  - :fax: 281-442-6308
+    :region: Tennessee
+    :addr1: 15550 EXPORT PLAZA
+    :city: Memphis
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: IAH
+    :city_state_zip: MEMPHIS,  TN.  38115
+    :zip: "38115"
+    :number: LAND77032
+    :url: blank
+    :phone: 281-442-1094
+    :country: US
+  - :fax: 254-799-2621
+    :region: Tennessee
+    :addr1: 324 S. LACY DR
+    :city: Memphis
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: ACT
+    :city_state_zip: MEMPHIS,  TN.  38119
+    :zip: "38119"
+    :number: LAND76705
+    :url: blank
+    :phone: 254-799-2509
+    :country: US
+  - :fax: 316-942-0295
+    :region: Tennessee
+    :addr1: 3215 W. PAWNEE
+    :city: Memphis
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: ICT
+    :city_state_zip: MEMPHIS,  TN.  38141
+    :zip: "38141"
+    :number: LAND67213
+    :url: LANDAIREXPRESS.COM
+    :phone: 316-942-0191
+    :country: US
+  - :fax: 314-426-5173
+    :region: California
+    :addr1: 3801 MCKELVEY
+    :city: Menifee
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: STL
+    :city_state_zip: MENIFEE,  CA.  92584
+    :zip: "92584"
+    :number: LAND63044
+    :url: blank
+    :phone: 314-738-0999
+    :country: US
+  - :fax: 817-329-8597
+    :region: Florida
+    :addr1: 1061 EAST NORTHWEST HIGHWAY
+    :city: Miami
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: DFW
+    :city_state_zip: MIAMI, FL.  33021
+    :zip: "33021"
+    :number: LAND76051
+    :url: www.landairexpress.com
+    :phone: 817-481-5858
+    :country: US
+  - :fax: 602-254-4802
+    :region: Florida
+    :addr1: 1315 E. GIBSON LN
+    :city: Miami
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: PHX
+    :city_state_zip: MIAMI, FL.  33122
+    :zip: "33122"
+    :number: LAND85034
+    :url: blank
+    :phone: 602-254-4502
+    :country: US
+  - :fax: 817-329-2978
+    :region: Florida
+    :addr1: 1061 E NORTHWEST HWY, SUITE 10
+    :city: Miami
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: DFW
+    :city_state_zip: MIAMI, FL.  33166
+    :zip: "33166"
+    :number: "64269"
+    :url: blank
+    :phone: 817-481-5858
+    :country: US
+  - :fax: 310-216-0143
+    :region: Florida
+    :addr1: 10501 S LA CIENEGA BLVD
+    :city: Miami
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: LAX
+    :city_state_zip: MIAMI, FL.  33166
+    :zip: "33166"
+    :number: LAND90045
+    :url: blank
+    :phone: 310-649-1552
+    :country: US
+  - :fax: 785-862-1664
+    :region: Illinois
+    :addr1: 4631 S.E. ADAMS
+    :city: Milan
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: TOP
+    :city_state_zip: MILAN, IL. 61264
+    :zip: "61264"
+    :number: LAND66609
+    :url: blank
+    :phone: 785-862-1609
+    :country: US
+  - :fax: 801-886-2503
+    :region: Wisconsin
+    :addr1: 4464 W. 2100 SOUTH
+    :city: South Milwaukee
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: SLC
+    :city_state_zip: MILWAUKEE ,  WI.  53207
+    :zip: "53207"
+    :number: LAND84120
+    :url: blank
+    :phone: 801-886-2500
+    :country: US
+  - :fax: 915-779-2313
+    :region: Wisconsin
+    :addr1: 28 SPUR, SUITE B
+    :city: South Milwaukee
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: ELP
+    :city_state_zip: MILWAUKEE,  WI.  53207
+    :zip: "53207"
+    :number: LAND79906
+    :url: blank
+    :phone: 915-778-4575
+    :country: US
+  - :fax: 325-698-6208
+    :region: Wisconsin
+    :addr1: 141 G TANNEHILL
+    :city: South Milwaukee
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: ABI
+    :city_state_zip: MILWAUKEE,  WI.  53207
+    :zip: "53207"
+    :number: LAND79602
+    :url: blank
+    :phone: 325-695-8110
+    :country: US
+  - :fax: 310-649-0725
+    :region: Wisconsin
+    :addr1: 10501 S. LA CIENEGA BLVD
+    :city: South Milwaukee
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: LAX
+    :city_state_zip: MILWAUKEE,  WI.  53207
+    :zip: "53207"
+    :number: "65259"
+    :url: blank
+    :phone: 310-649-1552
+    :country: US
+  - :fax: 918-234-2676
+    :region: Wisconsin
+    :addr1: 1533 N. GARNETT RD
+    :city: South Milwaukee
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: TUL
+    :city_state_zip: MILWAUKEE,  WI.  53221
+    :zip: "53221"
+    :number: LAND74116
+    :url: blank
+    :phone: 918-234-2626
+    :country: US
+  - :fax: 847-228-1855
+    :region: Wisconsin
+    :addr1: 2300 ESTES AVENUE, SUITE A
+    :city: South Milwaukee
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: ORD
+    :city_state_zip: MILWAUKEE,  WI.  53237
+    :zip: "53237"
+    :number: LAND60006
+    :url: blank
+    :phone: 847-228-1744
+    :country: US
+  - :fax: 720-859-2742
+    :region: Ontario
+    :addr1: 16075 EAST 32ND AVENUE, SUITE D
+    :city: Mississauga
+    :addr2: ""
+    :name: LAND AIR EXPRESS
+    :airport: DEN
+    :city_state_zip: MISSISSAUGA,  ONTARIO.  L5T2X9
+    :zip: L5T2X9
+    :number: LAND80011
+    :url: blank
+    :phone: 720-859-0922
+    :country: CA
+  - :fax: 417-866-1227
+    :region: Ontario
+    :addr1: 4220 WEST WILLARD ROAD
+    :city: Mississauga
+    :addr2: ""
+    :name: LAND AIR EXPRESS (SGF A/F
+    :airport: SGF
+    :city_state_zip: MISSISSAUGA, ON.  L4W5N4
+    :zip: L4W5N4
+    :number: LAND65803
+    :url: landairexpress.com
+    :phone: 417-866-2914
+    :country: CA
+  :faa: blank
+- :contact: DAVID  JONES
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: DIXIE EXPRESS
+  :locations: 
+  - :fax: 281-445-0577
+    :region: Texas
+    :addr1: 739 BRADFIELD
+    :city: El Paso
+    :addr2: ""
+    :name: DIXIE EXPRESS
+    :airport: IAH
+    :city_state_zip: EL PASO , TX. 79906
+    :zip: "79906"
+    :number: DIXI77060
+    :url: blank
+    :phone: 281-820-6350
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ALPINE COURIER
+  :locations: 
+  - :fax: 503-252-2089
+    :region: Louisiana
+    :addr1: PO BOX 20566
+    :city: Baton Rouge
+    :addr2: ""
+    :name: ALPINE COURIER
+    :airport: PDX
+    :city_state_zip: BATON ROUGE , LA.  70809
+    :zip: "70809"
+    :number: ALPI97230
+    :url: www.alpinecourier.com
+    :phone: 503-252-1964
+    :country: US
+  :faa: "38394"
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: LEONE TRUCKING
+  :locations: 
+  - :fax: 215-860-9493
+    :region: Ontario
+    :addr1: P.O. BOX 485
+    :city: Mississauga
+    :addr2: ""
+    :name: LEONE TRUCKING
+    :airport: PHL
+    :city_state_zip: MISSISSAUGA, ON. N7T  7J4
+    :zip: N7T  7J4
+    :number: LEON18954
+    :url: blank
+    :phone: 215-860-9487
+    :country: CA
+  :faa: blank
+- :contact: MATT  RUSHING
+  :rank: "1"
+  :accounting_code: |
+    201
+
+  :name: CEVA FREIGHT
+  :locations: 
+  - :fax: blank
+    :region: Texas
+    :addr1: 3937 HICKORY HILL ROAD
+    :city: Corpus Christi
+    :addr2: ""
+    :name: "CEVA FREIGHT "
+    :airport: "CRP"
+    :city_state_zip: CORPUS CHRISTI,  TX.  78401
+    :zip: "78401"
+    :number: CEVABILLING
+    :url: blank
+    :phone: 901-547-6706
+    :country: US
+  - :fax: 44-1446-711-650
+    :region: Ohio
+    :addr1: UNIT 1, CARDIFF AIRPORT BUSINES
+    :city: Columbus
+    :addr2: ""
+    :name: CEVA FREIGHT
+    :airport: CWL
+    :city_state_zip: COLUMBUS, OH.  43219
+    :zip: "43219"
+    :number: CEVA62311
+    :url: www.cevalogistics.com
+    :phone: 44-1446-711-800
+    :country: US
+  - :fax: 33-4-42-77-56-51
+    :region: Ohio
+    :addr1: 151 BOULEVARD DANIELLE
+    :city: Columbus
+    :addr2: ""
+    :name: CEVA FREIGHT
+    :airport: MRS
+    :city_state_zip: COLUMBUS, OH.  43223
+    :zip: "43223"
+    :number: CEVA00000
+    :url: www.cevalogistics.com
+    :phone: 33-4-9110-1600
+    :country: US
+  :billing_location: CEVABILLING
+  :faa: blank
+- :contact: blank
+  :rank: "135"
+  :accounting_code: |
+    601
+
+  :name: BEST SHIPPING
+  :locations: 
+  - :fax: 441-295-1713
+    :region: New York
+    :addr1: P.O. BOX HM 335
+    :city: Buffalo
+    :addr2: ""
+    :name: BEST SHIPPING
+    :airport: BDA
+    :city_state_zip: BUFFALO , NY. 14227
+    :zip: "14227"
+    :number: BEST00000
+    :url: www.best.bm
+    :phone: 441-292-8080
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: GENESSEE VALLEY
+  :locations: 
+  - :fax: 585-328-6651
+    :region: Missouri
+    :addr1: N/A
+    :city: Joplin
+    :addr2: ""
+    :name: GENESSEE VALLEY
+    :airport: ROC
+    :city_state_zip: JOPLIN , MO.  64801
+    :zip: "64801"
+    :number: GENE14601
+    :url: blank
+    :phone: 585-328-6440
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: AEL AIRPORT EXPRESS
+  :locations: 
+  - :fax: 604-278-0371
+    :region: Georgia
+    :addr1: "#131 - 5200 MILLER RD."
+    :city: Atlanta
+    :addr2: ""
+    :name: AEL AIRPORT EXPRESS
+    :airport: YVR
+    :city_state_zip: ATLANTA, GA. 30349
+    :zip: "30349"
+    :number: AELA71111
+    :url: blank
+    :phone: 604-278-0331
+    :country: US
+  :faa: blank
+- :contact: MARK
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: RAPID DELIVERY
+  :locations: 
+  - :fax: 860-623-4017
+    :region: Alberta
+    :addr1: 315 ELLA GRASSO TURNPIKE
+    :city: Red Deer
+    :addr2: ""
+    :name: RAPID DELIVERY
+    :airport: BDL
+    :city_state_zip: RED DEER, AB.  T4P  1Y3
+    :zip: T4P  1Y3
+    :number: RAPI06096
+    :url: blank
+    :phone: 860-623-2203
+    :country: CA
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: EASTSIDE EXPRESS
+  :locations: 
+  - :fax: 908-486-3355
+    :region: Texas
+    :addr1: 2025 E. LINDEN AVENUE
+    :city: Grapevine
+    :addr2: ""
+    :name: EASTSIDE EXPRESS
+    :airport: EWR
+    :city_state_zip: GRAPEVINE, TX.  76051
+    :zip: "76051"
+    :number: EAST07108
+    :url: blank
+    :phone: 908-486-3300
+    :country: US
+  :faa: "38636"
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: FIVE STAR COURIER
+  :locations: 
+  - :fax: 403-720-6307
+    :region: South Carolina
+    :addr1: 6608 20 STREET S
+    :city: Greer
+    :addr2: ""
+    :name: FIVE STAR COURIER
+    :airport: YYC
+    :city_state_zip: GREER, SC.  29651
+    :zip: "29651"
+    :number: FIVE20411
+    :url: blank
+    :phone: 403-720-8350
+    :country: US
+  - :fax: 403-720-6307
+    :region: Indiana
+    :addr1: P.O. BOX 846 STATION T
+    :city: Griffith
+    :addr2: ""
+    :name: "FIVE STAR COURIER "
+    :airport: YYC
+    :city_state_zip: GRIFFITH,  IN.  46319
+    :zip: "46319"
+    :number: FIVE22311
+    :url: blank
+    :phone: 403-720-8350
+    :country: US
+  :billing_location: FIVE22311
+  :faa: blank
+- :contact: AMANDA
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: KAMAKA AIR
+  :locations: 
+  - :fax: 808-839-6989
+    :region: California
+    :addr1: 144 PALEKONA ST.
+    :city: Los Angeles
+    :addr2: ""
+    :name: KAMAKA AIR
+    :airport: MKK
+    :city_state_zip: LOS ANGELES, CA. 90009
+    :zip: "90009"
+    :number: KAMA96819
+    :url: kamakaair.com
+    :phone: 808-839-0946
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ZOOM EXPRESS
+  :locations: 
+  - :fax: 502-964-2840
+    :region: Louisiana
+    :addr1: 4201 PRODUCE RD
+    :city: Zachary
+    :addr2: ""
+    :name: ZOOM EXPRESS
+    :airport: SDF
+    :city_state_zip: ZACHARY, LA. 70791
+    :zip: "70791"
+    :number: ZOOM40218
+    :url: blank
+    :phone: 502-964-2820
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: TOWNE AIR
+  :locations: 
+  - :fax: 800-769-1859
+    :region: Florida
+    :addr1: 504 C RADAR RD
+    :city: Tampa
+    :addr2: ""
+    :name: TOWNE AIR (DRUG TRANS EXP
+    :airport: GSO
+    :city_state_zip: TAMPA, FL. 33634
+    :zip: "33634"
+    :number: TOWN27410
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 800-769-1859
+    :region: Indiana
+    :addr1: 7522 CONNELLEY DRIVE
+    :city: South Bend
+    :addr2: ""
+    :name: TOWNE AIR
+    :airport: BWI
+    :city_state_zip: SOUTH BEND,  IN.  46628
+    :zip: "46628"
+    :number: "5536"
+    :url: blank
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 800-769-1859
+    :region: California
+    :addr1: 1810 AIRPORT EXCHANGE BLVD
+    :city: South San Francisco
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: CVG
+    :city_state_zip: SOUTH SAN FRANCISCO,  CA.  94080
+    :zip: "94080"
+    :number: TOWN41018
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 800-769-1859
+    :region: California
+    :addr1: 1500 WEST ZELLMAN CT
+    :city: South San Francisco
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: MKE
+    :city_state_zip: SOUTH SAN FRANCISCO,  CA.  94080
+    :zip: "94080"
+    :number: TOWN53221
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 800-769-1859
+    :region: California
+    :addr1: 2039 KUNTZ RD
+    :city: South San Francisco
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: DAY
+    :city_state_zip: SOUTH SAN FRANCISCO,  CA.  94080
+    :zip: "94080"
+    :number: TOWN45404
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 800-769-1859
+    :region: Nevada
+    :addr1: 2975 LONE OAK CIRCLE
+    :city: Sparks
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: MSP
+    :city_state_zip: SPARKS, NV. 89431
+    :zip: "89431"
+    :number: TOWN55121
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 616-554-0052
+    :region: Texas
+    :addr1: 5450 KRAFT AVENUE S.E.
+    :city: Splendora
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: GRR
+    :city_state_zip: SPLENDORA, TX.  77372-9420
+    :zip: 77372-9420
+    :number: TOWN49512
+    :url: www.towneair.com
+    :phone: 616-554-2190
+    :country: US
+  - :fax: 800-769-1859
+    :region: Washington
+    :addr1: 1721 MAXWELL
+    :city: Spokane
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: EVV
+    :city_state_zip: SPOKANE, WA. 99216
+    :zip: "99216"
+    :number: TOWN47710
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 800-769-1859
+    :region: Arkansas
+    :addr1: 9402 YEAGER LN
+    :city: Springdale
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: FWA
+    :city_state_zip: SPRINGDALE, AR.  72764
+    :zip: "72764"
+    :number: TOWN46809
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 574-239-1201
+    :region: Arkansas
+    :addr1: 24805 US 20 WEST
+    :city: Springdale
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: SBN
+    :city_state_zip: SPRINGDALE, AR.  72764
+    :zip: "72764"
+    :number: TOWN46628
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 989-753-5927
+    :region: Missouri
+    :addr1: 2870 EDDY STREET
+    :city: Springfield
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: MBS
+    :city_state_zip: SPRINGFIELD,  MO.  65802
+    :zip: "65802"
+    :number: TOWN48604
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 800-769-1859
+    :region: Missouri
+    :addr1: 19300 HOLLAND RD
+    :city: Springfield
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: CLE
+    :city_state_zip: SPRINGFIELD,  MO.  65803
+    :zip: "65803"
+    :number: TOWN44142
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 231-779-5964
+    :region: Newfoundland and Labrador
+    :addr1: 310 BELL AVENUE
+    :city: St. John's
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: TVC
+    :city_state_zip: ST. JOHN'S, NF.  A1E1T2
+    :zip: A1E1T2
+    :number: TOWN49601
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: CA
+  - :fax: 800-769-1859
+    :region: Missouri
+    :addr1: 1860 WILLIAMS RD
+    :city: Saint Louis
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: CMH
+    :city_state_zip: ST. LOUIS, MO.  63134
+    :zip: "63134"
+    :number: TOWN43207
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 800-769-1859
+    :region: Newfoundland and Labrador
+    :addr1: 952 FARGO AVE
+    :city: St. John's
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: ORD
+    :city_state_zip: ST. JOHN'S, NF. A1B  4G1
+    :zip: A1B  4G1
+    :number: TOWN60007
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: CA
+  - :fax: 610-461-8863
+    :region: Missouri
+    :addr1: 850 CARPENTERS CROSSING
+    :city: Saint Louis
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: PHL
+    :city_state_zip: ST. LOUIS, MO.  63043
+    :zip: "63043"
+    :number: TOWN19032
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 800-769-1859
+    :region: Missouri
+    :addr1: 10820 ADAMS RD
+    :city: Saint Louis
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: DTW
+    :city_state_zip: ST. LOUIS, MO.  63044
+    :zip: "63044"
+    :number: TOWN48174
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: blank
+    :region: Minnesota
+    :addr1: 1932 MONENTUM PLACE
+    :city: Saint Paul
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: ORD
+    :city_state_zip: ST. PAUL, MN.  55127
+    :zip: "55127"
+    :number: TOWN60689
+    :url: blank
+    :phone: 800.468.6963
+    :country: US
+  - :fax: 800-769-1859
+    :region: Virginia
+    :addr1: 6430 AIRWAY DR
+    :city: Sterling
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: IND
+    :city_state_zip: STERLING , VA. 20166
+    :zip: "20166"
+    :number: TOWN46241
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 800-769-1859
+    :region: Virginia
+    :addr1: 1901 JAGGIE FOX WAY
+    :city: Sterling
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: LEX
+    :city_state_zip: STERLING, VA. 20166
+    :zip: "20166"
+    :number: TOWN40511
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 800-769-1859
+    :region: California
+    :addr1: 4646 LOUISVILLE AVE
+    :city: Stockton
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: SDF
+    :city_state_zip: STOCKTON, CA.  95691
+    :zip: "95691"
+    :number: TOWN40213
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 718-527-3693
+    :region: Florida
+    :addr1: 144-23 156TH ROAD
+    :city: Sunrise
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :airport: JFK
+    :city_state_zip: SUNRISE, FL.  33351
+    :zip: "33351"
+    :number: TOWN11434
+    :url: www.towneair.com
+    :phone: 718-527-3227
+    :country: US
+  - :fax: blank
+    :region: New York
+    :addr1: 409B AIRPORT BOULEVARD
+    :city: East Syracuse
+    :addr2: ""
+    :name: TOWNE AIR (DRUG TRANSPOR
+    :airport: RDU
+    :city_state_zip: SYRACUSE, NY. 13211
+    :zip: "13211"
+    :number: TOWN27560
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 800-769-1859
+    :region: Florida
+    :addr1: 6713 PICKARD DRIVE
+    :city: Tampa
+    :addr2: ""
+    :name: TOWNE AIR (KINGS EXPRESS
+    :airport: SYR
+    :city_state_zip: TAMPA , FL. 33622
+    :zip: "33622"
+    :number: TOWN13211
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 800-769-1859
+    :region: Florida
+    :addr1: 4345 INTERNATIONAL PARKWAY
+    :city: Tampa
+    :addr2: ""
+    :name: TOWNE AIR (CARNES INC)
+    :airport: ATL
+    :city_state_zip: TAMPA , FL. 33634
+    :zip: "33634"
+    :number: TOWN30354
+    :url: blank
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 703-742-6606
+    :region: Florida
+    :addr1: 107 EXECUTIVE DRIVE
+    :city: Tampa
+    :addr2: ""
+    :name: TOWNE AIR (CDS AIR FREIGH
+    :airport: IAD
+    :city_state_zip: TAMPA, FL. 33634
+    :zip: "33634"
+    :number: TOWN20166
+    :url: blank
+    :phone: 800-828-9374
+    :country: US
+  - :fax: 800-769-1859
+    :region: New York
+    :addr1: 3333 PIPER LANE
+    :city: Tonawanda
+    :addr2: ""
+    :name: TOWNE AIR (DRUG TRANS INT
+    :airport: CLT
+    :city_state_zip: TONAWANDA, NY. 14217
+    :zip: "14217"
+    :number: TOWN28208
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 800-769-1859
+    :region: Kansas
+    :addr1: 3813 BROADWAY
+    :city: Topeka
+    :addr2: ""
+    :name: TOWNE AIR (KINGS EXP)
+    :airport: BUF
+    :city_state_zip: TOPEKA , KS. 66609
+    :zip: "66609"
+    :number: TOWN14227
+    :url: www.towneair.com
+    :phone: 800-468-1859
+    :country: US
+  - :fax: 800-769-1859
+    :region: Arizona
+    :addr1: 1315 E GIBSON LANE
+    :city: Tucson
+    :addr2: ""
+    :name: TOWNE AIR (LAND AIR EXPRE
+    :airport: PHX
+    :city_state_zip: TUCSON , AZ. 85714
+    :zip: "85714"
+    :number: TOWN85034
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 800-769-1859
+    :region: Oklahoma
+    :addr1: 475 DIVISION STREET
+    :city: Tulsa
+    :addr2: ""
+    :name: TOWNE AIR (METRO T&C)
+    :airport: EWR
+    :city_state_zip: TULSA, OK. 74116
+    :zip: "74116"
+    :number: TOWN07201
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 800-769-1859
+    :region: Oklahoma
+    :addr1: 2116 AIRPORT RD
+    :city: Tulsa
+    :addr2: ""
+    :name: TOWNE AIR (RPM TRANS)
+    :airport: GSP
+    :city_state_zip: TULSA, OK. 74116
+    :zip: "74116"
+    :number: TOWN29651
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 800-769-1859
+    :region: New Jersey
+    :addr1: "CARGO BUILDING #3, PIT INT'L AIRP"
+    :city: Union City
+    :addr2: ""
+    :name: TOWNE AIR (TOTAL TRANSPO
+    :airport: PIT
+    :city_state_zip: UNION CITY, NJ.  07083
+    :zip: 07083
+    :number: TOWN15231
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: US
+  - :fax: 800-769-1859
+    :region: Carabobo
+    :addr1: 10501 S. LA CIENEGA BLVD
+    :city: Valencia
+    :addr2: ""
+    :name: TOWNE AIR (LAND AIR)
+    :airport: LAX
+    :city_state_zip: VALENCIA, CA. 91355
+    :zip: "91355"
+    :number: TOWN90045
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: VE
+  - :fax: 800-769-1859
+    :region: British Columbia
+    :addr1: 1650 HELM
+    :city: Vancouver
+    :addr2: ""
+    :name: TOWNE AIR (LAND AIR)
+    :airport: LAS
+    :city_state_zip: VANCOUVER, BC. V6B 4R5
+    :zip: V6B 4R5
+    :number: TOWN89119
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: CA
+  - :fax: 800-769-1859
+    :region: British Columbia
+    :addr1: 299 LAWRENCE
+    :city: Victoria
+    :addr2: ""
+    :name: TOWNE AIR (LAND AIR % SCR
+    :airport: SFO
+    :city_state_zip: VICTORIA, BC. V8T  1T9
+    :zip: V8T  1T9
+    :number: TOWN94080
+    :url: www.towneair.com
+    :phone: 800-468-6963
+    :country: CA
+  :faa: 11/17/2005
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: COMPLETE DELIVERY INC
+  :locations: 
+  - :fax: 414-764-5846
+    :region: Texas
+    :addr1: 1155 WEST ANDERSON ROAD
+    :city: Lake Dallas
+    :addr2: ""
+    :name: COMPLETE DELIVERY INC
+    :airport: MKE
+    :city_state_zip: DALLAS, TX. 75261
+    :zip: "75261"
+    :number: COMP53154
+    :url: blank
+    :phone: 414-764-8870
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: LYKES CARTAGE COMPANY
+  :locations: 
+  - :fax: blank
+    :region: Tennessee
+    :addr1: 710 EAST 2ND AVENUE
+    :city: Nashville
+    :addr2: ""
+    :name: LYKES CARTAGE COMPANY
+    :airport: AMA
+    :city_state_zip: NASHVILLE, TN.  37201
+    :zip: "37201"
+    :number: LYKE79101
+    :url: www.lykescartage.com
+    :phone: 806-372-7319
+    :country: US
+  - :fax: blank
+    :region: Quebec
+    :addr1: 3340 GREENS ROAD
+    :city: Montreal
+    :addr2: ""
+    :name: LYKES CARTAGE COMPANY
+    :airport: IAH
+    :city_state_zip: MONTREAL, QC. H2Y  2G4
+    :zip: H2Y  2G4
+    :number: LYKE77032
+    :url: www.lykescartage.com
+    :phone: 281-987-7196
+    :country: CA
+  - :fax: 512-933-9487
+    :region: South Carolina
+    :addr1: 8606 WALL STREET
+    :city: Myrtle Beach
+    :addr2: ""
+    :name: LYKES CARTAGE COMPANY
+    :airport: AUS
+    :city_state_zip: MYRTLE BEACH, SC.  29577
+    :zip: "29577"
+    :number: LYKE78754
+    :url: www.lykescartage.com
+    :phone: 512-933-9060
+    :country: US
+  - :fax: blank
+    :region: South Carolina
+    :addr1: 5858 BROADWAY AVE. SUITE 2
+    :city: North Charleston
+    :addr2: ""
+    :name: LYKES CARTAGE COMPANY
+    :airport: JAX
+    :city_state_zip: NORTH CHARLESTON, SC.  29406
+    :zip: "29406"
+    :number: LYKE32254
+    :url: www.lykescartage.com
+    :phone: 904-378-0488
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: ITS
+  :locations: 
+  - :fax: 860-285-8189
+    :region: Illinois
+    :addr1: 530 A HAYDEN STATION RD
+    :city: Lake Zurich
+    :addr2: ""
+    :name: ITS
+    :airport: BDL
+    :city_state_zip: LAKE ZURICH, IL.  60047
+    :zip: "60047"
+    :number: ITS06095
+    :url: blank
+    :phone: 800-643-0101
+    :country: US
+  :faa: "39393"
+- :contact: blank
+  :rank: "5"
+  :accounting_code: |
+    601
+
+  :name: POWERSOURCE TRANSPORTA
+  :locations: 
+  - :fax: 219-972-8540
+    :region: New York
+    :addr1: 2023 N. LAFAYETTE CT.
+    :city: Port Washington
+    :addr2: ""
+    :name: POWERSOURCE TRANSPORTA
+    :airport: IND
+    :city_state_zip: PORT WASHINGTON,  NY.  11050
+    :zip: "11050"
+    :number: POWE46319
+    :url: www.powersourcetrans.com
+    :phone: 800-438-8789
+    :country: US
+  :faa: blank
+- :contact: DONNA
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: JUST IN TIME
+  :locations: 
+  - :fax: 901-386-9001
+    :region: New Jersey
+    :addr1: 3536 CANADA RD
+    :city: Linden
+    :addr2: ""
+    :name: JUST IN TIME
+    :airport: MEM
+    :city_state_zip: LINDEN, NJ.  07036
+    :zip: "07036"
+    :number: JUST38119
+    :url: blank
+    :phone: 800-738-8122
+    :country: US
+  :faa: 11/16/2005
+- :contact: KEVIN/CHRISTINE
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: K.C. BEWLEY TRUCKING
+  :locations: 
+  - :fax: 410-553-6940
+    :region: New Hampshire
+    :addr1: 180 PENROD COURT SUITE I-J
+    :city: Londonberry
+    :addr2: ""
+    :name: K.C. BEWLEY TRUCKING
+    :airport: BWI
+    :city_state_zip: LONDONBERRY, NH.  03053
+    :zip: "03053"
+    :number: KCBE21061
+    :url: blank
+    :phone: 410-553-6331
+    :country: US
+  :faa: 09/19/2006
+- :contact: Alex
+  :rank: "2"
+  :accounting_code: |
+    601
+
+  :name: AIR DISPATCH INC
+  :locations: 
+  - :fax: 585-328-6536
+    :region: Texas
+    :addr1: PO BOX 64756
+    :city: Austin
+    :addr2: ""
+    :name: AIR DISPATCH INC
+    :airport: ROC
+    :city_state_zip: AUSTIN, TX. 78754
+    :zip: "78754"
+    :number: AIRD14624
+    :url: blank
+    :phone: 585-328-0450
+    :country: US
+  :faa: blank
+- :contact: KEITH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: OKX LOGISTICS
+  :locations: 
+  - :fax: 405-947-1551
+    :region: Ohio
+    :addr1: 901 ENTERPRISE AVE
+    :city: Perrysburg
+    :addr2: ""
+    :name: OKX LOGISTICS
+    :airport: OKC
+    :city_state_zip: PERRYSBURG , OH.  43551
+    :zip: "43551"
+    :number: OKXL73128
+    :url: blank
+    :phone: 405-947-1500
+    :country: US
+  - :fax: blank
+    :region: Washington
+    :addr1: PO BOX 272138
+    :city: East Pasco
+    :addr2: ""
+    :name: OKX LOGISTICS
+    :airport: OKA
+    :city_state_zip: PASCO, WA. 99301
+    :zip: "99301"
+    :number: OKXL73137
+    :url: blank
+    :phone: 405-947-1500
+    :country: US
+  :faa: "38636"
+- :contact: ANDREW   DONAHUE
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: DSV AIR & SEA
+  :locations: 
+  - :fax: 61-3-9330-6299
+    :region: Illinois
+    :addr1: 62-66 WESTERN AVENUE
+    :city: South Elgin
+    :addr2: ""
+    :name: DSV AIR & SEA
+    :airport: MEL
+    :city_state_zip: ELGIN, IL.  60120
+    :zip: "60120"
+    :number: DSVA30430
+    :url: blank
+    :phone: 61-3-9338-0499
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: KEMCO SOUTH
+  :locations: 
+  - :fax: blank
+    :region: California
+    :addr1: 2400 LAKE ORANGE DR
+    :city: Los Angeles
+    :addr2: ""
+    :name: KEMCO SOUTH
+    :airport: MCO
+    :city_state_zip: LOS ANGELES, CA. 90045
+    :zip: "90045"
+    :number: "55117"
+    :url: blank
+    :phone: 407-857-9993
+    :country: US
+  - :fax: 407-857-9919
+    :region: California
+    :addr1: 2400 LAKE ORANGE DRIVE
+    :city: Los Angeles
+    :addr2: ""
+    :name: KEMCO SOUTH
+    :airport: MCO
+    :city_state_zip: LOS ANGELES, CA. 90045
+    :zip: "90045"
+    :number: KEMC32837
+    :url: blank
+    :phone: 407-857-9993
+    :country: US
+  - :fax: blank
+    :region: California
+    :addr1: 231 SANDY POINT LANE
+    :city: Los Angeles
+    :addr2: ""
+    :name: "KEMCO SOUTH "
+    :airport: ORD
+    :city_state_zip: LOS ANGELES, CA. 90045
+    :zip: "90045"
+    :number: KEMC60047
+    :url: blank
+    :phone: "1"
+    :country: US
+  :billing_location: KEMC60047
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: MONTGOMERY AIR FREIGHT
+  :locations: 
+  - :fax: 334-281-1987
+    :region: Oklahoma
+    :addr1: 4820 WESTPORT BOULEVARD
+    :city: Oklahoma City
+    :addr2: ""
+    :name: MONTGOMERY AIR FREIGHT
+    :airport: MGM
+    :city_state_zip: OKLAHOMA CITY, OK. 73128
+    :zip: "73128"
+    :number: MONT36108
+    :url: www.mgmair.com
+    :phone: 334-281-9157
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ACT EXPRESS
+  :locations: 
+  - :fax: 631-585-7000
+    :region: Tennessee
+    :addr1: 711 KOEHLER AVE
+    :city: Antioch
+    :addr2: ""
+    :name: ACT EXPRESS
+    :airport: JFK
+    :city_state_zip: ANTIOCH, TN.  37019
+    :zip: "37019"
+    :number: ACTE11779
+    :url: blank
+    :phone: 800-649-4282
+    :country: US
+  :faa: blank
+- :contact: Blake Bennett
+  :rank: "3"
+  :accounting_code: |
+    601
+
+  :name: BEAR TRANSPORTATION
+  :locations: 
+  - :fax: 479-442-6571
+    :region: California
+    :addr1: 2901 E ZION ROAD
+    :city: Brisbane
+    :addr2: ""
+    :name: BEAR TRANSPORTATION
+    :airport: XNA
+    :city_state_zip: BRISBANE, CA.  94005
+    :zip: "94005"
+    :number: BEAR72703
+    :url: blank
+    :phone: 888-219-6571
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: TIGER EXPRESS
+  :locations: 
+  - :fax: 406-458-6195
+    :region: Louisiana
+    :addr1: 2905 N. MONTANA
+    :city: Shreveport
+    :addr2: ""
+    :name: TIGER EXPRESS
+    :airport: HLN
+    :city_state_zip: SHREVEPORT, LA.  71109
+    :zip: "71109"
+    :number: TIGE59604
+    :url: blank
+    :phone: 406-458-0074
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ISLAND EXPRESS
+  :locations: 
+  - :fax: 239-693-8430
+    :region: California
+    :addr1: 4771 WAYCROSS RD
+    :city: La Mirada
+    :addr2: ""
+    :name: ISLAND EXPRESS
+    :airport: RSW
+    :city_state_zip: LA MIRADA, CA. 90638
+    :zip: "90638"
+    :number: ISLA33905
+    :url: blank
+    :phone: 239-693-0066
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: KRISTAL LOGISTICS
+  :locations: 
+  - :fax: 32-2-751-4720
+    :region: Texas
+    :addr1: BRUCARGO BLDG 734
+    :city: Lubbock
+    :addr2: ""
+    :name: KRISTAL LOGISTICS
+    :airport: BCN
+    :city_state_zip: LUBBOCK, TX. 79403
+    :zip: "79403"
+    :number: KRIS19311
+    :url: blank
+    :phone: 32-2-721-4680
+    :country: US
+  :faa: blank
+- :contact: JENNIFER   KAUFMAN
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: STA MAR ENTERPRISES
+  :locations: 
+  - :fax: 345-949-2399
+    :region: California
+    :addr1: P.O. BOX 761 GT
+    :city: South San Francisco
+    :addr2: ""
+    :name: STA MAR ENTERPRISES
+    :airport: GCM
+    :city_state_zip: SAN FRANCISCO, CA.  94102
+    :zip: "94102"
+    :number: STAM00111
+    :url: blank
+    :phone: 345-949-2399
+    :country: US
+  :faa: blank
+- :contact: CLAUDIA ALFARO
+  :rank: "1"
+  :accounting_code: |
+    201
+
+  :name: CEVA LOGISTICS
+  :locations: 
+  - :fax: 817-410-7850
+    :region: Pennsylvania
+    :addr1: 620 WESTPORT PARKWAY
+    :city: Coraopolis
+    :addr2: ""
+    :name: CEVA LOGISTICS
+    :airport: "PIT"
+    :city_state_zip: CORAOPOLIS, PA.  15108
+    :zip: "15108"
+    :number: EAGL60693
+    :url: blank
+    :phone: 817-410-6256
+    :country: US
+  - :fax: 011-44-208-755-5
+    :region: Colorado
+    :addr1: LHR HEATHROW GATEWAY
+    :city: Commerce City
+    :addr2: ""
+    :name: CEVA LOGISTICS
+    :airport: LHR
+    :city_state_zip: COMMERCE CITY,  CO.  80022
+    :zip: "80022"
+    :number: EGL45111
+    :url: WWW.EAGLEGL.COM
+    :phone: 44-208-755-5200
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: PATRIOT LOGISTICS
+  :locations: 
+  - :fax: 781-286-8895
+    :region: Arizona
+    :addr1: 186A LEE BURBANK HIGHWAY
+    :city: Phoenix
+    :addr2: ""
+    :name: PATRIOT LOGISTICS
+    :airport: BOS
+    :city_state_zip: PHOENIX, AZ.  85040
+    :zip: "85040"
+    :number: PATR02151
+    :url: blank
+    :phone: 781-560-1222
+    :country: US
+  :faa: 10/19/2006
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: CFI
+  :locations: 
+  - :fax: 417-659-5094
+    :region: California
+    :addr1: P.O. BOX 2547
+    :city: Corralitos
+    :addr2: ""
+    :name: CFI
+    :airport: JLN
+    :city_state_zip: CORRALITOS, CA.  95076
+    :zip: "95076"
+    :number: CFI64803
+    :url: blank
+    :phone: 800-641-4747
+    :country: US
+  :faa: blank
+- :contact: Duane
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: PERFORMANCE DELIVERIES IN
+  :locations: 
+  - :fax: 757-461-7176
+    :region: Arizona
+    :addr1: P.O. BOX 12094
+    :city: Phoenix
+    :addr2: ""
+    :name: PERFORMANCE DELIVERIES IN
+    :airport: ORF
+    :city_state_zip: PHOENIX, AZ.  85040
+    :zip: "85040"
+    :number: PERF23541
+    :url: blank
+    :phone: 757-461-7175
+    :country: US
+  :faa: "39205"
+- :contact: blank
+  :rank: "5"
+  :accounting_code: |
+    601
+
+  :name: PRIORITY EXPRESS (MCI)
+  :locations: 
+  - :fax: 816-221-6003
+    :region: Oregon
+    :addr1: 2321 FRONT STREET
+    :city: Portland
+    :addr2: ""
+    :name: PRIORITY EXPRESS (MCI)
+    :airport: MCI
+    :city_state_zip: PORTLAND, OR.  97220
+    :zip: "97220"
+    :number: PRIO11111
+    :url: blank
+    :phone: 816-221-6001
+    :country: US
+  - :fax: 515-564-1700
+    :region: Oregon
+    :addr1: 3915 DELAWARE AVENUE
+    :city: Portland
+    :addr2: ""
+    :name: PRIORITY EXPRESS
+    :airport: DSM
+    :city_state_zip: PORTLAND, OR.  97218
+    :zip: "97218"
+    :number: PRIO50313
+    :url: blank
+    :phone: 515-564-1400
+    :country: US
+  :faa: "38394"
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ROUSH'S DELIVERY SERVICE
+  :locations: 
+  - :fax: 912-236-7026
+    :region: New York
+    :addr1: 32 VISTA POINT DR
+    :city: Rochester
+    :addr2: ""
+    :name: ROUSH'S DELIVERY SERVICE
+    :airport: SAV
+    :city_state_zip: ROCHESTER , NY.  14601
+    :zip: "14601"
+    :number: ROUS31406
+    :url: blank
+    :phone: 912-236-6922
+    :country: US
+  :faa: blank
+- :contact: MARK  FOWLER
+  :rank: "3"
+  :accounting_code: |
+    601
+
+  :name: MENDELSSOHN
+  :locations: 
+  - :fax: 604-687-1463
+    :region: New Jersey
+    :addr1: 1140 W. PENDER ST. SUITE 720
+    :city: Newark
+    :addr2: ""
+    :name: MENDELSSOHN
+    :airport: YVR
+    :city_state_zip: NEWARK , NJ.  07105
+    :zip: "07105"
+    :number: MEND64511
+    :url: blank
+    :phone: 800-663-0301
+    :country: US
+  - :fax: 403-291-5399
+    :region: New York
+    :addr1: 3636 23RD ST N.E.
+    :city: New York
+    :addr2: ""
+    :name: MENDELSSOHN
+    :airport: YYC
+    :city_state_zip: NEW YORK, NY. 10036
+    :zip: "10036"
+    :number: MEND28511
+    :url: blank
+    :phone: 403-291-5332
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: AIR CONTAINER TRANSIT-MAF
+  :locations: 
+  - :fax: 915-779-7877
+    :region: Colorado
+    :addr1: 6501 CONVAIR ROAD
+    :city: Aurora
+    :addr2: ""
+    :name: AIR CONTAINER TRANSIT-MAF
+    :airport: ELP
+    :city_state_zip: AURORA, CO. 80011
+    :zip: "80011"
+    :number: AERO79925
+    :url: www.aeroground.com
+    :phone: 915-778-9900
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: HAYASHI ENTERPRISES
+  :locations: 
+  - :fax: 808-934-7320
+    :region: Hawaii
+    :addr1: 494 KALANIKOA ST.
+    :city: Kaunakakai
+    :addr2: ""
+    :name: HAYASHI ENTERPRISES
+    :airport: KOA
+    :city_state_zip: KAUNAKAKAI, HI. 96748
+    :zip: "96748"
+    :number: HAYA96720
+    :url: blank
+    :phone: 808-961-6011
+    :country: US
+  :faa: "39299"
+- :contact: ANDY/DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: BATON ROUGE CARGO
+  :locations: 
+  - :fax: 225-291-7675
+    :region: Kentucky
+    :addr1: 11337 CEDAR PARK AVE
+    :city: Bowling Green
+    :addr2: ""
+    :name: BATON ROUGE CARGO
+    :airport: BTR
+    :city_state_zip: BOWLING GREEN,  KY.  42102
+    :zip: "42102"
+    :number: BATO70809
+    :url: www.batonrougecargo.com
+    :phone: 225-291-3455
+    :country: US
+  - :fax: 337-886-9596
+    :region: Idaho
+    :addr1: 1441 HIGHWAY 93 NORTH
+    :city: Boise
+    :addr2: ""
+    :name: BATON ROUGE CARGO
+    :airport: LFT
+    :city_state_zip: BOISE, ID.  83709
+    :zip: "83709"
+    :number: BATO70583
+    :url: www.batonrougecargo.com
+    :phone: 337-886-9590
+    :country: US
+  :faa: blank
+- :contact: BOB
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: APEX AIRPORT EXPRESS
+  :locations: 
+  - :fax: 608-785-2705
+    :region: Ohio
+    :addr1: 1809 SAINT JAMES ST
+    :city: Berea
+    :addr2: ""
+    :name: APEX AIRPORT EXPRESS
+    :airport: LSE
+    :city_state_zip: BEREA, OH.  44017
+    :zip: "44017"
+    :number: APEX54603
+    :url: blank
+    :phone: 800-233-2739
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: RC EXPEDITE
+  :locations: 
+  - :fax: 417-863-0113
+    :region: Saskatchewan
+    :addr1: 3951 WEST MAPLE ST.
+    :city: Regina
+    :addr2: ""
+    :name: RC EXPEDITE
+    :airport: SGF
+    :city_state_zip: REGINA, SK. S4N  7K1
+    :zip: S4N  7K1
+    :number: RCEX65802
+    :url: www.rcexpedite.com
+    :phone: 417-861-8927
+    :country: CA
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: STRICKLAND COURIER**BILLIN
+  :locations: 
+  - :fax: blank
+    :region: Saskatchewan
+    :addr1: P.O. BOX 17632
+    :city: Saskatoon
+    :addr2: ""
+    :name: STRICKLAND COURIER
+    :airport: SHV
+    :city_state_zip: SASKATOON, SK. S7K 7Z1
+    :zip: S7K 7Z1
+    :number: STRI71138
+    :url: blank
+    :phone: 318-603-9068
+    :country: CA
+  - :fax: 318-603-0565
+    :region: Georgia
+    :addr1: 6201 BERT KOUNS INDUSTIA
+    :city: Savannah
+    :addr2: ""
+    :name: STRICKLAND COURIER
+    :airport: SHV
+    :city_state_zip: SAVANNAH, GA. 31406
+    :zip: "31406"
+    :number: STRI71129
+    :url: blank
+    :phone: 318-603-9068
+    :country: US
+  :billing_location: STRI71138
+  :faa: blank
+- :contact: BILL
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: SWIFT AIR DELIVERY
+  :locations: 
+  - :fax: 434-985-6525
+    :region: Georgia
+    :addr1: P.O. BOX 7202
+    :city: Savannah
+    :addr2: ""
+    :name: SWIFT AIR DELIVERY
+    :airport: RIC
+    :city_state_zip: SAVANNAH, GA. 31415
+    :zip: "31415"
+    :number: SWIF22901
+    :url: blank
+    :phone: 800-552-4016
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: KEMCO TRUCKING INC
+  :locations: 
+  - :fax: 847-437-6551
+    :region: California
+    :addr1: 1810 ESTES AVENUE
+    :city: Los Angeles
+    :addr2: ""
+    :name: KEMCO TRUCKING INC
+    :airport: ORD
+    :city_state_zip: LOS ANGELES, CA. 90045
+    :zip: "90045"
+    :number: KEMC60007
+    :url: blank
+    :phone: 847-437-6511
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: RUDE TRANSPORTATION
+  :locations: 
+  - :fax: 605-335-0771
+    :region: New York
+    :addr1: W/A
+    :city: Rochester
+    :addr2: ""
+    :name: RUDE TRANSPORTATION
+    :airport: RAP
+    :city_state_zip: ROCHESTER, NY.  14623
+    :zip: "14623"
+    :number: RUDE57701
+    :url: blank
+    :phone: 800-584-7001
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ACE DELIVERY & MOVING
+  :locations: 
+  - :fax: 907-349-4011
+    :region: Texas
+    :addr1: P.O. BOX 221389
+    :city: Amarillo
+    :addr2: ""
+    :name: ACE DELIVERY & MOVING
+    :airport: ANC
+    :city_state_zip: AMARILLO, TX. 79101
+    :zip: "79101"
+    :number: ACED99522
+    :url: www.alaskanace.com
+    :phone: 907-522-6684
+    :country: US
+  :faa: 02/21/2007
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: HBI
+  :locations: 
+  - :fax: 410-712-0575
+    :region: Georgia
+    :addr1: 7270 PARK CIRCLE
+    :city: Kennesaw
+    :addr2: ""
+    :name: HBI
+    :airport: BWI
+    :city_state_zip: KENNESAW, GA.  30144
+    :zip: "30144"
+    :number: HBI21076
+    :url: blank
+    :phone: 410-712-4600
+    :country: US
+  - :fax: 717-558-0594
+    :region: Texas
+    :addr1: 3500 INDUSTRIAL ROAD
+    :city: Keller
+    :addr2: ""
+    :name: HBI
+    :airport: MDT
+    :city_state_zip: KELLER, TX.  76248
+    :zip: "76248"
+    :number: HBI17111
+    :url: www.hbifreight.com
+    :phone: 717-558-0158
+    :country: US
+  - :fax: 703-834-6082
+    :region: Louisiana
+    :addr1: 13894 REDSKIN DR
+    :city: Kenner
+    :addr2: ""
+    :name: HBI
+    :airport: IAD
+    :city_state_zip: KENNER , LA.  70062
+    :zip: "70062"
+    :number: HBI20171
+    :url: blank
+    :phone: 703-834-0800
+    :country: US
+  - :fax: 703-834-6082
+    :region: Louisiana
+    :addr1: 45080 OLD OX ROAD
+    :city: Kenner
+    :addr2: ""
+    :name: HBI
+    :airport: IAD
+    :city_state_zip: KENNER , LA.  70062
+    :zip: "70062"
+    :number: HBI20166
+    :url: blank
+    :phone: 703-834-0800
+    :country: US
+  - :fax: 804-222-4374
+    :region: Washington
+    :addr1: 5300 FEDERAL ROAD
+    :city: Kent
+    :addr2: ""
+    :name: HBI (RIC)
+    :airport: RIC
+    :city_state_zip: KENT , WA. 98032
+    :zip: "98032"
+    :number: HBIR23250
+    :url: www.hbifreight.com
+    :phone: 804-222-4300
+    :country: US
+  :faa: 02/20/2006
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: WESTCHESTER PUTNAM FREI
+  :locations: 
+  - :fax: blank
+    :region: Connecticut
+    :addr1: 38 JEANNE DRIVE
+    :city: East Windsor Hill
+    :addr2: ""
+    :name: WESTCHESTER PUTNAM FREI
+    :airport: SWF
+    :city_state_zip: WINDSOR, CT.  06095
+    :zip: 06095
+    :number: WEST12550
+    :url: blank
+    :phone: 845-566-5199
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: DTH EXPEDITORS
+  :locations: 
+  - :fax: 770-253-0450
+    :region: New Jersey
+    :addr1: 470 PLAZA DR
+    :city: Port Elizabeth
+    :addr2: ""
+    :name: DTH EXPEDITORS
+    :airport: ATL
+    :city_state_zip: ELIZABETH, NJ.  07201
+    :zip: "07201"
+    :number: DTHE30349
+    :url: www.dthx.net
+    :phone: 800-393-8403
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: EASTSIDE RIVIERA FINANCE-N
+  :locations: 
+  - :fax: blank
+    :region: Wisconsin
+    :addr1: PO BOX 33174
+    :city: Green Bay
+    :addr2: ""
+    :name: EASTSIDE RIVIERA FINANCE-N
+    :airport: EWR
+    :city_state_zip: GREEN BAY, WI.  54304
+    :zip: "54304"
+    :number: EAST33174
+    :url: blank
+    :phone: 908-486-3300
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "1"
+  :accounting_code: |
+    602
+
+  :name: LANDSTAR EXPRESS AMERICA
+  :locations: 
+  - :fax: 801-302-9109
+    :region: Ontario
+    :addr1: 2500 S. DECKER LAKE BLVD
+    :city: Mississauga
+    :addr2: ""
+    :name: LANDSTAR EXPRESS AMERICA
+    :airport: "YYZ"
+    :city_state_zip: MISSISSAUGA, ON. L5S 1B1
+    :zip: L5S 1B1
+    :number: LAND84119
+    :url: www.landstarexpslc.com
+    :phone: 800-745-5594
+    :country: CA
+  - :fax: 702-432-5519
+    :region: Ontario
+    :addr1: 4540 EAST BOSTON
+    :city: Mississauga
+    :addr2: ""
+    :name: LANDSTAR
+    :airport: LAS
+    :city_state_zip: MISSISSAUGA, ON. L4V  1M5
+    :zip: L4V  1M5
+    :number: LAND89109
+    :url: blank
+    :phone: 800-300-7861
+    :country: CA
+  :faa: blank
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: FREIGHT CONNECTION
+  :locations: 
+  - :fax: 321-783-6273
+    :region: Ontario
+    :addr1: 200 CROFTON RD
+    :city: Hamilton
+    :addr2: ""
+    :name: FREIGHT CONNECTION
+    :airport: MSY
+    :city_state_zip: HAMILTON, ON. L9C  5R4
+    :zip: L9C  5R4
+    :number: FREI70062
+    :url: blank
+    :phone: 321-783-6233
+    :country: CA
+  :faa: 10/18/2006
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: LION EXHIBIT FREIGHT
+  :locations: 
+  - :fax: 011-52-998-884-2
+    :region: New Brunswick
+    :addr1: "AV. TULUM #269 PH 20"
+    :city: Moncton
+    :addr2: ""
+    :name: LION EXHIBIT FREIGHT
+    :airport: CUN
+    :city_state_zip: MONCTON, NB.  E1C  6L5
+    :zip: E1C  6L5
+    :number: LION77500
+    :url: blank
+    :phone: 011-52-998-884-2
+    :country: CA
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: GERBIG TRANSPORTATION
+  :locations: 
+  - :fax: 281-441-6059
+    :region: Hawaii
+    :addr1: 15112 LEE ROAD, SUITE 402
+    :city: Kahului
+    :addr2: ""
+    :name: GERBIG TRANSPORTATION
+    :airport: IAH
+    :city_state_zip: KAHULUI, HI.  96732
+    :zip: "96732"
+    :number: GERB77032
+    :url: blank
+    :phone: 281-441-6055
+    :country: US
+  - :fax: blank
+    :region: Missouri
+    :addr1: 125 COUNTY RD. 362
+    :city: Joplin
+    :addr2: ""
+    :name: GERBIG
+    :airport: HOU
+    :city_state_zip: JOPLIN, MO.  64803
+    :zip: "64803"
+    :number: GERB77372
+    :url: blank
+    :phone: 281-441-6055
+    :country: US
+  :faa: 10/24/2005
+- :contact: JAVIER  PEREZ  BERM
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: AZKAR OVERSEAS
+  :locations: 
+  - :fax: 011-34-916-606-4
+    :region: Idaho
+    :addr1: AVDA DE EUROPA
+    :city: Boise
+    :addr2: ""
+    :name: AZKAR OVERSEAS
+    :airport: MAD
+    :city_state_zip: BOISE, ID.  83705
+    :zip: "83705"
+    :number: AZKA28220
+    :url: WWW.AZKAR.COM
+    :phone: 34-916-606-945
+    :country: US
+  :faa: blank
+- :contact: BETTY  CHEN
+  :rank: "2"
+  :accounting_code: |
+    601
+
+  :name: JIF LOGISTICS, INC
+  :locations: 
+  - :fax: 718-276-3345
+    :region: Kentucky
+    :addr1: 152-31 134TH AVE
+    :city: Lexington
+    :addr2: ""
+    :name: JIF LOGISTICS, INC
+    :airport: "LEX"
+    :city_state_zip: LEXINGTON, KY.  40511
+    :zip: "40511"
+    :number: JIFL11434
+    :url: JIFLOGISTICS.COM
+    :phone: 718-977-0433
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: CALIFORNIA SIERRA EXPRESS
+  :locations: 
+  - :fax: 775-856-8001
+    :region: North Carolina
+    :addr1: 4965 JOULE STREET
+    :city: Charlotte
+    :addr2: ""
+    :name: CALIFORNIA SIERRA EXPRESS
+    :airport: RNO
+    :city_state_zip: CHARLOTTE, NC.  28219-9508
+    :zip: 28219-9508
+    :number: CALI89502
+    :url: blank
+    :phone: 775-856-8000
+    :country: US
+  - :fax: 650-259-8465
+    :region: South Carolina
+    :addr1: 355 VALLEY DRIVE
+    :city: Charleston
+    :addr2: ""
+    :name: CALIFORNIA SIERRA EXPRESS
+    :airport: SFO
+    :city_state_zip: CHARLESTON, SC.  29418
+    :zip: "29418"
+    :number: CALS94005
+    :url: blank
+    :phone: 650-259-8460
+    :country: US
+  - :fax: 559-441-1307
+    :region: North Carolina
+    :addr1: 2166 SOUTH BISCEGILA AVE
+    :city: Charlotte
+    :addr2: ""
+    :name: CALIFORNIA SIERRA EXPRESS
+    :airport: FAT
+    :city_state_zip: CHARLOTTE , NC.  28219
+    :zip: "28219"
+    :number: CALS93725
+    :url: blank
+    :phone: 559-441-1300
+    :country: US
+  - :fax: 310-338-0318
+    :region: North Carolina
+    :addr1: 5353 WEST IMPERIAL HWY
+    :city: Charlotte
+    :addr2: ""
+    :name: CALIFORNIA SIERRA EXPRESS
+    :airport: LAX
+    :city_state_zip: CHARLOTTE, NC.  28208
+    :zip: "28208"
+    :number: CALS90045
+    :url: blank
+    :phone: 310-338-9333
+    :country: US
+  - :fax: 209-234-6554
+    :region: North Carolina
+    :addr1: 6768 S. LINDBERGH ST.
+    :city: Charlotte
+    :addr2: ""
+    :name: CALIFORNIA SIERRA EXPRESS
+    :airport: SCK
+    :city_state_zip: CHARLOTTE, NC.  28208
+    :zip: "28208"
+    :number: CALS95691
+    :url: blank
+    :phone: 209-234-6553
+    :country: US
+  - :fax: 916-375-7080
+    :region: North Carolina
+    :addr1: 2975 OATES STREET
+    :city: Charlotte
+    :addr2: ""
+    :name: CALIFORNIA SIERRA EXPRESS
+    :airport: SMF
+    :city_state_zip: CHARLOTTE, NC.  28217
+    :zip: "28217"
+    :number: CALI95691
+    :url: www.calsierraexpress.com
+    :phone: 916-375-7070
+    :country: US
+  :faa: "38453"
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: DYNAMEX INC
+  :locations: 
+  - :fax: blank
+    :region: Texas
+    :addr1: 221 SOUTH STREET
+    :city: Grapevine
+    :addr2: ""
+    :name: DYNAMEX INC
+    :airport: BDL
+    :city_state_zip: GRAPEVINE, TX.  76051
+    :zip: "76051"
+    :number: DYNA06051
+    :url: www.dynamex.com
+    :phone: 860-826-1212
+    :country: US
+  - :fax: 613-226-4104
+    :region: New Jersey
+    :addr1: 7003 56TH AVE.
+    :city: Port Elizabeth
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: YEG
+    :city_state_zip: ELIZABETH, NJ.  07206
+    :zip: "07206"
+    :number: DYNA63211
+    :url: www.dynamex.com
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: New Jersey
+    :addr1: 239 CULVER AVE
+    :city: Port Elizabeth
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: EWR
+    :city_state_zip: ELIZABETH, NJ.  07208
+    :zip: 07208
+    :number: DYNA07305
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Illinois
+    :addr1: 3275 MINERS AVE
+    :city: Elk Grove Village
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: YXE
+    :city_state_zip: ELK GROVE VILLAGE , IL.  60007
+    :zip: "60007"
+    :number: DYNA77111
+    :url: www.dynamex.com
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Illinois
+    :addr1: 6710 WHITESTONE RD.
+    :city: Elk Grove Village
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: IAD
+    :city_state_zip: ELK GROVE VILLAGE, IL.  60006
+    :zip: "60006"
+    :number: DYNA21207
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Illinois
+    :addr1: "5301 TACONY ST #210/1"
+    :city: Elk Grove Village
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: PHL
+    :city_state_zip: ELK GROVE VILLAGE, IL.  60007
+    :zip: "60007"
+    :number: DYNA19137
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Illinois
+    :addr1: 1301 BEAVER AVENUE
+    :city: Elk Grove Village
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: PIT
+    :city_state_zip: ELK GROVE VILLAGE, IL.  60007
+    :zip: "60007"
+    :number: DYNA15233
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Illinois
+    :addr1: "#104 - 506 JOHN ST."
+    :city: Elk Grove Village
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: "ORD"
+    :city_state_zip: ELK GROVE, IL.  60007
+    :zip: "60007"
+    :number: DYNA81911
+    :url: www.dynamex.com
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: New Hampshire
+    :addr1: 3865 WILSON BLVD
+    :city: Enfield Center
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: IAD
+    :city_state_zip: ENFIELD ,  NH.  03748
+    :zip: 03748
+    :number: DYNA22203
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Kentucky
+    :addr1: 30-G SIXTH ROAD
+    :city: Erlanger
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: BOS
+    :city_state_zip: ERLANGER , KY.  41018
+    :zip: "41018"
+    :number: DYNA01801
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Kentucky
+    :addr1: 2808 INGLETON AVE.
+    :city: Erlanger
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: YYJ
+    :city_state_zip: ERLANGER, KY.  41018
+    :zip: "41018"
+    :number: DYNA56711
+    :url: www.dynamex.com
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Indiana
+    :addr1: 36 TIPPY PLACE
+    :city: Evansville
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: YYT
+    :city_state_zip: EVANSVILLE , IN.  47710
+    :zip: "47710"
+    :number: DYNA14711
+    :url: www.dynamex.com
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Massachusetts
+    :addr1: 16900 VALLEY VIEW
+    :city: Everett
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: LAX
+    :city_state_zip: EVERETT, MA.  02149
+    :zip: 02149
+    :number: DYNA90638
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: North Dakota
+    :addr1: "9512 CHESAPEAKE DR. # 402"
+    :city: Fargo
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: SAN
+    :city_state_zip: FARGO, ND. 58109
+    :zip: "58109"
+    :number: DYNA92123
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: New York
+    :addr1: 201 BROWNLOW AVE.
+    :city: Farmingdale
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: YHZ
+    :city_state_zip: FARMINGDALE, NY.  11735
+    :zip: "11735"
+    :number: DYNA31211
+    :url: www.dynamex.com
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Arkansas
+    :addr1: "3630 E SOUTHERN # 2"
+    :city: Fayetteville
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: PHX
+    :city_state_zip: FAYETTEVILLE, AR.  72703
+    :zip: "72703"
+    :number: DYNA85040
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: North Carolina
+    :addr1: 9918 WIDMER
+    :city: Fletcher
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: MCI
+    :city_state_zip: FLETCHER,  NC.  28792
+    :zip: "28792"
+    :number: DYNA66215
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Pennsylvania
+    :addr1: 2100 OLD HIGHWAY 8 NW
+    :city: Folcroft
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: MSP
+    :city_state_zip: FOLCROFT , PA.  19032
+    :zip: "19032"
+    :number: DYNA55112
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Pennsylvania
+    :addr1: 1801 ROYAL LANE
+    :city: Folcroft
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: DFW
+    :city_state_zip: FOLCROFT, PA.  19032
+    :zip: "19032"
+    :number: DYNA75229
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Georgia
+    :addr1: 4400 SOUTH MENDENHAL ROAD
+    :city: Forest Park
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: MEM
+    :city_state_zip: FOREST PARK, GA.  30297
+    :zip: "30297"
+    :number: DYNA38141
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Florida
+    :addr1: 1607 RHOADMILLER ST.
+    :city: Fort Myers
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: RIC
+    :city_state_zip: FORT MYERS, FL.  33905
+    :zip: "33905"
+    :number: "610360"
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Florida
+    :addr1: 26 WEST 39TH STREET
+    :city: Fort Myers
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: JFK
+    :city_state_zip: FORT MYERS, FL.  33912
+    :zip: "33912"
+    :number: DYNA10018
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Arkansas
+    :addr1: 2155 BARRETT PARK DRIVE
+    :city: Fort Smith
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: ATL
+    :city_state_zip: FORT SMITH, AR.  72902
+    :zip: "72902"
+    :number: DYNA30144
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Indiana
+    :addr1: 6918 S.220TH STREET
+    :city: Fort Wayne
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: SEA
+    :city_state_zip: FORT WAYNE, IN.  46809
+    :zip: "46809"
+    :number: DYNA98032
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Indiana
+    :addr1: 221 SOUTH STREET, UNIT G1
+    :city: Fort Wayne
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: BDL
+    :city_state_zip: FORT WAYNE, IN.  46818
+    :zip: "46818"
+    :number: "67331"
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-227-4104
+    :region: California
+    :addr1: 2475 SCIOTO HARPER DRIVE
+    :city: Foster City
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: CMH
+    :city_state_zip: FOSTER CITY, CA.  94404
+    :zip: "94404"
+    :number: DYNA43204
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: California
+    :addr1: 1536 HUTTON DRIVE
+    :city: Fresno
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: DFW
+    :city_state_zip: FRESNO , CA.  93725
+    :zip: "93725"
+    :number: DYNA75006
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: California
+    :addr1: 6660 64TH AVE. 101
+    :city: Fresno
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: "FAT"
+    :city_state_zip: FRESNO, CA.  93725
+    :zip: "93725"
+    :number: DYNA41311
+    :url: www.dynamex.com
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: California
+    :addr1: 21053 ALEXANDER COURT, UNITS C
+    :city: Fresno
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: SFO
+    :city_state_zip: FRESNO, CA.  93778
+    :zip: "93778"
+    :number: DYNA94545
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Maryland
+    :addr1: 30 CAIN DRIVE
+    :city: Glen Burnie
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: EWR
+    :city_state_zip: GLEN BURNIE,  MD.  21061
+    :zip: "21061"
+    :number: DYNA11717
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 613-226-4104
+    :region: Colorado
+    :addr1: 13-1650 NOTRE DAME AVE.
+    :city: Grand Junction
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: YWG
+    :city_state_zip: GRAND JUNCTION,  CO.  81506
+    :zip: "81506"
+    :number: DYNA31611
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  - :fax: 506-854-7836
+    :region: Colorado
+    :addr1: 213 CORNHILL ST.
+    :city: Grand Junction
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: YQM
+    :city_state_zip: GRAND JUNCTION,  CO.  81506
+    :zip: "81506"
+    :number: LIGH16511
+    :url: blank
+    :phone: 506-388-7000
+    :country: US
+  - :fax: 613-226-4104
+    :region: Michigan
+    :addr1: 302 5TH AVENUE
+    :city: Grand Rapids
+    :addr2: ""
+    :name: DYNAMEX
+    :airport: JFK
+    :city_state_zip: GRAND RAPIDS,  MI.  49512
+    :zip: "49512"
+    :number: DYNA10001
+    :url: blank
+    :phone: 800-461-9458
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: SALT LAKE AIR CARGO
+  :locations: 
+  - :fax: 801-975-7856
+    :region: Michigan
+    :addr1: 1435 SOUTH 4800 WEST
+    :city: Romulus
+    :addr2: ""
+    :name: SALT LAKE AIR CARGO
+    :airport: SLC
+    :city_state_zip: ROMULUS, MI.  48174
+    :zip: "48174"
+    :number: SALT84104
+    :url: blank
+    :phone: 801-975-7772
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: PERSONAL TOUCH FREIGHT S
+  :locations: 
+  - :fax: 908-558-0919
+    :region: Arizona
+    :addr1: 725 DOWD AVENUE
+    :city: Phoenix
+    :addr2: ""
+    :name: PERSONAL TOUCH FREIGHT S
+    :airport: EWR
+    :city_state_zip: PHOENIX, AZ.  85068
+    :zip: "85068"
+    :number: PERS07208
+    :url: blank
+    :phone: 908-354-6800
+    :country: US
+  :faa: 11/30/2005
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: VITAL EXPRESS DELIVERY
+  :locations: 
+  - :fax: 661-775-5402
+    :region: Connecticut
+    :addr1: "28470 AVE STANFORD #110"
+    :city: Windsor Locks
+    :addr2: ""
+    :name: VITAL EXPRESS DELIVERY
+    :airport: LAX
+    :city_state_zip: WINDSOR LOCKS,  CT.  06096
+    :zip: 06096
+    :number: VITA91355
+    :url: blank
+    :phone: 661-775-5400
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: TERRI'S TRUCK RENTAL
+  :locations: 
+  - :fax: 225-654-0390
+    :region: Washington
+    :addr1: 21184 REAMES ROAD
+    :city: Seatak
+    :addr2: ""
+    :name: TERRI'S TRUCK RENTAL
+    :airport: BTR
+    :city_state_zip: SEATAK, WA. 98168
+    :zip: "98168"
+    :number: TERR70791
+    :url: blank
+    :phone: 225-654-7504
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: TAYLOR MADE EXPRESS
+  :locations: 
+  - :fax: 414-571-7086
+    :region: Washington
+    :addr1: 2607 SOUTH 5TH STREET
+    :city: Seatak
+    :addr2: ""
+    :name: TAYLOR MADE EXPRESS
+    :airport: MKE
+    :city_state_zip: SEATAK, WA. 98148
+    :zip: "98148"
+    :number: TAYL53207
+    :url: blank
+    :phone: 414-571-8716
+    :country: US
+  - :fax: blank
+    :region: Louisiana
+    :addr1: PO BOX 261
+    :city: Scott
+    :addr2: ""
+    :name: TAYLOR MADE EXPRESS
+    :airport: MKE
+    :city_state_zip: SCOTT, LA. 70583
+    :zip: "70583"
+    :number: TAYL53154
+    :url: blank
+    :phone: 414-571-8716
+    :country: US
+  :faa: 09/29/2005
+- :contact: FIONA
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: STEWART SHIPPING & FORWA
+  :locations: 
+  - :fax: 011 44 (0) 1924 4
+    :region: Saskatchewan
+    :addr1: 60 HIGH ROAD
+    :city: Saskatoon
+    :addr2: ""
+    :name: STEWART SHIPPING & FORWA
+    :airport: LHR
+    :city_state_zip: SASKATOON, SK. S7K 1R5
+    :zip: S7K 1R5
+    :number: STEW12811
+    :url: www.stewartshipping.co.uk
+    :phone: 011 44 (0) 1924 4
+    :country: CA
+  :faa: blank
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    602
+
+  :name: CALM AIR
+  :locations: 
+  - :fax: blank
+    :region: North Carolina
+    :addr1: "****NOT A CARTAGE AGENT****"
+    :city: Charlotte
+    :addr2: ""
+    :name: CALM AIR
+    :airport: YYQ
+    :city_state_zip: CHARLOTTE, NC.  28289-0578
+    :zip: 28289-0578
+    :number: CALM00000
+    :url: blank
+    :phone: 204-675-8843
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: DIAMOND DELIVERY
+  :locations: 
+  - :fax: 260-469-0886
+    :region: Minnesota
+    :addr1: 2312 NORTHYARD COURT
+    :city: Eagan
+    :addr2: ""
+    :name: DIAMOND DELIVERY
+    :airport: FWA
+    :city_state_zip: EAGAN, MN. 55121
+    :zip: "55121"
+    :number: DIAM46818
+    :url: blank
+    :phone: 260-469-0880
+    :country: US
+  :faa: blank
+- :contact: STEVE
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: QUICK DELIVERY
+  :locations: 
+  - :fax: 251-479-9410
+    :region: Oregon
+    :addr1: 3161 CRICHTON ST
+    :city: Portland
+    :addr2: ""
+    :name: QUICK DELIVERY
+    :airport: MOB
+    :city_state_zip: PORTLAND, OR.  97294-0566
+    :zip: 97294-0566
+    :number: QUIC36607
+    :url: blank
+    :phone: 251-471-0901
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: BORDER EXPRESS CO.
+  :locations: 
+  - :fax: 479-648-3933
+    :region: Michigan
+    :addr1: 914 KNOXVILLE ST.
+    :city: Cadillac
+    :addr2: ""
+    :name: BORDER EXPRESS CO.
+    :airport: FSM
+    :city_state_zip: CADILLAC , MI. 49601
+    :zip: "49601"
+    :number: BORD72901
+    :url: blank
+    :phone: 479-648-3606
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: KINGS EXPRESS
+  :locations: 
+  - :fax: 585-458-5065
+    :region: Kentucky
+    :addr1: 100 MUSHROOM BOULEVARD
+    :city: Louisville
+    :addr2: ""
+    :name: KINGS EXPRESS
+    :airport: ROC
+    :city_state_zip: LOUISVILLE, KY. 40218
+    :zip: "40218"
+    :number: KING14623
+    :url: blank
+    :phone: 585-458-2190
+    :country: US
+  - :fax: 716-651-9870
+    :region: Kentucky
+    :addr1: 3813 BROADWAY STREET
+    :city: Louisville
+    :addr2: ""
+    :name: KINGS EXPRESS
+    :airport: BUF
+    :city_state_zip: LOUISVILLE, KY. 40218
+    :zip: "40218"
+    :number: KING14227
+    :url: www.kingsexpress.com
+    :phone: 716-651-9383
+    :country: US
+  :faa: 11/17/2005
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: MTS FREIGHT
+  :locations: 
+  - :fax: 801-975-1289
+    :region: Nebraska
+    :addr1: 2860 WEST 2200 SOUTH
+    :city: Omaha
+    :addr2: ""
+    :name: MTS FREIGHT
+    :airport: SLC
+    :city_state_zip: OMAHA, NE. 68110
+    :zip: "68110"
+    :number: MTSF84119
+    :url: blank
+    :phone: 801-975-1271
+    :country: US
+  - :fax: 406-442-4776
+    :region: Oklahoma
+    :addr1: 1414 N. MONTANA AVE
+    :city: Oklahoma City
+    :addr2: ""
+    :name: MTS FREIGHT
+    :airport: HLN
+    :city_state_zip: OKLAHOMA CITY, OK. 73137
+    :zip: "73137"
+    :number: MTSF59601
+    :url: blank
+    :phone: 800-836-1938
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ABLE COURIER
+  :locations: 
+  - :fax: 804-359-0243
+    :region: New Mexico
+    :addr1: 2910 W. CLAY ST
+    :city: Albuquerque
+    :addr2: ""
+    :name: ABLE COURIER
+    :airport: RIC
+    :city_state_zip: ALBUQUERQUE,  NM.  87106
+    :zip: "87106"
+    :number: ABLE23219
+    :url: blank
+    :phone: 804-359-0071
+    :country: US
+  :faa: blank
+- :contact: CRYSTAL
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ROAD 1 EXPRESS**BILLING**
+  :locations: 
+  - :fax: 615-833-1903
+    :region: Virginia
+    :addr1: P.O. BOX 91315
+    :city: University of Richmond
+    :addr2: ""
+    :name: ROAD 1 EXPRESS
+    :airport: BNA
+    :city_state_zip: RICHMOND, VA.  23219
+    :zip: "23219"
+    :number: ROAD30364
+    :url: blank
+    :phone: 404-607-1400
+    :country: US
+  - :fax: 615-874-2280
+    :region: Virginia
+    :addr1: 1418 ANTIOCH PIKE
+    :city: University of Richmond
+    :addr2: ""
+    :name: ROAD 1 EXPRESS
+    :airport: BNA
+    :city_state_zip: RICHMOND, VA.  23250
+    :zip: "23250"
+    :number: GSEX37210
+    :url: www.road1express.com
+    :phone: 615-874-2222
+    :country: US
+  :billing_location: ROAD30364
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ALL POINTS EXPRESS
+  :locations: 
+  - :fax: blank
+    :region: Illinois
+    :addr1: 865 W 5
+    :city: Bartonville
+    :addr2: ""
+    :name: ALL POINTS EXPRESS
+    :airport: YHM
+    :city_state_zip: BARTONVILLE, IL.  61607
+    :zip: "61607"
+    :number: ALLP95411
+    :url: blank
+    :phone: 905-574-0511
+    :country: US
+  :faa: blank
+- :contact: JOHN FLOYD
+  :rank: "2"
+  :accounting_code: |
+    601
+
+  :name: ASSOCIATION FREIGHT SERVI
+  :locations: 
+  - :fax: 301-920-1556
+    :region: Alabama
+    :addr1: 802 DALE DRIVE
+    :city: Birmingham
+    :addr2: ""
+    :name: ASSOCIATION FREIGHT SERVI
+    :airport: IAD
+    :city_state_zip: BIRMINGHAM, AL.  35212
+    :zip: "35212"
+    :number: ASSO20910
+    :url: blank
+    :phone: 301-565-5900
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: MAT EXPRESS
+  :locations: 
+  - :fax: 619-849-9596
+    :region: Connecticut
+    :addr1: 2719 KURTZ STREET
+    :city: New Britain
+    :addr2: ""
+    :name: MAT EXPRESS
+    :airport: SAN
+    :city_state_zip: NEW BRITAIN,  CT.  06051
+    :zip: "06051"
+    :number: MATE92110
+    :url: blank
+    :phone: 619-849-9600
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: AFS COURIER
+  :locations: 
+  - :fax: blank
+    :region: Colorado
+    :addr1: PO BOX 25118
+    :city: Aurora
+    :addr2: ""
+    :name: AFS COURIER
+    :airport: LIT
+    :city_state_zip: AURORA, CO. 80010
+    :zip: "80010"
+    :number: AFSC72221
+    :url: blank
+    :phone: 501-372-4562
+    :country: US
+  - :fax: 501-372-4596
+    :region: Colorado
+    :addr1: P.O. BOX 6629
+    :city: Aurora
+    :addr2: ""
+    :name: AFS COURIER
+    :airport: LIT
+    :city_state_zip: AURORA , CO. 80011
+    :zip: "80011"
+    :number: AFSC72120
+    :url: blank
+    :phone: 501-372-4562
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: RETRIEVER AIR FREIGHT SER
+  :locations: 
+  - :fax: 970-242-8622
+    :region: Virginia
+    :addr1: 2815 LANDING VIEW LANE
+    :city: University of Richmond
+    :addr2: ""
+    :name: RETRIEVER AIR FREIGHT SER
+    :airport: GJT
+    :city_state_zip: RICHMOND, VA.  15233
+    :zip: "15233"
+    :number: RETR81506
+    :url: blank
+    :phone: 970-242-5439
+    :country: US
+  - :fax: blank
+    :region: British Columbia
+    :addr1: P.O. BOX
+    :city: Richmond
+    :addr2: ""
+    :name: RETRIEVER AIR FREIGHT SER
+    :airport: GJT
+    :city_state_zip: RICHMOND, BC. V7B  1V1
+    :zip: V7B  1V1
+    :number: "758458"
+    :url: blank
+    :phone: 970-242-5439
+    :country: CA
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ATLANTIC FREIGHT SYSTEMS
+  :locations: 
+  - :fax: 908-353-1771
+    :region: Alabama
+    :addr1: 1 SLATER DRIVE
+    :city: Birmingham
+    :addr2: ""
+    :name: ATLANTIC FREIGHT SYSTEMS
+    :airport: EWR
+    :city_state_zip: BIRMINGHAM, AL.  35287-5210
+    :zip: 35287-5210
+    :number: ATLA07206
+    :url: blank
+    :phone: 908-282-2173
+    :country: US
+  :faa: "38363"
+- :contact: Boyd
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: J & P HALLS
+  :locations: 
+  - :fax: 229-888-2680
+    :region: Nevada
+    :addr1: 1708 WEST TOWN ROAD
+    :city: North Las Vegas
+    :addr2: ""
+    :name: J & P HALLS
+    :airport: ABY
+    :city_state_zip: LAS VEGAS, NV. 89109
+    :zip: "89109"
+    :number: JPHA31707
+    :url: blank
+    :phone: 800-424-3809
+    :country: US
+  - :fax: 912-964-9062
+    :region: Texas
+    :addr1: 1329 LYNHH AVE.
+    :city: Laredo
+    :addr2: ""
+    :name: J & P HALLS EXPRESS
+    :airport: SAV
+    :city_state_zip: LAREDO , TX. 78041
+    :zip: "78041"
+    :number: JPHA31415
+    :url: blank
+    :phone: 888-485-9406
+    :country: US
+  - :fax: blank
+    :region: Nevada
+    :addr1: 675 GUY PAINE ROAD
+    :city: North Las Vegas
+    :addr2: ""
+    :name: J & P HALLS
+    :airport: MCN
+    :city_state_zip: LAS VEGAS , NV. 89118
+    :zip: "89118"
+    :number: JPHA31220
+    :url: blank
+    :phone: 800-339-8150
+    :country: US
+  - :fax: blank
+    :region: Nevada
+    :addr1: PO BOX 45098
+    :city: North Las Vegas
+    :addr2: ""
+    :name: "J & P HALLS "
+    :airport: ATL
+    :city_state_zip: LAS VEGAS, NV. 89111
+    :zip: "89111"
+    :number: JPHA30320
+    :url: blank
+    :phone: 404-762-5063
+    :country: US
+  :billing_location: JPHA30320
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: SOUTHERN MESSENGER
+  :locations: 
+  - :fax: 403-287-0354
+    :region: Minnesota
+    :addr1: 1130 A - 44 AVE S.E.
+    :city: Saint Paul
+    :addr2: ""
+    :name: SOUTHERN MESSENGER
+    :airport: YYC
+    :city_state_zip: SAINT PAUL, MN.  55122
+    :zip: "55122"
+    :number: SOUT24611
+    :url: blank
+    :phone: 403-287-0311
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: MICHAEL LISA'S TRUCKING I
+  :locations: 
+  - :fax: blank
+    :region: Virginia
+    :addr1: 12833 CHADRON AVENUE
+    :city: Norfolk
+    :addr2: ""
+    :name: MICHAEL LISA'S TRUCKING I
+    :airport: LAX
+    :city_state_zip: NORFOLK, VA. 23541
+    :zip: "23541"
+    :number: MICH90250
+    :url: blank
+    :phone: 310-644-2961
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: AIRPORT DRAYAGE INC
+  :locations: 
+  - :fax: 503-255-6454
+    :region: Maine
+    :addr1: 6331 NORTHEAST 112TH AVENUE
+    :city: Bangor
+    :addr2: ""
+    :name: AIRPORT DRAYAGE INC
+    :airport: PDX
+    :city_state_zip: BANGOR, ME.  04401
+    :zip: "04401"
+    :number: AIRP97220
+    :url: www.airportdrayage.com
+    :phone: 503-253-3859
+    :country: US
+  :faa: blank
+- :contact: Dick
+  :rank: "5"
+  :accounting_code: |
+    601
+
+  :name: A1
+  :locations: 
+  - :fax: 816-279-4260
+    :region: Texas
+    :addr1: 4908 E HWY 36 (36 & I29)
+    :city: Abilene
+    :addr2: ""
+    :name: A1
+    :airport: MCI
+    :city_state_zip: ABILENE, TX.  79602
+    :zip: "79602"
+    :number: A164501
+    :url: blank
+    :phone: 816-232-4855
+    :country: US
+  - :fax: blank
+    :region: Georgia
+    :addr1: PO BOX 3254
+    :city: Albany
+    :addr2: ""
+    :name: "A1 "
+    :airport: MCI
+    :city_state_zip: ALBANY , GA. 31707
+    :zip: "31707"
+    :number: A164503
+    :url: blank
+    :phone: 816-232-4855
+    :country: US
+  :billing_location: A164503
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: BLACK HAWK FREIGHT SERVIC
+  :locations: 
+  - :fax: 309-797-9634
+    :region: British Columbia
+    :addr1: 3003 1ST AVENUE EAST
+    :city: Burnaby
+    :addr2: ""
+    :name: BLACK HAWK FREIGHT SERVIC
+    :airport: MLI
+    :city_state_zip: BURNABY, BC. V5C 6G7
+    :zip: V5C 6G7
+    :number: BLAC61264
+    :url: www.blackhawkfreight.com
+    :phone: 309-797-8086
+    :country: CA
+  :faa: blank
+- :contact: DENNIS/BARBARA
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: STEELE'S TRANSFER
+  :locations: 
+  - :fax: 403-237-6712
+    :region: Ontario
+    :addr1: 2448 - 9TH AVE S.E.
+    :city: Sarnia
+    :addr2: ""
+    :name: STEELE'S TRANSFER
+    :airport: YYC
+    :city_state_zip: SARNIA , ON. N7W1A7
+    :zip: N7W1A7
+    :number: STEE20711
+    :url: www.steelestransfer.com
+    :phone: 800-332-8398
+    :country: CA
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: PONY EXPRESS COURIER SER
+  :locations: 
+  - :fax: blank
+    :region: Pennsylvania
+    :addr1: 55 ROTHWELL RD.
+    :city: East Pittsburgh
+    :addr2: ""
+    :name: PONY EXPRESS COURIER SER
+    :airport: YWG
+    :city_state_zip: PITTSBURGH,  PA.  15233
+    :zip: "15233"
+    :number: PONY32511
+    :url: blank
+    :phone: 204-632-5000
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: DIRECT DISTRIBUTION
+  :locations: 
+  - :fax: 410-646-4984
+    :region: Alberta
+    :addr1: 2659 MERCHANT DRIVE
+    :city: Edmonton
+    :addr2: ""
+    :name: DIRECT DISTRIBUTION
+    :airport: BWI
+    :city_state_zip: EDMONTON, AB. T6B  3L2
+    :zip: T6B  3L2
+    :number: DIRE21230
+    :url: blank
+    :phone: 410-646-4900
+    :country: CA
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: LOGICITY
+  :locations: 
+  - :fax: 614-868-6901
+    :region: Quebec
+    :addr1: 4001 EAST 5TH AVENUE
+    :city: Montreal
+    :addr2: ""
+    :name: LOGICITY
+    :airport: CMH
+    :city_state_zip: MONTREAL, QC.  H2Z1G2
+    :zip: H2Z1G2
+    :number: EXPE43219
+    :url: blank
+    :phone: 614-522-0680
+    :country: CA
+  :faa: 10/14/2005
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: AREA TAXI INC
+  :locations: 
+  - :fax: blank
+    :region: Montana
+    :addr1: 316 BURLINGTON AVE
+    :city: Billings
+    :addr2: ""
+    :name: AREA TAXI INC
+    :airport: ORD
+    :city_state_zip: BILLINGS, MT.  59101
+    :zip: "59101"
+    :number: AREA60515
+    :url: blank
+    :phone: 630-515-0448
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ACTION AIRPORT EXPRESS
+  :locations: 
+  - :fax: 905-673-7955
+    :region: Ontario
+    :addr1: 3688 NASHUA DRIVE, UNIT 7-8
+    :city: Mississauga
+    :addr2: ""
+    :name: ACTION AIRPORT EXPRESS
+    :airport: YYZ
+    :city_state_zip: Mississauga, ON.  B-2000
+    :zip: B-2000
+    :number: ACTI41511
+    :url: www.actionexpress.com
+    :phone: 905-678-2020
+    :country: CA
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: PARKERSBURG DELIVERY SER
+  :locations: 
+  - :fax: 304-485-3293
+    :region: Arizona
+    :addr1: 3500 CAMDEN AVENUE
+    :city: Phoenix
+    :addr2: ""
+    :name: PARKERSBURG DELIVERY SER
+    :airport: PKB
+    :city_state_zip: PHOENIX, AZ.  85034
+    :zip: "85034"
+    :number: PARK26101
+    :url: blank
+    :phone: 304-485-3270
+    :country: US
+  - :fax: 304-485-3293
+    :region: Arizona
+    :addr1: 3500 CAMDEN AVE.
+    :city: Phoenix
+    :addr2: ""
+    :name: PARKERSBURG DELIVERY SER
+    :airport: CRW
+    :city_state_zip: PHOENIX, AZ.  85019
+    :zip: "85019"
+    :number: "510219"
+    :url: blank
+    :phone: 304-485-3270
+    :country: US
+  :faa: 11/17/2005
+- :contact: DISPATCH
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: CAPITOL EXPRESS
+  :locations: 
+  - :fax: 614-279-5616
+    :region: Georgia
+    :addr1: P.O. BOX 462
+    :city: College park
+    :addr2: ""
+    :name: CAPITOL EXPRESS
+    :airport: CMH
+    :city_state_zip: COLLEGE PARK, GA.  30349
+    :zip: "30349"
+    :number: CAPT43026
+    :url: blank
+    :phone: 614-279-2819
+    :country: US
+  - :fax: 859-389-7479
+    :region: New Jersey
+    :addr1: 973 PRIMROSE CT
+    :city: Cherry Hill
+    :addr2: ""
+    :name: CAPITOL EXPRESS
+    :airport: LEX
+    :city_state_zip: CHERRY HILL, NJ.  08002
+    :zip: 08002
+    :number: CAPI40511
+    :url: blank
+    :phone: 859-389-6560
+    :country: US
+  - :fax: 859-746-3273
+    :region: Illinois
+    :addr1: 3300 TURFWAY RD
+    :city: Chicago Ridge
+    :addr2: ""
+    :name: CAPITOL EXPRESS
+    :airport: CVG
+    :city_state_zip: CHICAGO, IL. 60689-5319
+    :zip: 60689-5319
+    :number: CAPI41018
+    :url: blank
+    :phone: 859-746-3270
+    :country: US
+  - :fax: 937-898-5401
+    :region: Manitoba
+    :addr1: PO BOX 462
+    :city: Churchill
+    :addr2: ""
+    :name: CAPITOL EXPRESS
+    :airport: DAY
+    :city_state_zip: CHURCHILL, MB.  00000
+    :zip: "00000"
+    :number: CAPI45414
+    :url: blank
+    :phone: 937-898-5192
+    :country: CA
+  - :fax: 614-279-5616
+    :region: Pennsylvania
+    :addr1: 890 GOODALE BLVD
+    :city: Clinton
+    :addr2: ""
+    :name: CAPITOL EXPRESS
+    :airport: CMH
+    :city_state_zip: CLINTON, PA.  15126
+    :zip: "15126"
+    :number: CAPI43212
+    :url: blank
+    :phone: 614-279-2819
+    :country: US
+  :faa: 01/27/2006
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: INTERSTATE COURIER
+  :locations: 
+  - :fax: 800-392-4515
+    :region: Wisconsin
+    :addr1: 6800-A TUNNEL ROAD
+    :city: La Crosse
+    :addr2: ""
+    :name: INTERSTATE COURIER
+    :airport: CLT
+    :city_state_zip: LA CROSSE, WI.  54603
+    :zip: "54603"
+    :number: INTE00001
+    :url: blank
+    :phone: 704-451-4565
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: AERO DELIVERY
+  :locations: 
+  - :fax: 306-242-5126
+    :region: Georgia
+    :addr1: 1410 ALBERTA AVE.
+    :city: Atlanta
+    :addr2: ""
+    :name: AERO DELIVERY
+    :airport: YXE
+    :city_state_zip: ATLANTA, GA. 30349
+    :zip: "30349"
+    :number: AERO71511
+    :url: blank
+    :phone: 306-242-6300
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: RCT EXPRESS FAST FLEET
+  :locations: 
+  - :fax: 650-871-4366
+    :region: Nevada
+    :addr1: 230 SHAW ROAD
+    :city: Reno
+    :addr2: ""
+    :name: RCT EXPRESS FAST FLEET
+    :airport: SFO
+    :city_state_zip: RENO, NV. 89502
+    :zip: "89502"
+    :number: RCTX94080
+    :url: blank
+    :phone: 650-871-4335
+    :country: US
+  - :fax: blank
+    :region: Saskatchewan
+    :addr1: PO BOX 8500
+    :city: Regina
+    :addr2: ""
+    :name: RCT EXPRESS
+    :airport: SFO
+    :city_state_zip: REGINA, SK. S4N  5X3
+    :zip: S4N  5X3
+    :number: RCTE19178
+    :url: blank
+    :phone: 650-871-4335
+    :country: CA
+  :faa: "38394"
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ACTION FREIGHT SERVICES
+  :locations: 
+  - :fax: 512-477-5050
+    :region: Georgia
+    :addr1: "9350 SPRINKLE ROAD # B"
+    :city: Atlanta
+    :addr2: ""
+    :name: ACTION FREIGHT SERVICES
+    :airport: AUS
+    :city_state_zip: ATLANTA , GA. 30320
+    :zip: "30320"
+    :number: ACTI78754
+    :url: www.actionfreightservice.com
+    :phone: 512-476-6415
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: USF REDDAWAY
+  :locations: 
+  - :fax: 541-665-0841
+    :region: Vermont
+    :addr1: 4000 HAMRICK ROAD
+    :city: Williston
+    :addr2: ""
+    :name: USF REDDAWAY
+    :airport: MFR
+    :city_state_zip: WILLISTON , VT.  05495
+    :zip: 05495
+    :number: USFR97502
+    :url: blank
+    :phone: 541-665-1965
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "2"
+  :accounting_code: |
+    601
+
+  :name: SIMARD TRANSPORT
+  :locations: 
+  - :fax: 604-231-9756
+    :region: Missouri
+    :addr1: 9200 VAN HORNE WAY UNIT 140
+    :city: Saint Louis
+    :addr2: ""
+    :name: SIMARD TRANSPORT
+    :airport: YVR
+    :city_state_zip: SAINT LOUIS, MO.  63119
+    :zip: "63119"
+    :number: SIMA61311
+    :url: www.simard.ca
+    :phone: 604-231-8756
+    :country: US
+  - :fax: 514-636-9411
+    :region: Missouri
+    :addr1: 1212-32ND AVE.
+    :city: Saint Joseph
+    :addr2: ""
+    :name: SIMARD TRANSPORT
+    :airport: YUL
+    :city_state_zip: SAINT JOSEPH,  MO.  64503
+    :zip: "64503"
+    :number: SIMA83711
+    :url: www.simard.ca
+    :phone: 888-282-9321
+    :country: US
+  - :fax: 905-670-2169
+    :region: Missouri
+    :addr1: 2200 DREW RD.
+    :city: Saint Joseph
+    :addr2: ""
+    :name: SIMARD TRANSPORT
+    :airport: YTO
+    :city_state_zip: SAINT JOSEPH,  MO.  64507
+    :zip: "64507"
+    :number: SIMA51111
+    :url: www.simard.ca
+    :phone: 800-766-8171
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: LIBERTY AIR FREIGHT INC
+  :locations: 
+  - :fax: blank
+    :region: Alabama
+    :addr1: TRI CITIES AIRPORT
+    :city: Mobile
+    :addr2: ""
+    :name: LIBERTY AIR FREIGHT INC
+    :airport: PSC
+    :city_state_zip: MOBILE, AL. 36607
+    :zip: "36607"
+    :number: LIBE99301
+    :url: blank
+    :phone: 509-547-7011
+    :country: US
+  :faa: blank
+- :contact: JIMMY
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: AIRPORT CARTAGE
+  :locations: 
+  - :fax: 813-882-9581
+    :region: Maryland
+    :addr1: 5901 BENJAMIN CENTER DR.
+    :city: Baltimore
+    :addr2: ""
+    :name: AIRPORT CARTAGE
+    :airport: TPA
+    :city_state_zip: BALTIMORE, MD.  21230
+    :zip: "21230"
+    :number: AIRP33634
+    :url: blank
+    :phone: 813-882-9581
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: BOSSONGS COML DELIVERY I
+  :locations: 
+  - :fax: 315-455-1108
+    :region: Alberta
+    :addr1: 6713 PICKARD DRIVE
+    :city: Calgary
+    :addr2: ""
+    :name: BOSSONGS COML DELIVERY I
+    :airport: SYR
+    :city_state_zip: CALGARY, AB. T2A 6A3
+    :zip: T2A 6A3
+    :number: BOSS13211
+    :url: blank
+    :phone: 800-845-8505
+    :country: CA
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ABQ EXPRESS
+  :locations: 
+  - :fax: 505-851-5222
+    :region: Pennsylvania
+    :addr1: 2400 ALAMO AVENUE SOUTHEAST
+    :city: Allentown
+    :addr2: ""
+    :name: ABQ EXPRESS
+    :airport: ABQ
+    :city_state_zip: ALLENTOWN , PA.  18103
+    :zip: "18103"
+    :number: ABQE87106
+    :url: blank
+    :phone: 505-851-5111
+    :country: US
+  :faa: 10/19/2006
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: EAGLES 4
+  :locations: 
+  - :fax: 623-873-0272
+    :region: Texas
+    :addr1: P.O. BOX 47365
+    :city: Grapevine
+    :addr2: ""
+    :name: EAGLES 4
+    :airport: PHX
+    :city_state_zip: GRAPEVINE, TX.  76051
+    :zip: "76051"
+    :number: EAGL85031
+    :url: blank
+    :phone: 602-918-2045
+    :country: US
+  :faa: 05/22/2006
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ACTION CARGO
+  :locations: 
+  - :fax: 434-846-2725
+    :region: Virginia
+    :addr1: P.O. BOX 4679
+    :city: Arlington
+    :addr2: ""
+    :name: ACTION CARGO
+    :airport: LYH
+    :city_state_zip: ARLINGTON, VA. 22203
+    :zip: "22203"
+    :number: ACTI23455
+    :url: blank
+    :phone: 434-846-1924
+    :country: US
+  - :fax: 307-266-9156
+    :region: Alabama
+    :addr1: PO BOX 2680
+    :city: Ashville
+    :addr2: ""
+    :name: ACTION CARGO EXPRESS
+    :airport: CPR
+    :city_state_zip: ASHVILLE, AL. 35953
+    :zip: "35953"
+    :number: ACTI82601
+    :url: blank
+    :phone: 307-266-2229
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "5"
+  :accounting_code: |
+    601
+
+  :name: FREIGHT FORCE INC.
+  :locations: 
+  - :fax: 714-995-9340
+    :region: New York
+    :addr1: PO BOX 4390
+    :city: Jamaica
+    :addr2: ""
+    :name: FREIGHT FORCE INC.
+    :airport: LAX
+    :city_state_zip: JAMAICA, NY. 11434
+    :zip: "11434"
+    :number: FREIbilling
+    :url: blank
+    :phone: 714-995-9300
+    :country: US
+  - :fax: 253-395-0558
+    :region: Maryland
+    :addr1: 22140 76TH AVENUE SOUTH
+    :city: Hanover
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: SEA
+    :city_state_zip: HANOVER, MD.  21076
+    :zip: "21076"
+    :number: FREI98032
+    :url: BrianB@freightforce.com
+    :phone: 253-395-3658
+    :country: US
+  - :fax: 617-889-5964
+    :region: Maryland
+    :addr1: 401 SECOND STREET
+    :city: Hanover
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: BOS
+    :city_state_zip: HANOVER, MD.  21076
+    :zip: "21076"
+    :number: FREI02149
+    :url: BOS@freightforce.com
+    :phone: 617-381-1990
+    :country: US
+  - :fax: 919-544-4648
+    :region: Pennsylvania
+    :addr1: 6216 ANGUS DRIVE
+    :city: Harrisburg
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: RDU
+    :city_state_zip: HARRISBURG, PA.  17104
+    :zip: "17104"
+    :number: FREI27617
+    :url: RDU@freightforce.com
+    :phone: 919-788-9422
+    :country: US
+  - :fax: 414-769-9119
+    :region: Pennsylvania
+    :addr1: 4950 S. 2ND STREET
+    :city: Harrisburg
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: MKE
+    :city_state_zip: HARRISBURG, PA.  17110
+    :zip: "17110"
+    :number: FREI53207
+    :url: BillS@freightforce.com
+    :phone: 414-769-9161
+    :country: US
+  - :fax: 813-884-3722
+    :region: Texas
+    :addr1: 5113 W IDLEWILD AVENUE
+    :city: Haslet
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: TPA
+    :city_state_zip: HASLET, TX. 76052
+    :zip: "76052"
+    :number: FREI33634
+    :url: Denniss@freightforce.com
+    :phone: 813-884-3446
+    :country: US
+  - :fax: 610-461-1933
+    :region: California
+    :addr1: BAY#7,8,9 DARBY COMMONS
+    :city: Hawthorne
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: PHL
+    :city_state_zip: HAWTHORNE, CA.  90250
+    :zip: "90250"
+    :number: FREI19032
+    :url: PHL@freightforce.com
+    :phone: 610-583-5212
+    :country: US
+  - :fax: 503-256-8413
+    :region: California
+    :addr1: 7790 NE AIR CARGO ROAD
+    :city: Hawthorne
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: PDX
+    :city_state_zip: HAWTHORNE, CA.  90250
+    :zip: "90250"
+    :number: FREI97218
+    :url: DaveS@freightforce.com
+    :phone: 503-255-7360
+    :country: US
+  - :fax: 847-468-9474
+    :region: California
+    :addr1: 1605 DUNDEE AVENUE
+    :city: Hayward
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: ORD
+    :city_state_zip: HAYWARD, CA. 94545
+    :zip: "94545"
+    :number: FREI60120
+    :url: TrishaP@freightforce.com
+    :phone: 847-468-9490
+    :country: US
+  - :fax: 305-597-1514
+    :region: Missouri
+    :addr1: 8437 N.W. 72ND STREET
+    :city: Hazelwood
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: MIA
+    :city_state_zip: HAZELWOOD, MO.  63042
+    :zip: "63042"
+    :number: "5528"
+    :url: blank
+    :phone: 305-597-1515
+    :country: US
+  - :fax: 210-946-9430
+    :region: Montana
+    :addr1: 5636 RANDOLPH BLVD
+    :city: East Helena
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: SAT
+    :city_state_zip: HELENA, MT.  59601
+    :zip: "59601"
+    :number: FREI78233
+    :url: SAT@freightforce.com
+    :phone: 210-657-8113
+    :country: US
+  - :fax: 314-427-8835
+    :region: Montana
+    :addr1: 9420 AEROSPACE DRIVE
+    :city: East Helena
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: STL
+    :city_state_zip: HELENA, MT.  59604
+    :zip: "59604"
+    :number: FREI63134
+    :url: JohnK@freightforce.com
+    :phone: 314-427-7964
+    :country: US
+  - :fax: 619-336-1599
+    :region: Virginia
+    :addr1: 1840 HARRISON AVENUE
+    :city: Herndon
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: SAN
+    :city_state_zip: HERNDON, VA.  20171
+    :zip: "20171"
+    :number: FREI91950
+    :url: CarlN@freightforce
+    :phone: 619-336-1500
+    :country: US
+  - :fax: 407-240-1122
+    :region: Ohio
+    :addr1: 1225 PINE AVE
+    :city: Hilliard
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: MCO
+    :city_state_zip: HILLIARD, OH.  43026
+    :zip: "43026"
+    :number: FREI32824
+    :url: SandiV@freightforce.com
+    :phone: 407-851-1615
+    :country: US
+  - :fax: 239-461-5557
+    :region: Ohio
+    :addr1: 11000 METRO PARKWAY
+    :city: Hilliard
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: RSW
+    :city_state_zip: HILLIARD, OH.  43026
+    :zip: "43026"
+    :number: FREI33912
+    :url: denniss@airwaysfreight.com
+    :phone: 239-690-2697
+    :country: US
+  - :fax: 281-590-8734
+    :region: Hawaii
+    :addr1: 5222 NORTH SAM HOUSTON PARK
+    :city: Hilo
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: IAH
+    :city_state_zip: HILO, HI.  96720
+    :zip: "96720"
+    :number: FEIG77032
+    :url: IAH@freightforce.com
+    :phone: 281-442-1100
+    :country: US
+  - :fax: 859-525-7444
+    :region: Hawaii
+    :addr1: 1119 AVIATION BLVD
+    :city: Honolulu
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: CVG
+    :city_state_zip: HONOLULU, HI.  96819
+    :zip: "96819"
+    :number: FREI41048
+    :url: CVG@freightforce.com
+    :phone: 859-525-2209
+    :country: US
+  - :fax: 817-329-7825
+    :region: Hawaii
+    :addr1: 1722 MINTERS CHAPEL RD
+    :city: Honolulu
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: DFW
+    :city_state_zip: HONOLULU, HI.  96819
+    :zip: "96819"
+    :number: FREI76051
+    :url: LindaP@freightforce.com
+    :phone: 817-416-9723
+    :country: US
+  - :fax: 703-996-0996
+    :region: Texas
+    :addr1: "44190 MERCURE CIRCLE #140"
+    :city: South Houston
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: IAD
+    :city_state_zip: HOUSTON , TX.  77032
+    :zip: "77032"
+    :number: FREI20166
+    :url: blank
+    :phone: 703-661-5605
+    :country: US
+  - :fax: 305-597-1514
+    :region: Texas
+    :addr1: 8433 N.W. 68TH STREET
+    :city: South Houston
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: FLL
+    :city_state_zip: HOUSTON , TX.  77032
+    :zip: "77032"
+    :number: FREI33166
+    :url: JulioG@freightforce.com
+    :phone: 305-597-1515
+    :country: US
+  - :fax: 919-544-4648
+    :region: Texas
+    :addr1: 234 BURGESS ROAD
+    :city: South Houston
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: GSO
+    :city_state_zip: HOUSTON, TX.  77032
+    :zip: "77032"
+    :number: FREI27409
+    :url: GSO@freightforce.com
+    :phone: 336-294-7118
+    :country: US
+  - :fax: 614-275-0333
+    :region: Texas
+    :addr1: 667 HARMON PLAZA
+    :city: South Houston
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: CMH
+    :city_state_zip: HOUSTON, TX.  77060
+    :zip: "77060"
+    :number: FREI43223
+    :url: CMH@freightforce.com
+    :phone: 614-351-0400
+    :country: US
+  - :fax: 816-243-5581
+    :region: Texas
+    :addr1: 1044 MEXICO CITY AVE
+    :city: Humble
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: MCI
+    :city_state_zip: HUMBLE, TX.  77396
+    :zip: "77396"
+    :number: FREI64195
+    :url: MCI@freightforce.com
+    :phone: 816-243-7517
+    :country: US
+  - :fax: 651-454-0011
+    :region: Alabama
+    :addr1: 3275 MIKE COLLINS DRIVE
+    :city: Huntsville
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: MSP
+    :city_state_zip: HUNTSVILLE, AL. 35806
+    :zip: "35806"
+    :number: FREI55121
+    :url: JeffA@freightforce.com
+    :phone: 612-726-9474
+    :country: US
+  - :fax: 734-722-2225
+    :region: Indiana
+    :addr1: 30735 CYPRESS ROAD
+    :city: Indianapolis
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: DTW
+    :city_state_zip: INDIANAPOLIS,  IN.  .
+    :zip: ""
+    :number: FREI48174
+    :url: BeverleyW@freightforce.com
+    :phone: 734-722-0740
+    :country: US
+  - :fax: 650-588-9806
+    :region: Indiana
+    :addr1: 975 LINDEN AVENUE
+    :city: Indianapolis
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: SFO
+    :city_state_zip: INDIANAPOLIS,  IN.  46241
+    :zip: "46241"
+    :number: FREI94080
+    :url: SFO@freightforce.com
+    :phone: 650-588-9801
+    :country: US
+  - :fax: 410-766-5632
+    :region: Indiana
+    :addr1: 7525 CONNELEY DRIVE
+    :city: Indianapolis
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: BWI
+    :city_state_zip: INDIANAPOLIS, IN.  46251-0313
+    :zip: 46251-0313
+    :number: FREI21076
+    :url: BWI@freightforce.com
+    :phone: 410-760-7548
+    :country: US
+  - :fax: 303-286-1007
+    :region: California
+    :addr1: 6360 EAST 58TH AVE
+    :city: Inglewood
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: DEN
+    :city_state_zip: INGLEWOOD, CA.  90001
+    :zip: "90001"
+    :number: FREI80022
+    :url: blank
+    :phone: 720-855-7805
+    :country: US
+  - :fax: 404-366-9771
+    :region: Mississippi
+    :addr1: 5156 SOUTH RIDGE PARKWAY
+    :city: Jackson
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: ATL
+    :city_state_zip: JACKSON, MS. 39201
+    :zip: "39201"
+    :number: FREI30349
+    :url: ABlack@freightforce.com
+    :phone: 404-366-9901
+    :country: US
+  - :fax: 845-534-0700
+    :region: Florida
+    :addr1: 300 SHORE ROAD
+    :city: Jacksonville Beach
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: SWF
+    :city_state_zip: JACKSONVILLE, FL.  32218
+    :zip: "32218"
+    :number: FREI12520
+    :url: SWF@freightforce.com
+    :phone: 845-534-2890
+    :country: US
+  - :fax: 860-623-4017
+    :region: Florida
+    :addr1: 315 ELLA GRASSO TURNPIKE
+    :city: Jacksonville Beach
+    :addr2: ""
+    :name: FREIGHT FORCE
+    :airport: BDL
+    :city_state_zip: JACKSONVILLE, FL.  32254
+    :zip: "32254"
+    :number: FREI06096
+    :url: BDL@freightforce.com
+    :phone: 860-623-3441
+    :country: US
+  :billing_location: FREIbilling
+  :faa: blank
+
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: OKLAHOMA FAST FREIGHT
+  :locations: 
+  - :fax: 479-783-3605
+    :region: West Virginia
+    :addr1: P.O. BOX 2682
+    :city: Parkersburg
+    :addr2: ""
+    :name: OKLAHOMA FAST FREIGHT
+    :airport: FSM
+    :city_state_zip: PARKERSBURG, WV.  26101
+    :zip: "26101"
+    :number: OKLA72902
+    :url: blank
+    :phone: 800-448-0161
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: COMPLETE TRANSPORT
+  :locations: 
+  - :fax: 314-716-9500
+    :region: Texas
+    :addr1: 127 BYASSEE DRIVE
+    :city: Lake Dallas
+    :addr2: ""
+    :name: COMPLETE TRANSPORT
+    :airport: STL
+    :city_state_zip: DALLAS, TX. 75229
+    :zip: "75229"
+    :number: COMP63042
+    :url: blank
+    :phone: 314-731-0700
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ISLAND TRANSPORT SYSTEMS
+  :locations: 
+  - :fax: 808-833-6987
+    :region: Quebec
+    :addr1: "3180 UALENA STREET # D"
+    :city: Lachine
+    :addr2: ""
+    :name: ISLAND TRANSPORT SYSTEMS
+    :airport: HNL
+    :city_state_zip: LACHINE, QC. H8T  3K7
+    :zip: H8T  3K7
+    :number: ISLA96819
+    :url: blank
+    :phone: 808-834-1701
+    :country: CA
+  :faa: 12/22/2005
+- :contact: DISPATCH
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: MAJOR CARRIERS INC
+  :locations: 
+  - :fax: 303-364-9233
+    :region: Minnesota
+    :addr1: 1963 JASPER STREET
+    :city: New brighton
+    :addr2: ""
+    :name: MAJOR CARRIERS INC
+    :airport: DEN
+    :city_state_zip: NEW BRIGHTON,  MN.  55112
+    :zip: "55112"
+    :number: MAJO80011
+    :url: www.majorcarriers.com
+    :phone: 303-364-6555
+    :country: US
+  :faa: "38453"
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: R & R CARTAGE
+  :locations: 
+  - :fax: 817-481-1579
+    :region: North Carolina
+    :addr1: P.O. BOX 612644
+    :city: Raleigh
+    :addr2: ""
+    :name: R & R CARTAGE
+    :airport: DFW
+    :city_state_zip: RALEIGH , NC.  27617
+    :zip: "27617"
+    :number: RRCA75261
+    :url: blank
+    :phone: 817-481-1241
+    :country: US
+  :faa: 10/14/2005
+- :contact: DISPATCH
+  :rank: "135"
+  :accounting_code: |
+    601
+
+  :name: MVP DELIVERY
+  :locations: 
+  - :fax: 415-445-9308
+    :region: Nebraska
+    :addr1: 870 MARKET ST
+    :city: Omaha
+    :addr2: ""
+    :name: MVP DELIVERY
+    :airport: SFO
+    :city_state_zip: OMAHA, NE. 68110
+    :zip: "68110"
+    :number: MVPD94102
+    :url: blank
+    :phone: 415-445-9306
+    :country: US
+  :faa: "39275"
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: EDMONTON COURIER DELIVER
+  :locations: 
+  - :fax: 780-458-0212
+    :region: North Carolina
+    :addr1: 209 12215 LANSDOWNE DR
+    :city: Greensboro
+    :addr2: ""
+    :name: EDMONTON COURIER DELIVER
+    :airport: YEG
+    :city_state_zip: GREENSBORO,  NC.  27409
+    :zip: "27409"
+    :number: EDMO64411
+    :url: www.edmontoncourierdelivery.co
+    :phone: 780-220-4316
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: D & N DELIVERY
+  :locations: 
+  - :fax: blank
+    :region: Illinois
+    :addr1: PO BOX 11023
+    :city: Downers Grove
+    :addr2: ""
+    :name: D & N DELIVERY
+    :airport: LAS
+    :city_state_zip: DOWNERS GROVE,  IL.  60515
+    :zip: "60515"
+    :number: DNDE89111
+    :url: blank
+    :phone: 702-263-5540
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ZENITH CARGO SERVICES
+  :locations: 
+  - :fax: 920-339-9698
+    :region: Manitoba
+    :addr1: 1292 PARKVIEW ROAD
+    :city: Winnipeg
+    :addr2: ""
+    :name: ZENITH CARGO SERVICES
+    :airport: GRB
+    :city_state_zip: WINNIPEG,  MB.  R3P  2M5
+    :zip: R3P  2M5
+    :number: ZENI54304
+    :url: blank
+    :phone: 920-339-9630
+    :country: CA
+  :faa: blank
+- :contact: JOE
+  :rank: "0"
+  :accounting_code: |
+    602
+
+  :name: DOUBLE DOWN TRANSPORT
+  :locations: 
+  - :fax: 716-447-0549
+    :region: Texas
+    :addr1: 320 WOODWARD
+    :city: El Paso
+    :addr2: ""
+    :name: DOUBLE DOWN TRANSPORT
+    :airport: BUF
+    :city_state_zip: EL PASO, TX. 79901
+    :zip: "79901"
+    :number: DOUB14217
+    :url: www.doubledowntransport.com
+    :phone: 716-447-0777
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: EXPRESS DELIVERY SERVICES
+  :locations: 
+  - :fax: 314-963-3212
+    :region: South Carolina
+    :addr1: 282 EAST AVENUE
+    :city: Greer
+    :addr2: ""
+    :name: EXPRESS DELIVERY SERVICES
+    :airport: STL
+    :city_state_zip: GREER , SC.  29650
+    :zip: "29650"
+    :number: EXPR63119
+    :url: blank
+    :phone: 314-963-0890
+    :country: US
+  :faa: blank
+- :contact: GLENN/BILL
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: UNIQUE DELIVERY
+  :locations: 
+  - :fax: 902-454-5870
+    :region: Maine
+    :addr1: 6175 LADY HAMMOND RD.
+    :city: Westbrook
+    :addr2: ""
+    :name: UNIQUE DELIVERY
+    :airport: YHZ
+    :city_state_zip: WESTBROOK,  ME.  04092
+    :zip: 04092
+    :number: UNIQ32911
+    :url: www.uniquedeliveryservice.com
+    :phone: 902-453-9450
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "2"
+  :accounting_code: |
+    601
+
+  :name: TWIN AIR
+  :locations: 
+  - :fax: 504-467-1095
+    :region: California
+    :addr1: 200 CROFTON ROAD
+    :city: West Sacramento
+    :addr2: ""
+    :name: TWIN AIR
+    :airport: MSY
+    :city_state_zip: WEST SACRAMENTO, CA.  95691
+    :zip: "95691"
+    :number: TWIN70062
+    :url: blank
+    :phone: 504-467-1955
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: TOTAL TRANSPORTATION COR
+  :locations: 
+  - :fax: 724-457-7400
+    :region: Louisiana
+    :addr1: 91 SPRING RUN ROAD EXTENSION
+    :city: Shreveport
+    :addr2: ""
+    :name: TOTAL TRANSPORTATION COR
+    :airport: PIT
+    :city_state_zip: SHREVEPORT, LA.  71138
+    :zip: "71138"
+    :number: TOTA15108
+    :url: www.total-transportation.com
+    :phone: 724-457-2201
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: JET DELIVERY SERVICE
+  :locations: 
+  - :fax: 503-256-2975
+    :region: Kentucky
+    :addr1: 6225 NORTHEAST 112TH AVENUE
+    :city: Lexington
+    :addr2: ""
+    :name: JET DELIVERY SERVICE
+    :airport: PDX
+    :city_state_zip: LEXINGTON , KY.  40511
+    :zip: "40511"
+    :number: JETD97220
+    :url: blank
+    :phone: 503-256-3621
+    :country: US
+  - :fax: 816-243-5672
+    :region: Kansas
+    :addr1: 1028 MEXICO CITY AVENUE
+    :city: Lenexa
+    :addr2: ""
+    :name: JET DELIVERY SERVICE
+    :airport: MCI
+    :city_state_zip: LENEXA, KS. 66215
+    :zip: "66215"
+    :number: JETD64153
+    :url: blank
+    :phone: 816-243-5660
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: AIR VAN INC
+  :locations: 
+  - :fax: 904-741-0014
+    :region: Maryland
+    :addr1: 1420 VANTAGE WAY SOUTH
+    :city: Baltimore
+    :addr2: ""
+    :name: AIR VAN INC
+    :airport: JAX
+    :city_state_zip: BALTIMORE, MD.  21207
+    :zip: "21207"
+    :number: AIRV32218
+    :url: blank
+    :phone: 904-741-4930
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ETI
+  :locations: 
+  - :fax: 610-798-7416
+    :region: North Carolina
+    :addr1: 2202 26TH ST SW
+    :city: Greensboro
+    :addr2: ""
+    :name: ETI
+    :airport: ABE
+    :city_state_zip: GREENSBORO,  NC.  27410
+    :zip: "27410"
+    :number: ETI18103
+    :url: blank
+    :phone: 610-798-0300
+    :country: US
+  :faa: blank
+- :contact: 800-853-0531
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: AM/PM LOGISTICS
+  :locations: 
+  - :fax: blank
+    :region: Michigan
+    :addr1: 377 OYSTER POINT BOULEVARD
+    :city: Bay City
+    :addr2: ""
+    :name: AM/PM LOGISTICS
+    :airport: SFO
+    :city_state_zip: BAY CITY, MI. 48706
+    :zip: "48706"
+    :number: AMPM94080
+    :url: www.ampmlogistics.com
+    :phone: 800-853-0513
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ZIPP DELIVERY
+  :locations: 
+  - :fax: 918-234-8525
+    :region: Washington
+    :addr1: 10835 EAST NEWTON PLACE
+    :city: Yakima
+    :addr2: ""
+    :name: ZIPP DELIVERY
+    :airport: TUL
+    :city_state_zip: YAKIMA, WA. 98901
+    :zip: "98901"
+    :number: ZIPP74116
+    :url: blank
+    :phone: 918-234-7445
+    :country: US
+  - :fax: 479-750-3963
+    :region: Massachusetts
+    :addr1: 593 W COUNTY LINE ROAD
+    :city: Woburn
+    :addr2: ""
+    :name: ZIPP DELIVERY
+    :airport: XNA
+    :city_state_zip: WOBURN, MA. 01801-1758
+    :zip: 01801-1758
+    :number: ZIPP72764
+    :url: blank
+    :phone: 479-751-4323
+    :country: US
+  - :fax: blank
+    :region: Washington
+    :addr1: 593 WEST COUNTY LINE ROAD
+    :city: Yakima
+    :addr2: ""
+    :name: ZIPP DELIVERY INC
+    :airport: XNA
+    :city_state_zip: YAKIMA, WA. 98907
+    :zip: "98907"
+    :number: "54214"
+    :url: blank
+    :phone: 479-751-4323
+    :country: US
+  :faa: blank
+- :contact: DAVE
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: LIGHTNING TRANSPORT
+  :locations: 
+  - :fax: 651-653-4887
+    :region: New Brunswick
+    :addr1: 3943 CLOVER AVE.
+    :city: Moncton
+    :addr2: ""
+    :name: LIGHTNING TRANSPORT
+    :airport: MSP
+    :city_state_zip: MONCTON, NB.  E1H  2P3
+    :zip: E1H  2P3
+    :number: LIGH55127
+    :url: blank
+    :phone: blank
+    :country: CA
+  :faa: 02/15/2006
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: RYANS EXPRESS
+  :locations: 
+  - :fax: 408-929-6204
+    :region: New York
+    :addr1: 190 REDWOOD RD
+    :city: Rochester
+    :addr2: ""
+    :name: RYANS EXPRESS
+    :airport: SJC
+    :city_state_zip: ROCHESTER, NY.  14624
+    :zip: "14624"
+    :number: RYAN95076
+    :url: www.ryansexp.com
+    :phone: 408-929-6200
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: BOSWELL TRUCKING
+  :locations: 
+  - :fax: 808-553-3582
+    :region: Alberta
+    :addr1: P.O. BOX 1478
+    :city: Calgary
+    :addr2: ""
+    :name: BOSWELL TRUCKING
+    :airport: MKK
+    :city_state_zip: CALGARY, AB. T2C0P4
+    :zip: T2C0P4
+    :number: BOSW96748
+    :url: blank
+    :phone: 808-553-5319
+    :country: CA
+  :faa: blank
+- :contact: Diane
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: TRANS-AERO
+  :locations: 
+  - :fax: 603-899-3374
+    :region: Texas
+    :addr1: PO BOX 559
+    :city: Waco
+    :addr2: ""
+    :name: TRANS-AERO
+    :airport: MHT
+    :city_state_zip: WACO, TX. 76705
+    :zip: "76705"
+    :number: TRAN03461
+    :url: blank
+    :phone: 603-899-3374
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "135"
+  :accounting_code: |
+    601
+
+  :name: JES EXPRESS
+  :locations: 
+  - :fax: 650-570-4667
+    :region: New York
+    :addr1: 602 BAHAMA LN
+    :city: Latham
+    :addr2: ""
+    :name: JES EXPRESS
+    :airport: SFO
+    :city_state_zip: LATHAM, NY. 12110
+    :zip: "12110"
+    :number: JESE94404
+    :url: blank
+    :phone: 650-222-4285
+    :country: US
+  :faa: 12/13/2007
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    602
+
+  :name: PANTHER II
+  :locations: 
+  - :fax: blank
+    :region: Arizona
+    :addr1: PO BOX 713 P.M.B. 208
+    :city: Phoenix
+    :addr2: ""
+    :name: PANTHER II
+    :airport: CLE
+    :city_state_zip: PHOENIX , AZ.  85034
+    :zip: "85034"
+    :number: PANT44256
+    :url: blank
+    :phone: 800-685-0657
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "2"
+  :accounting_code: |
+    601
+
+  :name: AIR CONTAINER TRANSPORT
+  :locations: 
+  - :fax: 206-246-8795
+    :region: Texas
+    :addr1: 2345 SOUTH 156TH STREET
+    :city: Austin
+    :addr2: ""
+    :name: AIR CONTAINER TRANSPORT
+    :airport: SEA
+    :city_state_zip: AUSTIN, TX. 78754
+    :zip: "78754"
+    :number: "753441"
+    :url: blank
+    :phone: 206-246-2000
+    :country: US
+  - :fax: blank
+    :region: Texas
+    :addr1: PO BOX 281226
+    :city: Austin
+    :addr2: ""
+    :name: AIR CONTAINER TRANSPORT
+    :airport: SFO
+    :city_state_zip: AUSTIN, TX. 78714-3043
+    :zip: 78714-3043
+    :number: AIRC94128
+    :url: www.aircontainertransport.com/co
+    :phone: 650-244-4267
+    :country: US
+  :faa: blank
+- :contact: MARC  DELAET
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: KDL TRANS
+  :locations: 
+  - :fax: 32(0)3/213.35.47
+    :region: California
+    :addr1: NASSAUSTAAT 22
+    :city: Los Angeles
+    :addr2: ""
+    :name: KDL TRANS
+    :airport: BRU
+    :city_state_zip: LOS ANGELES, CA. 90045
+    :zip: "90045"
+    :number: KDLT20001
+    :url: www.klstrans.be
+    :phone: 32(0)3/213.06.83
+    :country: US
+  :faa: blank
+- :contact: AL
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: MAYAN
+  :locations: 
+  - :fax: 310-742-0299
+    :region: Connecticut
+    :addr1: 29827 OLD MANOR COURT
+    :city: New Britain
+    :addr2: ""
+    :name: MAYAN
+    :airport: LAX
+    :city_state_zip: NEW BRITAIN,  CT.  06051
+    :zip: "06051"
+    :number: MAYA90061
+    :url: MAYANTRANSPORT@SBCGLO
+    :phone: 323-833-7833
+    :country: US
+  :faa: 11/06/07
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: TIFFANY TRANSPORTATION
+  :locations: 
+  - :fax: 305-592-8620
+    :region: Arkansas
+    :addr1: 5900 NORTHWEST 97TH AVE.
+    :city: Sherwood
+    :addr2: ""
+    :name: TIFFANY TRANSPORTATION
+    :airport: MIA
+    :city_state_zip: SHERWOOD, AR.  72124
+    :zip: "72124"
+    :number: TIFF33172
+    :url: blank
+    :phone: 305-592-3307
+    :country: US
+  - :fax: blank
+    :region: Pennsylvania
+    :addr1: PO BOX 226435
+    :city: Sharon Hill
+    :addr2: ""
+    :name: TIFFANY TRANSPORTATION
+    :airport: MIA
+    :city_state_zip: SHARON HILL, PA.  19079
+    :zip: "19079"
+    :number: TIFF33122
+    :url: blank
+    :phone: 305-592-3307
+    :country: US
+  :faa: blank
+- :contact: Sherry
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: SPEEDY PAK
+  :locations: 
+  - :fax: 803-775-2376
+    :region: California
+    :addr1: 919 LUCAS STREET NORTH
+    :city: San Diego
+    :addr2: ""
+    :name: SPEEDY PAK
+    :airport: CAE
+    :city_state_zip: SAN DIEGO, CA.  92110
+    :zip: "92110"
+    :number: SPEE29169
+    :url: blank
+    :phone: 803-773-5876
+    :country: US
+  - :fax: 843-238-4060
+    :region: California
+    :addr1: 1131 SHINE AVE
+    :city: San Diego
+    :addr2: ""
+    :name: SPEEDY PAK DELIVERY SERVI
+    :airport: MYR
+    :city_state_zip: SAN DIEGO, CA.  92123
+    :zip: "92123"
+    :number: SPEE29577
+    :url: blank
+    :phone: 843-238-4020
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: CENTRAL DELIVERY SERVICE
+  :locations: 
+  - :fax: 301-210-1291
+    :region: Ohio
+    :addr1: 6501 CENTRAL VALLEY ROAD
+    :city: Columbus
+    :addr2: ""
+    :name: CENTRAL DELIVERY SERVICE
+    :airport: BWI
+    :city_state_zip: COLUMBUS, OH.  43216
+    :zip: "43216"
+    :number: CENT20705
+    :url: www.centraldelivery.com
+    :phone: 410-792-7771
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: NEW MEXICO FREIGHT
+  :locations: 
+  - :fax: 505-842-9740
+    :region: Florida
+    :addr1: 2460 ALAMO AVENUE SOUTHEAST
+    :city: Orlando
+    :addr2: ""
+    :name: NEW MEXICO FREIGHT
+    :airport: ABQ
+    :city_state_zip: ORLANDO, FL. 32824
+    :zip: "32824"
+    :number: NEWM87106
+    :url: blank
+    :phone: 505-842-9747
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ABLE EXPRESS
+  :locations: 
+  - :fax: 615-889-5750
+    :region: Virginia
+    :addr1: 2724 OLD ELM HILL PIKE
+    :city: Alexandria
+    :addr2: ""
+    :name: ABLE EXPRESS
+    :airport: BNA
+    :city_state_zip: ALEXANDRIA, VA. 22304
+    :zip: "22304"
+    :number: ABLE37201
+    :url: blank
+    :phone: 615-889-2034
+    :country: US
+  - :fax: blank
+    :region: New Mexico
+    :addr1: P.O. BOX 148210
+    :city: Albuquerque
+    :addr2: ""
+    :name: ABLE EXPRESS
+    :airport: BNA
+    :city_state_zip: ALBUQUERQUE,  NM.  87106
+    :zip: "87106"
+    :number: ABLE37214
+    :url: blank
+    :phone: 615-889-2034
+    :country: US
+  :faa: 11/10/05
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ACS
+  :locations: 
+  - :fax: 651-681-8593
+    :region: Alaska
+    :addr1: 2535 PILOT KNOB ROAD
+    :city: Anchorage
+    :addr2: ""
+    :name: ACS
+    :airport: MSP
+    :city_state_zip: ANCHORAGE, AK. 99522
+    :zip: "99522"
+    :number: ACS55120
+    :url: blank
+    :phone: 651-681-8587
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: THRIFT TRUCKING
+  :locations: 
+  - :fax: 309-697-8205
+    :region: Washington
+    :addr1: 4425 ENTERPRISE DR
+    :city: Seattle
+    :addr2: ""
+    :name: THRIFT TRUCKING
+    :airport: PIA
+    :city_state_zip: SEATTLE, WA. 98158
+    :zip: "98158"
+    :number: THRI61607
+    :url: blank
+    :phone: 309-697-8200
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: SHOTGUN EXPRESS
+  :locations: 
+  - :fax: 817-431-7979
+    :region: Michigan
+    :addr1: 241 SOUTH MAIN STREET
+    :city: Saginaw
+    :addr2: ""
+    :name: SHOTGUN EXPRESS
+    :airport: DFW
+    :city_state_zip: SAGINAW , MI. 48604
+    :zip: "48604"
+    :number: SHOT76051
+    :url: blank
+    :phone: 817-431-0016
+    :country: US
+  :faa: "38636"
+- :contact: Bruce Michaels
+  :rank: "3"
+  :accounting_code: |
+    601
+
+  :name: KAI LOGSISTICS, INC.
+  :locations: 
+  - :fax: 954-741-4456
+    :region: California
+    :addr1: 5027 N HIATUS ROAD
+    :city: Los Angeles
+    :addr2: ""
+    :name: KAI LOGSISTICS, INC.
+    :airport: MIA
+    :city_state_zip: LOS ANGELES , CA. 90045
+    :zip: "90045"
+    :number: KAIL33351
+    :url: blank
+    :phone: 954-741-1414
+    :country: US
+  :faa: blank
+- :contact: Mike
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: AVS
+  :locations: 
+  - :fax: 514-422-0712
+    :region: Tennessee
+    :addr1: PO BOX 364
+    :city: Blountville
+    :addr2: ""
+    :name: AVS
+    :airport: YUL
+    :city_state_zip: BLOUNTVILLE, TN.  37617
+    :zip: "37617"
+    :number: AVS41811
+    :url: blank
+    :phone: 514-422-0710
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: SHEA TRUCKING
+  :locations: 
+  - :fax: 631-756-0295
+    :region: California
+    :addr1: 1600 NEW HIGHWAY
+    :city: South San Francisco
+    :addr2: ""
+    :name: SHEA TRUCKING
+    :airport: JFK
+    :city_state_zip: SOUTH SAN FRANCISCO, CA.  94080
+    :zip: "94080"
+    :number: SHEA11735
+    :url: blank
+    :phone: 631-756-7150
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "2"
+  :accounting_code: |
+    601
+
+  :name: CLT AIR FREIGHT CARRIER
+  :locations: 
+  - :fax: 704-357-9719
+    :region: Pennsylvania
+    :addr1: 4325 BEAM ROAD
+    :city: Cranberry Twp
+    :addr2: ""
+    :name: CLT AIR FREIGHT CARRIER
+    :airport: CLT
+    :city_state_zip: CRANBERRY TWP,  PA.  16066
+    :zip: "16066"
+    :number: CLTA28217
+    :url: www.cltair.com
+    :phone: 704-357-9337
+    :country: US
+  :faa: 10/18/2005
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: EXCELSIOR FREIGHT SYSTEM
+  :locations: 
+  - :fax: 518-785-1447
+    :region: Tennessee
+    :addr1: 862 ALBANY-SHAKER RD.
+    :city: Greeneville
+    :addr2: ""
+    :name: EXCELSIOR FREIGHT SYSTEM
+    :airport: ALB
+    :city_state_zip: GREENEVILLE,  TN.  37744
+    :zip: "37744"
+    :number: EXCE12110
+    :url: blank
+    :phone: 518-785-1234
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: REGIONS INTERSTATE BILLING
+  :locations: 
+  - :fax: blank
+    :region: British Columbia
+    :addr1: DEPT 5210
+    :city: Richmond
+    :addr2: ""
+    :name: REGIONS INTERSTATE BILLING
+    :airport: BHM
+    :city_state_zip: RICHMOND, BC.  V6X  1W3
+    :zip: V6X  1W3
+    :number: REGI35287
+    :url: blank
+    :phone: 256-355-1750
+    :country: CA
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: HUNTSVILLE AIR FREIGHT
+  :locations: 
+  - :fax: 256-772-9939
+    :region: Washington
+    :addr1: P.O. BOX 6111
+    :city: Kent
+    :addr2: ""
+    :name: HUNTSVILLE AIR FREIGHT
+    :airport: HSV
+    :city_state_zip: KENT, WA. 98032
+    :zip: "98032"
+    :number: HUNT35806
+    :url: blank
+    :phone: 256-772-9800
+    :country: US
+  :faa: blank
+- :contact: Randy
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ASAP EXPRESS DELIVERY
+  :locations: 
+  - :fax: blank
+    :region: Alabama
+    :addr1: 6223 SOLWAY DRIVE
+    :city: Birmingham
+    :addr2: ""
+    :name: ASAP EXPRESS DELIVERY
+    :airport: MEM
+    :city_state_zip: BIRMINGHAM, AL.  35212
+    :zip: "35212"
+    :number: ASAP38119
+    :url: blank
+    :phone: 901-680-9811
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: MCD
+  :locations: 
+  - :fax: 401-725-9880
+    :region: New York
+    :addr1: PO BOX 7143
+    :city: New York
+    :addr2: ""
+    :name: MCD
+    :airport: PVD
+    :city_state_zip: NEW YORK, NY. 10018
+    :zip: "10018"
+    :number: MCD02864
+    :url: blank
+    :phone: 401-724-5300
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: CURTAIN AIR FREIGHT
+  :locations: 
+  - :fax: 707-778-0416
+    :region: Nova Scotia
+    :addr1: 1501 PETALUMA BLVD. SOUTH
+    :city: Dartmouth
+    :addr2: ""
+    :name: CURTAIN AIR FREIGHT
+    :airport: SFO
+    :city_state_zip: DARTMOUTH, NS. B3B  1W2
+    :zip: B3B  1W2
+    :number: CURT94952
+    :url: blank
+    :phone: 707-778-8143
+    :country: CA
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: AIR CARGO TRANSIT
+  :locations: 
+  - :fax: 602-229-2620
+    :region: Maryland
+    :addr1: 2465 SOUTH 19TH AVE
+    :city: Baltimore
+    :addr2: ""
+    :name: AIR CARGO TRANSIT
+    :airport: PHX
+    :city_state_zip: BALTIMORE, MD.  21201
+    :zip: "21201"
+    :number: AIRC85019
+    :url: blank
+    :phone: 602-252-1000
+    :country: US
+  :faa: "38606"
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: BEARDEN DELIVERY SERVICE
+  :locations: 
+  - :fax: 205-595-9909
+    :region: Ohio
+    :addr1: 5900 MESSER AIRPORT HIGHWAY
+    :city: Brookpark
+    :addr2: ""
+    :name: BEARDEN DELIVERY SERVICE
+    :airport: BHM
+    :city_state_zip: BROOKPARK, OH.  44142
+    :zip: "44142"
+    :number: BEAR35212
+    :url: blank
+    :phone: 205-595-3342
+    :country: US
+  :faa: 10/19/2007
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: BURRARD TRANSPORT
+  :locations: 
+  - :fax: 604-936-9155
+    :region: Wyoming
+    :addr1: 2423 COLUMBIA
+    :city: Casper
+    :addr2: ""
+    :name: BURRARD TRANSPORT
+    :airport: YVR
+    :city_state_zip: CASPER, WY. 82601
+    :zip: "82601"
+    :number: BURR32811
+    :url: www.burrardtransport.com
+    :phone: 604-936-9121
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: FLS (FREIGHT LAND SKY)
+  :locations: 
+  - :fax: 717-236-2066
+    :region: Nova Scotia
+    :addr1: 1000 SYCAMORE ST
+    :city: Halifax
+    :addr2: ""
+    :name: FLS (FREIGHT LAND SKY)
+    :airport: MDT
+    :city_state_zip: HALIFAX, NS. B3K 2R9
+    :zip: B3K 2R9
+    :number: FLS17104
+    :url: blank
+    :phone: 717-236-6700
+    :country: CA
+  :faa: "39088"
+- :contact: blank
+  :rank: "7"
+  :accounting_code: |
+    601
+
+  :name: ON TIME EXPRESS
+  :locations: 
+  - :fax: blank
+    :region: Pennsylvania
+    :addr1: PO BOX 890578
+    :city: New Philadelphia
+    :addr2: ""
+    :name: "ON TIME EXPRESS "
+    :airport: ORF
+    :city_state_zip: PHILADELPHIA,  PA.  19137
+    :zip: "19137"
+    :number: ONTI23509
+    :url: blank
+    :phone: 757-857-7752
+    :country: US
+  - :fax: 757-855-0390
+    :region: California
+    :addr1: 1157 PRODUCTION RD
+    :city: Petaluma
+    :addr2: ""
+    :name: ON TIME EXPRESS
+    :airport: ORF
+    :city_state_zip: PETALUMA , CA. 94952
+    :zip: "94952"
+    :number: ONTI23502
+    :url: blank
+    :phone: 757-857-7752
+    :country: US
+  :billing_location: ONTI23509
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: DIAMOND FREIGHT SYSTEMS
+  :locations: 
+  - :fax: 509-535-3281
+    :region: Scotland
+    :addr1: "3808 N. SULLIVAN RD #13"
+    :city: Edinburgh
+    :addr2: ""
+    :name: DIAMOND FREIGHT SYSTEMS
+    :airport: GEG
+    :city_state_zip: EDINBURGH,  SC.   EH51QD
+    :zip: EH51QD
+    :number: DIAM99216
+    :url: blank
+    :phone: 509-535-1896
+    :country: GB
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: MBS DELIVERY INC
+  :locations: 
+  - :fax: blank
+    :region: New York
+    :addr1: 3125 LAURIA ROAD
+    :city: New York
+    :addr2: ""
+    :name: MBS DELIVERY INC
+    :airport: MBS
+    :city_state_zip: NEW YORK, NY. 10001
+    :zip: "10001"
+    :number: MBSD48706
+    :url: blank
+    :phone: 989-686-4000
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: METRO EXPRESS
+  :locations: 
+  - :fax: 909-758-9191
+    :region: Virginia
+    :addr1: PO BOX 4207
+    :city: Norfolk
+    :addr2: ""
+    :name: METRO EXPRESS
+    :airport: ONT
+    :city_state_zip: NORFOLK, VA. 23502
+    :zip: "23502"
+    :number: METR91730
+    :url: www.metroexpress.com
+    :phone: 800-224-8450
+    :country: US
+  - :fax: 334-993-8707
+    :region: New York
+    :addr1: 875 FEE FEE RD.
+    :city: Newburgh
+    :addr2: ""
+    :name: METRO EXPRESS
+    :airport: STL
+    :city_state_zip: NEWBURGH, NY.  12550
+    :zip: "12550"
+    :number: METR63043
+    :url: www.metroexpressinc.com
+    :phone: 800-805-0073
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: MERCURY FREIGHT SYSTEMS
+  :locations: 
+  - :fax: 716-683-8011
+    :region: New Jersey
+    :addr1: 3860 BROADWAY
+    :city: Newark
+    :addr2: ""
+    :name: MERCURY FREIGHT SYSTEMS
+    :airport: BUF
+    :city_state_zip: NEWARK, NJ.  33174
+    :zip: "33174"
+    :number: MERC14227
+    :url: blank
+    :phone: 716-683-2790
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "2"
+  :accounting_code: |
+    601
+
+  :name: JV TRANSPORTATION
+  :locations: 
+  - :fax: 973-817-8685
+    :region: Arkansas
+    :addr1: 16 HERBERT STREET
+    :city: Little Rock
+    :addr2: ""
+    :name: JV TRANSPORTATION
+    :airport: EWR
+    :city_state_zip: LITTLE ROCK, AR.  72221-5118
+    :zip: 72221-5118
+    :number: JVTR07105
+    :url: blank
+    :phone: 908-929-0200
+    :country: US
+  - :fax: blank
+    :region: Arkansas
+    :addr1: P.O. BOX 383
+    :city: Little Rock
+    :addr2: ""
+    :name: JV TRANSPORTATION
+    :airport: EWR
+    :city_state_zip: LITTLE ROCK, AR.  72201
+    :zip: "72201"
+    :number: JVTR07083
+    :url: blank
+    :phone: 908-929-0200
+    :country: US
+  :faa: 06/29/2007
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: GRILEY AIR FREIGHT
+  :locations: 
+  - :fax: blank
+    :region: Missouri
+    :addr1: PO BOX 92940
+    :city: Kansas City
+    :addr2: ""
+    :name: GRILEY AIR FREIGHT
+    :airport: LAX
+    :city_state_zip: KANSAS CITY, MO. 64120
+    :zip: "64120"
+    :number: GRIL90009
+    :url: blank
+    :phone: 310-642-0462
+    :country: US
+  - :fax: 310-645-1190
+    :region: Missouri
+    :addr1: 5341 WEST 104TH STREET
+    :city: Kansas City
+    :addr2: ""
+    :name: GRILEY AIR FREIGHT
+    :airport: LAX
+    :city_state_zip: KANSAS CITY , MO. 64153
+    :zip: "64153"
+    :number: GRIL90045
+    :url: www.grileyair.com
+    :phone: 310-642-0462
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: FREIGHTMASTERS INC
+  :locations: 
+  - :fax: 651-681-7555
+    :region: New York
+    :addr1: 3703 KENNEBEC DRIVE
+    :city: Jamaica
+    :addr2: ""
+    :name: FREIGHTMASTERS INC
+    :airport: MSP
+    :city_state_zip: JAMAICA, NY. 11434
+    :zip: "11434"
+    :number: FREI55122
+    :url: www.freightmasters.com
+    :phone: 651-688-6800
+    :country: US
+  :faa: blank
+- :contact: Rhonda
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: BERRY'S AIR FREIGHT
+  :locations: 
+  - :fax: 803-796-7781
+    :region: Ohio
+    :addr1: 1128 WATTLING ROAD
+    :city: Brookpark
+    :addr2: ""
+    :name: BERRY'S AIR FREIGHT
+    :airport: CAE
+    :city_state_zip: BROOKPARK, OH.  44142
+    :zip: "44142"
+    :number: BERR29170
+    :url: blank
+    :phone: 803-796-7557
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "2"
+  :accounting_code: |
+    601
+
+  :name: C AND A COURIER SERVICE
+  :locations: 
+  - :fax: 410-747-2627
+    :region: Oregon
+    :addr1: 639 COLERAINE ROAD
+    :city: Central Point
+    :addr2: ""
+    :name: C AND A COURIER SERVICE
+    :airport: BWI
+    :city_state_zip: CENTRAL POINT,  OR.  97502
+    :zip: "97502"
+    :number: CAND21229
+    :url: ""
+    :phone: 866-557-7784
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "3"
+  :accounting_code: |
+    601
+
+  :name: LIVINGSTON EVENT LOGISTICS
+  :locations: 
+  - :fax: 514-849-3446
+    :region: Quebec
+    :addr1: 276 RUE ST. JACQUES
+    :city: Montreal
+    :addr2: ""
+    :name: LIVINGSTON EVENT LOGISTICS
+    :airport: YUL
+    :city_state_zip: MONTREAL, QC. H2Y 2G4
+    :zip: H2Y 2G4
+    :number: LIVI22411
+    :url: blank
+    :phone: 514-987-2700
+    :country: CA
+  :faa: blank
+- :contact: blank
+  :rank: "2"
+  :accounting_code: |
+    601
+
+  :name: BAX GLOBAL- DFW
+  :locations: 
+  - :fax: blank
+    :region: New York
+    :addr1: 3015 N. AIRFIELD DR
+    :city: Brentwood
+    :addr2: ""
+    :name: BAX GLOBAL- DFW
+    :airport: DFW
+    :city_state_zip: BRENTWOOD, NY.  11717
+    :zip: "11717"
+    :number: BAXG75261
+    :url: blank
+    :phone: 972-453-0722
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: MONTANA AIR CARTAGE
+  :locations: 
+  - :fax: 406-245-1045
+    :region: Wisconsin
+    :addr1: 4300 STATE AVENUE
+    :city: Oak Creek
+    :addr2: ""
+    :name: MONTANA AIR CARTAGE
+    :airport: BIL
+    :city_state_zip: OAK CREEK, WI.  53154
+    :zip: "53154"
+    :number: MONT59101
+    :url: blank
+    :phone: 406-245-8622
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: GEM COURIER SERVICE INC
+  :locations: 
+  - :fax: blank
+    :region: New Jersey
+    :addr1: 2740 SOUTH COLE ROAD
+    :city: Jersey City
+    :addr2: ""
+    :name: GEM COURIER SERVICE INC
+    :airport: BOI
+    :city_state_zip: JERSEY CITY, NJ.  07305
+    :zip: "07305"
+    :number: GEMC83709
+    :url: blank
+    :phone: 208-362-0149
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: AGILITY FAIRS & EVENTS
+  :locations: 
+  - :fax: 9714-331-0007
+    :region: Colorado
+    :addr1: .
+    :city: Aurora
+    :addr2: ""
+    :name: AGILITY FAIRS & EVENTS
+    :airport: DXB
+    :city_state_zip: AURORA, CO. 80011
+    :zip: "80011"
+    :number: AGIL00000
+    :url: blank
+    :phone: 9714-331-2003
+    :country: US
+  :faa: blank
+- :contact: BEV
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: BUGDENS TAXI
+  :locations: 
+  - :fax: blank
+    :region: Texas
+    :addr1: "**CREDIT CARD ONLY**"
+    :city: Carrollton
+    :addr2: ""
+    :name: BUGDENS TAXI
+    :airport: YYT
+    :city_state_zip: CARROLLTON, TX.  75006
+    :zip: "75006"
+    :number: BUGD11211
+    :url: blank
+    :phone: 709-726-4400
+    :country: US
+  :faa: blank
+- :contact: MIKE   SHOWERS
+  :rank: "5"
+  :accounting_code: |
+    601
+
+  :name: R S AIR SERVICES
+  :locations: 
+  - :fax: 519-344-4285
+    :region: North Carolina
+    :addr1: 1401 PLANK ROAD
+    :city: Raleigh
+    :addr2: ""
+    :name: R S AIR SERVICES
+    :airport: DTW
+    :city_state_zip: RALEIGH, NC.  27617
+    :zip: "27617"
+    :number: RSAI71711
+    :url: blank
+    :phone: 800-567-9848
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: CARR'S DELIVERY SERVICE
+  :locations: 
+  - :fax: 361-289-7360
+    :region: Ohio
+    :addr1: .
+    :city: Columbus
+    :addr2: ""
+    :name: CARR'S DELIVERY SERVICE
+    :airport: CRP
+    :city_state_zip: COLUMBUS, OH.  43207
+    :zip: "43207"
+    :number: CARR78401
+    :url: blank
+    :phone: 361-289-0424
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: TOWN DELIVERY INC
+  :locations: 
+  - :fax: blank
+    :region: Maryland
+    :addr1: 2615 N. 11TH ST.
+    :city: Silver Spring
+    :addr2: ""
+    :name: TOWN DELIVERY INC
+    :airport: OMA
+    :city_state_zip: SILVER SPRING,  MD.  20910
+    :zip: "20910"
+    :number: TOWN68102
+    :url: blank
+    :phone: 402-342-0486
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: DESTINATION OVERIDE INC
+  :locations: 
+  - :fax: 440-243-2353
+    :region: Minnesota
+    :addr1: 106 SHELDON ROAD
+    :city: Eagan
+    :addr2: ""
+    :name: DESTINATION OVERIDE INC
+    :airport: CLE
+    :city_state_zip: EAGAN , MN. 55121
+    :zip: "55121"
+    :number: DEST44017
+    :url: blank
+    :phone: 440-243-5120
+    :country: US
+  :faa: 10/18/2005
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: TAX AIR
+  :locations: 
+  - :fax: 414-769-0529
+    :region: Maine
+    :addr1: 5975 S. HOWELL AVE.
+    :city: Scarborough
+    :addr2: ""
+    :name: TAX AIR
+    :airport: MKE
+    :city_state_zip: SCARBOROUGH,  ME.  04074
+    :zip: "04074"
+    :number: TAXA53207
+    :url: www.taxair.com
+    :phone: 800-242-6565
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: AIR GROUND XPRESS INC
+  :locations: 
+  - :fax: 724-695-1116
+    :region: Texas
+    :addr1: MATCHETTE ROAD
+    :city: Austin
+    :addr2: ""
+    :name: AIR GROUND XPRESS INC
+    :airport: PIT
+    :city_state_zip: AUSTIN, TX. 78754
+    :zip: "78754"
+    :number: AIRG15126
+    :url: www.airground.com
+    :phone: 724-695-1110
+    :country: US
+  :faa: 01/31/2006
+- :contact: BARRY-DISPATCH
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: LYNDEN TRANSPORT
+  :locations: 
+  - :fax: 253-926-7202
+    :region: Tennessee
+    :addr1: 5410 12TH ST EAST
+    :city: Nashville
+    :addr2: ""
+    :name: LYNDEN TRANSPORT
+    :airport: SEA
+    :city_state_zip: NASHVILLE, TN.  37214
+    :zip: "37214"
+    :number: LYND98424
+    :url: blank
+    :phone: 800-366-5702
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: COLONIAL COURIER SERVICE
+  :locations: 
+  - :fax: 419-893-4616
+    :region: Rhode Island
+    :addr1: 413 OSAGE STREET
+    :city: Cumberland
+    :addr2: ""
+    :name: COLONIAL COURIER SERVICE
+    :airport: TOL
+    :city_state_zip: CUMBERLAND,  RI.  02864
+    :zip: 02864
+    :number: COLO43537
+    :url: www.colonialcourier.com
+    :phone: 419-891-0922
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ACCELERATED FAST FREIGHT
+  :locations: 
+  - :fax: blank
+    :region: Pennsylvania
+    :addr1: 2875 SOUTH MENDENHALL ROAD
+    :city: Allentown
+    :addr2: ""
+    :name: ACCELERATED FAST FREIGHT
+    :airport: MEM
+    :city_state_zip: ALLENTOWN, PA.  18109
+    :zip: "18109"
+    :number: ACCE38115
+    :url: blank
+    :phone: 901-362-2694
+    :country: US
+  :faa: blank
+- :contact: Tony or Mike
+  :rank: "3"
+  :accounting_code: |
+    601
+
+  :name: AIR SURFACE EXPRESS, LLC.
+  :locations: 
+  - :fax: 813-884-7811
+    :region: Maryland
+    :addr1: 6018 JET POINT IND. BLVD
+    :city: Baltimore
+    :addr2: ""
+    :name: AIR SURFACE EXPRESS, LLC.
+    :airport: TPA
+    :city_state_zip: BALTIMORE, MD.  21229
+    :zip: "21229"
+    :number: AIRS33634
+    :url: blank
+    :phone: 813-884-7800
+    :country: US
+  :faa: blank
+- :contact: WILLIE
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: DP TRUCKING
+  :locations: 
+  - :fax: 310-970-1483
+    :region: Texas
+    :addr1: 12622 YUKON AVE
+    :city: El Paso
+    :addr2: ""
+    :name: DP TRUCKING
+    :airport: LAX
+    :city_state_zip: EL PASO, TX. 79925
+    :zip: "79925"
+    :number: DPTR90250
+    :url: blank
+    :phone: 310-970-1482
+    :country: US
+  :faa: blank
+- :contact: MARCO   PICCOTT
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: MISSISSAUGA TRANSPORTATI
+  :locations: 
+  - :fax: 905-677-6522
+    :region: Wisconsin
+    :addr1: 6390 N.W. DRIVE SUITE 200
+    :city: Oak Creek
+    :addr2: ""
+    :name: MISSISSAUGA TRANSPORTATI
+    :airport: YYZ
+    :city_state_zip: OAK CREEK, WI.  53154
+    :zip: "53154"
+    :number: MISS41111
+    :url: blank
+    :phone: 905-677-2588
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: THE SHAKER GROUP
+  :locations: 
+  - :fax: 518-782-7226
+    :region: Washington
+    :addr1: 862 ALBANY SHAKER ROAD
+    :city: Seattle
+    :addr2: ""
+    :name: THE SHAKER GROUP
+    :airport: ALB
+    :city_state_zip: SEATTLE, WA. 98158
+    :zip: "98158"
+    :number: THES12110
+    :url: www.theshakergroup.com
+    :phone: 518-786-9286
+    :country: US
+  :faa: blank
+- :contact: BOB   BELSTERLING
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: PLUNKETT MOTOR FREIGHT
+  :locations: 
+  - :fax: 724-452-4774
+    :region: Pennsylvania
+    :addr1: 124 PLUNKETT DRIVE
+    :city: East Pittsburgh
+    :addr2: ""
+    :name: PLUNKETT MOTOR FREIGHT
+    :airport: PIT
+    :city_state_zip: PITTSBURGH,  PA.  15231
+    :zip: "15231"
+    :number: PLUN16063
+    :url: blank
+    :phone: 724-452-6240
+    :country: US
+  :faa: blank
+- :contact: JORGE  REINA
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: RESA EXPO LOGISTIC
+  :locations: 
+  - :fax: 34-93-263-1894
+    :region: British Columbia
+    :addr1: P.O. BOX APARTADO DE CORREOS
+    :city: Richmond
+    :addr2: ""
+    :name: RESA EXPO LOGISTIC
+    :airport: BCN
+    :city_state_zip: RICHMOND, BC.  V7B  1K7
+    :zip: V7B  1K7
+    :number: RESA08908
+    :url: blank
+    :phone: 34-93-233-4743
+    :country: CA
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: BIRMINGHAM AIR FREIGHT
+  :locations: 
+  - :fax: 205-591-2681
+    :region: New York
+    :addr1: 5335 MESSER AIRPORT HIGHWAY
+    :city: Buffalo
+    :addr2: ""
+    :name: BIRMINGHAM AIR FREIGHT
+    :airport: BHM
+    :city_state_zip: BUFFALO, NY. 14227
+    :zip: "14227"
+    :number: BIRM35212
+    :url: blank
+    :phone: 205-591-2677
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ACLS
+  :locations: 
+  - :fax: 703-729-5988
+    :region: California
+    :addr1: 23480 ROCK HAVEN WAY
+    :city: Anaheim
+    :addr2: ""
+    :name: ACLS
+    :airport: IAD
+    :city_state_zip: ANAHEIM, CA. 92803-4390
+    :zip: 92803-4390
+    :number: ACLS20147
+    :url: blank
+    :phone: 703-729-5900
+    :country: US
+  :faa: 03/15/2007
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: LIVELY DELIVERY SERVICE
+  :locations: 
+  - :fax: 512-339-0794
+    :region: Quebec
+    :addr1: 9701 DESSAU
+    :city: Montreal
+    :addr2: ""
+    :name: LIVELY DELIVERY SERVICE
+    :airport: AUS
+    :city_state_zip: MONTREAL ,  QC.  H9R4P3
+    :zip: H9R4P3
+    :number: LIVE78758
+    :url: blank
+    :phone: 512-491-8116
+    :country: CA
+  - :fax: blank
+    :region: Alabama
+    :addr1: PO BOX 143043
+    :city: Montgomery
+    :addr2: ""
+    :name: LIVELY DELIVERY SERVICE
+    :airport: AUS
+    :city_state_zip: MONTGOMERY , AL.  36108
+    :zip: "36108"
+    :number: LIVE78714
+    :url: blank
+    :phone: 512-491-8116
+    :country: US
+  :faa: 03/14/2006
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: STAR TRAVEL
+  :locations: 
+  - :fax: 787-762-7532
+    :region: California
+    :addr1: LA CERAMICA INDUS. PARK
+    :city: South San Francisco
+    :addr2: ""
+    :name: STAR TRAVEL
+    :airport: SJU
+    :city_state_zip: SAN FRANCISCO, CA.  94128
+    :zip: "94128"
+    :number: STAR00983
+    :url: blank
+    :phone: 787-762-7585
+    :country: US
+  :faa: 04/27/2007
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: DIRECT EXPRESS
+  :locations: 
+  - :fax: 306-525-2004
+    :region: Alberta
+    :addr1: 608 HENDERSON DR.
+    :city: Edmonton
+    :addr2: ""
+    :name: DIRECT EXPRESS
+    :airport: YQR
+    :city_state_zip: EDMONTON, AB. T6H  4L4
+    :zip: T6H  4L4
+    :number: DIRE45311
+    :url: blank
+    :phone: 306-757-4722
+    :country: CA
+  :faa: blank
+- :contact: Nick Chastain x1882
+  :rank: "2"
+  :accounting_code: |
+    602
+
+  :name: REDHAWK GLOBAL
+  :locations: 
+  - :fax: 866-531-3298
+    :region: Pennsylvania
+    :addr1: PO BOX 2946
+    :city: Richboro
+    :addr2: ""
+    :name: REDHAWK GLOBAL
+    :airport: CMH
+    :city_state_zip: RICHBORO, PA.  18954
+    :zip: "18954"
+    :number: REDH43216
+    :url: blank
+    :phone: 866-411-4295
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: AMERICA'S BEST COURIER SE
+  :locations: 
+  - :fax: 501-847-3820
+    :region: Maryland
+    :addr1: N/A
+    :city: Beltsville
+    :addr2: ""
+    :name: AMERICA'S BEST COURIER SE
+    :airport: LIT
+    :city_state_zip: BELTSVILLE, MD.  20705
+    :zip: "20705"
+    :number: AMER72201
+    :url: blank
+    :phone: 501-517-3561
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: PORTLAND AIR FREIGHT
+  :locations: 
+  - :fax: 207-510-6350
+    :region: British Columbia
+    :addr1: 75 POSTAL SERVICE WAY
+    :city: Port Moody
+    :addr2: ""
+    :name: PORTLAND AIR FREIGHT
+    :airport: PWM
+    :city_state_zip: PORT MOODY, BC. V3H  2W8
+    :zip: V3H  2W8
+    :number: PORT04074
+    :url: www.portlandairfreight.com
+    :phone: 800-775-4091
+    :country: CA
+  :faa: 03/13/2006
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: QUALITY CUSTOMS BROKER
+  :locations: 
+  - :fax: 414-482-9448
+    :region: Oregon
+    :addr1: P.O. BOX 370113
+    :city: Portland
+    :addr2: ""
+    :name: QUALITY CUSTOMS BROKER
+    :airport: "PDX"
+    :city_state_zip: PORTLAND, OR.  97220
+    :zip: "97220"
+    :number: QUAL53237
+    :url: blank
+    :phone: 888-813-4647
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: CAMPBELLS DELIVERY SERVIC
+  :locations: 
+  - :fax: blank
+    :region: Virginia
+    :addr1: 4118 AIRPARK DRIVE
+    :city: Charlottesville
+    :addr2: ""
+    :name: CAMPBELLS DELIVERY SERVIC
+    :airport: LRD
+    :city_state_zip: CHARLOTTESVILLE, VA.  22901
+    :zip: "22901"
+    :number: CAMP78041
+    :url: blank
+    :phone: 956-726-1354
+    :country: US
+  :faa: blank
+- :contact: AMANDA BARLOW
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: USCIB
+  :locations: 
+  - :fax: 212-944-0012
+    :region: Kansas
+    :addr1: 1212 AVE OF THE AMERICAS
+    :city: Wichita
+    :addr2: ""
+    :name: USCIB
+    :airport: "ICT"
+    :city_state_zip: WICHITA, KS.  67213
+    :zip: "67213"
+    :number: USCI10036
+    :url: www.uscib.org
+    :phone: 212-703-5078
+    :country: US
+  :faa: blank
+- :contact: HATTIE
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: BESTWAY DELIVERY
+  :locations: 
+  - :fax: 601-939-2501
+    :region: New York
+    :addr1: 125 SOUTH FREIGHT BOULEVARD
+    :city: Buffalo
+    :addr2: ""
+    :name: BESTWAY DELIVERY
+    :airport: JAN
+    :city_state_zip: BUFFALO, NY. 14227
+    :zip: "14227"
+    :number: BEST39201
+    :url: blank
+    :phone: 601-939-0797
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: MADISON FREIGHT SYSTEMS
+  :locations: 
+  - :fax: 414-769-9302
+    :region: California
+    :addr1: 900 UNIEK DRIVE
+    :city: National City
+    :addr2: ""
+    :name: MADISON FREIGHT SYSTEMS
+    :airport: MSN
+    :city_state_zip: NATIONAL CITY , CA. 91950
+    :zip: "91950"
+    :number: MADI53597
+    :url: www.madisonfreight.com
+    :phone: 800-236-6660
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: CUSTOM EXPRESS
+  :locations: 
+  - :fax: blank
+    :region: Ohio
+    :addr1: 4960 SOUTH 2ND STREET
+    :city: Dayton
+    :addr2: ""
+    :name: CUSTOM EXPRESS
+    :airport: MKE
+    :city_state_zip: DAYTON, OH. 45404
+    :zip: "45404"
+    :number: CUST53207
+    :url: blank
+    :phone: 414-769-9400
+    :country: US
+  :faa: blank
+- :contact: ALI  ERDEM
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: TURKSPED MILLETLERARASI N
+  :locations: 
+  - :fax: 90 212 425 20 30
+    :region: South Carolina
+    :addr1: MERKEZ MAH. DEGIRMENBAHCE S
+    :city: West Columbia
+    :addr2: ""
+    :name: TURKSPED MILLETLERARASI N
+    :airport: IST
+    :city_state_zip: WEST COLUMBIA,  SC.  29169
+    :zip: "29169"
+    :number: TURK34197
+    :url: www.turksped.com.tr
+    :phone: 90 212 599 03 50
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: SPECIAL SERVICES
+  :locations: 
+  - :fax: 864-879-2172
+    :region: Texas
+    :addr1: N/A
+    :city: San Antonio
+    :addr2: ""
+    :name: SPECIAL SERVICES
+    :airport: GSP
+    :city_state_zip: SAN ANTONIO , TX.  78233
+    :zip: "78233"
+    :number: SPEC29650
+    :url: blank
+    :phone: 864-879-3803
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: S.M. HEWITT
+  :locations: 
+  - :fax: blank
+    :region: Michigan
+    :addr1: P.O. BOX 606
+    :city: Romulus
+    :addr2: ""
+    :name: S.M. HEWITT
+    :airport: YYZ
+    :city_state_zip: ROMULUS, MI.  48174
+    :zip: "48174"
+    :number: SMHE77411
+    :url: blank
+    :phone: 519-332-4411
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: EAGLE TRUCKING
+  :locations: 
+  - :fax: blank
+    :region: Texas
+    :addr1: PO BOX 218
+    :city: Grapevine
+    :addr2: ""
+    :name: EAGLE TRUCKING
+    :airport: PHL
+    :city_state_zip: GRAPEVINE, TX.  76051
+    :zip: "76051"
+    :number: "75410"
+    :url: blank
+    :phone: 610-532-2700
+    :country: US
+  - :fax: 610-532-9403
+    :region: Texas
+    :addr1: 900 CALCON HOOK RD
+    :city: Grapevine
+    :addr2: ""
+    :name: EAGLE TRUCKING
+    :airport: PHL
+    :city_state_zip: GRAPEVINE, TX.  76051
+    :zip: "76051"
+    :number: EAGL19079
+    :url: blank
+    :phone: 610-532-2700
+    :country: US
+  :faa: blank
+- :contact: Jim
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: AMERICAN FLYER, INC.
+  :locations: 
+  - :fax: 856-573-9530
+    :region: Illinois
+    :addr1: PO BOX 8467
+    :city: Bensenville
+    :addr2: ""
+    :name: AMERICAN FLYER, INC.
+    :airport: PHL
+    :city_state_zip: BENSENVILLE,  IL.  60106
+    :zip: "60106"
+    :number: AMER08002
+    :url: blank
+    :phone: 856-573-9555
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: KINGDOM EXPRESS INC
+  :locations: 
+  - :fax: 310-258-0910
+    :region: Kentucky
+    :addr1: 5140 WEST 104TH STREET
+    :city: Louisville
+    :addr2: ""
+    :name: KINGDOM EXPRESS INC
+    :airport: SBA
+    :city_state_zip: LOUISVILLE, KY. 40213
+    :zip: "40213"
+    :number: KING90001
+    :url: www.kingdomexpress.com
+    :phone: 310-258-0900
+    :country: US
+  :faa: "38394"
+- :contact: FERNANDO
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: NORTH AMER LOGISTICS SER
+  :locations: 
+  - :fax: 514-868-6651
+    :region: West Virginia
+    :addr1: 205 VIGOR AVE
+    :city: Parkersburg
+    :addr2: ""
+    :name: NORTH AMER LOGISTICS SER
+    :airport: YUL
+    :city_state_zip: PARKERSBURG, WV.  26101
+    :zip: "26101"
+    :number: NORT21211
+    :url: blank
+    :phone: 514-868-6650
+    :country: US
+  :faa: blank
+- :contact: www.jefron.net
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: JEFRON AIR FREIGHT
+  :locations: 
+  - :fax: 318-632-9130
+    :region: New York
+    :addr1: 4134 CURTIS LANE
+    :city: Latham
+    :addr2: ""
+    :name: JEFRON AIR FREIGHT
+    :airport: SHV
+    :city_state_zip: LATHAM, NY. 12110
+    :zip: "12110"
+    :number: JEFR71109
+    :url: blank
+    :phone: 318-632-9118
+    :country: US
+  :faa: 04/14/2008
+- :contact: KIM
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ON TARGET COURIER & CARG
+  :locations: 
+  - :fax: 506-872-8730
+    :region: Pennsylvania
+    :addr1: 17 SOMERS DRIVE
+    :city: New Philadelphia
+    :addr2: ""
+    :name: ON TARGET COURIER & CARG
+    :airport: YQM
+    :city_state_zip: PHILADELPHIA, PA.  19178-4021
+    :zip: 19178-4021
+    :number: ONTA12311
+    :url: blank
+    :phone: 506-872-8720
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: HAWAII CARTAGE
+  :locations: 
+  - :fax: 808-877-2650
+    :region: Missouri
+    :addr1: "246 PAPA PLACE #4"
+    :city: Kansas City
+    :addr2: ""
+    :name: HAWAII CARTAGE
+    :airport: OGG
+    :city_state_zip: KANSAS CITY, MO. 64195
+    :zip: "64195"
+    :number: HAWA96732
+    :url: www.hicartage.com
+    :phone: 808-877-7997
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: DAVIES TURNER AIR CARGO
+  :locations: 
+  - :fax: 011-44-131-317-9
+    :region: Virginia
+    :addr1: 2/5 SPITFIRE HOUSE
+    :city: Dulles
+    :addr2: ""
+    :name: DAVIES TURNER AIR CARGO
+    :airport: EDI
+    :city_state_zip: DULLES, VA. 20166
+    :zip: "20166"
+    :number: DAVI12011
+    :url: www.daviesturnercom
+    :phone: 011-44-131-317-9
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: AIR LAND EXPRESS
+  :locations: 
+  - :fax: blank
+    :region: Texas
+    :addr1: 48 SOUTH BAYLES AVE.
+    :city: Austin
+    :addr2: ""
+    :name: AIR LAND EXPRESS
+    :airport: JFK
+    :city_state_zip: AUSTIN, TX. 78754
+    :zip: "78754"
+    :number: AIRL11050
+    :url: blank
+    :phone: 212-956-1222
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ACTION EXPRESS & HOT SHOT
+  :locations: 
+  - :fax: 780-451-0311
+    :region: Georgia
+    :addr1: P.O. BOX 92038
+    :city: Atlanta
+    :addr2: ""
+    :name: ACTION EXPRESS & HOT SHOT
+    :airport: YEG
+    :city_state_zip: ATLANTA , GA. 30349
+    :zip: "30349"
+    :number: ACTI61111
+    :url: www.actionexpressedm.ca
+    :phone: 780-454-9231
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: ZOOM LOGISTICS
+  :locations: 
+  - :fax: blank
+    :region: Pennsylvania
+    :addr1: 2326 AIR PARK RD.
+    :city: Zelienople
+    :addr2: ""
+    :name: ZOOM LOGISTICS
+    :airport: CHS
+    :city_state_zip: ZELIENOPLE,  PA.  16063
+    :zip: "16063"
+    :number: ZOOM29406
+    :url: blank
+    :phone: 843-554-4555
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: THUNDERBOLT
+  :locations: 
+  - :fax: blank
+    :region: Pennsylvania
+    :addr1: .
+    :city: Sharon Hill
+    :addr2: ""
+    :name: THUNDERBOLT
+    :airport: ELP
+    :city_state_zip: SHARON HILL, PA.  19079
+    :zip: "19079"
+    :number: THUN79901
+    :url: blank
+    :phone: 915-872-9600
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: EAGLE CANADA
+  :locations: 
+  - :fax: 905-612-8580
+    :region: Texas
+    :addr1: 1880 MATHESON BLVD
+    :city: Grapevine
+    :addr2: ""
+    :name: EAGLE CANADA
+    :airport: YYZ
+    :city_state_zip: GRAPEVINE, TX.  76051
+    :zip: "76051"
+    :number: EAGL45411
+    :url: blank
+    :phone: 905-672-3456
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: RONTRA FREIGHT
+  :locations: 
+  - :fax: 206-248-2342
+    :region: New Hampshire
+    :addr1: 1912 SOUTH 146TH STREET
+    :city: Rindge
+    :addr2: ""
+    :name: RONTRA FREIGHT
+    :airport: SEA
+    :city_state_zip: RINDGE, NH.  03461
+    :zip: "03461"
+    :number: RONT98168
+    :url: www.rontra.com
+    :phone: 206-241-2353
+    :country: US
+  :faa: "39365"
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: CENTRAL AIR FREIGHT
+  :locations: 
+  - :fax: 484-223-1691
+    :region: Ohio
+    :addr1: "101 EAST WALNUT STREET #123"
+    :city: Columbus
+    :addr2: ""
+    :name: CENTRAL AIR FREIGHT
+    :airport: ABE
+    :city_state_zip: COLUMBUS, OH.  43212
+    :zip: "43212"
+    :number: CENT18109
+    :url: www.caffreightservices.com
+    :phone: 484-223-1596
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: COLORADO AIR CARGO
+  :locations: 
+  - :fax: 719-594-6242
+    :region: Texas
+    :addr1: 14300 EAST 35TH PLACE
+    :city: Lake Dallas
+    :addr2: ""
+    :name: COLORADO AIR CARGO
+    :airport: COS
+    :city_state_zip: DALLAS , TX. 75208
+    :zip: "75208"
+    :number: COLO80011
+    :url: blank
+    :phone: 303-307-1554
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: AEROSTREAM
+  :locations: 
+  - :fax: 206-824-3146
+    :region: Massachusetts
+    :addr1: 835 SOUTH 192ND ST, UNIT C1200
+    :city: Auburn
+    :addr2: ""
+    :name: AEROSTREAM
+    :airport: SEA
+    :city_state_zip: AUBURN, MA. 01501
+    :zip: "01501"
+    :number: AERO98148
+    :url: www.aerostream.ca
+    :phone: 866-376-1010
+    :country: US
+  - :fax: 604-207-8894
+    :region: Georgia
+    :addr1: 130-4840 MILLER RD.
+    :city: Atlanta
+    :addr2: ""
+    :name: AEROSTREAM
+    :airport: YVR
+    :city_state_zip: ATLANTA, GA. 30354
+    :zip: "30354"
+    :number: AERO71711
+    :url: www.aerostream.ca
+    :phone: 604-207-8888
+    :country: US
+  :faa: blank
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: NON STOP
+  :locations: 
+  - :fax: 919-785-0061
+    :region: Florida
+    :addr1: 6231 WESTGATE RD
+    :city: Orlando
+    :addr2: ""
+    :name: NON STOP
+    :airport: RDU
+    :city_state_zip: ORLANDO, FL. 32837
+    :zip: "32837"
+    :number: NONS27617
+    :url: blank
+    :phone: 919-785-0011
+    :country: US
+  - :fax: blank
+    :region: Florida
+    :addr1: PO BOX 133
+    :city: Orlando
+    :addr2: ""
+    :name: NON STOP
+    :airport: RDU
+    :city_state_zip: ORLANDO, FL. 32837
+    :zip: "32837"
+    :number: NONS27560
+    :url: blank
+    :phone: 919-785-0011
+    :country: US
+  :faa: "39056"
+- :contact: DISPATCH
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: FREIGHT ESCAPE
+  :locations: 
+  - :fax: 630-350-0696
+    :region: Maryland
+    :addr1: 811 THORNDALE AVENUE
+    :city: Hanover
+    :addr2: ""
+    :name: FREIGHT ESCAPE
+    :airport: ORD
+    :city_state_zip: HANOVER, MD.  21076
+    :zip: "21076"
+    :number: FREI60106
+    :url: www.freightescape.com
+    :phone: 630-350-0555
+    :country: US
+  :faa: "38606"
+- :contact: blank
+  :rank: "0"
+  :accounting_code: |
+    601
+
+  :name: DEPENDABLE DISPATCH SERV
+  :locations: 
+  - :fax: 204-283-0702
+    :region: Minnesota
+    :addr1: 975 COTTENWOOD ROAD
+    :city: Eagan
+    :addr2: ""
+    :name: DEPENDABLE DISPATCH SERV
+    :airport: YWG
+    :city_state_zip: EAGAN , MN. 55121
+    :zip: "55121"
+    :number: DEPE21311
+    :url: blank
+    :phone: 204-925-8885
+    :country: US
+  :faa: blank
+- :contact: DISPATCH
+  :rank: "1"
+  :accounting_code: |
+    601
+
+  :name: KITTY HAWK (RCT)
+  :locations: 
+  - :fax: 206-246-8794
+    :region: Arkansas
+    :addr1: 2345 SOUTH 156TH STREET
+    :city: Lowell
+    :addr2: ""
+    :name: KITTY HAWK (RCT)
+    :airport: SEA
+    :city_state_zip: LOWELL, AR. 72745
+    :zip: "72745"
+    :number: AIRC98158
+    :url: blank
+    :phone: 206-246-2000
+    :country: US
+  :faa: blank
+- :contact: Robert
+  :rank: "2"
+  :accounting_code: |
+    601
+
+  :name: MONTREX
+  :locations: 
+  - :fax: 514-636-4808
+    :region: Oklahoma
+    :addr1: .
+    :city: Oklahoma City
+    :addr2: ""
+    :name: MONTREX
+    :airport: YUL
+    :city_state_zip: OKLAHOMA CITY, OK. 73129
+    :zip: "73129"
+    :number: MONT00001
+    :url: blank
+    :phone: 514-636-5242
+    :country: US
+  :faa: blank

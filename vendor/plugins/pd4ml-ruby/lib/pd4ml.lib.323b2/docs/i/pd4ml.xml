@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>pd4ml</shortname>
+	<info>PD4ML JSP to PDF Transformer Tag Library</info>
+
+	<tag>
+		<name>page.break</name>
+		<tagclass>org.zefer.pd4ml.taglib.PD4MLPageBreakTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>PDF Page Break Tag</info>
+	</tag>
+	<tag>
+		<name>transform</name>
+		<tagclass>org.zefer.pd4ml.taglib.PD4MLTransformerTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>JSP to PDF Transformer Tag</info>
+		<attribute>
+			<name>authorName</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- author name to be included to document properties -->
+		</attribute>
+		<attribute>
+			<name>pageFormat</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- prefedined values like "A4" -->
+		</attribute>
+		<attribute>
+			<name>fileName</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- desired pdf file name (note: not all browsers interpret it correctly);
+			useful in compination with inline="false" attribute value -->
+		</attribute>
+		<attribute>
+			<name>pageInsets</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- "<top>,<left>,<bottom>,<right>,<units>"
+				coma-separated integer sizes in specified untis ("mm" or "points") -->
+		</attribute>
+		<attribute>
+			<name>pageOrientation</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- "landscape" or "portrait" -->
+		</attribute>
+		<attribute>
+			<name>screenWidth</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- see PD4ML.setHtmlWidth() -->
+		</attribute>
+		<attribute>
+			<name>enableImageSplit</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- "true" or "false"; see PD4ML.enableImgSplit() -->
+		</attribute>
+		<attribute>
+			<name>inline</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- should the file be shown in the browser window ("true") or
+			 offered to be saved to disk ("false") -->
+		</attribute>
+		<attribute>
+			<name>enableSwingPatch</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- "true" or "false"; see PD4ML.enableRenderingPatch() -->
+		</attribute>
+		<attribute>
+			<name>interpolateImages</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- "true" or "false"; see PD4ML.interpolateImages() -->
+		</attribute>
+		<attribute>
+			<name>encoding</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>url</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- external URL to be converted to PDF.
+			If the attribute is set, than the HTML/JSP content between <pd4ml:transform>
+			and </pd4ml:transform> tags is ignored. The URL should be in full form
+			http://server/path/to/file.jsp or in reduced /path/to/file.jsp (in the last case
+			current server address and port are used). Relative paths are not accepted. -->
+		</attribute>
+		<attribute>
+			<name>useAFM</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- Available since version 1.1.0. if set to true, it forces PD4ML to use Adobe font glyph widths instead of
+	             the font metrics provided by Java graphical environment. Usually resulting PDF is rendered more correctly. -->
+		</attribute>
+	</tag>
+	<tag>
+		<name>header</name>
+		<tagclass>org.zefer.pd4ml.taglib.PD4HeaderTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		 <!-- PDF Header Definition Tag -->
+		<attribute>
+			<name>titleAlignment</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- "left" or "center" or "right" -->
+		</attribute>
+		<attribute>
+			<name>titleTemplate</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- a template string with placeholders: ${title} for title,
+			${page} for page number -->
+		</attribute>
+		<attribute>
+			<name>pageNumberAlignment</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- "left" or "center" or "right" -->
+		</attribute>
+		<attribute>
+			<name>pageNumberTemplate</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- a template string with placeholders: ${page} for page number -->
+		</attribute>
+		<attribute>
+			<name>initialPageNumber</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- page number for the first generated page -->
+		</attribute>
+		<attribute>
+			<name>pagesToSkip</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- a number of pages from teh document begining, that
+			should not be merked with header info -->
+		</attribute>
+		<attribute>
+			<name>areaHeight</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- height of heading area in points -->
+		</attribute>
+		<attribute>
+			<name>fontSize</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- header font size in points -->
+		</attribute>
+		<attribute>
+			<name>color</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- RGB color value in "#rrggbb" hexadecimal form -->
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>footer</name>
+		<tagclass>org.zefer.pd4ml.taglib.PD4FooterTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		 <!-- PDF Header Definition Tag -->
+		<attribute>
+			<name>titleAlignment</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- "left" or "center" or "right" -->
+		</attribute>
+		<attribute>
+			<name>titleTemplate</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- a template string with placeholders: ${title} for title,
+			${page} for page number -->
+		</attribute>
+		<attribute>
+			<name>pageNumberAlignment</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- "left" or "center" or "right" -->
+		</attribute>
+		<attribute>
+			<name>pageNumberTemplate</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- a template string with placeholders: ${page} for page number -->
+		</attribute>
+		<attribute>
+			<name>initialPageNumber</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- page number for the first generated page -->
+		</attribute>
+		<attribute>
+			<name>pagesToSkip</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- a number of pages from teh document begining, that
+			should not be merked with footer info -->
+		</attribute>
+		<attribute>
+			<name>areaHeight</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- height of footer area in points -->
+		</attribute>
+		<attribute>
+			<name>fontSize</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- footer font size in points -->
+		</attribute>
+		<attribute>
+			<name>color</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			 <!-- RGB color value in "#rrggbb" hexadecimal form -->
+		</attribute>
+	</tag>
+
+
+	<tag>
+		<name>permissions</name>
+		<tagclass>org.zefer.pd4ml.taglib.PD4PermissionsTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		 <!-- PDF Permission Control tag. Available since version 1.1.0 -->
+		<attribute>
+			<name>password</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- setting of the attribute forthes the resulting document to be encrypted with
+			the given password. setting the password to "empty" allows the document to be encrypted
+			without password, but with given permissions (can be allowed to be shown, but not to be
+			printed for instance) -->
+		</attribute>
+		<attribute>
+			<name>rights</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- numeric value. can be calculated using permissions constants from PD4Constants.java -->
+		</attribute>
+		<attribute>
+			<name>strongEncryption</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- boolean flag to encrypt with 40 or 128 bit encryption key -->
+		</attribute>
+	</tag>
+
+
+</taglib>

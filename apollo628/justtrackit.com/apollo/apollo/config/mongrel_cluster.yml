@@ -1,0 +1,11 @@
+--- 
+user: apache
+cwd: /var/www/vhosts/justtrackit.com/apollo
+log_file: log/mongrel.log
+port: "8000"
+environment: development 
+group: mongrel
+address: 127.0.0.1
+pid_file: tmp/pids/mongrel.pid
+servers: 3
+

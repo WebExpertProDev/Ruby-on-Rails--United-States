@@ -1,0 +1,207 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:tld="http://java.sun.com/xml/ns/j2ee">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>transform
+          (Tag Library Documentation Generator - Generated Documentation)
+        </title>
+<meta content="$title" name="keywords">
+<link title="Style" href="../stylesheet.css" type="text/css" rel="stylesheet">
+</head>
+<script>
+            function asd()
+            {
+            parent.document.title="transform (Tag Library Documentation Generator - Generated Documentation)";
+            }
+          </script>
+<body onload="asd();" bgcolor="white">
+<a name="navbar_top"></a>
+<table cellspacing="0" cellpadding="1" width="100%" border="0">
+<tr>
+<td CLASS="NavBarCell1" BGCOLOR="#EEEEFF" COLSPAN="3"><a NAME="navbar_top_firstrow"></a>
+<table CELLSPACING="3" CELLPADDING="0" BORDER="0">
+<tr VALIGN="top" ALIGN="center">
+<td CLASS="NavBarCell1" BGCOLOR="#EEEEFF">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td CLASS="NavBarCell1" BGCOLOR="#EEEEFF">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td CLASS="NavBarCell1Rev" BGCOLOR="#FFFFFF"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td CLASS="NavBarCell1" BGCOLOR="#EEEEFF">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ROWSPAN="3" VALIGN="top" ALIGN="right"><em></em></td>
+</tr>
+<tr>
+<td CLASS="NavBarCell2" BGCOLOR="white"><font SIZE="-2"></font></td><td CLASS="NavBarCell2" BGCOLOR="white"><font SIZE="-2">
+                &nbsp;<a TARGET="_top" HREF="../index.html"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="transform.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a TARGET="" HREF="../alltags-noframe.html"><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<h2>
+<font size="-1">pd4ml</font>
+<br>
+            Tag transform</h2>
+<hr>JSP to PDF Transformer Tag<br>
+<p></p>
+<hr>
+<table width="100%" cellspacing="0" cellpadding="3" border="1">
+<tr class="TableHeadingColor" bgcolor="#CCCCFF">
+<td colspan="2"><font size="+2"><b>Tag Information</b></font></td>
+</tr>
+<tr>
+<td>Tag Class</td><td>org.zefer.pd4ml.taglib.PD4MLTransformerTag</td>
+</tr>
+<tr>
+<td>TagExtraInfo Class</td><td><i>None</i></td>
+</tr>
+<tr>
+<td>Body Content</td><td>JSP</td>
+</tr>
+<tr>
+<td>Display Name</td><td><i>None</i></td>
+</tr>
+</table>
+<br>
+<p></p>
+<table width="100%" cellspacing="0" cellpadding="3" border="1">
+<tr class="TableHeadingColor" bgcolor="#CCCCFF">
+<td colspan="5"><font size="+2"><b>Attributes</b></font></td>
+</tr>
+<tr>
+<td><b>Name</b></td><td><b>Required</b></td><td><b>Request-time</b></td><td><b>Type</b></td><td><b>Description</b></td>
+</tr>
+<tr valign="top">
+<td>authorName</td><td>false</td><td>true</td><td><code>java.lang.String</code></td><td>Author's name to be included to the document properties list</td>
+</tr>
+<tr valign="top">
+<td>pageFormat</td><td>false</td><td>true</td><td><code>java.lang.String</code></td><td>Predefined document size values like "A4", "LETTER"</td>
+</tr>
+<tr valign="top">
+<td>fileName</td><td>false</td><td>true</td><td><code>java.lang.String</code></td><td>Desired pdf file name to appear in "Save as..." dialog (note: not all browsers interpret it correctly);
+useful in combination with inline="false" attribute value</td>
+</tr>
+<tr valign="top">
+<td>pageInsets</td><td>false</td><td>true</td><td><code>java.lang.String</code></td><td>"&lt;top&gt;,&lt;left&gt;,&lt;bottom&gt;,&lt;right&gt;,&lt;units&gt;"
+coma-separated integer sizes in specified units ("mm" or "points")</td>
+</tr>
+<tr valign="top">
+<td>pageOrientation</td><td>false</td><td>true</td><td><code>java.lang.String</code></td><td>"landscape" or "portrait"</td>
+</tr>
+<tr valign="top">
+<td>screenWidth</td><td>true</td><td>true</td><td><code>int</code></td><td>see PD4ML.setHtmlWidth()</td>
+</tr>
+<tr valign="top">
+<td>adjustScreenWidth</td><td>false</td><td>true</td><td><code>boolean</code></td><td>sets htmlWidth to the most right margin of the HTML content. Since 3.0.2.
+See PD4ML.adjustHtmlWidth()</td>
+</tr>
+<tr valign="top">
+<td>enableImageSplit</td><td>false</td><td>true</td><td><code>boolean</code></td><td>"true" or "false"; see PD4ML.enableImgSplit()</td>
+</tr>
+<tr valign="top">
+<td>enableTableBreaks</td><td>false</td><td>true</td><td><code>boolean</code></td><td>"true" or "false"; see PD4ML.enableTableBreaks()</td>
+</tr>
+<tr valign="top">
+<td>inline</td><td>false</td><td>true</td><td><code>boolean</code></td><td>should the file be shown in the browser window ("true") or
+offered to be saved to disk ("false")</td>
+</tr>
+<tr valign="top">
+<td>enableSwingPatch</td><td>false</td><td>true</td><td><code>boolean</code></td><td>"true" or "false"; DEPRECATED. See PD4ML.enableRenderingPatch()</td>
+</tr>
+<tr valign="top">
+<td>interpolateImages</td><td>false</td><td>true</td><td><code>boolean</code></td><td>"true" or "false"; see PD4ML.interpolateImages()</td>
+</tr>
+<tr valign="top">
+<td>encoding</td><td>false</td><td>true</td><td><code>java.lang.String</code></td><td><i>No Description</i></td>
+</tr>
+<tr valign="top">
+<td>url</td><td>false</td><td>true</td><td><code>java.lang.String</code></td><td>external URL to be converted to PDF.
+If the attribute is set, than the HTML/JSP content between &lt;pd4ml:transform&gt;
+and &lt;/pd4ml:transform&gt; tags is ignored and the given URL is used as PDF source.
+The URL should be in full form
+http://server/path/to/file.jsp or in reduced /path/to/file.jsp (in the last case
+current server address and port are used). Relative paths are not accepted.</td>
+</tr>
+<tr valign="top">
+<td>forward</td><td>false</td><td>true</td><td><code>java.lang.String</code></td><td>URL of PD4ForwarderServlet to delegate PDF transport function to.
+The forwarding is used to prevent IllegalStateException in some of servlet runtime
+and UI framework environments.
+The servlet should have an access to the JSP session context.
+Be carefull with big HTML sources: if "url" attribute is not given,
+they remain in a session context until the session expired </td>
+</tr>
+<tr valign="top">
+<td>useAFM</td><td>false</td><td>true</td><td><code>boolean</code></td><td>Available since version 1.1.0. DEPRECATED (always "true"). If set to true, it forces PD4ML to use Adobe font glyph widths instead of
+the font metrics provided by Java graphical environment. Usually resulting PDF is rendered more accurate.</td>
+</tr>
+<tr valign="top">
+<td>debug</td><td>false</td><td>true</td><td><code>boolean</code></td><td>Available since version 1.2.0. If set to true, it forces PD4ML to output absolute paths to images being loaded
+in order to determine base url or resource referencing problems.</td>
+</tr>
+<tr valign="top">
+<td>enable</td><td>false</td><td>true</td><td><code>boolean</code></td><td>Available since version 2.1.4. If set to true (default), converts nested HTML to PDF. Otherwise outputs HTML "as is"</td>
+</tr>
+<tr valign="top">
+<td>outline</td><td>false</td><td>true</td><td><code>java.lang.String</code></td><td>Available since version 1.2.0. Enables generation of PDF bookmarks (aka outlines).
+There are 3 supported values:
+"anchors" - generates bookmarks from named anchors,
+"headings" - converts headings h1-h6 structure to bookmarks tree,
+"none" - does not generate bookmarks </td>
+</tr>
+<tr valign="top">
+<td>fitPageVertically</td><td>false</td><td>true</td><td><code>java.lang.String</code></td><td> Available since version 3.0.4 Forces PD4ML to downscale entire HTML layout to fit a single PDF page vertically </td>
+</tr>
+<tr valign="top">
+<td>protectPhysicalUnitDimensions</td><td>false</td><td>true</td><td><code>java.lang.String</code></td><td> Available since version 3.0.4 Makes PD4ML to output text respecting font sizes given in "in", "pt", "cm" etc.
+Use carefully. See PD4ML.protectPhysicalUnitDimensions()
+</td>
+</tr>
+<tr valign="top">
+<td>generateHyperlinks</td><td>false</td><td>true</td><td><code>boolean</code></td><td>Available since version 1.2.0. Enables/disables convertion of HTML hyperlinks to PDF hyperlinks.
+Supports references to external as well as to internal resources </td>
+</tr>
+</table>
+<br>
+<p></p>
+<table width="100%" cellspacing="0" cellpadding="3" border="1">
+<tr class="TableHeadingColor" bgcolor="#CCCCFF">
+<td colspan="5"><font size="+2"><b>Variables</b></font></td>
+</tr>
+<td colspan="2"><i>No Variables Defined.</i></td>
+</table>
+<br>
+<p></p>
+<a name="navbar_bottom"></a>
+<table cellspacing="0" cellpadding="1" width="100%" border="0">
+<tr>
+<td CLASS="NavBarCell1" BGCOLOR="#EEEEFF" COLSPAN="3"><a NAME="navbar_bottom_firstrow"></a>
+<table CELLSPACING="3" CELLPADDING="0" BORDER="0">
+<tr VALIGN="top" ALIGN="center">
+<td CLASS="NavBarCell1" BGCOLOR="#EEEEFF">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td CLASS="NavBarCell1" BGCOLOR="#EEEEFF">    &nbsp;<a href="tld-summary.html"><font CLASS="NavBarFont1"><b>Library</b></font></a>&nbsp;</td><td CLASS="NavBarCell1Rev" BGCOLOR="#FFFFFF"> &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Tag&nbsp;</font>&nbsp;</td><td CLASS="NavBarCell1" BGCOLOR="#EEEEFF">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ROWSPAN="3" VALIGN="top" ALIGN="right"><em></em></td>
+</tr>
+<tr>
+<td CLASS="NavBarCell2" BGCOLOR="white"><font SIZE="-2"></font></td><td CLASS="NavBarCell2" BGCOLOR="white"><font SIZE="-2">
+                &nbsp;<a TARGET="_top" HREF="../index.html"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a href="transform.html" target="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a TARGET="" HREF="../alltags-noframe.html"><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<small><i>
+            Output Generated by 
+            <a target="_blank" href="http://taglibrarydoc.dev.java.net/">Tag Library Documentation Generator</a>.
+            Java, JSP, and JavaServer Pages are trademarks or 
+            registered trademarks of Sun Microsystems, Inc. in the US and other
+            countries.  Copyright 2002-4 Sun Microsystems, Inc.
+            4150 Network Circle
+            Santa Clara, CA 95054, U.S.A.
+            All Rights Reserved. 
+            </i></small>
+</body>
+</html>

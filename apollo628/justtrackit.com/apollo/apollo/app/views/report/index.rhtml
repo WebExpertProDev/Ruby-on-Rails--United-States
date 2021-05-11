@@ -1,0 +1,27 @@
+<script>
+    // Viewport
+    new Apollo.Page({
+        items: [
+            new Apollo.report.Manager({
+                region: 'west',
+                title: 'Reports'
+            })
+        ]
+    });
+    
+    // criteria form-popup
+    new RExt.form.Popup({
+        id: 'criteria_popup',
+        shadow: false,
+        form: new Apollo.report.CriteriaForm({
+            
+        })
+    });
+    
+    new Apollo.report.Printer({
+		id: 'report_printer',
+        width: 800,
+        height: 600
+	});
+    
+</script>

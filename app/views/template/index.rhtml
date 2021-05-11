@@ -1,0 +1,50 @@
+<!-- liquid-tags help dropdown -->
+<div id="template_help" class="x-hidden">
+    <div class="container" style="margin-bottom: 10px">
+        <h3 class="r-icon-text icon-page-white-code">Template tag</h3>    
+        <p>usage:</p>
+        <code>{{tag_name}}</code>
+    </div>
+    <div class="container" style="margin-bottom: 10px">
+        <h3 class="r-icon-text icon-arrow-right">Template Object</h3>    
+        <p>Usage:</p>
+        <code>{{parent.object.tag_name}}</code>
+    </div>    
+    
+    <div class="container" style="margin-bottom: 10px">  
+        <h3 class="r-icon-text icon-chart-organisation">Collection</h3>    
+        <p>Usage:</p>
+        <code>
+            {% for item in collection %}<br />
+            &nbsp;&nbsp;&nbsp;{{item.tag_name}}<br />
+            {% endfor %}<br />
+        </code>        
+    </div>
+    
+    
+    
+    <div class="ft">
+        <a href="http://wiki.shopify.com/UsingLiquid" target="_blank">Detailed Documentation</a>
+    </div>
+</div>
+
+
+<%= render(:partial => "util") %>
+
+
+<script>
+
+
+new Apollo.Page({
+    items : [
+        new RExt.template.Manager({
+            id: 'page-west',
+            controller: 'template',
+            autoHeight: true,
+            width: 200,
+            region: 'west'    
+        })
+    ]
+});
+
+</script>

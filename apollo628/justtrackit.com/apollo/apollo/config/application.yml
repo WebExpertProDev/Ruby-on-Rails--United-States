@@ -1,0 +1,53 @@
+###
+# controller authn
+#
+:auth:
+  order:
+    :required_role: corp.employee
+  tsa:
+    :required_role: corp.tsa
+  accounting:
+    :required_role: corp.accounting
+  company:
+    :required_role: corp.employee
+  template:
+    :required_role: admin
+  report
+    :required_role: corp.accounting
+
+:login_success_url: /order
+
+###
+# google maps api key
+#
+:google_maps_key: ABQIAAAA2h4uQGtJitMLpYRGo0nEoRTe6_kBupTp7L6311XnWb4QhEMI0hQSJDhpEf22wI21eqqsd_zIqvmjHg
+
+###
+# application email address
+#
+:email: rick@transmanage.com
+
+###
+# house_waybill_offset
+#
+:hwb_offset: 30000
+
+###
+# services
+#
+:services:
+    
+  # fax service (Greenfax.com)
+  :fax:  
+    :send_code: jtirocks
+    :domain: greenfax.com            
+    :password: foo
+    :notification_url: https://www.greenfax.com/api/xml/outbound.php
+
+###
+# ssl info
+#
+:ssl:
+  :public_key: config/public.pem 
+  :private_key: config/private.pem 
+  :passphrase: jamattie3tango2

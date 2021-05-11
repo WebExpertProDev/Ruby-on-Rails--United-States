@@ -1,0 +1,48 @@
+/***
+* form layout css
+* @author Chris Scott
+* make dialog-like buttons.
+
+*/
+.x-layout-form-wrapper .x-toolbar {
+    background: transparent;
+    border: 0;
+}
+
+.x-layout-form-wrapper .x-toolbar .x-btn-left{
+    width:3px;
+    height:21px;
+    background:url(/javascripts/ext-1.1/resources/images/default/basic-dialog/btn-sprite.gif) no-repeat 0 0;
+}
+.x-layout-form-wrapper .x-toolbar .x-btn-right{
+    width:3px;
+    height:21px;
+    background:url(/javascripts/ext-1.1/resources/images/default/basic-dialog/btn-sprite.gif) no-repeat 0 -21px;
+}
+.x-layout-form-wrapper .x-toolbar .x-btn-left i, .x-layout-form-wrapper .x-toolbar .x-btn-right i{
+    display:block;
+    width:3px;
+    overflow:hidden;
+    font-size:1px;
+    line-height:1px;
+}
+.x-layout-form-wrapper .x-toolbar .x-btn-center{
+    background:url(/javascripts/ext-1.1/resources/images/default/basic-dialog/btn-sprite.gif) repeat-x 0 -42px;
+    vertical-align: middle;
+    text-align:center;
+    padding:0 5px;
+    cursor:pointer;
+    white-space:nowrap;
+}
+
+.x-layout-form-wrapper .x-toolbar table  {
+    float:right;
+    clear:none;
+}
+
+.x-form-field .x-btn-wrap {
+    border: 1px solid red;
+    float: none;
+    display: inline;
+}
+

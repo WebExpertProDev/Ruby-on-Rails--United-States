@@ -1,0 +1,15 @@
+<!-- combo-template -->
+<textarea id="combo-template" style="display:none;">
+    <tpl for=".">
+        <div class="search-item">	            
+	        <div class="agent">           
+                <span class="name">{[(typeof(values.name) != "undefined") ? values.name : values.first + " " + values.last]}</span>
+                <span class="roles">
+                    <tpl for="roles"><img class="x-panel-inline-icon role-{cls}" src="javascripts/ext-2.0/resources/images/default/s.gif"/></tpl>
+                </span>
+            </div>
+	    </div>
+    </tpl>
+</textarea>
+
+

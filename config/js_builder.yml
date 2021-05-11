@@ -1,0 +1,238 @@
+
+###
+# builds documentation for application tree
+#    
+:app:
+  :name: Apollo Application library
+  :path: public/javascripts/app
+  :output: deploy 
+  :author: Chris Scott
+  :version: 2.0
+  :copyright: Resistor Software  
+  :source: false
+  :source_dir: $output/source
+  :minify: true
+  :min_dir: $output/build
+  :doc: false
+  :doc_dir: $path/source/docs
+  :min_dir: $output/build      
+  :targets: []  
+
+###
+# builds documentation for application tree
+#    
+:app2:
+  :name: Apollo Application library
+  :path: public/javascripts/resistor-ext2/source
+  :output: deploy 
+  :author: Chris Scott
+  :version: 2.0
+  :copyright: Resistor Software  
+  :source: fals
+  :source_dir: $output/source
+  :minify: true
+  :min_dir: $output/build
+  :doc: false
+  :doc_dir: $path/../../app/docs
+  :min_dir: $output/build      
+  :targets: []  
+  
+###
+# builds resistor-ext2 tree
+#    
+:resistor_ext2:
+  :name: Resistor Software Ext2 Library
+  :path: public/javascripts/resistor-ext2/source
+  :output: ../deploy    
+  :author: Chris Scott
+  :version: 2.0
+  :copyright: Resistor Software  
+  :source: fals
+  :source_dir: $output/source
+  :minify: true
+  :min_dir: $output/build
+  :doc: false
+  :doc_dir: $path/../docs
+  :min_dir: $output/build
+      
+  :targets:                     
+  - :name: EverythingInOne
+    :file: $output/resistor-ext2-all.js
+    :debug: true
+    shorthand: false
+    shorthand_list: not sure if this is necessary
+    :include:        
+    - core/RExt.js
+    - util/Collection.js
+    - form/vtypes.js
+    - Page.js
+    - form/DialogForm.js
+    - form/Fields.js
+    - widgets/Plugins.js
+    - widgets/View.js
+    - widgets/RPanel.js	    
+    - widgets/RegionManager.js
+    - application/company/CompanyManager.js
+    - widgets/LoginForm.js
+    
+  - :name: EverythingInOne
+    :file: $output/resistor-ext2-all.js
+    :debug: true
+    shorthand: false
+    shorthand_list: not sure if this is necessary
+    :include:        
+    - core/RExt.js
+    - util/Collection.js
+    - form/vtypes.js
+    - Page.js
+    - form/DialogForm.js
+    - form/Fields.js
+    - widgets/Plugins.js
+    - widgets/View.js
+    - widgets/RPanel.js	    
+    - widgets/RegionManager.js
+    - application/company/CompanyManager.js
+    - widgets/LoginForm.js       
+        
+###
+# application
+# mixes ext-2.0 with resistor-ext2
+#
+:application:
+  :name: Apollo default includes (mix of Ext-2.0 with resistor-ext2)
+  :path: public/javascripts
+  :output: deploy    
+  :author: Chris Scott
+  :version: 2.0
+  :copyright: Resistor Software  
+  :source: false
+  :source_dir: $output/source
+  :minify: false
+  :min_dir: $output/build
+  :doc: false
+  :doc_dir: $output/docs
+  :min_dir: $output/build 
+       
+  :targets:     
+  # resistor-ext2            
+  - :name: Resistor Ext2
+    :file: $output/resistor-ext2-all.js
+    :debug: false
+    shorthand: false
+    shorthand_list: not sure if this is necessary
+    :include:        
+    - resistor-ext2/source/core/RExt.js
+    - resistor-ext2/source/util/Collection.js
+    - resistor-ext2/source/form/vtypes.js
+    - resistor-ext2/source/Page.js
+    - resistor-ext2/source/form/DialogForm.js
+    - resistor-ext2/source/form/Fields.js
+    - resistor-ext2/source/widgets/Plugins.js
+    - resistor-ext2/source/widgets/View.js
+    - resistor-ext2/source/widgets/RPanel.js	    
+    - resistor-ext2/source/widgets/RegionManager.js    
+    - resistor-ext2/source/widgets/LoginForm.js
+    - ux/form/radiogroup/radiogroup.js
+    - app/app.js
+  
+  # auth_controller
+  - :name: Auth Controller library
+    :file: $output/auth-all.js
+    :debug: false
+    shorthand: false
+    shorthand_list: not sure if this is necessary
+    :include:     
+    - deploy/resistor-ext2-all.js            
+                   
+  # company_controller   
+  - :name: CompanyController library
+    :file: $output/company-all.js
+    :debug: false
+    shorthand: false
+    shorthand_list: not sure if this is necessary
+    :include:        
+    - deploy/resistor-ext2-all.js    
+    - resistor-ext2/source/widgets/GMap.js
+    - resistor-ext2/source/application/company/CompanyManager.js
+    - app/company/CompanyManager.js
+    - app/company/CompanyView.js  
+        
+  # order_controller  
+  - :name: OrderController library
+    :file: $output/order-all.js
+    :debug: false
+    shorthand: false
+    shorthand_list: not sure if this is necessary
+    :include:        
+    - deploy/resistor-ext2-all.js         
+    - resistor-ext2/source/widgets/GMap.js
+    - resistor-ext2/source/application/company/CompanyManager.js
+    - resistor-ext2/source/application/template/DocumentMgr.js
+    - app/company/CompanyManager.js
+    - app/order/OrderManager.js
+    - app/order/HWB2.js    
+    - app/order/OrderView.js
+    - app/order/RouteView.js
+    - app/order/RoutingForm.js
+  
+  # accounting_controller
+  - :name: AccountingController library
+    :file: $output/accounting-all.js
+    :debug: false
+    shorthand: false
+    shorthand_list: not sure if this is necessary
+    :include:     
+    - deploy/resistor-ext2-all.js    
+    - resistor-ext2/source/application/company/CompanyManager.js
+    - resistor-ext2/source/application/template/DocumentMgr.js
+    - app/accounting/AccountingManager.js     
+    - app/accounting/AccountingView.js
+  
+  # report_controller
+  - :name: Reporting library
+    :file: $output/report-all.js
+    :debug: false
+    shorthand: false
+    shorthand_list: not sure if this is necessary
+    :include:     
+    - deploy/resistor-ext2-all.js        
+    - resistor-ext2/source/application/template/DocumentMgr.js        
+    - app/report/ReportManager.js
+    
+  # template_controller
+  - :name: TemplateController library
+    :file: $output/template-all.js
+    :debug: false
+    shorthand: false
+    shorthand_list: not sure if this is necessary
+    :include:     
+    - deploy/resistor-ext2-all.js            
+    - resistor-ext2/source/application/template/TemplateMgr.js
+  
+  # account_controller
+  - :name: AccountController library
+    :file: $output/account-all.js
+    :debug: false
+    shorthand: false
+    shorthand_list: not sure if this is necessary
+    :include:     
+    - deploy/resistor-ext2-all.js    
+    - resistor-ext2/source/application/company/CompanyManager.js
+    - app/company/CompanyManager.js             
+    - app/account/AccountView.js
+      
+  # Build all app css into 1 file
+  - :name: Application css
+    :file: $output/../../stylesheets/deploy/app-all.css
+    :debug: false
+    shorthand: false
+    :shorthand_list: whatever
+    :include:    
+    - ../stylesheets/reset-fonts-grids.css         
+    - resistor-ext2/resources/css/rext.css
+    - resistor-ext2/resources/css/buttons.css
+    - resistor-ext2/resources/css/form.css
+    - ../stylesheets/app.css
+    - ../stylesheets/company/company.css
+    - ../stylesheets/order/order.css
+    - ../stylesheets/order/view.css

@@ -1,0 +1,2 @@
+class SecurityController < ApplicationController
+end

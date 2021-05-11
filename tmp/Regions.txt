@@ -1,0 +1,3672 @@
+CountryID:RegionID:Region
+AU:VI:Victoria
+AU:TS:Tasmania
+AU:QL:Queensland
+AU:NS:New South Wales
+AU:SA:South Australia
+AU:WA:Western Australia
+AU:NT:Northern Territory
+BR:AC:Acre
+BR:AP:Amap�
+BR:BA:Bahia
+BR:GO:Goi�s
+BR:PI:Piau�
+BR:CE:Cear�
+BR:PR:Paran�
+BR:AL:Alagoas
+BR:PB:Para�ba
+BR:RR:Roraima
+BR:SE:Sergipe
+BR:AM:Amazonas
+BR:MA:Maranh�o
+BR:RO:Rond�nia
+BR:SP:S�o Paulo
+BR:TO:Tocantins
+BR:MT:Mato Grosso
+BR:MG:Minas Gerais
+BR:ES:Esp�rito Santo
+BR:RJ:Rio de Janeiro
+BR:SC:Santa Catarina
+BR:RS:Rio Grande do Sul
+BR:MS:Mato Grosso do Sul
+BR:RN:Rio Grande do Norte
+CA:QC:Quebec
+CA:AB:Alberta
+CA:ON:Ontario
+CA:MB:Manitoba
+CA:NS:Nova Scotia
+CA:SK:Saskatchewan
+CA:NF:Newfoundland and Labrador
+CA:NB:New Brunswick
+CA:BC:British Columbia
+CA:PE:Prince Edward Island
+CA:NT:Northwest Territories
+ID:BA:Bali
+MX:SO:Sonora
+MX:JA:Jalisco
+MX:HI:Hidalgo
+MX:MR:Morelos
+MX:CP:Chiapas
+MX:TB:Tabasco
+MX:GR:Guerrero
+MX:NL:Nuevo Leon
+MX:TM:Tamaulipas
+MX:GJ:Guanajuato
+MX:QR:Quintana Roo
+MX:BN:Baja California
+MX:BS:Baja California Sur
+MN:TO:Tov
+MN:UV:Uvs
+MN:DD:Dornod
+MN:HG:Hovsgol
+MN:SL:Selenge
+MN:SB:Suhbaatar
+RU:KO:Komi
+RU:DA:Dagestan
+RU:ME:Mariy-El
+RU:TT:Tatarstan
+US:AL:Alabama
+US:AK:Alaska
+US:AZ:Arizona
+US:AR:Arkansas
+US:CA:California
+US:CO:Colorado
+US:CT:Connecticut
+US:DE:Delaware
+US:DC:District of Columbia
+US:FL:Florida
+US:GA:Georgia
+US:HI:Hawaii
+US:ID:Idaho
+US:IL:Illinois
+US:IN:Indiana
+US:IA:Iowa
+US:KS:Kansas
+US:KY:Kentucky
+US:LA:Louisiana
+US:ME:Maine
+US:MD:Maryland
+US:MA:Massachusetts
+US:MI:Michigan
+US:MN:Minnesota
+US:MS:Mississippi
+US:MO:Missouri
+US:MT:Montana
+US:NE:Nebraska
+US:NV:Nevada
+US:NH:New Hampshire
+US:NJ:New Jersey
+US:NM:New Mexico
+US:NY:New York
+US:NC:North Carolina
+US:ND:North Dakota
+US:OH:Ohio
+US:OK:Oklahoma
+US:OR:Oregon
+US:PA:Pennsylvania
+US:RI:Rhode Island
+US:SC:South Carolina
+US:SD:South Dakota
+US:TN:Tennessee
+US:TX:Texas
+US:UT:Utah
+US:VA:Virginia
+US:WA:Washington
+US:WV:West Virginia
+US:WI:Wisconsin
+US:WY:Wyoming
+US:VT:Vermont
+AU:CT:Australian Capital Territory
+ID:IJ:Papua
+MN:BU:Bulgan
+MN:HD:Hovd
+MX:CH:Chihuahua
+MX:CL:Colima
+MX:DU:Durango
+MX:OA:Oaxaca
+MX:SL:San Luis Potosi
+MX:TL:Tlaxcala
+MX:ZA:Zacatecas
+CA:YT:Yukon Territory
+AG:BB:Barbuda
+AG:GE:Saint George
+AG:JO:Saint John
+AG:MA:Saint Mary
+AG:PA:Saint Paul
+AG:PE:Saint Peter
+AG:PH:Saint Philip
+AF:BD:Badakhshan
+AF:BG:Badghis
+AF:BL:Baghlan
+AF:BM:Bamian
+AF:FH:Farah
+AF:FB:Faryab
+AF:GZ:Ghazni
+AF:GR:Ghowr
+AF:HM:Helmand
+AF:HR:Herat
+AF:KB:Kabol
+AF:KP:Kapisa
+AF:KR:Konar
+AF:LA:Laghman
+AF:LW:Lowgar
+AF:NG:Nangarhar
+AF:NM:Nimruz
+AF:OR:Oruzgan
+AF:PT:Paktia
+AF:PR:Parvan
+AF:KD:Kandahar
+AF:KZ:Kondoz
+AF:TK:Takhar
+AF:VR:Vardak
+AF:ZB:Zabol
+AF:PK:Paktika
+AF:BK:Balkh
+AF:JW:Jowzjan
+AF:SM:Samangan
+AF:SP:Sare Pol
+DZ:AL:Alger
+DZ:BT:Batna
+DZ:CO:Constantine
+DZ:MD:Medea
+DZ:MG:Mostaganem
+DZ:OR:Oran
+DZ:SD:Saida
+DZ:SF:Setif
+DZ:TR:Tiaret
+DZ:TO:Tizi Ouzou
+DZ:TL:Tlemcen
+DZ:BJ:Bejaia
+DZ:BS:Biskra
+DZ:BL:Blida
+DZ:BU:Bouira
+DZ:DJ:Djelfa
+DZ:GL:Guelma
+DZ:JJ:Jijel
+DZ:LG:Laghouat
+DZ:MC:Mascara
+DZ:MS:M'Sila
+DZ:OB:Oum el Bouaghi
+DZ:SB:Sidi Bel Abbes
+DZ:SK:Skikda
+DZ:TB:Tebessa
+DZ:AR:Adrar
+DZ:AD:Ain Defla
+DZ:AT:Ain Temouchent
+DZ:AN:Annaba
+DZ:BC:Bechar
+DZ:BB:Bordj Bou Arreridj
+DZ:BM:Boumerdes
+DZ:CH:Chlef
+DZ:EB:El Bayadh
+DZ:EO:El Oued
+DZ:ET:El Tarf
+DZ:GR:Ghardaia
+DZ:IL:Illizi
+DZ:KH:Khenchela
+DZ:ML:Mila
+DZ:NA:Naama
+DZ:OG:Ouargla
+DZ:RE:Relizane
+DZ:SA:Souk Ahras
+DZ:TM:Tamanghasset
+DZ:TN:Tindouf
+DZ:TP:Tipaza
+DZ:TS:Tissemsilt
+AZ:AR:Abseron
+AZ:AC:Agcabadi
+AZ:AM:Agdam
+AZ:AS:Agdas
+AZ:AF:Agstafa
+AZ:AU:Agsu
+AZ:AB:Ali Bayramli
+AZ:AA:Astara
+AZ:BA:Baki
+AZ:BL:Balakan
+AZ:BR:Barda
+AZ:BQ:Beylaqan
+AZ:BS:Bilasuvar
+AZ:CB:Cabrayil
+AZ:CL:Calilabad
+AZ:DS:Daskasan
+AZ:DV:Davaci
+AZ:FU:Fuzuli
+AZ:GD:Gadabay
+AZ:GA:Ganca
+AZ:GR:Goranboy
+AZ:GY:Goycay
+AZ:HA:Haciqabul
+AZ:IM:Imisli
+AZ:IS:Ismayilli
+AZ:KA:Kalbacar
+AZ:KU:Kurdamir
+AZ:LC:Lacin
+AZ:LA:Lankaran
+AZ:LE:Lerik
+AZ:MA:Masalli
+AZ:MI:Mingacevir
+AZ:NA:Naftalan
+AZ:NX:Naxcivan
+AZ:NE:Neftcala
+AZ:OG:Oguz
+AZ:QA:Qabala
+AZ:QX:Qax
+AZ:QZ:Qazax
+AZ:QO:Qobustan
+AZ:QB:Quba
+AZ:QD:Qubadli
+AZ:QR:Qusar
+AZ:ST:Saatli
+AZ:SB:Sabirabad
+AZ:SA:Saki
+AZ:SL:Salyan
+AZ:SI:Samaxi
+AZ:SM:Samkir
+AZ:SX:Samux
+AZ:SY:Siyazan
+AZ:SQ:Sumqayit
+AZ:SS:Susa
+AZ:TA:Tartar
+AZ:TO:Tovuz
+AZ:UC:Ucar
+AZ:XZ:Xacmaz
+AZ:XA:Xankandi
+AZ:XR:Xanlar
+AZ:XI:Xizi
+AZ:XC:Xocali
+AZ:XD:Xocavand
+AZ:YR:Yardimli
+AZ:YE:Yevlax
+AZ:ZG:Zangilan
+AZ:ZQ:Zaqatala
+AZ:ZR:Zardab
+AL:BR:Berat
+AL:DI:Diber
+AL:DR:Durres
+AL:EL:Elbasan
+AL:FR:Fier
+AL:GJ:Gjirokaster
+AL:GR:Gramsh
+AL:ER:Kolonje
+AL:KO:Korce
+AL:KR:Kruje
+AL:KU:Kukes
+AL:LE:Lezhe
+AL:LB:Librazhd
+AL:LU:Lushnje
+AL:MT:Mat
+AL:MR:Mirdite
+AL:PR:Permet
+AL:PG:Pogradec
+AL:PU:Puke
+AL:SR:Sarande
+AL:SH:Shkoder
+AL:SK:Skrapar
+AL:TE:Tepelene
+AL:TP:Tropoje
+AL:VL:Vlore
+AL:TI:Tiran
+AL:BU:Bulqize
+AL:DL:Delvine
+AL:DV:Devoll
+AL:HA:Has
+AL:KA:Kavaje
+AL:KC:Kucove
+AL:KB:Kurbin
+AL:MM:Malesi e Madhe
+AL:MK:Mallakaster
+AL:PQ:Peqin
+AL:TR:Tirane
+AM:AG:Aragatsotn
+AM:AR:Ararat
+AM:AV:Armavir
+AM:GR:Geghark'unik'
+AM:KT:Kotayk'
+AM:LO:Lorri
+AM:SH:Shirak
+AM:SU:Syunik'
+AM:TV:Tavush
+AM:VD:Vayots' Dzor
+AM:ER:Yerevan
+AD:AN:Andorra la Vella
+AD:CA:Canillo
+AD:EN:Encamp
+AD:MA:La Massana
+AD:OR:Ordino
+AD:JL:Sant Julia de Loria
+AO:BG:Benguela
+AO:BI:Bie
+AO:CB:Cabinda
+AO:CC:Cuando Cubango
+AO:CN:Cuanza Norte
+AO:CS:Cuanza Sul
+AO:CU:Cunene
+AO:HM:Huambo
+AO:HL:Huila
+AO:LU:Luanda
+AO:ML:Malanje
+AO:NA:Namibe
+AO:MX:Moxico
+AO:UI:Uige
+AO:ZA:Zaire
+AO:LN:Lunda Norte
+AO:LS:Lunda Sul
+AO:BO:Bengo
+AR:BA:Buenos Aires
+AR:CT:Catamarca
+AR:CC:Chaco
+AR:CH:Chubut
+AR:CB:Cordoba
+AR:CN:Corrientes
+AR:DF:Distrito Federal
+AR:ER:Entre Rios
+AR:FM:Formosa
+AR:JY:Jujuy
+AR:LP:La Pampa
+AR:LR:La Rioja
+AR:MZ:Mendoza
+AR:MN:Misiones
+AR:NQ:Neuquen
+AR:RN:Rio Negro
+AR:SA:Salta
+AR:SJ:San Juan
+AR:SL:San Luis
+AR:SC:Santa Cruz
+AR:SF:Santa Fe
+AR:SE:Santiago del Estero
+AR:TF:Antartida e Islas del Atlan Tierra del Fuego
+AR:TM:Tucuman
+AT:BU:Burgenland
+AT:KA:Karnten
+AT:NO:Niederosterreich
+AT:OO:Oberosterreich
+AT:SZ:Salzburg
+AT:ST:Steiermark
+AT:TR:Tirol
+AT:VO:Vorarlberg
+AT:WI:Wien
+BH:HD:Al Hadd
+BH:MN:Al Manamah
+BH:MQ:Al Muharraq
+BH:JH:Jidd Hafs
+BH:ST:Sitrah
+BH:MG:Al Mintaqah al Gharbiyah
+BH:MJ:Mintaqat Juzur Hawar
+BH:MS:Al Mintaqah ash Shamaliyah
+BH:MW:Al Mintaqah al Wusta
+BH:MI:Madinat Isa
+BH:MH:Madinat Hamad
+BB:CC:Christ Church
+BB:AN:Saint Andrew
+BB:GE:Saint George
+BB:JM:Saint James
+BB:JN:Saint John
+BB:JS:Saint Joseph
+BB:LU:Saint Lucy
+BB:MI:Saint Michael
+BB:PE:Saint Peter
+BB:PH:Saint Philip
+BB:TH:Saint Thomas
+BW:CE:Central
+BW:CH:Chobe
+BW:GH:Ghanzi
+BW:KG:Kgalagadi
+BW:KL:Kgatleng
+BW:KW:Kweneng
+BW:NG:Ngamiland
+BW:NE:NorthEast
+BW:SE:SouthEast
+BW:SO:Southern
+BM:DE:Devonshire
+BM:HC:Hamilton Municipality
+BM:PA:Paget
+BM:PE:Pembroke
+BM:SG:Saint George
+BM:SC:Saint George's
+BM:SA:Sandys
+BM:SM:Smiths
+BM:SO:Southampton
+BM:WA:Warwick
+BE:AN:Antwerpen
+BE:HT:Hainaut
+BE:LG:Liege
+BE:LI:Limburg
+BE:LX:Luxembourg
+BE:NA:Namur
+BE:OV:Oost-Vlaanderen
+BE:WV:West-Vlaanderen
+BS:BI:Bimini
+BS:CI:Cat Island
+BS:EX:Exuma
+BS:IN:Inagua
+BS:LI:Long Island
+BS:MG:Mayaguana
+BS:RI:Ragged Island
+BS:HI:Harbour Island
+BS:NP:New Providence
+BS:AC:Acklins and Crooked Islands
+BS:FP:Freeport
+BS:FC:Fresh Creek
+BS:GH:Governor's Harbour
+BS:GT:Green Turtle Cay
+BS:HR:High Rock
+BS:KB:Kemps Bay
+BS:MH:Marsh Harbour
+BS:NB:Nichollstown and Berry Islands
+BS:RS:Rock Sound
+BS:SP:Sandy Point
+BS:SR:San Salvador and Rum Cay
+BD:CG:Chittagong
+BD:DA:Dhaka
+BD:KH:Khulna
+BD:RJ:Rajshahi
+BZ:BZ:Belize
+BZ:CY:Cayo
+BZ:CZ:Corozal
+BZ:OW:Orange Walk
+BZ:SC:Stann Creek
+BZ:TO:Toledo
+BO:CQ:Chuquisaca
+BO:CB:Cochabamba
+BO:EB:El Beni
+BO:LP:La Paz
+BO:OR:Oruro
+BO:PA:Pando
+BO:PO:Potosi
+BO:SC:Santa Cruz
+BO:TR:Tarija
+MM:RA:Rakhine State
+MM:CH:Chin State
+MM:AY:Ayeyarwady
+MM:KC:Kachin State
+MM:KN:Kayin State
+MM:KH:Kayah State
+MM:MD:Mandalay
+MM:SA:Sagaing
+MM:SH:Shan State
+MM:TN:Tanintharyi
+MM:MO:Mon State
+MM:MG:Magway
+MM:BA:Bago
+MM:YA:Yangon
+BJ:AK:Atakora
+BJ:AQ:Atlantique
+BJ:BO:Borgou
+BJ:MO:Mono
+BJ:OU:Oueme
+BJ:ZO:Zou
+BY:BR:Brestskaya Voblasts'
+BY:HO:Homyel'skaya Voblasts'
+BY:HR:Hrodzyenskaya Voblasts'
+BY:HM:Minsk
+BY:MI:Minskaya Voblasts'
+BY:MA:Mahilyowskaya Voblasts'
+BY:VI:Vitsyebskaya Voblasts'
+SB:ML:Malaita
+SB:WE:Western
+SB:CN:Central
+SB:GC:Guadalcanal
+SB:IS:Isabel
+SB:MK:Makira
+SB:TE:Temotu
+BR:DF:Distrito Federal
+BR:PA:Paro
+BR:PE:Pernambuco
+BT:BU:Bumthang
+BT:CK:Chhukha
+BT:CR:Chirang
+BT:DA:Daga
+BT:GE:Geylegphug
+BT:HA:Ha
+BT:LH:Lhuntshi
+BT:MO:Mongar
+BT:PR:Paro
+BT:PM:Pemagatsel
+BT:PN:Punakha
+BT:SM:Samchi
+BT:SJ:Samdrup
+BT:SG:Shemgang
+BT:TA:Tashigang
+BT:TM:Thimphu
+BT:TO:Tongsa
+BT:WP:Wangdi Phodrang
+BG:BR:Burgas
+BG:SG:Sofiya-Grad
+BG:KK:Khaskovo
+BG:LV:Lovech
+BG:MT:Montana
+BG:PD:Plovdiv
+BG:RG:Razgrad
+BG:SF:Sofiya
+BG:VN:Varna
+BN:BE:Belait
+BN:BM:Brunei and Muara
+BN:TE:Temburong
+BN:TU:Tutong
+BI:BU:Bujumbura
+BI:MV:Muramvya
+BI:BB:Bubanza
+BI:BR:Bururi
+BI:CA:Cankuzo
+BI:CI:Cibitoke
+BI:GI:Gitega
+BI:KR:Karuzi
+BI:KY:Kayanza
+BI:KI:Kirundo
+BI:MA:Makamba
+BI:MY:Muyinga
+BI:NG:Ngozi
+BI:RT:Rutana
+BI:RY:Ruyigi
+KH:BA:Batdambang
+KH:KM:Kampong Cham
+KH:KG:Kampong Chhnang
+KH:KS:Kampong Spoe
+KH:KT:Kampong Thum
+KH:KP:Kampot
+KH:KN:Kandal
+KH:KK:Kaoh Kong
+KH:KR:Krachen
+KH:MK:Mondol Kiri
+KH:PP:Phnum Penh
+KH:PO:Pouthisat
+KH:PH:Preah Vihear
+KH:PY:Prey Veng
+KH:ST:Stoeng Treng
+KH:SR:Svay Rieng
+KH:TA:Takev
+KH:RO:Rotanah Kiri
+KH:SI:Siem Reab
+KH:OM:Banteay Mean Cheay
+KH:KB:Keb
+KH:OC:Otdar Mean Cheay
+KH:KA:Preah Seihanu
+TD:BA:Batha
+TD:BI:Biltine
+TD:BT:Borkou-Ennedi-Tibesti
+TD:CB:ChariBaguirmi
+TD:GR:Guera
+TD:KA:Kanem
+TD:LC:Lac
+TD:LO:Logone Occidental
+TD:LR:Logone Oriental
+TD:MK:Mayo-Kebbi
+TD:MC:Moyen-Chari
+TD:OD:Ouaddai
+TD:SA:Salamat
+TD:TA:Tandjile
+LK:CE:Central
+LK:NC:North Central
+LK:NE:North Eastern
+LK:NW:North Western
+LK:SA:Sabaragamuwa
+LK:SO:Southern
+LK:UV:Uva
+LK:WE:Western
+CD:BN:Bandundu
+CD:EQ:Equateur
+CD:KC:Kasai-Occidental
+CD:KR:Kasai-Oriental
+CD:KT:Katanga
+CD:KN:Kinshasa
+CD:BC:Bas-Congo
+CD:HC:Orientale
+CN:AH:Anhui
+CN:ZJ:Zhejiang
+CN:JX:Jiangxi
+CN:JS:Jiangsu
+CN:JL:Jilin
+CN:QH:Qinghai
+CN:FJ:Fujian
+CN:HL:Heilongjiang
+CN:HE:Henan
+CN:HB:Hebei
+CN:HN:Hunan
+CN:HU:Hubei
+CN:XJ:Xinjiang
+CN:XZ:Xizang
+CN:GS:Gansu
+CN:GX:Guangxi
+CN:GZ:Guizhou
+CN:LN:Liaoning
+CN:NM:Nei Mongol
+CN:NX:Ningxia
+CN:BJ:Beijing
+CN:SH:Shanghai
+CN:SX:Shanxi
+CN:SD:Shandong
+CN:SA:Shaanxi
+CN:SC:Sichuan
+CN:TJ:Tianjin
+CN:YN:Yunnan
+CN:GD:Guangdong
+CN:HA:Hainan
+CN:CQ:Chongqing
+CL:VS:Valparaiso
+CL:AI:Aisen del General Carlos Ibanez del Campo
+CL:AN:Antofagasta
+CL:AR:Araucania
+CL:AT:Atacama
+CL:BI:Bio-Bio
+CL:CO:Coquimbo
+CL:LI:Libertador General Bernardo O'Higgins
+CL:LL:Los Lagos
+CL:MA:Magallanes y de la Antartica Chilena
+CL:ML:Maule
+CL:RM:Region Metropolitana
+CL:TA:Tarapaca
+KY:CR:Creek
+KY:EA:Eastern
+KY:MI:Midland
+KY:SO:South Town
+KY:SP:Spot Bay
+KY:ST:Stake Bay
+KY:WD:West End
+KY:WN:Western
+CM:ES:Est
+CM:LT:Littoral
+CM:NW:NordOuest
+CM:OU:Ouest
+CM:SW:SudOuest
+CM:AD:Adamaoua
+CM:CE:Centre
+CM:EN:ExtremeNord
+CM:NO:Nord
+CM:SU:Sud
+KM:AN:Anjouan
+KM:GC:Grande Comore
+KM:MO:Moheli
+CO:AM:Amazonas
+CO:AN:Antioquia
+CO:AR:Arauca
+CO:AT:Atlantico
+CO:CQ:Caqueta
+CO:CA:Cauca
+CO:CE:Cesar
+CO:CH:Choco
+CO:CR:Cordoba
+CO:GV:Guaviare
+CO:GN:Guainia
+CO:HU:Huila
+CO:LG:La Guajira
+CO:ME:Meta
+CO:NA:Narino
+CO:NS:Norte de Santander
+CO:PU:Putumayo
+CO:QD:Quindio
+CO:RI:Risaralda
+CO:SA:San Andres y Providencia
+CO:ST:Santander
+CO:SU:Sucre
+CO:TO:Tolima
+CO:VC:Valle del Cauca
+CO:VP:Vaupes
+CO:VD:Vichada
+CO:CS:Casanare
+CO:CU:Cundinamarca
+CO:DC:Distrito Capital
+CO:BL:Bolivar
+CO:BY:Boyaca
+CO:CL:Caldas
+CO:MA:Magdalena
+CR:AL:Alajuela
+CR:CA:Cartago
+CR:GU:Guanacaste
+CR:HE:Heredia
+CR:LI:Limon
+CR:PU:Puntarenas
+CR:SJ:San Jose
+CF:BB:Bamingui-Bangoran
+CF:BK:Basse-Kotto
+CF:HK:Haute-Kotto
+CF:HS:Haute-Sangha
+CF:HM:Haut-Mbomou
+CF:KG:Kemo-Gribingui
+CF:LB:Lobaye
+CF:MB:Mbomou
+CF:NM:Nana-Mambere
+CF:UK:Ouaka
+CF:AC:Ouham
+CF:OP:Ouham-Pende
+CF:VK:Vakaga
+CF:KB:Gribingui
+CF:SE:Sangha
+CF:MP:Ombella-Mpoko
+CF:BG:Bangui
+CU:PR:Pinar del Rio
+CU:CH:Ciudad de La Habana
+CU:MA:Matanzas
+CU:IJ:Isla de la Juventud
+CU:CM:Camaguey
+CU:CA:Ciego de Avila
+CU:CF:Cienfuegos
+CU:GR:Granma
+CU:GU:Guantanamo
+CU:LH:La Habana
+CU:HO:Holguin
+CU:LT:Las Tunas
+CU:SS:Sancti Spiritus
+CU:SC:Santiago de Cuba
+CU:VC:Villa Clara
+CV:BV:Boa Vista
+CV:BR:Brava
+CV:SM:Calheta de S�o Miguel
+CV:MA:Maio
+CV:PA:Paul
+CV:PI:Praia
+CV:RG:Ribeira Grande
+CV:SL:Sal
+CV:SC:Santa Catarina
+CV:SN:Sao Nicolau
+CV:SV:Sao Vicente
+CV:TF:Tarrafal
+CY:FA:Famagusta
+CY:KY:Kyrenia
+CY:LA:Larnaca
+CY:NI:Nicosia
+CY:LI:Limassol
+CY:PA:Paphos
+DK:AR:Arhus
+DK:BO:Bornholm
+DK:FR:Frederiksborg
+DK:FY:Fyn
+DK:SK:Kobenhavn
+DK:NJ:Nordjylland
+DK:RB:Ribe
+DK:RK:Ringkobing
+DK:RS:Roskilde
+DK:SJ:Sonderjylland
+DK:ST:Storstrom
+DK:VJ:Vejle
+DK:VS:Vestsjalland
+DK:VB:Viborg
+DK:SF:Fredericksberg
+DJ:AS:'Ali Sabih
+DJ:DI:Dikhil
+DJ:DJ:Djibouti
+DJ:OB:Obock
+DJ:TA:Tadjoura
+DM:AN:Saint Andrew
+DM:DA:Saint David
+DM:GO:Saint George
+DM:JN:Saint John
+DM:JH:Saint Joseph
+DM:LU:Saint Luke
+DM:MA:Saint Mark
+DM:PK:Saint Patrick
+DM:PL:Saint Paul
+DM:PR:Saint Peter
+DO:AZ:Azua
+DO:BR:Baoruco
+DO:BH:Barahona
+DO:DA:Dajabon
+DO:DN:Distrito Nacional
+DO:DU:Duarte
+DO:ES:Espaillat
+DO:IN:Independencia
+DO:AL:La Altagracia
+DO:EP:Elias Pina
+DO:RO:La Romana
+DO:MT:Maria Trinidad Sanchez
+DO:MC:Monte Cristi
+DO:PN:Pedernales
+DO:PR:Peravia
+DO:PP:Puerto Plata
+DO:SC:Salcedo
+DO:SM:Samana
+DO:SZ:Sanchez Ramirez
+DO:JU:San Juan
+DO:PM:San Pedro de Macoris
+DO:ST:Santiago
+DO:SR:Santiago Rodriguez
+DO:VA:Valverde
+DO:SE:El Seibo
+DO:HM:Hato Mayor
+DO:VE:La Vega
+DO:MN:Monsenor Nouel
+DO:MP:Monte Plata
+DO:CR:San Cristobal
+EC:GA:Galapagos
+EC:AZ:Azuay
+EC:BO:Bolivar
+EC:CN:Canar
+EC:CR:Carchi
+EC:CB:Chimborazo
+EC:CT:Cotopaxi
+EC:EO:El Oro
+EC:ES:Esmeraldas
+EC:GU:Guayas
+EC:IM:Imbabura
+EC:LJ:Loja
+EC:LR:Los Rios
+EC:MN:Manabi
+EC:MS:Morona-Santiago
+EC:PA:Pastaza
+EC:PI:Pichincha
+EC:TU:Tungurahua
+EC:ZC:Zamora-Chinchipe
+EC:NA:Napo
+EC:SU:Sucumbios
+EG:DQ:Ad Daqahliyah
+EG:BA:Al Bahr al Ahmar
+EG:BH:Al Buhayrah
+EG:FY:Al Fayyum
+EG:GH:Al Gharbiyah
+EG:IK:Al Iskandariyah
+EG:IS:Al Isma'iliyah
+EG:JZ:Al Jizah
+EG:MF:Al Minufiyah
+EG:MN:Al Minya
+EG:QH:Al Qahirah
+EG:QL:Al Qaly�biyah
+EG:WJ:Al Wadi al Jadid
+EG:SQ:Ash Sharqiyah
+EG:SW:As Suways
+EG:AN:Aswan
+EG:AT:Asyut
+EG:BN:Bani Suwayf
+EG:BS:Bur Sa'id
+EG:DT:Dumyat
+EG:KS:Kafr ash Shaykh
+EG:MT:Matruh
+EG:QN:Qina
+EG:SJ:Suhaj
+EG:JS:Janub Sina'
+EG:SS:Shamal Sina'
+IE:CW:Carlow
+IE:CN:Cavan
+IE:CE:Clare
+IE:CK:Cork
+IE:DL:Donegal
+IE:DN:Dublin
+IE:GY:Galway
+IE:KY:Kerry
+IE:KE:Kildare
+IE:KK:Kilkenny
+IE:LM:Leitrim
+IE:LS:Laois
+IE:LK:Limerick
+IE:LD:Longford
+IE:LH:Louth
+IE:MO:Mayo
+IE:MH:Meath
+IE:MN:Monaghan
+IE:OY:Offaly
+IE:RN:Roscommon
+IE:SO:Sligo
+IE:TY:Tipperary
+IE:WD:Waterford
+IE:WH:Westmeath
+IE:WX:Wexford
+IE:WW:Wicklow
+GQ:AN:Annobon
+GQ:BN:Bioko Norte
+GQ:BS:Bioko Sur
+GQ:CS:Centro Sur
+GQ:KN:Kie-Ntem
+GQ:LI:Litoral
+GQ:WN:Wele-Nzas
+EE:HA:Harjumaa
+EE:HI:Hiiumaa
+EE:IV:Ida-Virumaa
+EE:JR:Jarvamaa
+EE:JN:Jogevamaa
+EE:LN:Laanemaa
+EE:LV:Laane-Virumaa
+EE:PR:Parnumaa
+EE:PL:Polvamaa
+EE:RA:Raplamaa
+EE:SA:Saaremaa
+EE:TA:Tartumaa
+EE:VG:Valgamaa
+EE:VD:Viljandimaa
+EE:VR:Vorumaa
+SV:AH:Ahuachapan
+SV:CA:Cabanas
+SV:CH:Chalatenango
+SV:CU:Cuscatlan
+SV:LI:La Libertad
+SV:PA:La Paz
+SV:UN:La Union
+SV:MO:Morazan
+SV:SM:San Miguel
+SV:SS:San Salvador
+SV:SA:Santa Ana
+SV:SI:San Vicente
+SV:SO:Sonsonate
+SV:US:Usulutan
+ET:HA:Harari People
+ET:GA:Gambela Peoples
+ET:BE:Benshangul-Gumaz
+ET:TI:Tigray
+ET:AM:Amhara
+ET:AF:Afar
+ET:OR:Oromia
+ET:SO:Somali
+ET:AA:Addis Ababa
+ET:SN:Southern Nations
+CZ:PR:Hlavni Mesto Praha
+FI:AV:Ahvenanmaa
+FI:LP:Lappi
+FI:OU:Oulu Laani
+FJ:CE:Central
+FJ:EA:Eastern
+FJ:NO:Northern
+FJ:RO:Rotuma
+FJ:WE:Western
+FM:KO:Kosrae
+FM:PO:Pohnpei
+FM:CH:Chuuk
+FM:YA:Yap
+FR:AQ:Aquitaine
+FR:AU:Auvergne
+FR:BA:Basse-Normandie
+FR:BO:Bourgogne
+FR:BR:Bretagne
+FR:CE:Centre
+FR:CH:Champagne-Ardenne
+FR:CO:Corse
+FR:FC:Franche-Comte
+FR:HA:Haute-Normandie
+FR:IL:Ile-De-France
+FR:LA:Languedoc-Roussillon
+FR:LI:Limousin
+FR:LO:Lorraine
+FR:MI:Midi-Pyrenees
+FR:NO:Nord-Pas-de-Calais
+FR:PA:Pays de la Loire
+FR:PI:Picardie
+FR:PO:Poitou-Charentes
+FR:PR:Provence-Alpes-Cote d'Azur
+FR:RH:Rhone-Alpes
+FR:AL:Alsace
+GM:BJ:Banjul
+GM:LR:Lower River
+GM:MC:MacCarthy Island
+GM:UR:Upper River
+GM:WE:Western
+GM:NB:North Bank
+GA:ES:Estuaire
+GA:HO:Haut-Ogooue
+GA:MO:Moyen-Ogooue
+GA:NG:Ngounie
+GA:NY:Nyanga
+GA:OI:Ogooue-Ivindo
+GA:OL:Ogooue-Lolo
+GA:OM:Ogooue-Maritime
+GA:WN:Woleu-Ntem
+GE:AB:Abkhazia
+GE:AJ:Ajaria
+GE:TB:T'bilisi
+GH:AA:Greater Accra
+GH:AH:Ashanti
+GH:BA:Brong-Ahafo
+GH:CP:Central
+GH:EP:Eastern
+GH:NP:Northern
+GH:TV:Volta
+GH:WP:Western
+GH:UE:Upper East
+GH:UW:Upper West
+GD:AN:Saint Andrew
+GD:DA:Saint David
+GD:GE:Saint George
+GD:JO:Saint John
+GD:MA:Saint Mark
+GD:PA:Saint Patrick
+GL:NG:Nordgronland
+GL:EG:Ostgronland
+GL:VG:Vestgronland
+DE:BW:Baden-Wurttemberg
+DE:BY:Bayern
+DE:HB:Bremen
+DE:HH:Hamburg
+DE:HE:Hessen
+DE:NI:Niedersachsen
+DE:NW:Nordrhein-Westfalen
+DE:RP:Rheinland-Pfalz
+DE:SL:Saarland
+DE:SH:Schleswig-Holstein
+DE:BB:Brandenburg
+DE:MY:Mecklenburg-Vorpommern
+DE:SN:Sachsen
+DE:ST:Sachsen-Anhalt
+DE:TH:Thuringen
+DE:BE:Berlin
+GR:ES:Evros
+GR:RD:Rodhopi
+GR:XN:Xanthi
+GR:DR:Drama
+GR:SR:Serrai
+GR:KK:Kilkis
+GR:PL:Pella
+GR:FL:Florina
+GR:KS:Kastoria
+GR:GE:Grevena
+GR:KZ:Kozani
+GR:IM:Imathia
+GR:TN:Thessaloniki
+GR:KV:Kavala
+GR:KD:Khalkidhiki
+GR:PI:Pieria
+GR:IO:Ioannina
+GR:TP:Thesprotia
+GR:PV:Preveza
+GR:AR:Arta
+GR:LR:Larisa
+GR:TR:Trikala
+GR:KT:Kardhitsa
+GR:MG:Magnisia
+GR:KE:Kerkira
+GR:LV:Levkas
+GR:KF:Kefallinia
+GR:ZK:Zakinthos
+GR:FT:Fthiotis
+GR:ET:Evritania
+GR:AA:Aitolia kai Akarnania
+GR:FK:Fokis
+GR:VT:Voiotia
+GR:EV:Evvoia
+GR:AT:Attiki
+GR:AG:Argolis
+GR:KO:Korinthia
+GR:AK:Akhaia
+GR:IL:Ilia
+GR:MS:Messinia
+GR:AD:Arkadhia
+GR:LC:Lakonia
+GR:KN:Khania
+GR:RT:Rethimni
+GR:IR:Iraklion (Crete)
+GR:LT:Lasithi
+GR:DO:Dhodhekanisos
+GR:SM:Samos
+GR:KY:Kikladhes
+GR:KH:Khios
+GR:LS:Lesvos
+GT:AV:Alta Verapaz
+GT:BV:Baja Verapaz
+GT:CM:Chimaltenango
+GT:CQ:Chiquimula
+GT:PR:El Progreso
+GT:ES:Escuintla
+GT:GU:Guatemala
+GT:HU:Huehuetenango
+GT:IZ:Izabal
+GT:JA:Jalapa
+GT:JU:Jutiapa
+GT:PE:Peten
+GT:QZ:Quetzaltenango
+GT:QC:Quiche
+GT:RE:Retalhuleu
+GT:SA:Sacatepequez
+GT:SM:San Marcos
+GT:SR:Santa Rosa
+GT:SO:Solola
+GT:SU:Suchitepequez
+GT:TO:Totonicapan
+GT:ZA:Zacapa
+GN:BE:Beyla
+GN:BF:Boffa
+GN:BK:Boke
+GN:CK:Conakry
+GN:DB:Dabola
+GN:DL:Dalaba
+GN:DI:Dinguiraye
+GN:DU:Dubreka
+GN:FA:Faranah
+GN:FO:Forecariah
+GN:FR:Fria
+GN:GA:Gaoual
+GN:GU:Gueckedou
+GN:KA:Kankan
+GN:KE:Kerouane
+GN:KD:Kindia
+GN:KS:Kissidougou
+GN:KN:Koundara
+GN:KO:Kouroussa
+GN:LA:Labe
+GN:MC:Macenta
+GN:ML:Mali
+GN:MM:Mamou
+GN:NZ:Nzerekore
+GN:PI:Pita
+GN:SI:Siguiri
+GN:TE:Telimele
+GN:TO:Tougue
+GN:YO:Yomou
+GY:BA:Barima-Waini
+GY:CU:Cuyuni-Mazaruni
+GY:DE:Demerara-Mahaica
+GY:EB:East Berbice-Corentyne
+GY:ES:Essequibo Islands-West Demerara
+GY:MA:Mahaica-Berbice
+GY:PM:Pomeroon-Supenaam
+GY:PT:Potaro-Siparuni
+GY:UD:Upper Demerara-Berbice
+GY:UT:Upper Takutu-Upper Essequibo
+HT:NO:Nord-Ouest
+HT:AR:Artibonite
+HT:CE:Centre
+HT:GA:Grand'Anse
+HT:ND:Nord
+HT:NE:Nord-Est
+HT:OU:Ouest
+HT:SD:Sud
+HT:SE:Sud-Est
+HN:AT:Atlantida
+HN:CH:Choluteca
+HN:CL:Colon
+HN:CM:Comayagua
+HN:CP:Copan
+HN:CR:Cortes
+HN:EP:El Paraiso
+HN:FM:Francisco Morazan
+HN:GD:Gracias a Dios
+HN:IN:Intibuca
+HN:IB:Islas de la Bahia
+HN:LP:La Paz
+HN:LE:Lempira
+HN:OC:Ocotepeque
+HN:OL:Olancho
+HN:SB:Santa Barbara
+HN:VA:Valle
+HN:YO:Yoro
+HU:BK:Bacs-Kiskun
+HU:BA:Baranya
+HU:BE:Bekes
+HU:BZ:Borsod-Abauj-Zemplen
+HU:BU:Budapest
+HU:CS:Csongrad
+HU:DE:Debrecen
+HU:FE:Fejer
+HU:GS:Gyor-Moson-Sopron
+HU:HB:Hajdu-Bihar
+HU:HE:Heves
+HU:KE:Komarom-Esztergom
+HU:MI:Miskolc
+HU:NO:Nograd
+HU:PS:Pees
+HU:PE:Pest
+HU:SO:Somogy
+HU:SZ:Szabolcs-Szatmar-Bereg
+HU:SD:Szeged
+HU:JN:Jasz-Nagykun-Szolnok
+HU:TO:Tolna
+HU:VA:Vas
+HU:VM:Veszprem
+HU:ZA:Zala
+HU:GY:Gyor
+HU:BC:Bekescsaba
+HU:DU:Dunaujvaros
+HU:EG:Eger
+HU:HV:Hodmezovasarhely
+HU:KV:Kaposvar
+HU:KM:Kecskemet
+HU:NK:Nagykanizsa
+HU:NY:Nyiregyhaza
+HU:SN:Sopron
+HU:SF:Szekesfehervar
+HU:SK:Szolnok
+HU:SH:Szombathely
+HU:TB:Tatabanya
+HU:ZE:Zalaegerszeg
+IS:AK:Akranes
+IS:AU:Akureyri
+IS:AR:Arnessysla
+IS:AB:Austur-Bardastrandarsysla
+IS:AH:Austur-Hunavatnssysla
+IS:AS:Austur-Skaftafellssysla
+IS:BF:Borgarfjardarsysla
+IS:DS:Dalasysla
+IS:EY:Eyjafjardarsysla
+IS:GU:Gullbringusysla
+IS:HA:Hafnarfjordur
+IS:HU:Husavik
+IS:IA:Isafjordur
+IS:KE:Keflavik
+IS:KJ:Kjosarsysla
+IS:KO:Kopavogur
+IS:MY:Myrasysla
+IS:NE:Neskaupstadur
+IS:NI:Nordur-Isafjardarsysla
+IS:NM:Nordur-Mulasysla
+IS:NT:Nordur-Tingeyjarsysla
+IS:OL:Olafsfjordur
+IS:RA:Rang�rvallasysla
+IS:RE:Reykjavik
+IS:SA:Saudarkrokur
+IS:SE:Seydisfjordur
+IS:SI:Siglufjordur
+IS:SG:Skagafjardarsysla
+IS:SH:Snafellsnes-og Hnappadalssysla
+IS:SD:Strandasysla
+IS:SM:Sudur-Mulasysla
+IS:ST:Sudur-Tingeyjarsysla
+IS:VE:Vestmannaeyjar
+IS:VB:Vestur-Bardastrandarsysla
+IS:VH:Vestur-Hunavatnssysla
+IS:VI:Vestur-Isafjardarsysla
+IS:VS:Vestur-Skaftafellssysla
+ID:AC:Aceh (Atjeh)
+ID:BE:Bengkulu
+ID:JK:Jakarta Raya (Djakarta Raya)
+ID:JA:Jambi (Djambi)
+ID:JR:Jawa Barat (Djawa Barat)
+ID:JT:Jawa Tengah (Djawa Tengah)
+ID:JI:Jawa Timur (Djawa Timur)
+ID:YO:Yogyakarta (Jogjakarta)
+ID:KB:Kalimantan Barat
+ID:KS:Kalimantan Selatan
+ID:KT:Kalimantan Tengah
+ID:KI:Kalimantan Timur
+ID:LA:Lampung
+ID:MA:Maluku
+ID:NB:Nusa Tenggara Barat
+ID:NT:Nusa Tenggara Timur
+ID:RI:Riau
+ID:SN:Sulawesi Selatan
+ID:ST:Sulawesi Tengah
+ID:SG:Sulawesi Tenggara
+ID:SW:Sulawesi Utara
+ID:SB:Sumatera Barat
+ID:SL:Sumatera Selatan
+ID:SU:Sumatera Utara
+IN:AN:Andaman and Nicobar Islands
+IN:AP:Andhra Pradesh
+IN:AS:Assam
+IN:BR:Bihar
+IN:CH:Chandigarh
+IN:DN:Dadra and Nagar Haveli
+IN:DL:Delhi
+IN:GJ:Gujarat
+IN:HR:Haryana
+IN:HP:Himachal Pradesh
+IN:JK:Jammu and Kashmir
+IN:KL:Kerala
+IN:LD:Lakshadweep
+IN:MP:Madhya Pradesh
+IN:MH:Maharashtra
+IN:MM:Manipur
+IN:ML:Meghalaya
+IN:KA:Karnataka
+IN:NL:Nagaland
+IN:OR:Orissa
+IN:PY:Pondicherry
+IN:PB:Punjab
+IN:RJ:Rajasthan
+IN:TN:Tamil Nadu
+IN:TR:Tripura
+IN:UP:Uttar Pradesh
+IN:WB:West Bengal
+IN:SK:Sikkim
+IN:AR:Arunachal Pradesh
+IN:MZ:Mizoram
+IN:DD:Daman and Diu
+IN:GA:Goa
+IR:WA:Azarbayjan-e Gharbi
+IR:CM:Chahar Ma�all va Bakhtiari
+IR:SB:Sistan va Baluchestan
+IR:KB:Kohgiluyeh va Buyer Ahmad
+IR:FA:Fars
+IR:GI:Gilan
+IR:HD:Hamadan
+IR:IL:Ilam
+IR:HG:Hormozgan
+IR:BK:Kermanshah
+IR:KZ:Khuzestan
+IR:KD:Kordestan
+IR:MN:Mazandaran
+IR:BS:Bushehr
+IR:LO:Lorestan
+IR:MK:Markazi
+IR:SM:Semnan
+IR:TH:Tehran
+IR:ZA:Zanjan
+IR:ES:Esfahan
+IR:KE:Kerman
+IR:KR:Khorasan
+IR:YA:Yazd
+IR:AR:Ardabil
+IR:EA:Azarbayjan-e Sharqi
+IL:HD:HaDarom (Southern)
+IL:HM:HaMerkaz (Central)
+IL:HZ:Ha�afon  (Northern)
+IL:HA:H�efa  (Haifa)
+IL:TA:Tel Aviv
+IL:JM:Yerushalayim  (Jerusalem)
+IT:AB:Abruzzi
+IT:BA:Basilicata
+IT:CA:Calabria
+IT:CM:Campania
+IT:EM:Emilia-Romagna
+IT:FR:Friuli-Venezia Giulia
+IT:LA:Lazio
+IT:LI:Liguria
+IT:LO:Lombardia
+IT:MA:Marche
+IT:MO:Molise
+IT:PI:Piemonte
+IT:PU:Puglia
+IT:SA:Sardegna
+IT:SI:Sicilia
+IT:TO:Toscana
+IT:TR:Trentino-Alto Adige
+IT:UM:Umbria
+IT:VA:Valle d'Aosta
+IT:VE:Veneto
+CI:DB:Dabakala
+CI:AO:Aboisso
+CI:AZ:Adzope
+CI:AV:Agboville
+CI:BI:Biankouma
+CI:BO:Bouna
+CI:BL:Boundiali
+CI:DN:Danane
+CI:DV:Divo
+CI:FE:Ferkessedougou
+CI:GA:Gagnoa
+CI:KA:Katiola
+CI:KO:Korhogo
+CI:OD:Odienne
+CI:SE:Seguela
+CI:TO:Touba
+CI:BG:Bongouanou
+CI:IS:Issia
+CI:LA:Lakota
+CI:MK:Mankono
+CI:OU:Oume
+CI:SO:Soubre
+CI:TG:Tingrela
+CI:ZU:Zuenoula
+CI:AB:Abidjan
+CI:BA:Bangolo
+CI:BE:Beoumi
+CI:BD:Bondoukou
+CI:BF:Bouafle
+CI:BK:Bouake
+CI:DL:Daloa
+CI:DO:Daoukro
+CI:DI:Dimbokro
+CI:DU:Duekoue
+CI:GL:Grand-Lahou
+CI:GU:Guiglo
+CI:MA:Man
+CI:MB:Mbahiakro
+CI:SK:Sakassou
+CI:SP:San Pedro
+CI:SA:Sassandra
+CI:SI:Sinfra
+CI:TA:Tabou
+CI:TD:Tanda
+CI:TI:Tiassale
+CI:TM:Toumodi
+CI:VA:Vavoua
+CI:YA:Yamoussoukro
+CI:AG:Agnilbilekrou
+IQ:AN:Al Anbar
+IQ:BA:Al Basrah
+IQ:MU:Al Muthann�
+IQ:QA:Al Qadisiyah
+IQ:SU:As Sulaymaniyah
+IQ:BB:Babil
+IQ:BG:Baghdad
+IQ:DA:Dahuk
+IQ:DQ:Dhi Qar
+IQ:DI:Diyala
+IQ:AR:Arbil
+IQ:KA:Karbala'
+IQ:TS:At Ta'mim
+IQ:MA:Maysan
+IQ:NI:Ninawa
+IQ:WA:Wasit
+IQ:NA:An Najaf
+IQ:SD:S�alah ad Din
+JP:AI:Aichi
+JP:AK:Akita
+JP:AM:Aomori
+JP:CH:Chiba
+JP:EH:Ehime
+JP:FU:Fukui
+JP:FK:Fukuoka
+JP:FS:Fukushima
+JP:GI:Gifu
+JP:GU:Gumma
+JP:HI:Hiroshima
+JP:HO:Hokkaido
+JP:HY:Hyogo
+JP:IB:Ibaraki
+JP:IS:Ishikawa
+JP:IW:Iwate
+JP:KA:Kagawa
+JP:KG:Kagoshima
+JP:KN:Kanagawa
+JP:KO:Kochi
+JP:KU:Kumamoto
+JP:KY:Kyoto
+JP:MI:Mie
+JP:MY:Miyagi
+JP:MZ:Miyazaki
+JP:NA:Nagano
+JP:NG:Nagasaki
+JP:NR:Nara
+JP:NI:Niigata
+JP:OI:Oita
+JP:OK:Okayama
+JP:OS:Osaka
+JP:SA:Saga
+JP:SI:Saitama
+JP:SH:Shiga
+JP:SM:Shimane
+JP:SZ:Shizuoka
+JP:TO:Tochigi
+JP:TK:Tokushima
+JP:TY:Tokyo
+JP:TT:Tottori
+JP:TA:Toyama
+JP:WA:Wakayama
+JP:YA:Yamagata
+JP:YM:Yamaguchi
+JP:YN:Yamanashi
+JP:ON:Okinawa
+JM:CL:Clarendon
+JM:HA:Hanover
+JM:MA:Manchester
+JM:PO:Portland
+JM:SD:Saint Andrew
+JM:SN:Saint Ann
+JM:SC:Saint Catherine
+JM:SE:Saint Elizabeth
+JM:SJ:Saint James
+JM:SM:Saint Mary
+JM:ST:Saint Thomas
+JM:TR:Trelawny
+JM:WE:Westmoreland
+JM:KI:Kingston
+JO:BA:Al Balqa'
+JO:MN:Ma'an
+JO:KA:Al Karak
+JO:MA:Al Mafraq
+JO:AM:'Amman
+JO:AT:At Tafilah
+JO:AZ:Az Zaraq
+JO:IR:Irbid
+KE:CE:Central
+KE:CO:Coast
+KE:EA:Eastern
+KE:NA:Nairobi Area
+KE:NE:NorthEastern
+KE:NY:Nyanza
+KE:RV:Rift Valley
+KE:WE:Western
+KG:BI:Bishkek
+KG:CH:Chuy
+KG:DA:Jalal-Abad
+KG:NA:Naryn
+KG:OS:Osh
+KG:TL:Talas
+KG:YK:Ysyk-Kol
+KP:CH:Chagang-do
+KP:HN:Hamgyong-namdo
+KP:WN:Hwanghae-namdo
+KP:WB:Hwanghae-bukto
+KP:KS:Kaesong-si
+KP:KW:Kangwon-do
+KP:PN:P'yongan-namdo
+KP:PY:P'yongyang-si
+KP:YG:Yanggang-do
+KP:NP:Namp'o-si
+KP:HG:Hamgyong-bukto
+KI:GI:Gilbert Islands
+KI:LI:Line Islands
+KI:PI:Phoenix Islands
+KR:CJ:Cheju-do
+KR:CB:Cholla-bukto
+KR:GB:Ch'ungch'ong-bukto
+KR:KW:Kangwon-do
+KR:KN:Kyongsang-namdo
+KR:PU:Pusan-gwangyoksi
+KR:SO:Soul-t'ukpyolsi
+KR:IN:Inch'on-gwangyoksi
+KR:KG:Kyonggi-do
+KR:KB:Kyongsang-bukto
+KR:TG:Taegu-gwangyoksi
+KR:CN:Cholla-namdo
+KR:GN:Ch'ungch'ong-namdo
+KR:KJ:Kwangju-gwangyoksi
+KR:TJ:Taejon-gwangyoksi
+KW:KU:Al Kuwayt
+KW:HA:Hawalli
+KW:AH:Al Ahmadi
+KW:JA:Al Jahra'
+KW:FA:Al Farwaniyah
+KZ:AC:Almaty
+KZ:AM:Aqmola
+KZ:AT:Aqtobe
+KZ:AS:Astana
+KZ:AR:Atyrau
+KZ:BQ:Batys Qazaqstan
+KZ:BY:Bayqongyr
+KZ:MG:Mangghystau
+KZ:OQ:Ongtustik Qazaqstan
+KZ:PA:Pavlodar
+KZ:QG:Qaraghandy
+KZ:QS:Qostanay
+KZ:QO:Qyzylorda
+KZ:SQ:Shyghys Qazaqstan
+KZ:SA:Soltustik Qazaqstan
+KZ:ZM:Zhambyl
+LA:AT:Attapu
+LA:CH:Champasak
+LA:HO:Houaphan
+LA:OU:Oudomxai
+LA:XA:Xiagnabouli
+LA:XI:Xiangkhoang
+LA:KH:Khammouan
+LA:LM:Louangnamtha
+LA:LP:Louangphabang
+LA:PH:Phongsali
+LA:SL:Salavan
+LA:SV:Savannakhet
+LA:BK:Bokeo
+LA:BL:Bolikhamxai
+LA:VI:Viangchan
+LA:XS:Xaisomboun
+LA:XE:Xekong
+LB:BI:Beqaa
+LB:JA:Liban-Sud
+LB:AS:Liban-Nord
+LB:BA:Beyrouth
+LB:JL:Mont-Liban
+LV:AI:Aizjrayjkes Rajons
+LV:AL:Aluksnes Rajons
+LV:BL:Balvu Rajons
+LV:BU:Bauskas Rajons
+LV:CE:Cesu Rajons
+LV:DA:Daugavpils
+LV:DU:Daugavpils Rajons
+LV:DO:Dobeles Rajons
+LV:GU:Gulbenes Rajons
+LV:JK:Jekabpils Rajons
+LV:JE:Jelgava
+LV:JL:Jelgavas Rajons
+LV:JU:Jurmala
+LV:KR:Kraslavas Rajons
+LV:KU:Kuldigas Rajons
+LV:LI:Liepaja
+LV:LE:Liepajas Rajons
+LV:LM:Limbazu Rajons
+LV:LU:Ludzas Rajons
+LV:MA:Madonas Rajons
+LV:OG:Ogres Rajons
+LV:PR:Preiju Rajons
+LV:RE:Rezekne
+LV:RA:Rezeknes Rajons
+LV:RI:Riga
+LV:RG:Rigas Rajons
+LV:SA:Saldus Rajons
+LV:TA:Talsu Rajons
+LV:TU:Tukuma Rajons
+LV:VK:Valkas Rajons
+LV:VM:Valmieras Rajons
+LV:VE:Ventspils
+LV:VN:Ventspils Rajons
+LT:AL:Alytaus Apskritis
+LT:KU:Kauno Apskritis
+LT:KL:Klaipedos Apskritis
+LT:MR:Marijampoles Apskritis
+LT:PN:Panevezio Apskritis
+LT:SA:Siauliu Apskritis
+LT:TA:Taurages Apskritis
+LT:TE:Telsiu Apskritis
+LT:UT:Utenos Apskritis
+LT:VL:Vilniaus Apskritis
+LR:BG:Bong
+LR:GG:Grand Gedeh
+LR:LO:Lofa
+LR:NI:Nimba
+LR:SI:Sinoe
+LR:GB:Grand Bassa
+LR:CM:Grand Cape Mount
+LR:MY:Maryland
+LR:MO:Montserrado
+LR:BM:Bomi
+LR:GK:Grand Kru
+LR:MG:Margibi
+LR:RI:River Cess
+SK:BC:Banskobystricky
+SK:BL:Bratislavsky
+SK:KI:Kosicky
+SK:NI:Nitrinsky
+SK:PV:Presovsky
+SK:TC:Treciansky
+SK:TA:Trnavsky
+SK:ZI:Zilinsky
+LI:BA:Balzers
+LI:ES:Eschen
+LI:GA:Gamprin
+LI:MA:Mauren
+LI:PL:Planken
+LI:RU:Ruggell
+LI:SN:Schaan
+LI:SB:Schellenberg
+LI:TN:Triesen
+LI:TB:Triesenberg
+LI:VA:Vaduz
+LS:BE:Berea
+LS:BB:Butha-Buthe
+LS:LE:Leribe
+LS:MF:Mafeteng
+LS:MS:Maseru
+LS:MH:Mohale's Hoek
+LS:MK:Mokhotlong
+LS:QN:Qacha's Hoek
+LS:QT:Quthing
+LS:TT:Thaba-Tseka
+LU:DI:Diekirch
+LU:GR:Grevenmacher
+LU:LU:Luxembourg
+LY:AZ:Al 'Aziziyah
+LY:JU:Al Jufrah
+LY:KU:Al Kufrah
+LY:SH:Ash Shati'
+LY:MU:Murzuq
+LY:SB:Sabha
+LY:TH:Tarhunah
+LY:TU:T�ubruq
+LY:ZL:Zlitan
+LY:AJ:Ajdabiya
+LY:FA:Al Fatih
+LY:JA:Al Jabal al Akhdar
+LY:KH:Al Khums
+LY:NK:An Nuqat al Khams
+LY:AW:Awbari
+LY:ZA:Az Zawiyah
+LY:BA:Banghazi
+LY:DA:Darnah
+LY:GD:Ghadamis
+LY:GR:Gharyan
+LY:MI:Misratah
+LY:SF:Sawfajjin
+LY:SU:Surt
+LY:TB:Tarabulus
+LY:YA:Yafran
+MG:AS:Antsiranana
+MG:FI:Fianarantsoa
+MG:MA:Mahajanga
+MG:TM:Toamasina
+MG:AV:Antananarivo
+MG:TL:Toliara
+MO:IL:Ilhas
+MO:MA:Macau
+MD:BL:Balti
+MD:CG:Cahul
+MD:CE:Chisinau
+MD:DU:Stinga Nistrului
+MD:ET:Edinet
+MD:GA:Gagauzia
+MD:OR:Orhei
+MD:SR:Soroca
+MD:UN:Ungheni
+MN:AR:Arhangay
+MN:BH:Bayanhongor
+MN:BO:Bayan-Olgiy
+MN:DG:Dornogovi
+MN:DU:Dundgovi
+MN:DZ:Dzavhan
+MN:GA:Govi-Altay
+MN:HN:Hentiy
+MN:OG:Omnogovi
+MN:OH:Ovorhangay
+MN:UB:Ulaanbaatar
+MN:ER:Orhon
+MS:SA:Saint Anthony
+MS:SG:Saint Georges
+MS:SP:Saint Peter
+MW:CK:Chikwawa
+MW:CR:Chiradzulu
+MW:CT:Chitipa
+MW:TH:Thyolo
+MW:DE:Dedza
+MW:DO:Dowa
+MW:KR:Karonga
+MW:KS:Kasungu
+MW:MA:Machinga (Kasupe)
+MW:LI:Lilongwe
+MW:MG:Mangochi (Fort Johnston)
+MW:MC:Mchinji
+MW:MJ:Mulanje (Mlange)
+MW:MZ:Mzimba
+MW:NU:Ntcheu
+MW:NA:Nkhata Bay
+MW:NK:Nkhotakota
+MW:NS:Nsanje
+MW:NI:Ntchisi (Nchisi)
+MW:RU:Rumphi (Rumpil)
+MW:SA:Salima
+MW:ZO:Zomba
+MW:BL:Blantyre
+MW:MN:Mwanza
+ML:BA:Bamako
+ML:GA:Gao
+ML:KY:Kayes
+ML:MO:Mopti
+ML:SG:Segou
+ML:SK:Sikasso
+ML:KK:Koulikoro
+ML:TB:Tombouctou
+MA:AG:Agadir
+MA:AH:Al Hoce�ma
+MA:AZ:Azilal
+MA:BS:Ben Slimane
+MA:BM:Beni Mellal
+MA:BO:Boulemane
+MA:CA:Casablanca
+MA:CH:Chaouen
+MA:EJ:El Jadida
+MA:EK:El Kelaa des Sraghna
+MA:ER:Er Rachidia
+MA:ES:Essaouira
+MA:FE:Fes
+MA:FI:Figuig
+MA:KE:Kenitra
+MA:KH:Khemisset
+MA:KN:Khenifra
+MA:KO:Khouribga
+MA:MR:Marrakech
+MA:ME:Meknes
+MA:NA:Nador
+MA:OU:Ouarzazate
+MA:OJ:Oujda
+MA:RA:Rabat-Sale
+MA:SA:Safi
+MA:SE:Settat
+MA:TG:Tanger
+MA:TT:Tata
+MA:TZ:Taza
+MA:TI:Tiznit
+MA:GU:Guelmim
+MA:IF:Ifrane
+MA:LA:Laayoune
+MA:TN:Tan-Tan
+MA:TO:Taounate
+MA:SK:Sidi Kacem
+MA:TA:Taroudannt
+MA:TE:Tetouan
+MA:LR:Larache
+MA:AS:Assa-Zag
+MA:EM:Es Smara
+MU:BL:Black River
+MU:FL:Flacq
+MU:GP:Grand Port
+MU:MO:Moka
+MU:PA:Pamplemousses
+MU:PW:Plaines Wilhems
+MU:PL:Port Louis
+MU:RR:Rivi�re du Rempart
+MU:SA:Savanne
+MU:AG:Agalega Islands
+MU:CC:Cargados Carajos
+MU:RO:Rodrigues
+MR:HC:Hodh Ech Chargui
+MR:HG:Hodh El Gharbi
+MR:AS:Assaba
+MR:GO:Gorgol
+MR:BR:Brakna
+MR:TR:Trarza
+MR:AD:Adrar
+MR:DN:Dakhlet Nouadhibou
+MR:TG:Tagant
+MR:GD:Guidimaka
+MR:TZ:Tiris Zemmour
+MR:IN:Inchiri
+OM:DA:Ad Dakhiliyah
+OM:BA:Al Batinah
+OM:WU:Al Wusta
+OM:SH:Ash Sharqiyah
+OM:ZA:Az Zahirah
+OM:MA:Masqat
+OM:MU:Musandam
+OM:JA:Zufar
+MV:SE:Seenu
+MV:LM:Laamu
+MV:TH:Thaa
+MV:RA:Raa
+MV:BA:Baa
+MV:SH:Shaviyani
+MV:NO:Noonu
+MV:KA:Kaafu
+MV:AA:Alifu
+MV:DA:Dhaalu
+MV:FA:Faafa
+MV:GA:Gaafu Alifu
+MV:GD:Gaafu Dhaalu
+MV:HA:Haa Alifu
+MV:HD:Haa Dhaalu
+MV:LV:Lhaviyani
+MV:MA:Maale
+MV:ME:Meenu
+MV:NA:Gnaviyani
+MV:WA:Vaavu
+MX:AG:Aguascalientes
+MX:CM:Campeche
+MX:CA:Coahuila de Zaragoza
+MX:DF:Distrito Federal
+MX:MX:Mexico
+MX:MC:Michoacan de Ocampo
+MX:NA:Nayarit
+MX:PU:Puebla
+MX:QE:Queretaro de Arteaga
+MX:SI:Sinaloa
+MX:VE:Veracruz-Llave
+MX:YU:Yucatan
+MY:JH:Johor
+MY:KH:Kedah
+MY:KN:Kelantan
+MY:ME:Melaka
+MY:NS:Negeri Sembilan
+MY:PH:Pahang
+MY:PK:Perak
+MY:PL:Perlis
+MY:PG:Pulau Pinang
+MY:SK:Sarawak
+MY:SL:Selangor
+MY:TE:Terengganu
+MY:KL:Wilayah Persekutuan
+MY:LA:Labuan
+MY:SA:Sabah
+MZ:CD:Cabo Delgado
+MZ:GA:Gaza
+MZ:IN:Inhambane
+MZ:MP:Maputo
+MZ:SO:Sofala
+MZ:NM:Nampula
+MZ:NS:Niassa
+MZ:TE:Tete
+MZ:ZA:Zambezia
+MZ:MN:Manica
+NE:AG:Agadez
+NE:DF:Diffa
+NE:DS:Dosso
+NE:MA:Maradi
+NE:NI:Niamey
+NE:TH:Tahoua
+NE:ZI:Zinder
+NE:TL:Tillaberi
+VU:AO:Aoba//Maewo
+VU:TR:Torba
+VU:SN:Sanma
+VU:TF:Tafea
+NG:LA:Lagos
+NG:BA:Bauchi
+NG:RI:Rivers
+NG:FC:Abuja Capital Territory
+NG:OG:Ogun
+NG:ON:Ondo
+NG:PL:Plateau
+NG:AK:Akwa Ibom
+NG:CR:Cross River
+NG:KD:Kaduna
+NG:AN:Anambra
+NG:BE:Benue
+NG:BO:Borno
+NG:KN:Kano
+NG:KW:Kwara
+NG:NI:Niger
+NG:OY:Oyo
+NG:SO:Sokoto
+NG:AB:Abia
+NG:AD:Adamawa
+NG:DE:Delta
+NG:ED:Edo
+NG:EN:Enugu
+NG:JI:Jigawa
+NG:KE:Kebbi
+NG:KO:Kogi
+NG:OS:Osun
+NG:TA:Taraba
+NG:YO:Yobe
+NL:DR:Drenthe
+NL:FR:Friesland
+NL:GE:Gelderland
+NL:GR:Groningen
+NL:LI:Limburg
+NL:NB:Noord-Brabant
+NL:NH:Noord-Holland
+NL:OV:Overijssel
+NL:UT:Utrecht
+NL:ZE:Zeeland
+NL:ZH:Zuid-Holland
+NL:FL:Flevoland
+NO:AK:Akershus
+NO:AA:Aust-Agder
+NO:BU:Buskerud
+NO:FI:Finnmark
+NO:HE:Hedmark
+NO:HO:Hordaland
+NO:MR:More og Romsdal
+NO:NL:Nordland
+NO:NR:Nord-Trondelag
+NO:OP:Oppland
+NO:OS:Oslo
+NO:OF:�stfold
+NO:RO:Rogaland
+NO:SF:Sogn og Fjordane
+NO:ST:Sor-Trondelag
+NO:TE:Telemark
+NO:TR:Troms
+NO:VA:Vest-Agder
+NO:VF:Vestfold
+NP:BA:Bagmati
+NP:BH:Bheri
+NP:DH:Dhawalagiri
+NP:GA:Gandaki
+NP:JA:Janakpur
+NP:KA:Karnali
+NP:KO:Kosi
+NP:LU:Lumbini
+NP:MA:Mahakali
+NP:ME:Mechi
+NP:NA:Narayani
+NP:RA:Rapti
+NP:SA:Sagarmatha
+NP:SE:Seti
+NR:AI:Aiwo
+NR:AB:Anabar
+NR:AT:Anetan
+NR:AR:Anibare
+NR:BA:Baiti
+NR:BO:Boe
+NR:BU:Buada
+NR:DE:Denigomodu
+NR:EW:Ewa
+NR:IJ:Ijuw
+NR:ME:Meneng
+NR:NI:Nibok
+NR:UA:Uaboe
+NR:YA:Yaren
+SR:BR:Brokopondo
+SR:CM:Commewijne
+SR:CR:Coronie
+SR:MA:Marowijne
+SR:NI:Nickerie
+SR:PR:Para
+SR:PM:Paramaribo
+SR:SA:Saramacca
+SR:SI:Sipaliwini
+SR:WA:Wanica
+NI:BO:Boaco
+NI:CA:Carazo
+NI:CI:Chinandega
+NI:CO:Chontales
+NI:ES:Esteli
+NI:GR:Granada
+NI:JI:Jinotega
+NI:LE:Leon
+NI:MD:Madriz
+NI:MN:Managua
+NI:MS:Masaya
+NI:MT:Matagalpa
+NI:NS:Nueva Segovia
+NI:SJ:Rio San Juan
+NI:RI:Rivas
+NI:AN:Atlantico Norte
+NI:AS:Atlantico Sur
+NZ:HB:Hawke's Bay
+NZ:MA:Marlborough
+NZ:SO:Southland
+NZ:TK:Taranaki
+NZ:WK:Waikato
+PY:AA:Alto Parana
+PY:AM:Amambay
+PY:CG:Caaguazu
+PY:CZ:Caazapa
+PY:CE:Central
+PY:CN:Concepcion
+PY:CR:Cordillera
+PY:GU:Guaira
+PY:IT:Itapua
+PY:MI:Misiones
+PY:NE:Neembucu
+PY:PG:Paraguari
+PY:PH:Presidente Hayes
+PY:SP:San Pedro
+PY:CY:Canindeyu
+PY:AS:Asuncion
+PY:AG:Alto Paraguay
+PY:BQ:Boqueron
+PE:AM:Amazonas
+PE:AN:Ancash
+PE:AP:Apurimac
+PE:AR:Arequipa
+PE:AY:Ayacucho
+PE:CJ:Cajamarca
+PE:CL:Callao
+PE:CS:Cusco
+PE:HV:Huancavelica
+PE:HC:Huanuco
+PE:IC:Ica
+PE:JU:Junin
+PE:LL:La Libertad
+PE:LB:Lambayeque
+PE:LI:Lima
+PE:LO:Loreto
+PE:MD:Madre de Dios
+PE:MQ:Moquegua
+PE:PA:Pasco
+PE:PI:Piura
+PE:PU:Puno
+PE:SM:San Martin
+PE:TA:Tacna
+PE:TU:Tumbes
+PE:UC:Ucayali
+PK:TA:Federally Administered Tribal Areas
+PK:BA:Balochistan
+PK:NW:North-West Frontier
+PK:PB:Punjab
+PK:SD:Sindh
+PK:JK:Azad Kashmir
+PK:NA:Northern Areas
+PK:IS:Islamabad
+PL:DS:Dolnoslaskie
+PL:KP:Kujawsko-Pomorskie
+PL:LD:Lodzkie
+PL:LU:Lubelskie
+PL:LB:Lubuskie
+PL:MA:Malopolskie
+PL:MZ:Mazowieckie
+PL:OP:Opolskie
+PL:PK:Podkarpackie
+PL:PD:Podlaskie
+PL:PM:Pomorskie
+PL:SL:Slaskie
+PL:SK:Swietokrzyskie
+PL:WN:Warminsko-Mazurskie
+PL:WP:Wielkopolskie
+PL:ZP:Zachodniopomorskie
+PA:BC:Bocas del Toro
+PA:CH:Chiriqui
+PA:CC:Cocle
+PA:CL:Colon
+PA:DR:Darien
+PA:HE:Herrera
+PA:LS:Los Santos
+PA:PN:Panama
+PA:SB:San Blas
+PA:VR:Veraguas
+PT:AV:Aveiro
+PT:BE:Beja
+PT:BR:Braga
+PT:BA:Braganca
+PT:CB:Castelo Branco
+PT:CO:Coimbra
+PT:EV:Evora
+PT:FA:Faro
+PT:MA:Madeira
+PT:GU:Guarda
+PT:LE:Leiria
+PT:LI:Lisboa
+PT:PA:Portalegre
+PT:PO:Porto
+PT:SA:Santarem
+PT:SE:Setubal
+PT:VC:Viana do Castelo
+PT:VR:Vila Real
+PT:VI:Viseu
+PT:AC:Azores
+PG:CE:Central
+PG:GU:Gulf
+PG:MB:Milne Bay
+PG:NO:Northern
+PG:SH:Southern Highlands
+PG:WE:Western
+PG:NS:Bougainville
+PG:CH:Chimbu
+PG:EH:Eastern Highlands
+PG:EN:East New Britain
+PG:ES:East Sepik
+PG:MD:Madang
+PG:MN:Manus
+PG:MR:Morobe
+PG:NI:New Ireland
+PG:WH:Western Highlands
+PG:WN:West New Britain
+PG:SA:Sandaun
+PG:EG:Enga
+PG:NC:National Capital
+GW:BA:Bafata
+GW:QU:Quinara
+GW:OI:Oio
+GW:BL:Bolama
+GW:CA:Cacheu
+GW:TO:Tombali
+GW:GA:Gabu
+GW:BS:Bissau
+GW:BM:Biombo
+QA:DA:Ad Dawhah
+QA:GH:Al Ghuwayriyah
+QA:JU:Al Jumayliyah
+QA:KH:Al Khawr
+QA:WA:Al Wakrah
+QA:RA:Ar Rayyan
+QA:JB:Jarayan al Batinah
+QA:MS:Madinat ash Shamal
+QA:US:Umm Salal
+RO:AB:Alba
+RO:AR:Arad
+RO:AG:Arges
+RO:BC:Bacau
+RO:BH:Bihor
+RO:BN:Bistrita-Nasaud
+RO:BT:Botosani
+RO:BR:Braila
+RO:BV:Brasov
+RO:BU:Bucuresti
+RO:BZ:Buzau
+RO:CS:Caras-Severin
+RO:CJ:Cluj
+RO:CT:Constanta
+RO:CV:Covasna
+RO:DB:Dambovita
+RO:DJ:Dolj
+RO:GL:Galati
+RO:GJ:Gorj
+RO:HR:Harghita
+RO:HD:Hunedoara
+RO:IL:Ialomita
+RO:IS:Iasi
+RO:MM:Maramures
+RO:MH:Mehedinti
+RO:MS:Mures
+RO:NT:Neamt
+RO:OT:Olt
+RO:PH:Prahova
+RO:SJ:Salaj
+RO:SM:Satu Mare
+RO:SB:Sibiu
+RO:SV:Suceava
+RO:TR:Teleorman
+RO:TM:Timis
+RO:TL:Tulcea
+RO:VS:Vaslui
+RO:VL:Valcea
+RO:VN:Vrancea
+RO:CL:Calarasi
+RO:GR:Giurgiu
+PH:AB:Abra
+PH:AN:Agusan del Norte
+PH:AS:Agusan del Sur
+PH:AK:Aklan
+PH:AL:Albay
+PH:AQ:Antique
+PH:BA:Bataan
+PH:BN:Batanes
+PH:BT:Batangas
+PH:BG:Benguet
+PH:BO:Bohol
+PH:BK:Bukidnon
+PH:BU:Bulacan
+PH:CG:Cagayan
+PH:CN:Camarines Norte
+PH:CS:Camarines Sur
+PH:CM:Camiguin
+PH:CP:Capiz
+PH:CT:Catanduanes
+PH:CV:Cavite
+PH:CB:Cebu
+PH:BS:Basilan
+PH:ES:Eastern Samar
+PH:DV:Davao del Norte
+PH:DS:Davao del Sur
+PH:DO:Davao Oriental
+PH:IF:Ifugao
+PH:IN:Ilocos Norte
+PH:IS:Ilocos Sur
+PH:II:Iloilo
+PH:IB:Isabela
+PH:KA:Kalinga-Apayao
+PH:LG:Laguna
+PH:LN:Lanao del Norte
+PH:LS:Lanao del Sur
+PH:LB:La Union
+PH:LY:Leyte
+PH:MQ:Marinduque
+PH:MB:Masbate
+PH:MC:Mindoro Occidental
+PH:MR:Mindoro Oriental
+PH:MD:Misamis Occidental
+PH:MN:Misamis Oriental
+PH:MT:Mountain
+PH:RP:RP45
+PH:NR:Negros Oriental
+PH:NE:Nueva Ecija
+PH:NV:Nueva Vizcaya
+PH:PL:Palawan
+PH:PM:Pampanga
+PH:PN:Pangasinan
+PH:RI:Rizal
+PH:RM:Romblon
+PH:SM:Samar
+PH:MG:Maguindanao
+PH:NC:North Cotabato
+PH:SR:Sorsogon
+PH:SL:Southern Leyte
+PH:SU:Sulu
+PH:SN:Surigao del Norte
+PH:SS:Surigao del Sur
+PH:TR:Tarlac
+PH:ZM:Zambales
+PH:ZN:Zamboanga del Norte
+PH:ZS:Zamboanga del Sur
+PH:NS:Northern Samar
+PH:QR:Quirino
+PH:SQ:Siquijor
+PH:SC:South Cotabato
+PH:SK:Sultan Kudarat
+PH:TT:Tawi-Tawi
+PH:AG:Angeles
+PH:BL:Bacolod
+PH:BB:Bago
+PH:BI:Baguio
+PH:BD:Bais
+PH:BC:Basilan City
+PH:BY:Batangas City
+PH:BV:Butuan
+PH:CA:Cabanatuan
+PH:CI:Cadiz
+PH:CD:Cagayan de Oro
+PH:CL:Calbayog
+PH:CF:Caloocan
+PH:CH:Canlaon
+PH:CE:Cavite City
+PH:CU:Cebu City
+PH:CO:Cotabato
+PH:DA:Dagupan
+PH:DN:Danao
+PH:DP:Dapitane
+PH:DC:Davao City
+PH:DI:Dipolog
+PH:DU:Dumaguete
+PH:GS:General Santos
+PH:GI:Gingoog
+PH:IL:Iligan
+PH:IC:Iloilo City
+PH:IR:Iriga
+PH:LC:La Carlota
+PH:LO:Laoag
+PH:LA:LapuLapu
+PH:LE:Legaspi
+PH:LI:Lipa
+PH:LU:Lucena
+PH:MU:Mandaue
+PH:MM:Manila
+PH:MA:Marawi
+PH:NA:Naga
+PH:OL:Olongapo
+PH:OM:Ormoc
+PH:OR:Oroquieta
+PH:OZ:Ozamis
+PH:PG:Pagadiane
+PH:PY:Palayan
+PH:PA:Pasay
+PH:PP:Puerto Princesa
+PH:QC:Quezon City
+PH:RO:Roxas
+PH:SA:Negros Occidental San Carlos
+PH:SO:Pangasinan San Carlos
+PH:SJ:San Jose
+PH:SP:San Pablo
+PH:SI:Silay
+PH:SG:Surigao
+PH:TC:Tacloban
+PH:TG:Tagaytay
+PH:TB:Tagbilaran
+PH:TA:Tangub
+PH:TO:Toledo
+PH:TM:Trece Martires
+PH:ZA:Zamboanga
+PH:AU:Aurora
+PH:QZ:Quezon
+PH:ND:Negros Occidental
+RU:AD:Adygeya
+RU:AB:Aginskiy Buryatskiy Avtonomnyy Okrug
+RU:GA:Altay
+RU:AL:Altayskiy Kray
+RU:AM:Amurskaya Oblast'
+RU:AR:Arkhangel'skaya Oblast'
+RU:AS:Astrakhanskaya Oblast'
+RU:BK:Bashkortostan
+RU:BL:Belgorodskaya Oblast'
+RU:BR:Bryanskaya Oblast'
+RU:BU:Buryatiya
+RU:CN:Chechnya
+RU:CL:Chelyabinskaya Oblast'
+RU:CT:Chitinskaya Oblast'
+RU:CK:Chukotskiy Avtonomnyy Okrug
+RU:CV:Chuvashiya
+RU:EN:Evenkiyskiy Avtonomnyy Okrug
+RU:IN:Ingushetiya
+RU:IR:Irkutskaya Oblast'
+RU:IV:Ivanovskaya Oblast'
+RU:KB:Kabardino-Balkariya
+RU:KN:Kaliningradskaya Oblast'
+RU:KL:Kalmykiya
+RU:KG:Kaluzhskaya Oblast'
+RU:KA:Kamchatskaya Oblast'
+RU:KC:Karachayevo-Cherkesiya
+RU:KI:Kareliya
+RU:KE:Kemerovskaya Oblast'
+RU:KH:Khabarovskiy Kray
+RU:KK:Khakasiya
+RU:KM:Khanty-Mansiyskiy Avtonomnyy Okrug
+RU:KV:Kirovskaya Oblast'
+RU:KP:Komi-Permyatskiy Avtonomnyy Okrug
+RU:KR:Koryakskiy Avtonomnyy Okrug
+RU:KT:Kostromskaya Oblast'
+RU:KD:Krasnodarskiy Kray
+RU:KY:Krasnoyarskiy Kray
+RU:KU:Kurganskaya Oblast'
+RU:KS:Kurskaya Oblast'
+RU:LN:Leningradskaya Oblast'
+RU:LP:Lipetskaya Oblast'
+RU:MG:Magadanskaya Oblast'
+RU:MR:Mordoviya
+RU:MS:Moskovskaya Oblast'
+RU:MC:Moskva
+RU:MM:Murmanskaya Oblast'
+RU:NN:Nenetskiy Avtonomnyy Okrug
+RU:NZ:Nizhegorodskaya Oblast'
+RU:NG:Novgorodskaya Oblast'
+RU:NS:Novosibirskaya Oblast'
+RU:OM:Omskaya Oblast'
+RU:OB:Orenburgskaya Oblast'
+RU:OL:Orlovskaya Oblast'
+RU:PZ:Penzenskaya Oblast'
+RU:PM:Permskaya Oblast'
+RU:PR:Primorskiy Kray
+RU:PS:Pskovskaya Oblast'
+RU:RO:Rostovskaya Oblast'
+RU:RZ:Ryazanskaya Oblast'
+RU:SK:Sakha (Yakutiya)
+RU:SL:Sakhalinskaya Oblast'
+RU:SA:Samarskaya Oblast'
+RU:SP:Sankt-Peterburg
+RU:SR:Saratovskaya Oblast'
+RU:NO:Severnaya Osetiya-Alaniya
+RU:SM:Smolenskaya Oblast'
+RU:ST:Stavropol'skiy Kray
+RU:SV:Sverdlovskaya Oblast'
+RU:TB:Tambovskaya Oblast'
+RU:TM:Taymyrskiy Dolgano-Nenetskiy Avtonomnyy Okrug
+RU:TO:Tomskaya Oblast'
+RU:TL:Tul'skaya Oblast'
+RU:TV:Tverskaya Oblast'
+RU:TY:Tyumenskaya Oblast'
+RU:UD:Udmurtiya
+RU:UL:Ul'yanovskaya Oblast'
+RU:UB:Ust'-Ordynskiy Buryatskiy Avtonomnyy Okrug
+RU:VL:Vladimirskaya Oblast'
+RU:VG:Volgogradskaya Oblast'
+RU:VO:Vologodskaya oblast'
+RU:VR:Voronezhskaya Oblast'
+RU:YN:Yamalo-Nenetskiy Avtonomnyy Okrug
+RU:YS:Yaroslavskaya Oblast'
+RU:YV:Yevreyskaya Avtonomnyy Oblast'
+RW:BT:Butare
+RW:BM:Byumba
+RW:CY:Cyangugu
+RW:GK:Gikongoro
+RW:GS:Gisenyi
+RW:GT:Gitarama
+RW:KN:Kibungo
+RW:KY:Kibuye
+RW:KR:Kigali-Rural
+RW:RU:Ruhengeri
+SA:BA:Al Bahah
+SA:MD:Al Madinah
+SA:SH:Ash Sharqiyah
+SA:QS:Al Qasim
+SA:RI:Ar Riyad
+SA:AS:'Asir
+SA:HA:Ha'il
+SA:MK:Makkah
+SA:HS:Al Hudud ash Shamaliyah
+SA:NJ:Najran
+SA:JZ:Jizan
+SA:TB:Tabuk
+SA:JF:Al Jawf
+KN:CC:Christ Church Nicholatown
+KN:AS:Saint Anne Sandy Point
+KN:GB:Saint George Basseterre
+KN:GG:Saint George Gingerland
+KN:JW:Saint James Windward
+KN:JC:Saint John Capesterre
+KN:JF:Saint John Figtree
+KN:MC:Saint Mary Cayon
+KN:PP:Saint Paul Capesterre
+KN:PL:Saint Paul Charlestown
+KN:PB:Saint Peter Basseterre
+KN:TL:Saint Thomas Lowland
+KN:TM:Saint Thomas Middle Island
+KN:TP:Trinity Palmetto Point
+SC:PI:Anse aux Pins
+SC:AB:Anse Boileau
+SC:ET:Anse Etoile
+SC:LO:Anse Louis
+SC:RO:Anse Royale
+SC:BL:Baie Lazare
+SC:BS:Baie Sainte Anne
+SC:BV:Beau Vallon
+SC:BA:Bel Air
+SC:BO:Bel Ombre
+SC:CA:Cascade
+SC:GL:Glacis
+SC:GP:Grand' Anse
+SC:DI:La Digue
+SC:RA:La Riviere Anglaise
+SC:MB:Mont Buxton
+SC:MF:Mont Fleuri
+SC:PL:Plaisance
+SC:PR:Pointe La Rue
+SC:PG:Port Glaud
+SC:SL:Saint Louis
+SC:TA:Takamaka
+ZA:NL:KwaZulu-Natal
+ZA:FS:Free State
+ZA:EC:Eastern Cape
+ZA:GT:Gauteng
+ZA:MP:Mpumalanga
+ZA:NC:Northern Cape
+ZA:NP:Northern Province
+ZA:NW:North-West
+ZA:WC:Western Cape
+SN:DK:Dakar
+SN:DB:Diourbel
+SN:SL:Saint-Louis
+SN:TC:Tambacounda
+SN:TH:Thies
+SN:LG:Louga
+SN:FK:Fatick
+SN:KL:Kaolack
+SN:KD:Kolda
+SN:ZG:Ziguinchor
+SH:AC:Ascension
+SH:SH:Saint Helena
+SH:TA:Tristan da Cunha
+SI:AJ:Ajdovscina
+SI:BE:Beltinci
+SI:BL:Bled
+SI:BH:Bohinj
+SI:BO:Borovnica
+SI:BC:Bovec
+SI:BR:Brda
+SI:BZ:Brezice
+SI:BV:Brezovica
+SI:CA:Cankova-Tisina
+SI:CL:Celje
+SI:CG:Cerklje Na Gorenjskem
+SI:CK:Cerknica
+SI:CE:Cerkno
+SI:CR:Crensovci
+SI:CN:Crna na Koroskem
+SI:CO:Crnomelj
+SI:DV:Destrnik-Trnovska Vas
+SI:DI:Divaca
+SI:DB:Dobrepolje
+SI:DG:Dobrova-Horjul-Polhov Gradec
+SI:DP:Dol pri Ljubljani
+SI:DM:Domzale
+SI:DO:Dornava
+SI:DR:Dravograd
+SI:DU:Duplek
+SI:GV:Gorenja Vas-Poljane
+SI:GO:Gorisnica
+SI:GR:Gornja Radgona
+SI:GG:Gornji Grad
+SI:GP:Gornji Petrovci
+SI:GS:Grosuplje
+SI:HO:HodosSalovci
+SI:HR:Hrastnik
+SI:HK:Hrpelje-Kozina
+SI:ID:Idrija
+SI:IG:Ig
+SI:IB:Ilirska Bistrica
+SI:IV:Ivancna Gorica
+SI:IZ:Izola
+SI:JE:Jesenice
+SI:JU:Jursinci
+SI:KA:Kamnik
+SI:KN:Kanal
+SI:KI:Kidricevo
+SI:KO:Kobarid
+SI:KB:Kobilje
+SI:KC:Kocevje
+SI:KM:Komen
+SI:KP:Koper
+SI:KJ:Kozje
+SI:KR:Kranj
+SI:KG:Kranjska Gora
+SI:KS:Krsko
+SI:KZ:Kungota
+SI:KU:Kuzma
+SI:LA:Lasko
+SI:LE:Lenart
+SI:LN:Lendava
+SI:LI:Litija
+SI:LB:Ljubljana
+SI:LC:Ljubno
+SI:LJ:Ljutomer
+SI:LO:Logatec
+SI:LD:Loska Dolina
+SI:LP:Loski Potok
+SI:LU:Luce
+SI:LK:Lukovica
+SI:MJ:Majsperk
+SI:MA:Maribor
+SI:MD:Medvode
+SI:MN:Menges
+SI:ME:Metlika
+SI:MZ:Mezica
+SI:MI:Miren-Kostanjevica
+SI:ML:Mislinja
+SI:MV:Moravce
+SI:MT:Moravske Toplice
+SI:MO:Mozirje
+SI:MS:Murska Sobota
+SI:MU:Muta
+SI:NA:Naklo
+SI:NZ:Nazarje
+SI:NG:Nova Gorica
+SI:NM:Novo Mesto
+SI:OD:Odranci
+SI:OR:Ormoz
+SI:OS:Osilnica
+SI:PE:Pesnica
+SI:PA:Piran
+SI:PI:Pivka
+SI:PD:Podcetrtek
+SI:PV:Podvelka-Ribnica
+SI:PO:Postojna
+SI:PR:Preddvor
+SI:PT:Ptuj
+SI:PU:Puconci
+SI:RF:Race-Fram
+SI:RA:Radece
+SI:RD:Radenci
+SI:RL:Radlje ob Dravi
+SI:RV:Radovljica
+SI:RN:Ravne-Prevalje
+SI:RI:Ribnica
+SI:RO:Rogasevci
+SI:RS:Rogaska Slatina
+SI:RT:Rogatec
+SI:RU:Ruse
+SI:SM:Semic
+SI:SN:Sencur
+SI:SE:Sentilj
+SI:SR:Sentjernej
+SI:SU:Sentjur pri Celju
+SI:SV:Sevnica
+SI:SZ:Sezana
+SI:SC:Skocjan
+SI:SL:Skofja Loka
+SI:SK:Skofljica
+SI:SG:Slovenj Gradec
+SI:SB:Slovenska Bistrica
+SI:SS:Slovenske Konjice
+SI:SP:Smarje pri Jelsah
+SI:SA:Smartno ob Paki
+SI:SO:Sostanj
+SI:SH:Starse
+SI:ST:Store
+SI:SJ:Sveti Jurij
+SI:TO:Tolmin
+SI:TB:Trbovlje
+SI:TE:Trebnje
+SI:TR:Trzic
+SI:TU:Turnisce
+SI:VE:Velenje
+SI:VL:Velike Lasce
+SI:VI:Videm
+SI:VP:Vipava
+SI:VT:Vitanje
+SI:VO:Vodice
+SI:VJ:Vojnik
+SI:VR:Vrhnika
+SI:VU:Vuzenica
+SI:ZO:Zagorje ob Savi
+SI:ZA:Zalec
+SI:ZV:Zavrc
+SI:ZE:Zelezniki
+SI:ZI:Ziri
+SI:ZR:Zrece
+SL:EA:Eastern
+SL:NO:Northern
+SL:SO:Southern
+SL:WE:Western Area
+SM:AC:Acquaviva
+SM:CH:Chiesanuova
+SM:DO:Domagnano
+SM:FA:Faetano
+SM:FI:Fiorentino
+SM:BM:Borgo Maaggiore
+SM:SM:San Marino
+SM:MG:Monte Giardino
+SM:SE:Serravalle
+SO:BK:Bakool
+SO:BN:Banaadir
+SO:BR:Bari
+SO:BY:Bay
+SO:GA:Galguduud
+SO:GE:Gedo
+SO:HI:Hiiraan
+SO:JD:Jubbada Dhexe
+SO:JH:Jubbada Hoose
+SO:MU:Mudug
+SO:NU:Nugaal
+SO:SA:Sanaag
+SO:SD:Shabeellaha Dhexe
+SO:SH:Shabeellaha Hoose
+SO:TO:Togdheer
+SO:WO:Woqooyi Galbeed
+ES:PM:Islas Baleares
+ES:LO:La Rioja
+ES:MD:Madrid
+ES:MU:Murcia
+ES:NA:Navarra
+ES:AS:Asturias
+ES:CB:Cantabria
+ES:AN:Andalucia
+ES:AR:Aragon
+ES:CN:Canarias
+ES:CM:Castilla-La Mancha
+ES:CL:Castilla y Leon
+ES:CT:Catalu�a
+ES:EX:Extremadura
+ES:GA:Galicia
+ES:PV:Pais Vasco
+ES:VC:Valenciana
+YU:VO:Vojvodina
+LC:AR:Anse-la-Raye
+LC:DA:Dauphin
+LC:CS:Castries
+LC:CH:Choiseul
+LC:DE:Dennery
+LC:GI:Gros-Islet
+LC:LB:Laborie
+LC:MI:Micoud
+LC:CO:Soufriere
+LC:VF:Vieux-Fort
+LC:PR:Praslin
+SD:UN:A'ali an Nil
+SD:KH:Al Khartum
+SD:NO:Ash Shamaliyah
+SD:RS:Al Babr al Ahmar
+SD:EB:Al Buhayrat
+SD:GZ:Al Jazirah
+SD:GD:Al Qadarif
+SD:WH:Al Wahdah
+SD:WN:An Nil al Abyad
+SD:BN:An Nil al Azraq
+SD:BG:Bahr al Jabal
+SD:WE:Gharb al Istiwa'iyah
+SD:WB:Gharb Bahr al Ghazal
+SD:WD:Gharb Darfur
+SD:WK:Gharb Kurdufan
+SD:JD:Janub Darfur
+SD:SK:Janub Kurdufan
+SD:JG:Junqali
+SD:KA:Kassala
+SD:RN:Nahr an Nil
+SD:NB:Shamal Bahr al Ghazal
+SD:ND:Shamal Darfur
+SD:NK:Shamal Kurdufan
+SD:EE:Sharq al Istiwa'iyah
+SD:SI:Sinnar
+SD:WR:Warab
+SE:BL:Blekinge Lan
+SE:GV:Gavleborgs Lan
+SE:GT:Gotlands Lan
+SE:HA:Hallands Lan
+SE:JA:Jamtlands Lan
+SE:JO:Jonkopings Lan
+SE:KA:Kalmar Lan
+SE:KO:Dalarnas Lan
+SE:KR:Kronobergs Lan
+SE:NB:Norrbottens Lan
+SE:OR:Orebro Lan
+SE:OG:Ostergotlands Lan
+SE:SD:Sodermanlands Lan
+SE:UP:Uppsala Lan
+SE:VR:Varmlands Lan
+SE:VB:Vasterbottens Lan
+SE:VN:Vasternorrlands Lan
+SE:VM:Vastmanlands Lan
+SE:ST:Stockholms Lan
+SE:SN:Skane Lan
+SE:VG:Vastra Gotaland
+SY:HA:Al Hasakah
+SY:LA:Al Ladhiqiyah
+SY:QU:Al Qunaytirah
+SY:RA:Ar Raqqah
+SY:SU:As Suwayda'
+SY:DR:Dar'a
+SY:DY:Dayr az Zawr
+SY:RD:Rif Dimashq
+SY:HL:Halab
+SY:HM:Hamah
+SY:HI:Hims
+SY:ID:Idlib
+SY:DI:Dimashq
+SY:TA:Tartus
+CH:AG:Aargau
+CH:AR:Ausser-Rhoden
+CH:BL:Basel-Landschaft
+CH:BS:Basel-Stadt
+CH:BE:Bern
+CH:FR:Fribourg
+CH:GE:Geneve
+CH:GL:Glarus
+CH:GR:Graubunden
+CH:AI:Inner-Rhoden
+CH:LU:Luzern
+CH:NE:Neuchatel
+CH:NW:Nidwalden
+CH:OW:Obwalden
+CH:SG:Sankt Gallen
+CH:SH:Schaffhausen
+CH:SZ:Schwyz
+CH:SO:Solothurn
+CH:TG:Thurgau
+CH:TI:Ticino
+CH:UR:Uri
+CH:VS:Valais
+CH:VD:Vaud
+CH:ZG:Zug
+CH:ZH:Zurich
+CH:JU:Jura
+TT:AR:Arima
+TT:CA:Caroni
+TT:MA:Mayaro
+TT:NA:Nariva
+TT:PO:Port-of-Spain
+TT:SA:Saint Andrew
+TT:SD:Saint David
+TT:SG:Saint George
+TT:SP:Saint Patrick
+TT:SF:San Fernando
+TT:TO:Tobago
+TT:VI:Victoria
+TH:MH:Mae Hong Son
+TH:CM:Chiang Mai
+TH:CR:Chiang Rai
+TH:NA:Nan
+TH:LN:Lamphun
+TH:LG:Lampang
+TH:PR:Phrae
+TH:TK:Tak
+TH:SO:Sukhothai
+TH:UD:Uttaradit
+TH:KP:Kamphaeng Phet
+TH:PS:Phitsanulok
+TH:PC:Phichit
+TH:PH:Phetchabun
+TH:UT:Uthai Thani
+TH:NS:Nakhon Sawan
+TH:NK:Nong Khai
+TH:LE:Loei
+TH:UN:Udon Thani
+TH:SN:Sakon Nakhon
+TH:NF:Nakhon Phanom
+TH:KK:Khon Kaen
+TH:KL:Kalasin
+TH:MS:Maha Sarakham
+TH:RE:Roi Et
+TH:CY:Chaiyaphum
+TH:NR:Nakhon Ratchasima
+TH:BR:Buriram
+TH:SU:Surin
+TH:SI:Sisaket
+TH:NW:Narathiwat
+TH:CN:Chai Nat
+TH:SB:Sing Buri
+TH:LB:Lop Buri
+TH:AT:Ang Thong
+TH:PA:Phra Nakhon Si Ayutthaya
+TH:SR:Sara Buri
+TH:NO:Nonthaburi
+TH:PT:Pathum Thani
+TH:BM:Krung Thep Mahanakhon
+TH:PY:Phayao
+TH:SP:Samut Prakan
+TH:NN:Nakhon Nayok
+TH:CC:Chachoengsao
+TH:PB:Prachin Buri
+TH:CB:Chon Buri
+TH:RY:Rayong
+TH:CT:Chanthaburi
+TH:TT:Trat
+TH:KN:Kanchanaburi
+TH:SH:Suphan Buri
+TH:RT:Ratchaburi
+TH:NP:Nakhon Pathom
+TH:SM:Samut Songkhram
+TH:SS:Samut Sakhon
+TH:PE:Phetchaburi
+TH:PK:Prachuap Khiri Khan
+TH:CP:Chumphon
+TH:RN:Ranong
+TH:ST:Surat Thani
+TH:PG:Phangnga
+TH:PU:Phuket
+TH:KR:Krabi
+TH:NT:Nakon Si Thammarat
+TH:TG:Trang
+TH:PL:Phatthalung
+TH:SA:Satun
+TH:SG:Songkhla
+TH:PI:Pattani
+TH:YL:Yala
+TH:YS:Yasothon
+TH:UR:Ubon Ratchanthani
+TH:AC:Amnat Charoen
+TH:MD:Mukdahan
+TH:NB:Nong Bua Lamphu
+TH:SK:Sa Kaeo
+TJ:BK:Kuhistoni Badakhshon
+TJ:KL:Khatlon
+TJ:LE:Leninobod
+TO:HA:Ha'apai
+TO:TT:Tongatapu
+TO:VA:Vava'u
+TN:KS:Al Qasrayn
+TN:KR:Al Qayrawan
+TN:JE:Jundubah
+TN:KF:Al Kaf
+TN:MH:Al Mahdiyah
+TN:MS:Al Munastir
+TN:BJ:Bajah
+TN:BZ:Banzart
+TN:NB:Nabul
+TN:SL:Silyanah
+TN:SS:Susah
+TN:AN:Aryanah
+TN:BA:Bin 'Arus
+TN:ME:Madanin
+TN:GB:Qabis
+TN:QA:Qafsah
+TN:KB:Qibili
+TN:SF:Safaqi
+TN:SZ:Sidi Bu Zayd
+TN:TA:Tatawin
+TN:TO:Tawzar
+TN:TU:Tunis
+TN:ZA:Zaghwan
+TR:AA:Adana
+TR:AD:Adiyaman
+TR:AF:Afyon
+TR:AG:Agri
+TR:AM:Amasya
+TR:AL:Antalya
+TR:AV:Artvin
+TR:AY:Aydin
+TR:BK:Balikesir
+TR:BC:Bilecik
+TR:BG:Bingol
+TR:BT:Bitlis
+TR:BL:Bolu
+TR:BD:Burdur
+TR:BU:Bursa
+TR:CK:Canakkale
+TR:CI:Cankiri
+TR:CM:Corum
+TR:DN:Denizli
+TR:DY:Diyarbakir
+TR:ED:Edirne
+TR:EG:Elazig
+TR:EN:Erzincan
+TR:EM:Erzurum
+TR:ES:Eskisehir
+TR:GA:Gaziantep
+TR:GI:Giresun
+TR:HT:Hatay
+TR:IC:Icel
+TR:IP:Isparta
+TR:IB:Istanbul
+TR:IZ:Izmir
+TR:KA:Kars
+TR:KS:Kastamonu
+TR:KY:Kayseri
+TR:KL:Kirklareli
+TR:KH:Kirsehir
+TR:KC:Kocaeli
+TR:KU:Kutahya
+TR:ML:Malatya
+TR:MN:Manisa
+TR:KM:Kahramanmaras
+TR:MG:Mugla
+TR:MS:Mus
+TR:NV:Nevsehir
+TR:OR:Ordu
+TR:RI:Rize
+TR:SK:Sakarya
+TR:SS:Samsun
+TR:SP:Sinop
+TR:SV:Sivas
+TR:TG:Tekirdag
+TR:TT:Tokat
+TR:TB:Trabzon
+TR:TC:Tunceli
+TR:SU:Sanliurfa
+TR:US:Usak
+TR:VA:Van
+TR:YZ:Yozgat
+TR:ZO:Zonguldak
+TR:AN:Ankara
+TR:GU:Gumushane
+TR:HK:Hakkari
+TR:KO:Konya
+TR:MR:Mardin
+TR:NG:Nigde
+TR:SI:Siirt
+TR:AK:Aksaray
+TR:BM:Batman
+TR:BB:Bayburt
+TR:KR:Karaman
+TR:KK:Kirikkale
+TR:SR:Sirnak
+TW:FK:Fu-chien
+TW:KH:Kao-hsiung
+TW:TP:T'ai-pei
+TW:TA:T'ai-wan
+TZ:AR:Arusha
+TZ:DS:Dar es Salaam
+TZ:DO:Dodoma
+TZ:IR:Iringa
+TZ:KM:Kigoma
+TZ:KL:Kilimanjaro
+TZ:LI:Lindi
+TZ:MA:Mara
+TZ:MB:Mbeya
+TZ:MO:Morogoro
+TZ:MT:Mtwara
+TZ:MW:Mwanza
+TZ:PN:Pemba North
+TZ:RV:Ruvuma
+TZ:SH:Shinyanga
+TZ:SD:Singida
+TZ:TB:Tabora
+TZ:TN:Tanga
+TZ:KR:Kagera
+TZ:PS:Pemba South
+TZ:ZS:Zanzibar Central//South
+TZ:ZN:Zanzibar North
+TZ:RK:Rukwa
+TZ:ZW:Zanzibar Urban//West
+UG:AP:Apac
+UG:AR:Arua
+UG:BN:Bundibogyo
+UG:BS:Bushenyi
+UG:GU:Gulu
+UG:HO:Hoima
+UG:IG:Iganga
+UG:JI:Jinja
+UG:KA:Kabale
+UG:KB:Kabarole
+UG:KN:Kalangala
+UG:KM:Kampala
+UG:KL:Kamuli
+UG:KC:Kapchorwa
+UG:KS:Kasese
+UG:KI:Kibale
+UG:KG:Kiboga
+UG:KR:Kisoro
+UG:KT:Kitgum
+UG:KO:Kotido
+UG:KU:Kumi
+UG:LI:Lira
+UG:LU:Luwero
+UG:MA:Masaka
+UG:MS:Masindi
+UG:ML:Mbale
+UG:MR:Mbarara
+UG:MO:Moroto
+UG:MY:Moyo
+UG:MP:Mpigi
+UG:MU:Mubende
+UG:MK:Mukono
+UG:NE:Nebbi
+UG:NT:Ntungamo
+UG:PA:Pallisa
+UG:RA:Rakai
+UG:RU:Rukungiri
+UG:SO:Soroti
+UG:TO:Tororo
+UA:CK:Cherkas'ka Oblast'
+UA:CH:Chernihivs'ka Oblast'
+UA:CV:Chernivets'ka Oblast'
+UA:DP:Dnipropetrovs'ka Oblast'
+UA:DT:Donets'ka Oblast'
+UA:IF:Ivano-Frankivs'ka Oblast'
+UA:KK:Kharkivs'ka Oblast'
+UA:KS:Khersons'ka Oblast'
+UA:KM:Khmel'nyts'ka Oblast'
+UA:KH:Kirovohrads'ka Oblast'
+UA:KR:Avtonomna Respublika Krym
+UA:KC:Misto Kyyiv
+UA:KV:Kyyivs'ka Oblast'
+UA:LH:Luhans'ka Oblast'
+UA:LV:L'vivs'ka Oblast'
+UA:MY:Mykolayivs'ka Oblast'
+UA:OD:Odes'ka Oblast
+UA:PL:Poltavs'ka Oblast'
+UA:RV:Rivnens'ka Oblast'
+UA:SC:Misto Sevastopol
+UA:SM:Sums'ka Oblast'
+UA:TP:Ternopil's'ka Oblast'
+UA:VI:Vinnyts'ka Oblast'
+UA:VO:Volyns'ka Oblast'
+UA:ZK:Zakarpats'ka Oblast'
+UA:ZP:Zaporiz'ka Oblast'
+UA:ZT:Zhytomyrs'ka Oblast'
+BF:BM:Bam
+BF:BZ:Bazega
+BF:BB:Bougouriba
+BF:BL:Boulgou
+BF:BK:Boulkiemde
+BF:GZ:Ganzourgou
+BF:GG:Gnagna
+BF:GM:Gourma
+BF:HO:Houe
+BF:KA:Kadiogo
+BF:KN:Kenedougou
+BF:KM:Komoe
+BF:KS:Kossi
+BF:KR:Kouritenga
+BF:MO:Mouhoun
+BF:NM:Namentenga
+BF:NR:Naouri
+BF:OB:Oubritenga
+BF:OD:Oudalan
+BF:PA:Passore
+BF:PO:Poni
+BF:SG:Sanguie
+BF:ST:Sanmatenga
+BF:SE:Seno
+BF:SS:Sissili
+BF:SM:Soum
+BF:SR:Sourou
+BF:TA:Tapoa
+BF:YT:Yatenga
+BF:ZW:Zoundweogo
+UY:AR:Artigas
+UY:CA:Canelones
+UY:CL:Cerro Largo
+UY:CO:Colonia
+UY:DU:Durazno
+UY:FS:Flores
+UY:FD:Florida
+UY:LA:Lavalleja
+UY:MA:Maldonado
+UY:MO:Montevideo
+UY:PA:Paysandu
+UY:RN:Rio Negro
+UY:RV:Rivera
+UY:RO:Rocha
+UY:SA:Salto
+UY:SJ:San Jose
+UY:SO:Soriano
+UY:TA:Tacuarembo
+UY:TT:Treinta y Tres
+UZ:AN:Andijon
+UZ:BU:Bukhoro
+UZ:FA:Farghona
+UZ:JI:Jizzakh
+UZ:KH:Khorazm
+UZ:NG:Namangan
+UZ:NW:Nawoiy
+UZ:QA:Qashqadaryo
+UZ:QR:Qoraqalpoghiston
+UZ:SA:Samarqand
+UZ:SI:Sirdaryo
+UZ:SU:Surkhondaryo
+UZ:TO:Toshkent
+VC:CH:Charlotte
+VC:AN:Saint Andrew
+VC:DA:Saint David
+VC:GE:Saint George
+VC:PA:Saint Patrick
+VC:GT:Grenadines
+VE:AM:Amazonas
+VE:AN:Anzoategui
+VE:AP:Apure
+VE:AR:Aragua
+VE:BA:Barinas
+VE:BO:Bolivar
+VE:CA:Carabobo
+VE:CO:Cojedes
+VE:DA:Delta Amacuro
+VE:DF:Distrito Federal
+VE:FA:Falcon
+VE:GU:Guarico
+VE:LA:Lara
+VE:ME:Merida
+VE:MI:Miranda
+VE:MO:Monagas
+VE:NE:Nueva Esparta
+VE:PO:Portuguesa
+VE:SU:Sucre
+VE:TA:Tachira
+VE:TR:Trujillo
+VE:YA:Yaracuy
+VE:ZU:Zulia
+VE:DP:Dependencias Federales
+VN:AG:An Giang
+VN:BR:Ben Tre
+VN:CB:Cao Bang
+VN:DL:Dak Lak
+VN:DT:Dong Thap
+VN:HP:Hai Phong
+VN:HN:Ha Noi
+VN:HC:Ho Chi Minh
+VN:KG:Kien Giang
+VN:LC:Lai Chau
+VN:LD:Lam Dong
+VN:LA:Long An
+VN:QN:Quang Ninh
+VN:SL:Son La
+VN:TN:Tay Ninh
+VN:TH:Thanh Hoa
+VN:TB:Thai Binh
+VN:TG:Tien Giang
+VN:LS:Lang Son
+VN:DN:Dong Nai
+VN:BV:Ba Ria-Vung Tau
+VN:BD:Binh Dinh
+VN:BU:Binh Thuan
+VN:CT:Can Tho
+VN:GL:Gia Lai
+VN:HG:Ha Giang
+VN:HA:Ha Tay
+VN:HT:Ha Tinh
+VN:HO:Hoa Binh
+VN:KH:Khanh Hoa
+VN:KT:Kon Tum
+VN:LO:Lao Cai
+VN:NA:Nghe An
+VN:NB:Ninh Binh
+VN:NT:Ninh Thuan
+VN:PY:Phu Yen
+VN:QB:Quang Binh
+VN:QG:Quang Ngai
+VN:QT:Quang Tri
+VN:ST:Soc Trang
+VN:TT:Thura Thien-Hue
+VN:TV:Tra Vinh
+VN:TQ:Tuyen Quang
+VN:VL:Vinh Long
+VN:YB:Yen Bai
+VN:BG:Bac Giang
+VN:BK:Bac Kan
+VN:BL:Bac Lieu
+VN:BN:Bac Ninh
+VN:BI:Bin Duong
+VN:BP:Bin Phuoc
+VN:CM:Ca Mau
+VN:DA:Da Nang
+VN:HD:Hai Duong
+VN:HM:Ha Nam
+VN:HY:Hung Yen
+VN:ND:Nam Dinh
+VN:PT:Phu Tho
+VN:QM:Quang Nam
+VN:TY:Thai Nguyen
+VN:VC:Vinh Phuc
+NA:KH:Khomas
+NA:CA:Caprivi
+NA:ER:Erongo
+NA:HA:Hardap
+NA:KA:Karas
+NA:KU:Kunene
+NA:OW:Ohangwena
+NA:OK:Okavango
+NA:OH:Omaheke
+NA:OS:Omusati
+NA:ON:Oshana
+NA:OT:Oshikoto
+NA:OD:Otjozondjupa
+WS:AA:A'ana
+WS:AL:Aiga-i-le-Tai
+WS:AT:Atua
+WS:FA:Fa'asaleleaga
+WS:GE:Gaga'emauga
+WS:VF:Va'a-o-Fonoti
+WS:GI:Gagaifomauga
+WS:PA:Palauli
+WS:SA:Satupa'itea
+WS:TU:Tuamasaga
+WS:VS:Vaisigano
+SZ:HH:Hhohho
+SZ:LU:Lubombo
+SZ:MA:Manzini
+SZ:SH:Shiselweni
+YE:AB:Abyan
+YE:AD:'Adan
+YE:MR:Al Mahrah
+YE:HD:Hadramawt
+YE:SH:Shabwah
+YE:LA:Lahij
+YE:BA:Al Bayda'
+YE:HU:Al Hudaydah
+YE:JA:Al Jawf
+YE:MW:Al Mahwit
+YE:DH:Dhamar
+YE:HJ:Hajjah
+YE:IB:Ibb
+YE:MA:Ma'rib
+YE:SD:Sa'dah
+YE:SN:San'a'
+YE:TA:Ta'izz
+ZM:WE:North-Western
+ZM:CE:Copperbelt
+ZM:EA:Western
+ZM:LP:Southern
+ZM:NO:Central
+ZM:NW:Eastern
+ZM:SO:Northern
+ZM:CO:Luapula
+ZM:LS:Lusaka
+ZW:MA:Manicaland
+ZW:MI:Midlands
+ZW:MC:Mashonaland Central
+ZW:ME:Mashonaland East
+ZW:MW:Mashonaland West
+ZW:MN:Matabeleland North
+ZW:MS:Matabeleland South
+ZW:MV:Masvingo
+NZ:AU:Auckland
+NZ:WG:Wellington
+NZ:CA:Canterbury
+NZ:BP:Bay of Plenty
+NZ:NO:Northland
+NZ:OT:Otago
+AQ:EL:Enderby Land
+AQ:RI:Ross Island
+NZ:CI:Chatham Islands
+FI:ES:Etela-Suomen Laani
+MR:NO:Nouakchott
+CA:NU:Nunavut
+AE:UA:United Arab Emigrates (general)
+AE:AZ:Abu Zaby
+AE:AJ:'Ajman
+AE:DU:Dubayy
+AE:FU:Al Fujayrah
+AE:RK:Ra's al Khaymah
+AE:SH:Ash Shariqah
+AE:UQ:Umm al Qaywayn
+NZ:GI:Gisborne
+NZ:NE:Nelson
+NZ:TS:Tasman
+NZ:MW:Wanganui-Manawatu
+NZ:WC:West Coast
+FI:IS:Ita-Suomen Laani
+FI:LS:Lansi-Suomen Laani
+YU:YU:Yugoslavia
+HR:BB:Bjelovarsko-Bilogorska
+HR:SP:Brodsko-Posavka
+HR:DN:Dubrovacko-Neretvanska
+HR:IS:Istarska
+HR:KA:Karlovacka
+HR:KK:Koprivnicko-Krizevacka
+HR:KZ:Krapinsko-Zagorska
+HR:LS:Licko-Senjska
+HR:ME:Medimurska
+HR:OB:Osjecko-Baranjska
+HR:PS:Pozesko-Slavonska
+HR:PG:Primorsko-Goranska
+HR:SB:Sibensko-Kninska
+HR:SM:Sisacko-Moslavacka
+HR:SD:Splitsko-Dalmatinska
+HR:VA:Varazdinska
+HR:VP:Viroviticko-Podravska
+HR:VS:Vukovarsko-Srijemska
+HR:ZD:Zadarska
+HR:ZG:Zagrebacka
+HR:GZ:Grad Zagreb
+AN:CU:Curacao
+AN:BO:Bonaire
+AN:SM:St Maarten
+BE:BU:Brussels
+AD:EE:Escaldes-Engordany
+TM:AL:Ahal
+TM:BA:Balkan
+TM:DA:Dashhowuz
+TM:LE:Lebap
+TM:MA:Mary
+KH:PL:Pailin
+EC:OR:Orellana
+ID:MU:Maluku Utara
+VE:VA:Vargas
+YU:CG:Crna Gora (Montenegro)
+YU:SR:Srbija (Serbia)
+CD:MN:Maniema
+CD:NK:Nord-Kivu
+CD:SK:Sud-Kivu
+JO:AJ:Ajlun
+JO:AQ:Al Aqabah
+JO:JA:Jarash
+JO:MD:Madaba
+VU:ML:Malampa
+VU:PM:Penama
+VU:SE:Shefa
+NG:BY:Bayelsa
+NG:EB:Ebonyi
+NG:EK:Ekiti
+NG:GO:Gombe
+NG:NA:Nassarawa
+NG:ZA:Zamfara
+MD:LP:Lapusna
+MD:TG:Tighina
+BG:BL:Blagoevgrad
+BG:DO:Dobrich
+BG:GB:Gabrovo 
+BG:KZ:Kurdzhali
+BG:KY:Kyustendil
+BG:PZ:Pazardzhik
+BG:PN:Pernik
+BG:PV:Pleven
+BG:RS:Ruse
+BG:SH:Shumen
+BG:SI:Silistra
+BG:SL:Sliven
+BG:SM:Smolyan
+BG:SZ:Stara Zagora
+BG:TU:Turgovishte
+BG:VT:Veliko Turnovo
+BG:VD:Vidin
+BG:VR:Vratsa
+BG:YA:Yambol
+IR:GO:Golestan
+IR:QZ:Qazvin
+IR:QM:Qom
+TR:AR:Ardahan
+TR:BR:Bartin
+TR:IG:Igdir
+TR:KB:Karabuk
+TR:KI:Kilis
+TR:OS:Osmaniye
+TR:YL:Yalova
+BH:RF:Ar Rifa' wa al Mintaqah al Janubiyah
+BA:SR:Republika Srpska
+BA:BF:Federation of Bosnia and Herzegovina
+KG:BA:Batken
+KP:PB:P'yongan-bukto
+RU:TU:Tyva
+CZ:JM:Jihomoravsky Kraj
+CZ:JC:Jihocesky Kraj
+CZ:VY:Vysocina
+CZ:KA:Karlovarsky Kraj
+CZ:KR:Kralovehradecky Kraj
+CZ:LI:Liberecky Kraj
+CZ:OL:Olomoucky Kraj
+CZ:MO:Moravskoslezsky Kraj
+CZ:PA:Pardubicky Kraj
+CZ:PL:Plzensky Kraj
+CZ:ST:Stredocesky Kraj
+CZ:US:Ustecky Kraj
+CZ:ZL:Zlinsky Kraj
+MK:AR:Aracinovo
+MK:BA:Bac
+MK:BE:Belcista
+MK:BR:Berovo
+MK:BI:Bistrica
+MK:BO:Bitola
+MK:BL:Blatec
+MK:BG:Bogdanci
+MK:BM:Bogomila
+MK:BJ:Bogovinje
+MK:BS:Bosilovo
+MK:BN:Brvenica
+MK:CR:Cair
+MK:CP:Capari
+MK:CK:Caska
+MK:CG:Cegrane
+MK:CE:Centar
+MK:CZ:Centar Zupa
+MK:CN:Cesinovo
+MK:CS:Cucer-Sandevo
+MK:DB:Debar
+MK:DL:Delcevo
+MK:DG:Delogozdi
+MK:DX:Demir Hisar
+MK:DK:Demir Kapija
+MK:DO:Dobrusevo
+MK:DJ:Dolna Banjica
+MK:DN:Dolneni
+MK:GP:Dorce Petrov
+MK:DR:Drugovo
+MK:DZ:Dzepciste
+MK:GB:Gazi Baba
+MK:GE:Gevgelija
+MK:GO:Gostivar
+MK:GR:Gradsko
+MK:IL:Ilinden
+MK:IZ:Izvor
+MK:JE:Jegunovce
+MK:KJ:Kamenjane
+MK:KB:Karbinci
+MK:KX:Karpos
+MK:KD:Kavadarci
+MK:KH:Kicevo
+MK:KV:Kisela Voda
+MK:KL:Klecevce
+MK:KC:Kocani
+MK:KN:Konce
+MK:KW:Kondovo
+MK:KF:Konopiste
+MK:KE:Kosel
+MK:KY:Kartovo
+MK:KZ:Kriva Palanka
+MK:KG:Krivogastani
+MK:KS:Krusevo
+MK:KK:Kuklis
+MK:KQ:Kukurecani
+MK:KM:Kumanovo
+MK:LA:Labunista
+MK:LI:Lipkovo
+MK:LO:Lozovo
+MK:LU:Lukovo
+MK:MM:Makedonska Kamenica
+MK:MB:Makedonski Brod
+MK:MA:Mavrovi Anovi
+MK:ME:Meseista
+MK:MI:Miravci
+MK:MO:Mogila
+MK:MU:Murtino
+MK:NG:Negotino
+MK:NP:Negotino-Polosko
+MK:NO:Novaci
+MK:NS:Novo Selo
+MK:OB:Oblesevo
+MK:OX:Ohrid
+MK:OR:Orasac
+MK:OZ:Orizari
+MK:OS:Oslomej
+MK:PH:Pehcevo
+MK:PE:Petrovec
+MK:PN:Plasnica
+MK:PO:Podares
+MK:PR:Prilep
+MK:PB:Probistip
+MK:RD:Radovis
+MK:RN:Rankovce
+MK:RE:Resen
+MK:RM:Rosoman
+MK:RT:Rostusa
+MK:SA:Samokov
+MK:SJ:Saraj
+MK:SI:Sipkovica
+MK:SS:Sopiste
+MK:SC:Sopotnica
+MK:SB:Srbinovo
+MK:SV:Staravina
+MK:SD:Star Dojran
+MK:SE:Star Nagoricane
+MK:ST:Stip
+MK:SQ:Struga
+MK:SR:Strumica
+MK:SU:Studenicani
+MK:SO:Suto Orizari
+MK:SL:Sveti Nikole
+MK:TR:Tearce
+MK:TT:Tetovo
+MK:TO:Topolcani
+MK:VA:Valandovo
+MK:VL:Vasilevo
+MK:VE:Veles
+MK:VS:Velesta
+MK:VV:Vevcani
+MK:VN:Vinica
+MK:VT:Vitoliste
+MK:VC:Vranestica
+MK:VP:Vrapciste
+MK:VR:Vratnica
+MK:VK:Vrutok
+MK:ZA:Zajas
+MK:ZK:Zelenikovo
+MK:ZE:Zelino
+MK:ZI:Zitose
+MK:ZL:Zletovo
+MK:ZR:Zrnovci
+YU:KM:Kosovo
+IN:UL:Uttaranchal
+IN:CT:Chhattisgarh
+IN:JH:Jharkhand
+BI:MW:Mwaro
+ZW:BU:Bulawayo
+ZW:HA:Harare
+CI:AD:Adiake
+CI:AL:Alepe
+CI:BN:Bocanda
+CI:DA:Dabou
+CI:GR:Grand-Bassam
+CI:JA:Jacqueville
+CI:TP:Toulepleu
+GN:MD:Mandiana
+GN:LO:Lola
+GN:LE:Lelouma
+GN:KB:Koubia
+GN:CO:Coyah
+ID:GO:Gorontalo
+ID:BB:Kepulauan Bangka Belitung
+ID:BT:Banten
+KR:UL:Ulsan-gwangyoksi
+UG:SE:Sembabule
+UG:NA:Nakasongola
+UG:KW:Katakwi
+UG:BU:Busia
+UG:BG:Bugiri
+UG:AD:Adjumani
+LB:NA:Nabatiye
+AF:KT:Khost
+AF:NR:Nuristan
+AZ:SR:Sarur
+AZ:SH:Sahbuz
+AZ:SD:Sadarak
+AZ:OR:Ordubud
+AZ:BB:Babak
+BD:BA:Barisal
+BD:SY:Sylhet
+BE:BW:Brabant Wallon
+BE:VB:Vlaams-Brabant
+BM:HA:Hamilton
+AS:ET:Eastern Tutuila
+AS:UU:Unorganized
+AS:WT:Western Tutuila
+AS:MA:Manu'a
+BA:BR:Brcko District
+BT:TY:Tashi Yangtse
+BT:GA:Gasa
+BJ:PL:Plateau
+BJ:LI:Littoral
+BJ:DO:Donga
+BJ:CF:Couffo
+BJ:CL:Collines
+BJ:AL:Alibori
+GE:GU:Guria
+GE:IM:Imereti
+GE:KA:Kakheti
+GE:KK:Kvemo Kartli
+GE:MM:Mtskheta-Mtianeti
+GE:RL:Racha-Lochkhumi-Kvemo Svaneti
+GE:SZ:Samegrelo-Zemo Svateni
+GE:SJ:Samtskhe-Javakheti
+GE:SK:Shida Kartli
+MN:GS:Govi-Sumber
+MN:DA:Darhan Uul
+KP:NJ:Najin Sonbong-si
+ER:AN:Anseba
+ER:SK:Semenawi Keyih Bahri
+ER:MA:Maekel
+ER:GB:Gash Barka
+ER:DK:Debubawi Keyih Bahri
+ER:DU:Debub
+CV:MO:Mosteiros
+CV:PN:Porto Novo
+CV:SZ:Santa Cruz
+CV:SD:S�o Domingos
+CV:SF:S�o Filipe
+BF:BA:Bal�
+BF:BW:Banwa
+BF:IO:Ioba
+BF:KJ:Komondjari
+BF:KP:Kompienga
+BF:KL:Koulp�logo
+BF:KW:Kourw�ogo
+BF:LE:L�raba
+BF:LO:Loroum
+BF:NY:Nayala
+BF:NB:Noumbiel
+BF:TU:Tui
+BF:YG:Yagha
+BF:ZR:Ziro
+BF:ZM:Zondoma
+GD:CA:Carriacou
+LR:RG:River Gee
+LR:GP:Gbarpolu
+TZ:PW:Pwani
+TR:DU:D�zce
+TN:MN:Manouba
+ML:KD:Kidal
+MP:RO:Rota
+MP:SA:Saipan
+MP:TA:Tinian
+RW:KV:Kigali-Ville
+RW:UM:Umutara
+MQ:TR:Trinit�
+MQ:SP:Saint-Pierre
+MQ:MA:Marin
+MQ:FF:Fort-de-France
+MD:TR:Taraclia
+MW:PH:Phalombe
+MW:LK:Likoma
+MW:BA:Balaka
+MY:PJ:Putrajaya
+GF:SL:Saint-Laurent-du-Maroni
+GF:CY:Cayenne
+VI:ST:Saint Thomas
+VI:SJ:Saint John
+VI:SC:Saint Croix
+PS:WE:West Bank
+PS:GZ:Gaza
+GB:WA:Wales
+GB:SC:Scotland
+GB:NI:Northern Ireland
+GB:EN:England
+TG:CE:Centre
+TG:KA:Kara
+TG:MA:Maritime
+TG:PL:Plateaux
+TG:SA:Savanes
+NG:IM:Imo
+NG:KT:Katsina

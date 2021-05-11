@@ -1,0 +1,6 @@
+<%= javascript_tag "
+
+// load domain-list into RExt.company.Util singleton.
+RExt.company.Util.addDomains(#{Domain.find(:all).collect { |d| {:id => d.id, :name => d.name, :label => d.label} }.to_json});
+
+" %>

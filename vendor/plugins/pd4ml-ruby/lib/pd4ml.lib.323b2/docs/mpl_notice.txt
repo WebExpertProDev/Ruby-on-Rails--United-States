@@ -1,0 +1,56 @@
+iText
+=====
+
+PD4ML Java Library Pro (which is also a part of PD4ML Java Library Volume License and
+PD4ML Java Library Source Code License) includes in modified form a number of Java classes taken from
+iText Library (Copyright (C) 1999-2005 by Bruno Lowagie and Paulo Soares. All Rights Reserved).
+
+iText Library code is released under Mozilla Public License Version 1.1 (MPL)
+
+In order to comply with the license agreement we publish the following information:
+
+1. MPL text is available by the following link:
+http://www.lowagie.com/iText/MPL-1.1.txt
+
+2. iText Library home and location of the original source files:
+http://www.lowagie.com/iText/
+
+3. Description of the modifications:
+a) The original class TrueTypeFontSubSet has been renamed to PD4TrueTypeWriter and placed
+to a Java package that corresponds to PD4ML project structure.
+b) References to external iText constants have been replaced with their values.
+c) The package of original classes ArabicLigaturizer and BidiOrder has been changed to
+correspond to PD4ML project structure.
+d) Some algorithmic ideas and code portions has been taken from the original BidiLine class to
+PD4ML's BidiText
+
+4. Modified source code location:
+http://pd4ml.zefer.org/i/PD4TrueTypeWriter.java
+http://pd4ml.zefer.org/i/BidiText.java
+http://pd4ml.zefer.org/i/ArabicLigaturizer.java
+http://pd4ml.zefer.org/i/BidiOrder.java
+
+Mozilla
+=======
+
+PD4ML Java Library includes portions of C++ code taken from Mozilla project (Mozilla 
+foundation) and ported to Java.
+
+Mozilla project code is released under Mozilla Public License Version 1.1 (MPL)
+
+In order to comply with the license agreement we publish the following information:
+
+1. MPL text is available by the following link:
+http://www.mozilla.org/MPL/MPL-1.1.html
+
+2. Mozilla project home and location of the original source files:
+http://www.mozilla.org/
+
+3. Description of the modifications:
+Table column width balancing code was extracted from C++ files (mozilla/layout/tables/* in Mozilla's 
+src tree) and ported to Java.
+
+4. Resulting Java source code location:
+http://pd4ml.zefer.org/i/FineColumnWidthCalculator.java
+
+

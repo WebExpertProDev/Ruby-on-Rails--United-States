@@ -1,0 +1,55 @@
+--- 
+:select_columns: |
+  --- 
+  - "{{InvoicePayable}}.id"
+  - "{{Invoice}}.id"
+  - "{{InvoicePayable}}.name"
+  - "{{InvoicePayable}}.cost_cents"
+  - "{{Order}}.bill_number"
+  - "{{Company}}.name"
+  - "{{Country}}.iso"
+  - "{{Region}}.iso"
+  - "{{City}}.name"
+  - "{{Account}}.first"
+  - "{{Account}}.last"
+
+:conditions: |
+  --- 
+  - "{{InvoicePayable}}.payable_type = 'CompanySalesAccount'"
+
+:columns: |
+  --- 
+  - :header: Invoice ID
+    :dataIndex: "{{Invoice}}.id"
+  - :header: Bill number
+    :dataIndex: "{{Order}}.bill_number"
+  - :header: Name
+    :dataIndex: "{{InvoicePayable}}.name"
+  - :header: Cost
+    :renderer: function(v) { return Ext.util.Format.usMoney(v/100); }
+    :dataIndex: "{{InvoicePayable}}.cost_cents"
+  - :header: Company
+    :dataIndex: "{{Company}}.name"
+  - :header: Country
+    :dataIndex: "{{Country}}.iso"
+  - :header: Region
+    :dataIndex: "{{Region}}.iso"
+  - :header: City
+    :dataIndex: "{{City}}.name"
+  - :header: First
+    :dataIndex: "{{Account}}.first"
+  - :header: Last
+    :dataIndex: "{{Account}}.last"
+
+:joins: |
+  --- 
+  - LEFT JOIN {{Invoice}} ON {{Invoice}}.id = {{InvoicePayable}}.invoice_id
+  - LEFT JOIN {{Order}} ON {{Invoice}}.order_id = {{Order}}.id
+  - LEFT JOIN {{Company}} ON {{Company}}.id = {{InvoicePayable}}.company_id
+  - LEFT JOIN {{CompanyLocation}} ON {{CompanyLocation}}.id = {{Company}}.billing_location_id
+  - LEFT JOIN {{Country}} ON {{Country}}.id = {{CompanyLocation}}.country_id
+  - LEFT JOIN {{Region}} ON {{Region}}.id = {{CompanyLocation}}.region_id
+  - LEFT JOIN {{City}} ON {{City}}.id = {{CompanyLocation}}.city_id
+  - LEFT JOIN {{CompanySalesAccount}} ON {{CompanySalesAccount}}.id = {{InvoicePayable}}.payable_id
+  - LEFT JOIN {{Account}} ON {{Account}}.id = {{CompanySalesAccount}}.account_id
+

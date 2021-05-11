@@ -1,0 +1,205 @@
+# Logfile created on Sat Jun 28 00:52:46 -0500 2008  [4;36;1mSQL (0.000782)[0m   [0;1mSHOW client_min_messages[0m
+  [4;35;1mSQL (0.000214)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.000149)[0m   [0;1mSHOW standard_conforming_strings[0m
+  [4;35;1mSQL (0.000123)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "account" does not exist
+: DROP TABLE account[0m
+  [4;35;1mSQL (0.046330)[0m   [0mCREATE TABLE account ("id" serial primary key, "company_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "email" character varying(100) DEFAULT NULL, "username" character varying(255) NOT NULL, "first" character varying(50) NOT NULL, "last" character varying(50) NOT NULL, "phone" character varying(20) DEFAULT NULL, "ext" character varying(20) DEFAULT NULL, "mobile" character varying(20) DEFAULT NULL, "fax" character varying(20) DEFAULT NULL, "description" character varying(255) DEFAULT E'' NOT NULL, "password" character varying(128) NOT NULL, "password_salt" character varying(100) NOT NULL, "password_hash_type" character varying(10) NOT NULL, "company_location_id" integer DEFAULT NULL) [0m
+  [4;36;1mSQL (0.003552)[0m   [0;1mCREATE INDEX "index_account_on_email_and_username" ON account ("email", "username")[0m
+  [4;35;1mSQL (0.000000)[0m   [0mPGError: ERROR: table "account_role" does not exist
+: DROP TABLE account_role[0m
+  [4;36;1mSQL (0.007058)[0m   [0;1mCREATE TABLE account_role ("id" serial primary key, "role_id" integer NOT NULL, "account_id" integer NOT NULL, "field_value" character varying(255) DEFAULT NULL, "created_at" date NOT NULL, "updated_at" date NOT NULL) [0m
+  [4;35;1mSQL (0.002700)[0m   [0mCREATE UNIQUE INDEX "index_account_role_on_role_id_and_account_id" ON account_role ("role_id", "account_id")[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "billing_method" does not exist
+: DROP TABLE billing_method[0m
+  [4;35;1mSQL (0.009611)[0m   [0mCREATE TABLE billing_method ("id" serial primary key, "name" character varying(255) NOT NULL, "label" character varying(255) NOT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "company" does not exist
+: DROP TABLE company[0m
+  [4;35;1mSQL (0.009179)[0m   [0mCREATE TABLE company ("id" serial primary key, "domain_id" integer NOT NULL, "name" character varying(100) NOT NULL, "description" text NOT NULL, "www" character varying(100) DEFAULT NULL, "nickname" character varying(50) DEFAULT NULL, "logo" character varying(255) DEFAULT NULL, "billing_method_id" integer DEFAULT NULL, "bill_to_company_address" boolean DEFAULT 't' NOT NULL, "domain_values" character varying(255) DEFAULT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "created_by" integer NOT NULL, "primary_location_id" integer DEFAULT NULL, "billing_location_id" integer DEFAULT NULL, "username" character varying(255) DEFAULT NULL, "password" character varying(255) DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002883)[0m   [0;1mCREATE INDEX "index_company_on_name" ON company ("name")[0m
+  [4;35;1mSQL (0.000000)[0m   [0mPGError: ERROR: table "company_accounting" does not exist
+: DROP TABLE company_accounting[0m
+  [4;36;1mSQL (0.009484)[0m   [0;1mCREATE TABLE company_accounting ("id" serial primary key, "company_id" integer NOT NULL, "city_id" integer DEFAULT NULL, "address1" character varying(255) DEFAULT NULL, "address2" character varying(255) DEFAULT NULL, "zip" character varying(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.002667)[0m   [0mCREATE UNIQUE INDEX "index_company_accounting_on_company_id" ON company_accounting ("company_id")[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "company_cc" does not exist
+: DROP TABLE company_cc[0m
+  [4;35;1mSQL (0.010493)[0m   [0mCREATE TABLE company_cc ("id" serial primary key, "company_id" integer NOT NULL, "system_cc_id" integer NOT NULL, "num" text NOT NULL, "expiry" date NOT NULL, "pin" text NOT NULL, "hash_type" character varying(10) NOT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "company_location" does not exist
+: DROP TABLE company_location[0m
+  [4;35;1mSQL (0.027076)[0m   [0mCREATE TABLE company_location ("id" serial primary key, "company_id" integer NOT NULL, "country_id" integer NOT NULL, "region_id" integer NOT NULL, "city_id" integer NOT NULL, "airport_id" integer NOT NULL, "name" character varying(255) DEFAULT NULL, "addr1" character varying(255) DEFAULT NULL, "addr2" character varying(255) DEFAULT NULL, "zip" character varying(20) DEFAULT NULL, "www" character varying(100) DEFAULT NULL, "email" character varying(100) DEFAULT NULL, "phone1" character varying(25) DEFAULT NULL, "phone2" character varying(25) DEFAULT NULL, "fax" character varying(25) DEFAULT NULL, "lat" float DEFAULT NULL, "lng" float DEFAULT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "company_role" does not exist
+: DROP TABLE company_role[0m
+  [4;35;1mSQL (0.022363)[0m   [0mCREATE TABLE company_role ("id" serial primary key, "role_id" integer NOT NULL, "company_id" integer NOT NULL, "field_value" character varying(255) DEFAULT NULL, "created_at" date NOT NULL, "updated_at" date NOT NULL) [0m
+  [4;36;1mSQL (0.003174)[0m   [0;1mCREATE UNIQUE INDEX "index_company_role_on_role_id_and_company_id" ON company_role ("role_id", "company_id")[0m
+  [4;35;1mSQL (0.000000)[0m   [0mPGError: ERROR: table "company_sales_account" does not exist
+: DROP TABLE company_sales_account[0m
+  [4;36;1mSQL (0.023379)[0m   [0;1mCREATE TABLE company_sales_account ("id" serial primary key, "company_id" integer NOT NULL, "account_id" integer NOT NULL) [0m
+  [4;35;1mSQL (0.002850)[0m   [0mCREATE UNIQUE INDEX "index_company_sales_account_on_company_id_and_account_id" ON company_sales_account ("company_id", "account_id")[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "country" does not exist
+: DROP TABLE country[0m
+  [4;35;1mSQL (0.009249)[0m   [0mCREATE TABLE country ("id" serial primary key, "iso" character varying(255) NOT NULL, "name" character varying(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002603)[0m   [0;1mCREATE INDEX "index_country_on_name" ON country ("name")[0m
+  [4;35;1mSQL (0.000000)[0m   [0mPGError: ERROR: table "country_region" does not exist
+: DROP TABLE country_region[0m
+  [4;36;1mSQL (0.009385)[0m   [0;1mCREATE TABLE country_region ("id" serial primary key, "country_id" integer NOT NULL, "iso" character varying(255) NOT NULL, "name" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (0.002803)[0m   [0mCREATE INDEX "index_country_region_on_iso_and_name" ON country_region ("iso", "name")[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "country_region_city" does not exist
+: DROP TABLE country_region_city[0m
+  [4;35;1mSQL (0.006293)[0m   [0mCREATE TABLE country_region_city ("id" serial primary key, "region_id" integer NOT NULL, "name" character varying(255) NOT NULL, "lat" float DEFAULT NULL, "lng" float DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002633)[0m   [0;1mCREATE INDEX "index_country_region_city_on_name" ON country_region_city ("name")[0m
+  [4;35;1mSQL (0.000000)[0m   [0mPGError: ERROR: table "country_region_city_airport" does not exist
+: DROP TABLE country_region_city_airport[0m
+  [4;36;1mSQL (0.005887)[0m   [0;1mCREATE TABLE country_region_city_airport ("id" serial primary key, "icao" character varying(4) NOT NULL, "iso" character varying(3) NOT NULL, "city_id" integer DEFAULT NULL, "name" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (0.002702)[0m   [0mCREATE INDEX "index_country_region_city_airport_on_iso_and_name" ON country_region_city_airport ("iso", "name")[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "domain" does not exist
+: DROP TABLE domain[0m
+  [4;35;1mSQL (0.008962)[0m   [0mCREATE TABLE domain ("id" serial primary key, "parent_id" integer DEFAULT 0 NOT NULL, "name" character varying(255) NOT NULL, "label" character varying(255) DEFAULT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "domain_account_role" does not exist
+: DROP TABLE domain_account_role[0m
+  [4;35;1mSQL (0.007004)[0m   [0mCREATE TABLE domain_account_role ("id" serial primary key, "domain_id" integer NOT NULL, "role_id" integer NOT NULL) [0m
+  [4;36;1mSQL (0.002963)[0m   [0;1mCREATE UNIQUE INDEX "index_domain_account_role_on_domain_id_and_role_id" ON domain_account_role ("domain_id", "role_id")[0m
+  [4;35;1mSQL (0.000000)[0m   [0mPGError: ERROR: table "domain_company_role" does not exist
+: DROP TABLE domain_company_role[0m
+  [4;36;1mSQL (0.006473)[0m   [0;1mCREATE TABLE domain_company_role ("id" serial primary key, "domain_id" integer NOT NULL, "role_id" integer NOT NULL) [0m
+  [4;35;1mSQL (0.002893)[0m   [0mCREATE UNIQUE INDEX "index_domain_company_role_on_domain_id_and_role_id" ON domain_company_role ("domain_id", "role_id")[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "domain_field" does not exist
+: DROP TABLE domain_field[0m
+  [4;35;1mSQL (0.009132)[0m   [0mCREATE TABLE domain_field ("id" serial primary key, "domain_id" integer NOT NULL, "name" character varying(255) NOT NULL, "label" character varying(255) NOT NULL, "required" boolean DEFAULT 't' NOT NULL, "field_type" character varying(255) NOT NULL, "config" character varying(255) DEFAULT E'--- {}
+
+' NOT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "invoice" does not exist
+: DROP TABLE invoice[0m
+  [4;35;1mSQL (0.008986)[0m   [0mCREATE TABLE invoice ("id" serial primary key, "order_id" integer NOT NULL, "invoice_status_id" integer NOT NULL, "comment" text DEFAULT NULL, "created_by" integer NOT NULL, "created_at" timestamp DEFAULT NULL, "updated_at" timestamp DEFAULT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "invoice_item" does not exist
+: DROP TABLE invoice_item[0m
+  [4;35;1mSQL (0.009988)[0m   [0mCREATE TABLE invoice_item ("id" serial primary key, "invoice_id" integer NOT NULL, "invoiceable_id" integer NOT NULL, "invoiceable_type" character varying(255) NOT NULL, "name" character varying(255) NOT NULL, "cost_cents" decimal(8,2) NOT NULL, "adjustments" text DEFAULT E'--- []
+
+' NOT NULL, "updated_by" integer DEFAULT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "invoice_payable" does not exist
+: DROP TABLE invoice_payable[0m
+  [4;35;1mSQL (0.008613)[0m   [0mCREATE TABLE invoice_payable ("id" serial primary key, "invoice_id" integer NOT NULL, "company_id" integer NOT NULL, "payable_type" character varying(255) NOT NULL, "payable_id" integer NOT NULL, "name" character varying(255) NOT NULL, "cost_cents" decimal(8,2) NOT NULL, "adjustments" text DEFAULT NULL, "paid" boolean DEFAULT 'f' NOT NULL, "paid_date" timestamp DEFAULT NULL, "updated_by" integer NOT NULL, "created_at" timestamp DEFAULT NULL, "updated_at" timestamp DEFAULT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "invoice_status" does not exist
+: DROP TABLE invoice_status[0m
+  [4;35;1mSQL (0.006524)[0m   [0mCREATE TABLE invoice_status ("id" serial primary key, "name" character varying(255) NOT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "invoice_transaction" does not exist
+: DROP TABLE invoice_transaction[0m
+  [4;35;1mSQL (0.006082)[0m   [0mCREATE TABLE invoice_transaction ("id" serial primary key, "transaction_type_id" integer NOT NULL, "invoice_id" integer NOT NULL, "transaction_method_id" integer NOT NULL, "method_number" integer DEFAULT NULL, "method_date" timestamp DEFAULT NULL, "amount_cents" decimal(8,2) DEFAULT 0.0, "comment" character varying(255) DEFAULT NULL, "created_by" integer NOT NULL, "updated_by" integer NOT NULL, "created_at" timestamp DEFAULT NULL, "updated_at" timestamp DEFAULT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "mawb_hwb" does not exist
+: DROP TABLE mawb_hwb[0m
+  [4;35;1mSQL (0.023324)[0m   [0mCREATE TABLE mawb_hwb ("id" serial primary key, "mawb_id" integer NOT NULL, "hwb_id" integer NOT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "order_entity" does not exist
+: DROP TABLE order_entity[0m
+  [4;35;1mSQL (0.014201)[0m   [0mCREATE TABLE order_entity ("id" serial primary key, "order_id" integer NOT NULL, "order_type_entity_id" integer NOT NULL, "company_id" integer NOT NULL, "account_id" integer DEFAULT NULL, "date_in" timestamp NOT NULL, "date_out" timestamp DEFAULT NULL, "attn" character varying(255) DEFAULT NULL, "company_location_id" integer DEFAULT NULL, "cost_cents" decimal(8,2) DEFAULT 0.0 NOT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "order_entity_cost" does not exist
+: DROP TABLE order_entity_cost[0m
+  [4;35;1mSQL (0.017294)[0m   [0mCREATE TABLE order_entity_cost ("id" serial primary key, "order_entity_id" integer NOT NULL, "shipping_cost_id" integer NOT NULL, "cost_cents" decimal(8,2) DEFAULT 0.0 NOT NULL, "when" date NOT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "order_entity_domain_value" does not exist
+: DROP TABLE order_entity_domain_value[0m
+  [4;35;1mSQL (0.006058)[0m   [0mCREATE TABLE order_entity_domain_value ("id" serial primary key, "order_entity_id" integer NOT NULL, "domain_field_id" integer NOT NULL, "value" character varying(255) DEFAULT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "order_item" does not exist
+: DROP TABLE order_item[0m
+  [4;35;1mSQL (0.006563)[0m   [0mCREATE TABLE order_item ("id" serial primary key, "order_id" integer NOT NULL, "pieces" integer NOT NULL, "length" float NOT NULL, "width" float NOT NULL, "height" float NOT NULL, "weight" float DEFAULT NULL, "value" float DEFAULT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "order_log" does not exist
+: DROP TABLE order_log[0m
+  [4;35;1mSQL (0.009300)[0m   [0mCREATE TABLE order_log ("id" serial primary key, "order_log_type_id" integer DEFAULT 1 NOT NULL, "order_id" integer NOT NULL, "account_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "subject" character varying(255) DEFAULT NULL, "msg" text NOT NULL, "verb" character varying(11) DEFAULT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "order_log_type" does not exist
+: DROP TABLE order_log_type[0m
+  [4;35;1mSQL (0.010239)[0m   [0mCREATE TABLE order_log_type ("id" serial primary key, "name" character varying(255) NOT NULL, "label" character varying(255) NOT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "order_revenu" does not exist
+: DROP TABLE order_revenu[0m
+  [4;35;1mSQL (0.006645)[0m   [0mCREATE TABLE order_revenu ("id" serial primary key, "order_id" integer NOT NULL, "system_revenu_id" integer NOT NULL, "system_revenu_type_id" integer NOT NULL, "value" float DEFAULT 0.0 NOT NULL, "config" character varying(255) DEFAULT E'--- {}
+
+' NOT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "order_status" does not exist
+: DROP TABLE order_status[0m
+  [4;35;1mSQL (0.019994)[0m   [0mCREATE TABLE order_status ("id" serial primary key, "name" character varying(255) NOT NULL, "label" character varying(255) NOT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "order_type" does not exist
+: DROP TABLE order_type[0m
+  [4;35;1mSQL (0.009307)[0m   [0mCREATE TABLE order_type ("id" serial primary key, "name" character varying(255) NOT NULL, "label" character varying(255) DEFAULT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "order_type_doc" does not exist
+: DROP TABLE order_type_doc[0m
+  [4;35;1mSQL (0.005903)[0m   [0mCREATE TABLE order_type_doc ("id" serial primary key, "order_type_id" integer NOT NULL, "template_id" integer NOT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "order_type_entity" does not exist
+: DROP TABLE order_type_entity[0m
+  [4;35;1mSQL (0.009303)[0m   [0mCREATE TABLE order_type_entity ("id" serial primary key, "order_type_id" integer NOT NULL, "domain_id" integer NOT NULL, "name" character varying(255) NOT NULL, "label" character varying(255) NOT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "orders" does not exist
+: DROP TABLE orders[0m
+  [4;35;1mSQL (0.011308)[0m   [0mCREATE TABLE orders ("id" serial primary key, "parent_id" integer DEFAULT 0 NOT NULL, "bill_number" character varying(255) DEFAULT NULL, "shipping_status_id" integer NOT NULL, "order_type_id" integer NOT NULL, "created_by" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "billing_method_id" integer NOT NULL, "bill_to_id" integer NOT NULL, "po" character varying(255) DEFAULT NULL, "purpose" character varying(255) DEFAULT NULL, "declared_value_cents" decimal(8,2) DEFAULT 0.0 NOT NULL, "shipping_method_id" integer NOT NULL, "dim_factor" integer DEFAULT 194 NOT NULL, "pieces" integer NOT NULL, "weight" integer DEFAULT NULL, "shipping_commodity_id" integer NOT NULL, "pickup_locations" character varying(255) DEFAULT NULL, "pod_name" character varying(255) DEFAULT NULL, "pod_date" timestamp DEFAULT NULL, "pod_updated_at" timestamp DEFAULT NULL, "order_status_id" integer DEFAULT 1 NOT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "plugin_schema_info" does not exist
+: DROP TABLE plugin_schema_info[0m
+  [4;35;1mSQL (0.001401)[0m   [0mCREATE TABLE plugin_schema_info ("plugin_name" character varying(255) DEFAULT NULL, "version" integer DEFAULT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "report" does not exist
+: DROP TABLE report[0m
+  [4;35;1mSQL (0.009229)[0m   [0mCREATE TABLE report ("id" serial primary key, "name" character varying(255) NOT NULL, "label" character varying(255) NOT NULL, "model" character varying(255) NOT NULL, "conditions" character varying(255) DEFAULT NULL, "joins" character varying(255) DEFAULT NULL, "columns" character varying(255) DEFAULT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "role" does not exist
+: DROP TABLE role[0m
+  [4;35;1mSQL (0.005526)[0m   [0mCREATE TABLE role ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "identifier" character varying(100) NOT NULL, "label" character varying(100) NOT NULL) [0m
+  [4;36;1mSQL (0.002721)[0m   [0;1mCREATE INDEX "index_role_on_identifier" ON role ("identifier")[0m
+  [4;35;1mSQL (0.000000)[0m   [0mPGError: ERROR: table "role_field" does not exist
+: DROP TABLE role_field[0m
+  [4;36;1mSQL (0.035070)[0m   [0;1mCREATE TABLE role_field ("id" serial primary key, "role_id" integer NOT NULL, "name" text NOT NULL, "label" text NOT NULL, "required" boolean DEFAULT 't' NOT NULL, "config" text NOT NULL, "field_type" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mPGError: ERROR: table "role_static_permission" does not exist
+: DROP TABLE role_static_permission[0m
+  [4;36;1mSQL (0.006507)[0m   [0;1mCREATE TABLE role_static_permission ("id" serial primary key, "role_id" integer NOT NULL, "static_permission_id" integer NOT NULL) [0m
+  [4;35;1mSQL (0.003508)[0m   [0mCREATE UNIQUE INDEX "index_role_static_permission_on_role_id_and_static_permission_i" ON role_static_permission ("role_id", "static_permission_id")[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "sales_agent" does not exist
+: DROP TABLE sales_agent[0m
+  [4;35;1mSQL (0.006000)[0m   [0mCREATE TABLE sales_agent ("id" serial primary key, "company_id" integer DEFAULT NULL, "created_at" timestamp DEFAULT NULL, "updated_at" timestamp DEFAULT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "session" does not exist
+: DROP TABLE session[0m
+  [4;35;1mSQL (0.009815)[0m   [0mCREATE TABLE session ("id" serial primary key, "session_id" character varying(255) NOT NULL, "data" text DEFAULT NULL, "created_at" timestamp DEFAULT NULL, "updated_at" timestamp DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002924)[0m   [0;1mCREATE INDEX "index_session_on_session_id" ON session ("session_id")[0m
+  [4;35;1mSQL (0.002864)[0m   [0mCREATE INDEX "index_session_on_updated_at" ON session ("updated_at")[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "shipping_commodity" does not exist
+: DROP TABLE shipping_commodity[0m
+  [4;35;1mSQL (0.005591)[0m   [0mCREATE TABLE shipping_commodity ("id" serial primary key, "name" character varying(255) NOT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "shipping_cost" does not exist
+: DROP TABLE shipping_cost[0m
+  [4;35;1mSQL (0.015426)[0m   [0mCREATE TABLE shipping_cost ("id" serial primary key, "name" character varying(255) NOT NULL, "protected" boolean DEFAULT 'f' NOT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "shipping_method" does not exist
+: DROP TABLE shipping_method[0m
+  [4;35;1mSQL (0.007030)[0m   [0mCREATE TABLE shipping_method ("id" serial primary key, "name" character varying(255) NOT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "shipping_status" does not exist
+: DROP TABLE shipping_status[0m
+  [4;35;1mSQL (0.007899)[0m   [0mCREATE TABLE shipping_status ("id" serial primary key, "name" character varying(255) NOT NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mPGError: ERROR: table "static_permission" does not exist
+: DROP TABLE static_permission[0m
+  [4;35;1mSQL (0.014314)[0m   [0mCREATE TABLE static_permission ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "identifier" character varying(100) NOT NULL) [0m
+  [4;36;1mSQL (0.003127)[0m   [0;1mCREATE INDEX "index_static_permission_on_identifier" ON static_permission ("identifier")[0m
+  [4;35;1mSQL (0.000000)[0m   [0mPGError: ERROR: table "system_cc" does not exist
+: DROP TABLE system_cc[0m
+  [4;36;1mSQL (0.005816)[0m   [0;1mCREATE TABLE system_cc ("id" serial primary key, "name" character varying(55) NOT NULL, "mask" character varying(55) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mPGError: ERROR: table "system_log" does not exist
+: DROP TABLE system_log[0m
+  [4;36;1mSQL (0.010569)[0m   [0;1mCREATE TABLE system_log ("id" serial primary key, "system_log_type_id" integer DEFAULT 1 NOT NULL, "loggable_id" integer NOT NULL, "loggable_type" character varying(255) NOT NULL, "verb" character varying(23) DEFAULT NULL, "subject" character varying(255) NOT NULL, "msg" text NOT NULL, "created_by" integer NOT NULL, "created_at" timestamp DEFAULT NULL, "updated_at" timestamp DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mPGError: ERROR: table "system_log_type" does not exist
+: DROP TABLE system_log_type[0m
+  [4;36;1mSQL (0.009195)[0m   [0;1mCREATE TABLE system_log_type ("id" serial primary key, "name" character varying(255) NOT NULL, "label" character varying(255) NOT NULL, "icon" character varying(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mPGError: ERROR: table "system_revenu" does not exist
+: DROP TABLE system_revenu[0m
+  [4;36;1mSQL (0.009788)[0m   [0;1mCREATE TABLE system_revenu ("id" serial primary key, "name" character varying(255) NOT NULL, "label" character varying(255) NOT NULL, "invoice_label" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mPGError: ERROR: table "system_revenu_type" does not exist
+: DROP TABLE system_revenu_type[0m
+  [4;36;1mSQL (0.006325)[0m   [0;1mCREATE TABLE system_revenu_type ("id" serial primary key, "name" character varying(25) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mPGError: ERROR: table "template" does not exist
+: DROP TABLE template[0m
+  [4;36;1mSQL (0.018349)[0m   [0;1mCREATE TABLE template ("id" serial primary key, "template_type_id" integer NOT NULL, "model" character varying(255) DEFAULT NULL, "name" character varying(255) NOT NULL, "label" character varying(255) NOT NULL, "content" text DEFAULT E'' NOT NULL, "created_by" integer NOT NULL, "updated_by" integer NOT NULL, "created_at" timestamp DEFAULT NULL, "updated_at" timestamp DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mPGError: ERROR: table "template_type" does not exist
+: DROP TABLE template_type[0m
+  [4;36;1mSQL (0.008558)[0m   [0;1mCREATE TABLE template_type ("id" serial primary key, "name" character varying(255) NOT NULL, "label" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mPGError: ERROR: table "transaction_method" does not exist
+: DROP TABLE transaction_method[0m
+  [4;36;1mSQL (0.006382)[0m   [0;1mCREATE TABLE transaction_method ("id" serial primary key, "name" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mPGError: ERROR: table "transaction_type" does not exist
+: DROP TABLE transaction_type[0m
+  [4;36;1mSQL (0.038773)[0m   [0;1mCREATE TABLE transaction_type ("id" serial primary key, "name" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (0.002014)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000926)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.004229)[0m   [0m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = 'schema_info'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;36;1mSQL (0.000752)[0m   [0;1mUPDATE schema_info SET version = 476[0m

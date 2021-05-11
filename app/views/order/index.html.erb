@@ -1,0 +1,219 @@
+<!-- google AJAX API -->
+<!-- <script type="text/javascript" src="http://www.google.com/jsapi?key=<%= google_maps_key %>"></script> -->
+<!-- google maps API -->
+<!-- <script type="text/javascript">google.load("maps", "2");</script> -->
+
+       
+<!-- order templates -->
+<%= render(:partial => "templates") %>
+
+<!-- get company templates -->
+<%= render(:partial => "company/templates") %>
+
+<!-- Apollo.order.Util -->
+<%= render(:partial => "util") %>
+
+<!-- include company util -->
+<%= render(:partial => "company/util") %>
+
+<%= javascript_tag "
+
+
+if (typeof(google) != 'undefined') {
+	new Apollo.order.GMap({id: 'order_map'});
+}
+
+// instantiate the RegionManager, used for managing country/region/city Combos.
+new RExt.RegionManager({
+    countries : #{Country.find(:all).collect {|c| [c.id, c.name]}.to_json}
+});
+
+// AccountForm
+new RExt.form.Popup({
+	id: 'account_popup',
+    shadow: false,
+	form: new Apollo.company.AccountForm({        
+		id: 'account_form'		        
+	})
+});
+
+// Create hwb form
+new Apollo.order.HWB({
+    id: 'hwb',
+    iconCls: 'icon-package-add',
+    useDialog: true,
+    dialogConfig: {
+        maximizable: true,
+        height: 600,
+        width: 800,
+        shadow: false,
+        modal: false
+    },            
+    closable: true,
+    labelWidth: 85, // label settings here cascade unless overridden    
+    frame: true,
+    header: false,            
+    title: 'House waybill',
+    bodyStyle: 'padding:5px 5px 0',
+    autoScroll: true,    
+    defaultType: 'textfield',
+    monitorValid: false
+});
+
+//DocumentMgr
+new RExt.template.DocumentMgr({
+    id: 'document_mgr',
+	docs: Apollo.order.Util.getDocs(),
+	controller: 'order',
+	previewAction: 'preview_doc',
+	sendAction: 'send_doc'
+});
+  
+// create Log-form popup
+new RExt.form.Popup({
+    id: 'log_popup',
+    actsAsDialog: false,
+    shadow: false,
+    form: new Apollo.order.LogForm({
+        id: 'log_form',
+        width: 400,
+        labelWidth: 70        
+    })
+});
+
+// Apollo.order.PODForm (proof of delivery form)
+new Apollo.order.PODForm({
+    id: 'pod_form'    
+});
+
+new Apollo.company.CompanyForm({
+    id: 'company_form',
+    title: 'Company',    
+    shadow: false,
+    header: false,  
+    modal: false,  
+    closable: true,
+    dialogConfig: {
+        height: 450,
+        width: 750
+    },
+    frame: true,
+    insertUrl: 'company/insert',  
+    updateUrl: 'company/update',  
+    useDialog: true,
+    monitorValid: false
+});
+
+// Location-popup
+new RExt.form.Popup({
+	id: 'location_popup',           	
+    shadow: false,
+    actsAsDialog: true,
+	form: new RExt.company.LocationForm({})
+});  
+
+
+new RExt.form.Popup({
+	id: 'billing_popup',
+	form: new Apollo.order.BillingForm({
+		id: 'billing_form'
+	})
+});
+
+new RExt.form.Popup({  
+    id: 'hwb_popup',          
+    actsAsDialog: true,
+    shadow: false,
+    form: new Apollo.order.HWB({  
+        id: 'hwb_editor',
+        iconCls: 'icon-pencil',
+        closable: true,
+    	labelWidth: 85, // label settings here cascade unless overridden
+    	updateUrl: 'order/update_entity',
+        frame:true,
+    	header: true,
+        title: 'Set Consignee',
+        bodyStyle:'padding:5px 5px 0',
+    	autoScroll: true,
+        autoHeight: true,
+        defaultType: 'textfield',           
+        fieldsets: ['consignee', 'shipper'],
+        width: 365
+    })           
+}); 
+
+
+// DIMS grid
+new Apollo.order.Dims({
+    id: 'dims',
+    region: 'east',                  
+    width: 320,           
+    dialogConfig: {
+        layout: 'border',
+        shadow: false,
+        width: 550,
+        height: 500
+    },        
+    updateUrl: '/order/update_dims',
+    iconCls: 'icon-bricks'   
+});
+
+// expense form
+new RExt.form.Popup({  
+    id: 'expense_popup',          
+    actsAsDialog: true,
+    shadow: false,
+    form:  new Apollo.order.ExpenseForm({
+        iconCls: 'icon-money',
+    	id: 'expense_form',		
+    	title: 'Add Cost',    	
+    	header: true,
+    	frame: true,    	    	    
+    	width: 300,
+    	height: 210,
+    	autoHeight: false,
+    	labelWidth: 70,
+    	labelAlign: 'right',
+    	insertUrl: '/order/add_expense'
+    })
+});
+
+
+// RoutingForm
+var f = new Apollo.order.RoutingForm({
+    id: 'routing_form',	
+	title: 'Add order route',		
+	dialogConfig: {
+		width: 670,
+		height: 525	
+	},
+	leftWidth: 0.5,
+	accordionWidth: 0.5		
+});     
+   
+// local route 
+var fpanel = new Apollo.order.LocalRoute({
+	id: 'local_route_form',
+	title: 'Local-delivery',
+	dialogConfig: {
+		width: 400,
+		height: 200
+	}
+});
+  
+
+// create OrderManager
+new Apollo.Page({
+	items: [
+    	new Apollo.order.Manager({
+            id: 'order_manager',
+    		region: 'west',
+            title: 'Order Manager'			       
+        })
+	]
+});   
+
+
+" %>
+
+

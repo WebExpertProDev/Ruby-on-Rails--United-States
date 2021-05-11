@@ -1,0 +1,137 @@
+/* Ext.ux.UploadForm css file
+ *
+ * vim:sw=2:ts=2:fdc=4
+ * $Id: uploadform.css 62 2007-07-22 12:54:28Z jozo $
+ */
+
+.x-upform-buttons-ct {
+	position:relative;
+	height: 22px;
+	margin-bottom: 5px;
+}
+.x-upform-input-ct {
+	position:absolute;
+	height: 22px;
+	width: 78px;
+	overflow: hidden;
+}
+.x-upform-ubtn-ct {
+	position: absolute;
+	right:28px;
+}
+.x-upform-cbtn-ct {
+	position: absolute;
+	right:0;
+}
+.x-upform-bbtn-ct {
+	position: absolute;
+	height: 22px;
+	right:0;
+}
+.x-upform-input-wrap {
+	position: absolute;
+	opacity: 0.0;
+	-moz-opacity: 0.0;
+	filter: alpha(opacity=0);
+	right:0;
+	height: 22px;
+}
+.x-upform-input-wrap input {
+	top: 0;
+	height: 22px;
+	font-size: 14px;
+	cursor: pointer;
+	-moz-user-focus: ignore;
+	border: 0px none transparent;
+
+	overflow: hidden;
+}
+.x-upform-input-mask {
+	position:absolute;
+	height: 22px;
+	width: 24px;
+	left: -18px;
+}
+.x-upform-table {
+	width:100%;
+	font-size: 11px;
+	border-collapse: collapse;
+}
+.x-upform-filename {
+	-moz-user-select: none;
+	cursor: default;
+	padding-left: 3px;
+}
+.x-upform-filedelete {
+	width: 16px;
+	text-align: right;
+	padding-right: 2px;
+}
+.x-upform-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.6;
+	-moz-opacity: 0.6;
+	filter: alpha(opacity=60);
+	background-color: white;
+}
+.x-upform-wait {
+	width: 16px;
+	height: 16px;
+	background: transparent url(/javascripts/ext-1.1/resources/images/default/grid/wait.gif);
+	background-repeat: no-repeat;
+	position:absolute;
+	right: 56px;
+	top: 2px;
+	display:none;
+}
+
+.x-uf-progress-wrap {
+	margin-top:2px;
+	margin-bottom:2px;
+	border: 1px solid #6593cf;
+	overflow:hidden;
+}
+.x-uf-progress {
+	height: 6px;
+	background: #e0e8f3 url(/javascripts/ext-1.1/resources/images/default/qtip/bg.gif) repeat-x;
+}
+.x-uf-progress-bar {
+	height:5px;
+	overflow:hidden;
+	width:0;
+	background:#8BB8F3;
+	border-top:1px solid #B2D0F7;
+	border-bottom:1px solid #65A1EF;
+	border-right:1px solid #65A1EF;
+}
+.x-uf-pginfo-ct {
+	font-size: 11px;
+	font-family: tahoma,verdana,helvetica;
+	border: 1px solid #65A1EF;
+	background: #ffffe8;
+	padding: 2px;
+}
+.x-uf-pginfo-table {
+	width: 100%;
+	border: 0;
+}
+.x-uf-pginfo-value {
+	text-align: right;
+/*	font-weight: bold; */
+}
+
+.x-uf-filepb {
+	line-height: 1px;
+	font-size: 1px;
+	height: 1px;
+	background:#8BB8F3;
+	border-top:1px solid #B2D0F7;
+	border-bottom:1px solid #65A1EF;
+	border-right:1px solid #65A1EF;
+	width: 0;
+}
+
+
+/* end of file */

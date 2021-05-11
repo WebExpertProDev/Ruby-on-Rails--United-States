@@ -1,0 +1,1094 @@
+/***
+ * Apollo.CompanyForm
+ * a form to add companies to the db.
+ *
+ * @param {Object} el
+ */
+Ext.namespace('Apollo.company');
+
+Apollo.company.Form = function(param) {
+
+	// ref to AccountForm Popup
+	this.accountPopup = null;
+
+	// domain.  what domain will this company be mapped to?
+	this.domain = null;
+	this.domain_id = null;
+
+	// privtate
+	this.type = null;
+
+	this.dialogs = {
+		account: null,
+		agent: null
+	};
+
+	this.dialogs.agent = Application.createDialog({
+		id: 'company-form-agent-dialog',
+		title: 'Create new sales-agent company',
+        layout:'fit',
+        width: 650,
+        height: 450,
+        closeAction:'hide',
+		center: true,
+        plain: true,
+		modal: true
+	});
+	// attach button hadnlers
+
+	// create account-list template, used for both company-accounts and agent-accounts.
+	this.tplAccount = new Ext.Template(
+	    '<div id="company_account_{id}">',
+	        '<div>{first} {last}</div>',
+	    '</div>'
+	);
+	this.tplAccount.compile();
+
+	// create the agent-list template
+	this.tplAgent = new Ext.Template(
+		'<div id="company_agent_{name}">',
+			'<div>{name}</div>',
+		'</div>'
+	);
+	this.tplAgent.compile();
+
+	var el = Ext.fly('company_account_list');
+	if (el) {
+		el.dom.innerHTML = '';						// <-- clear the company's account list
+	}
+	var el = Ext.fly('company_agent_account_list'); // <-- clear the agent's account template.
+	if (el) {
+		el.dom.innerHTML = '';
+	}
+
+	// build collections of accounts, agents and agent-accounts.  these collections get returned
+	// to server when main form is submitted, via getParams(), which is called by RExt.DialogForm
+	this.accounts = new Ext.util.MixedCollection();
+	this.agents = new Ext.util.MixedCollection();
+	this.agentAccounts = new Ext.util.MixedCollection();
+
+	// *super*
+	Apollo.company.Form.superclass.constructor.call(this, param);
+
+};
+Ext.extend(Apollo.company.Form, RExt.form.Wizard, {
+
+	/***
+	 * build
+	 * implement the build function, called by RExt.DialogForm
+	 *
+	 */
+	build : function() {
+
+		// build TabPanel form
+		return {
+			id: 'tabs',
+			xtype:'tabpanel',
+	        activeTab: 0,
+			autoWidth: true,
+			autoHeight: true,
+			deferredRender: false,
+			border: true,
+	        defaults:{bodyStyle:'padding:5px'},
+			items : [
+				this.buildCompanyForm('company'),
+				this.buildTsaTab(),
+				this.buildAccountsTab(),
+				this.buildAccountingTab(),
+				this.buildAgentsTab()
+			]
+		}
+	},
+
+	/***
+	 * getAccountPopup
+	 * returns the AccountForm Popup for use by other components.
+	 * @return {RExt.form.Popup}
+	 */
+	getAccountPopup : function() {
+		return Ext.getCmp('account_popup');
+	},
+
+	/***
+	 * reset
+	 * override reset and clear collections and templates.
+	 */
+	reset : function() {
+		// clear all the mixed collections.
+		this.agents.clear();
+		this.accounts.clear();
+		this.agentAccounts.clear();
+
+		// clear the comboAccounts store from accounting form.
+		var comboAccounts = this.form.findField('accounting[account_id]');
+		if (comboAccounts) {
+			//comboAccounts.store.removeAll();    //<--- bug in Ext2.0
+            comboAccounts.store.each(function(a) {
+                comboAccounts.store.remove(a);
+            });
+		}
+
+		// clear accounts / agents templates.
+		var el = Ext.fly('company_account_list');
+		if (el) {
+			el.dom.innerHTML = '';						// <-- clear the company's account list
+		}
+		var el = Ext.fly('company_agent_account_list'); // <-- clear the agent's account template.
+		if (el) {
+			el.dom.innerHTML = '';
+		}
+        var el = Ext.fly('company_agent_list');
+        if (el) {
+            el.dom.innerHTML = '';
+        }
+
+		var tabs = this.getComponent('tabs');
+
+		var tab_roles = tabs.getComponent('tab_company_roles');
+		var tab_agents = tabs.getComponent('tab_agents');
+		var tab_accounts = tabs.getComponent('tab_accounts');
+		var tab_accounting = tabs.getComponent('tab_accounting');
+
+		switch (this.type) {
+			case 'client':
+				tabs.unhideTabStripItem(tab_roles);
+				tab_roles.enable();
+				tabs.unhideTabStripItem(tab_agents);
+				tab_agents.enable();
+				tab_accounts.enable();
+				tabs.unhideTabStripItem(tab_accounts);
+				tab_accounting.enable();
+				tabs.unhideTabStripItem(tab_accounting);
+
+				// show teh credit-card fieldset on accounting tab.
+				tab_accounting.getComponent('fieldset_credit').enable();
+                var cc_field = this.form.findField('cc[system_cc_id]');
+                cc_field.setValue(1);    // <-- default cc id 1, whatever that is (visa?  mc?)
+                                
+				tab_roles.items.each(function(i) {
+					if (i.getXType() == 'fieldset' && i.rendered == true)	{
+						i.expand();
+						i.collapse();
+					}
+				});
+
+
+				break;
+			case 'carrier':
+				tab_roles.disable();
+				tabs.hideTabStripItem(tab_roles);
+				tab_agents.disable();
+				tabs.hideTabStripItem(tab_agents);
+				tab_accounts.disable();
+				tabs.hideTabStripItem(tab_accounts);
+				tab_accounting.disable();
+				tabs.hideTabStripItem(tab_accounting);
+
+				break;
+			case 'agent':
+				tabs.hideTabStripItem(tab_roles);
+				tab_roles.disable();
+				tabs.unhideTabStripItem(tab_accounts);
+				tab_accounts.enable();
+				tabs.hideTabStripItem(tab_agents);
+				tab_agents.disable();
+				tabs.hideTabStripItem(tab_accounting);
+				tab_accounting.disable();
+
+				break;
+		}
+		Apollo.company.Form.superclass.reset.apply(this, arguments);
+	},
+
+	/*** @private Company record def'n ***/
+	record : Ext.data.Record.create([
+		{name: 'id'},
+		{name: 'name'}
+	]),
+
+	/***
+	 * accessor for above record
+	 *
+	 */
+	getRecord : function() {
+		return this.record;
+	},
+
+	/***
+	 * buildCompanyTab
+	 * build a company fieldset.
+	 * @param {String} formName, need to prefix the form with differnet name between company / agent
+	 * specifically a problem with "city" field, which will have the same id between agent / company forms, which are
+	 * built by this same method, buildCompanyForm.
+	 * in the company form, formName is company; in agent form, it's "agent"
+	 *
+	 */
+	buildCompanyForm : function(formName) {
+
+		// get region manager
+		regionMgr = Ext.ComponentMgr.get('region_manager');
+
+		// init the regionManager with the current form name "company"
+		regionMgr.setFormName(formName);
+
+		// create city combo
+		var comboCity  = regionMgr.renderCity({});
+
+		// create airport combo
+		var comboAirport = regionMgr.renderAirport({
+			fieldLabel: 'Airport',
+			width: 150,
+			hiddenName: formName + '[airport_id]',
+			name: formName + 'airport_id',
+			minChars: 2,
+			hideTrigger: true
+		});
+
+		// details fieldset
+		var details = {
+			layout: 'form',
+			autoHeight: true,
+			xtype: 'fieldset',
+			title: 'Details',
+			border: true,
+			items: [
+				new Ext.form.TextField({
+	                name: formName + '[name]',
+					tabIndex: 1,
+	                fieldLabel: 'Name',
+	                allowBlank: false
+	            }),
+				new Ext.form.TextField({
+					name: formName + '[description]',
+					tabIndex: 1,
+					fieldLabel: 'Description',
+					allowBlank: false,
+					width: 200
+				})
+			]
+		};
+
+		// render 2 columns to hold contact & location fieldsets.
+		var columns = {
+			border: false,
+		    layout:'column',
+			labelWidth: 60,
+			autoHeight: true,
+		    items: [{
+				layout: 'form',
+				xtype: 'fieldset',
+				columnWidth: 0.5,
+				title: 'Location',
+				defaultType: 'textfield',
+				autoHeight: true,
+				border: false,
+
+				style: 'margin-right:10px',
+				items: [
+					comboCity,
+					new Ext.form.TextField({
+						name: formName + '[addr1]',
+						tabIndex: 1,
+						fieldLabel: 'Address1',
+						allowBlank: false
+					}),
+					new Ext.form.TextField({
+						name: formName + '[addr2]',
+						tabIndex: 1,
+						fieldLabel: 'Address2',
+						allowBlank: true
+					}),
+					new Ext.form.TextField({
+						name: formName + '[zip]',
+						tabIndex: 1,
+						fieldLabel: 'Zip',
+						allowBlank: false
+					}),
+					comboAirport
+				]
+		    },{
+				layout: 'form',
+				xtype: 'fieldset',
+				title: 'Contact',
+				columnWidth: 0.5,
+				border: false,
+
+				autoHeight: true,
+				items: [
+					new Ext.ux.MaskFormattedTextField({
+						name: formName + '[phone1]',
+						tabIndex: 1,
+						fieldLabel: 'Phone1',
+						allowBlank: false,
+						width: 100
+					}),
+					new Ext.ux.MaskFormattedTextField({
+						name: formName + '[phone2]',
+						tabIndex: 1,
+						fieldLabel: 'Phone2',
+						allowBlank: true,
+						width: 100
+					}),
+					new Ext.ux.MaskFormattedTextField({
+						name: formName + '[fax]',
+						tabIndex: 1,
+						fieldLabel: 'Fax',
+						allowBlank: true,
+						width: 100
+					}),
+					new Ext.form.TextField({
+						name: formName + '[email]',
+						tabIndex: 1,
+						fieldLabel: 'Email',
+						allowBlank: true
+					}),
+					new Ext.form.TextField({
+						name: formName + '[www]',
+						tabIndex: 1,
+						fieldLabel: 'www',
+						allowBlank: true
+					})
+				]
+		    }]
+		};
+
+		return {
+			id: 'tab_' + formName,
+			layout: 'form',
+			border: true,
+			title: 'Company',
+			autoHeight: true,
+			bodyStyle: 'padding: 5px 10px 5px 10px',
+			items: [
+				details,
+				columns
+			]
+		};
+	},
+
+	/***
+	 * buildTsaTab
+	 *TSA Validation # and Date* Customer added by (Employee Name)* Date Added*
+	 */
+	buildTsaTab : function() {
+
+
+
+		return {
+			id: 'tab_company_roles',
+			layout: 'form',
+			border: true,
+			title: 'TSA',
+			autoHeight: true,
+			autoHeight: true,
+			bodyStyle: 'padding: 5px 10px 5px 10px',
+			labelWidth: 100,
+			items: {
+				layout: 'form',
+				id: 'role_known_shipper',
+				xtype:'fieldset',
+	            checkboxToggle:true,
+				checkboxName: 'roles[client.known_shipper]',
+	            title: 'Known Shipper',
+	            autoHeight:true,
+	            defaultType: 'textfield',
+	            collapsed: true,
+	            items :[
+					new Ext.form.TextField({
+						name: 'client.known_shipper[validation_number]',
+						fieldLabel: 'Validation#',
+						allowBlank: false
+					})
+				]
+			}
+		};
+
+	},
+
+	/***
+	 * buildAccountingTab
+	 *
+	 */
+	buildAccountingTab : function() {
+		/***
+		 *
+		 * Credit options in drag down menu
+		 * (Credit or Prepay)
+		 * Credit Card info (
+		 * 		Type,
+		 * 		#,
+		 * 		Exp Date
+		 * 		Security Code (3 or 4 digit code)
+		*/
+
+		var comboBillingMethod = new Ext.form.ComboBox({
+            name: 'accounting_billing_method',
+			hiddenName: 'accounting[billing_method_id]',
+			tabIndex: 1,
+			width: 100,
+			listWidth: 100,
+            fieldLabel: 'Billing method',
+            allowBlank: false,
+			forceSelection: true,
+			triggerAction: 'all',
+            displayField: 'name',
+            valueField: 'value',
+			value: 'Credit card',
+            mode: 'local',
+            store: new Ext.data.SimpleStore({
+				'id':0,
+                fields: ['value', 'name'],
+                data: Apollo.order.Util.getBillingMethods()
+            })
+        });
+
+		/***
+		 * @event select
+		 * show/hide credit-fieldset
+		 * @param {Object} field
+		 * @param {Object} record
+		 * @param {Object} index
+		 */
+		comboBillingMethod.on('select', function(field, record, index) {
+			var fs_credit = this.getComponent('tabs').getComponent('tab_accounting').getComponent('fieldset_credit');
+			if (record.data.name.toUpperCase() == 'CREDIT CARD') {
+				fs_credit.enable();
+			}
+			else {
+				fs_credit.disable();
+			}
+		},this);
+
+		var comboAccounts = new RExt.form.ComboBoxAdd({
+            name: 'accounting_account_id',
+			hiddenName: 'accounting[account_id]',
+			tabIndex: 1,
+			width: 200,
+			listWidth: 200,
+            fieldLabel: 'Accountant',
+            allowBlank: false,
+			forceSelection: true,
+			triggerAction: 'all',
+            displayField: 'name',
+            valueField: 'id',
+            mode: 'local',
+            store: new Ext.data.SimpleStore({
+                fields: ['id', 'name'],
+                data: []
+            })
+        });
+		/***
+		 * @event this.accounts@add
+		 * when the accounts MixedCollection gets a new record, add a new record to this combo as well.
+		 * @param {Object} index
+		 * @param {Object} object
+		 * @param {Object} key
+		 */
+		this.accounts.on('add', function(index, object, key) {
+
+			comboAccounts.insert(0, {
+				id: object['account[email]'],
+				name: object['account[first]'] + ' ' + object['account[last]']
+			});
+
+		});
+		/***
+		 * @event add
+		 * @param {Object} ev
+		 */
+		comboAccounts.on('add', function(param) {
+			var popup = this.getAccountPopup();
+			var panel = popup.getFormPanel();
+			panel.setKey(0);
+			panel.showInsert();
+			panel.on('beforeaction', this.onInsertAccount, this);
+
+			popup.show(param.button);
+
+		},this);
+
+		// build credit-card fieldset
+		var fs_credit = {
+			id: 'fieldset_credit',
+			layout: 'form',
+			xtype: 'fieldset',
+			title: 'Credit Information',
+			autoHeight:true,
+        	autoWidth: true,
+			defaultType: 'textfield',
+			labelWidth: 75,
+			style: 'margin-top: 10px',
+			items: [
+				new Ext.form.ComboBox({
+		            name: 'cc[type]',
+					tabIndex: 1,
+					width: 100,
+					listWidth: 100,
+		            hiddenName: 'cc_type',
+		            fieldLabel: 'Type',
+		            allowBlank: false,
+					forceSelection: true,
+					triggerAction: 'all',
+		            displayField: 'name',
+		            valueField: 'id',
+		            mode: 'local',
+		            store: new Ext.data.SimpleStore({
+		                fields: ['id', 'name'],
+		                data: Apollo.order.Util.getCreditCardTypes()
+		            })
+				}),
+				new Ext.form.NumberField({
+					name: 'cc[num]',
+					fieldLabel: 'Credit card#',
+					width: 200,
+					allowBlank: false
+				}),
+				new Ext.form.TextField({
+					name: 'cc[pin]',
+					allowBlank: false,
+					fieldLabel: 'PIN',
+					width: 60
+				}),
+				new Ext.form.ComboBox({
+		            name: 'cc[expiry]',
+					tabIndex: 1,
+					width: 50,
+		            hiddenName: 'cc_expiry',
+		            fieldLabel: 'Expiry',
+		            allowBlank: false,
+					forceSelection: true,
+					triggerAction: 'all',
+		            displayField: 'name',
+		            valueField: 'value',
+		            mode: 'local',
+		            store: new Ext.data.SimpleStore({
+		                fields: ['value', 'name'],
+		                data: Apollo.order.Util.getCreditCardExpiryDates()
+		            })
+				})
+			]
+		};
+
+		return {
+			id: 'tab_accounting',
+			layout: 'form',
+			title: 'Accounting',
+			autoHeight:true,
+        	autoWidth: true,
+			defaultType: 'textfield',
+			labelWidth: 100,
+			style: 'padding: 10px 5px 5px 5px',
+			items: [
+				comboAccounts,
+				comboBillingMethod,
+				fs_credit
+			]
+		};
+	},
+
+	/***
+	 * buildAccountsTab
+	 * for adding accounts to a company
+	 * @return {Object}
+	 */
+	buildAccountsTab : function() {
+		var popup = this.getAccountPopup();
+		var btnAccount = new RExt.Toolbar.PopupButton({
+			text: 'Add Account',
+			menu : popup
+		});
+		btnAccount.on('click', function(btn, ev) {
+			var panel = popup.getFormPanel();
+			panel.setType(this.type);
+			panel.setKey(0);
+			panel.showInsert();
+
+			// attach a 'beforeaction' listener to short-cct the form POST.
+			// we don't POST form here -- we add to MixedCollection
+			panel.on('beforeaction', this.onInsertAccount, this);
+		},this);
+
+		var tab = {
+			id: 'tab_accounts',
+			layout: 'form',
+			border: false,
+			title: 'Contacts',
+			html: '<div id="company_account_list">No accounts added.</div>',
+			autoHeight: true,
+			tbar: [btnAccount]
+		};
+		return tab;
+	},
+
+	/***
+	 * onInsertAccount
+	 * @param {Object} form
+	 * @param {Object} action
+	 */
+	onInsertAccount : function(form, action) {
+		if (form.isValid()) {
+			var method = 'append';
+			if (this.accounts.getCount() == 0) { // <-- user overwrite if this is 1st record.
+				method = 'overwrite';
+			}
+
+			var data = form.getValues();
+			this.accounts.add(data);
+
+			var tplData = {
+				id: data['account[first]'] + data['account[last]'],
+				first: data['account[first]'],
+				last: data['account[last]']
+			}
+			this.tplAccount[method]("company_account_list", tplData);
+
+			this.getAccountPopup().hide();
+		}
+		return false;
+	},
+
+
+	/***
+	 * buildAgentsTab
+	 * render method, build the Agents tab on main company dialog.
+	 */
+	buildAgentsTab : function() {
+		// create Agents dialog
+		var dialog = this.dialogs.agent;
+
+		// create tab with toolbar
+		var tab = {
+			id: 'tab_agents',
+			layout: 'form',
+			border: false,
+			autoHeight: true,
+			title: 'Sales Agents',
+			html: '<div id="company_agent_list"></div>',
+
+			tbar: [{
+				text: 'Add Sales Agent', handler: function(ev, btn) {
+					dialog.on('btninsert', function(ev, btn) {
+						if (this.agentAccounts.getCount() == 0) {
+							Application.setAlert('You must add at least one account when creating a sales-agent company', false);
+							return false;
+						}
+						else if (form.isValid()) {
+							var method = 'append';
+							if (this.agents.getCount() == 0) {
+								method = 'overwrite';
+							}
+							var data = form.getValues();
+							this.tplAgent[method]('company_agent_list', {name: data['agent[name]']});
+							data.accounts = this.agentAccounts.getRange();
+							// add agent, including its accounts, to agents collection.
+							this.agents.add(data);
+							dialog.hide();
+						}
+						else {
+							Application.setAlert('You must fill-in all required fields', false);
+						}
+					},this);
+					this.agentAccounts.clear();
+					var el = Ext.fly('company_agent_account_list');
+					if (el) {
+						el.dom.innerHTML = '';
+					}
+					form.reset();
+					formPanel.getComponent('agent_tabs').activate(0);
+					dialog.show();
+
+					// focus first form-field after short delay
+					var task = new Ext.util.DelayedTask(function() { form.items.first().focus(); });
+					task.delay(10);
+				},scope: this
+			}]
+		};
+
+		var formPanel = new Ext.FormPanel({
+			id: 'company_agent_form',
+			labelWidth: 75, // label settings here cascade unless overridden
+		    labelAlign: 'right',
+			waitMsg: 'Saving',
+			insertUrl: '/company/insert',
+			frame: true,
+			header: false,
+			title: 'Company',
+			bodyStyle: 'padding: 5px 5px 0',
+			autoScroll: true,
+
+			defaultType: 'textfield',
+			items: new Ext.TabPanel({
+				id: 'agent_tabs',
+				activeTab: 0,
+				autoWidth: true,
+				autoHeight: true,
+				border: true,
+		        defaults:{bodyStyle:'padding:5px'},
+				items : [
+					this.buildCompanyForm('agent'),
+					this.buildAgentAccountsTab()
+
+				]
+			})
+		});
+		var form = formPanel.form;	// <-- create pointer to FormPanel's contained form for event-handlers above.
+
+		dialog.add(formPanel);
+		return tab;
+
+	},
+
+	/***
+	 * buildAgentAccountsTab
+	 * when a user wishes to add an agent to a company, this reproduces the form found on the standard
+	 * company dialog for the sales agent popup.
+	 */
+	buildAgentAccountsTab : function() {
+
+		var popup = this.getAccountPopup();
+		var btnAccount = new RExt.Toolbar.PopupButton({
+			text: 'Add Account',
+			menu : popup
+		});
+		btnAccount.on('click', function(btn, ev) {
+			var panel = popup.getFormPanel();
+			panel.setType(this.type);
+			panel.setKey(0);
+			panel.showInsert();
+
+			// attach a 'beforeaction' listener to short-cct the form POST.
+			// we don't POST form here -- we add to MixedCollection
+			panel.on('beforeaction', this.onInsertAgentAccount, this);
+		},this);
+
+		var tab = {
+			id: 'tab_agent_accounts',
+			layout: 'form',
+			border: false,
+			title: 'Contacts',
+			html: '<div id="company_agent_account_list">No accounts added.</div>',
+			autoHeight: true,
+			tbar: [btnAccount]
+		};
+		return tab;
+
+
+
+	},
+
+    /***
+	 * onInsertAgentAccount
+	 * @param {Object} form
+	 * @param {Object} action
+	 */
+	onInsertAgentAccount : function(form, action) {
+		if (form.isValid()) {
+			var method = 'append';
+			if (this.agentAccounts.getCount() == 0) { // <-- user overwrite if this is 1st record.
+				method = 'overwrite';
+			}
+
+			var data = form.getValues();
+			this.agentAccounts.add(data);
+
+			var tplData = {
+				id: data['account[first]'] + data['account[last]'],
+				first: data['account[first]'],
+				last: data['account[last]']
+			}
+            this.tplAccount[method]('company_agent_account_list', tplData);
+			this.getAccountPopup().hide();
+		}
+		return false;
+	},
+
+	/***
+	 * getParams
+	 * implement getParams.  called before the main form is submitted to server.
+	 * we must send along any included sales-agents that were added, along with accounts.
+	 * @return {Object}
+	 */
+	getParams : function() {
+
+		params = {
+			accounts : Ext.encode(this.accounts.getRange()),
+			agents : Ext.encode(this.agents.getRange())
+		}
+		if (this.domain_id != null) {
+			params.domain_id = this.domain_id;
+		}
+		if(this.domain != null) {
+			params.domain = this.domain;
+		}
+		return params;
+
+	},
+
+	addAccount : function(data) {
+		this.accounts.add(data);
+	},
+
+	addAgent : function(data) {
+		this.agents.add(data);
+	},
+
+	isValid : function() {
+		var tabs = this.getComponent('tabs');
+		var tab_accounts = tabs.getComponent('tab_accounts');
+		if (!tab_accounts.disabled) {
+			if (this.accounts.getCount() == 0) {
+				Application.setAlert('You must add at least one account', false);
+				return false;
+			}
+		}
+		return Apollo.company.Form.superclass.isValid.apply(this, arguments);
+	},
+
+	/***
+	 * setDomain
+	 * sets what type of company insert this will be.
+	 *
+	 */
+	setDomain : function(value) {
+		this.domain = value;
+	},
+
+	setDomainId : function(value) {
+		this.domain_id = value;
+	},
+
+	setType: function(type) {
+		this.type = type;
+	},
+
+	getAccountForm: function() {
+		return this.dialogs.account;
+	}
+});
+
+
+/***
+ * Apollo.company.AccountForm
+ * A form for creating accounts.
+ * @author Chris Scott
+ * @param {Object} param
+ */
+Apollo.company.AccountForm = function(param) {
+
+	Apollo.company.AccountForm.superclass.constructor.apply(this, arguments);
+
+	// {String} type of account this will apply to.  [client||agent||sales_agent||carrier]
+	this.type = null;
+    
+    this.addEvents({'add': true});
+
+};
+Ext.extend(Apollo.company.AccountForm, RExt.sys.Form, {
+
+	/***
+	 * get/setType
+	 * set the form's type.  [client/agent, etc].  reset() will show/hide particular fieldsets with a switch
+	 * on this.type.
+	 * @param {Object} v
+	 */
+	setType : function(v) { this.type = v; },
+	getType : function() { return this.type; },
+
+	/***
+	 * reset
+	 * show/hide particular fieldsets with switch on this.type
+	 */
+	reset : function() {
+		Apollo.company.AccountForm.superclass.reset.apply(this, arguments);
+		var fs_tsa = this.getComponent('fieldset_tsa');
+		fs_tsa.hide();
+		var fs_company = this.getComponent('fieldset_company');
+		fs_company.hide();
+
+		var comboCompany = this.form.findField('account[company_id]');
+		if (comboCompany) {
+			comboCompany.reset();
+			comboCompany.lastQuery = null;
+		}
+
+		if (this.getKey() === null) {
+			var field = new Ext.form.TextField({fieldLabel: 'foo', name: 'foo'});
+			var field2 = new Ext.form.TextField({fieldLabel: 'foo', name: 'foo2'});
+
+			fs_company.show();
+			fs_company.enable();
+		}
+		else {
+			fs_company.hide();
+			fs_company.disable();
+		}
+
+		//fs_tsa.collapse();
+
+		switch (this.type) {
+			case 'agent':
+				fs_tsa.show();
+				fs_tsa.collapse();
+				break;
+			default:
+				fs_tsa.collapse();
+				fs_tsa.hide();
+				break;
+		}
+	},
+
+	/***
+	 * build
+	 * render method; build the "Accounts" tab on main dialog.
+	 * @return {Object}
+	 */
+	build : function() {
+
+		// comboConsignee
+		var comboCompany = new RExt.form.ComboBoxAdd({
+			name: 'account_company',
+			hiddenName: 'account[company_id]',
+			fieldLabel: 'Company',
+			allowBlank: false,
+			mode: 'remote',
+			triggerAction: 'all',
+			lazyInit: false,
+			valueField: 'id',
+			displayField: 'name',
+			pageSize: 10,
+			width: 160,
+			listWidth: 160,
+			store: new Ext.data.Store({
+	            proxy: new Ext.data.HttpProxy({
+	                url: 'company/search_company'
+	            }),
+	            reader: new Ext.data.JsonReader({
+		            root: 'data',
+		            totalProperty: 'total',
+		            id: 0
+		        },[
+		            {name: 'id', mapping: 0},
+		            {name: 'name', mapping: 1}
+		        ]),
+				baseParams: {
+					type: 'agent',
+					domain: 'agent'
+				}
+	        })
+		});
+		/***
+		 * @event render
+		 * fix the list's z-index
+		 * Combos on a Popup need special attention paid to their list, which is z-indexed at 11000 while
+		 * the popup is z-indexed at 15000.
+		 * @param {Object} combo
+		 */
+		comboCompany.on('render', function(combo) {
+			combo.list.setZIndex(16000);
+		});
+		/***
+		 * @event add
+		 * @param {Object} param
+		 */
+		comboCompany.on('add', function(param) {
+			Ext.getCmp('account_popup').hide();
+			var cform = Ext.getCmp('company_form');
+            
+			cform.setType(this.getType());
+			cform.setDomain(this.getType());
+            cform.setDomainId(null);
+			cform.on('actioncomplete', function(form, action) {
+				console.log('comboCompany, actioncomplete: ', action);
+                console.log('this fires event: ', this.id);
+                this.fireEvent('add', form, action);
+			},this);
+			cform.showInsert();
+
+		},this);
+		/***
+		 * @event click
+		 * set the form's key on select.
+		 * @param {Object} field
+		 * @param {Object} record
+		 * @param {Object} index
+		 */
+		comboCompany.on('select', function(field, record, index) {
+			this.setKey(record.data.id);
+		},this);
+
+		return [
+			{
+				layout: 'form',
+				xtype: 'fieldset',
+				id: 'fieldset_company',
+				labelWidth: 70,
+				hidden: true,
+				items: [comboCompany]
+			},
+			{
+				layout: 'form',
+				xtype: 'fieldset',
+				title: 'Account Information',
+				autoHeight:true,
+				defaultType: 'textfield',
+				items: [
+					new Ext.form.TextField({
+						name: 'account[first]',
+						fieldLabel: 'First name',
+						allowBlank: false
+					}),
+					new Ext.form.TextField({
+						name: 'account[last]',
+						fieldLabel: 'Last name',
+						allowBlank: true
+					}),
+					new Ext.ux.MaskFormattedTextField({
+						name: 'account[phone]',
+						fieldLabel: 'Phone',
+						allowBlank: false,
+						width: 100
+					}),
+					new Ext.ux.MaskFormattedTextField({
+						name: 'account[mobile]',
+						fieldLabel: 'Mobile',
+						allowBlank: false,
+						width: 100
+					}),
+					new Ext.ux.MaskFormattedTextField({
+						name: 'account[fax]',
+						fieldLabel: 'Fax',
+						allowBlank: false,
+						width: 100
+					}),
+					new Ext.form.TextField({
+						name: 'account[email]',
+						fieldLabel: 'Email',
+						allowBlank: false
+					})
+				]
+			},
+			{
+				layout: 'form',
+				id: 'fieldset_tsa',
+				xtype:'fieldset',
+				hidden: true,
+	            checkboxToggle:true,
+				checkboxName: 'tsa_approved',
+	            title: 'TSA Approved',
+	            autoHeight:true,
+	            defaultType: 'textfield',
+	            collapsed: true,
+	            items :[
+					new Ext.ux.MaskFormattedTextField({
+						name: 'tsa[created_at]',
+						fieldLabel: 'Approval date',
+						allowBlank: false,
+						vtype: 'date',
+						width: 75,
+						mask: '##-##-####'
+					})
+	            ]
+			}
+		];
+	}
+});

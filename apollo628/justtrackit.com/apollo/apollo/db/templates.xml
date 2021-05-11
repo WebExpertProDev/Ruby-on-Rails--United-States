@@ -1,0 +1,1432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <template name="print">
+        <template_type_id>1</template_type_id>
+        <label>Print</label>
+        <model></model>
+        <content>{% assign LOCATION = corp.head_office %}
+
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;link href="/stylesheets/reset-fonts-grids.css" media="screen" rel="stylesheet" type="text/css"/&gt;
+        &lt;link href="/stylesheets/print.css" media="screen" rel="stylesheet" type="text/css"/&gt;        
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div id="doc2" class="yui-t7 {{document.name}}"&gt;
+            
+            &lt;div id="hd" style=""&gt;
+                &lt;div class="yui-g"&gt;
+                    &lt;div class="yui-u first"&gt;                                                                              
+                           &amp;nbsp;
+                    &lt;/div&gt;
+                    &lt;div class="yui-u" id="hd-east"&gt; 
+                        {% case document.name %} 
+                            {% when 'TSA_unknown_shipper_declaration' %} 
+                                {% include 'tsa_properties' %}
+                            {% when 'TSA_certificate' %} 
+                                {% include 'tsa_properties' %}                                    
+                            {% else %} 
+                                {% include 'order_details'%}
+                        {% endcase %} 
+                    &lt;/div&gt;
+                &lt;/div&gt;                                                                                                          
+            &lt;/div&gt;
+            &lt;div id="bd"&gt;
+               &lt;h1 class="document-title"&gt;{{document.label}}&lt;/h1&gt;               
+               {{content_for_layout}}
+            &lt;/div&gt;
+                                                        
+            &lt;div id="ft"&gt;
+                Footer is here.
+            &lt;/div&gt;
+        &lt;/div&gt;             
+    &lt;/body&gt;
+&lt;/html&gt;
+
+
+       </content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="delivery_receipt">
+        <template_type_id>2</template_type_id>
+        <label>Delivery Receipt</label>
+        <model></model>
+        <content>&lt;div class="yui-g"&gt;
+     &lt;div class="yui-u first"&gt;
+         {% include 'shipper' %}
+         {% include 'billing' %}
+     &lt;/div&gt;
+     &lt;div class="yui-u"&gt;
+         {% include 'consignee' %}    
+&lt;div id="instructions" class="box-plain"&gt;
+    &lt;div class="hd"&gt;&lt;h2&gt;Instructions&lt;/h2&gt;&lt;/div&gt;
+    &lt;div class="bd"&gt;
+        &lt;p&gt;{% include 'delivery_instructions' %}&lt;/p&gt;        
+    &lt;/div&gt;
+&lt;/div&gt;
+         {% include 'pod' %}               
+     &lt;/div&gt;
+&lt;/div&gt;
+
+{% include 'items' %}
+
+</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="tsa_properties">
+        <template_type_id>3</template_type_id>
+        <label>TSA Properties</label>
+        <model></model>
+        <content>{% for route in order.children %}
+     {% case route.type.name %} 
+        {% when 'route' %} 
+            {% assign MAWB_NUMBER = route.bill_number %}
+        {% when 'mawb' %} 
+            {% assign MAWB_NUMBER = route.bill_number %}                                            
+    {% endcase %} 
+{% endfor %}
+
+{% if MAWB_NUMBER == empty %}
+    {% assign MAWB_NUMBER = '&lt;span class="error"&gt;UNDEFINED&lt;/span&gt;' %}
+{% endif %}
+
+
+&lt;div id="tsa-properties" class="grid-viewport"&gt;   
+    &lt;table class="grid properties"&gt;                         
+        &lt;tr&gt;
+            &lt;th&gt;IACCERT #:&lt;/th&gt;            
+            &lt;td&gt;{{corp.iaccert_number}}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;MAWB#:&lt;/th&gt;
+            &lt;td&gt;{{MAWB_NUMBER}}&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/div&gt;</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="shipper">
+        <template_type_id>3</template_type_id>
+        <label>Shipper</label>
+        <model></model>
+        <content>{% if order %} 
+    {% assign SHIPPER = order.shipper %}
+{% elsif invoice %} 
+    {% assign SHIPPER = invoice.order.shipper %} {% endif %}
+ {% assign LOCATION = SHIPPER.location %}
+ {% assign CONTACT = SHIPPER.account %}
+
+&lt;div class="box"&gt;
+    &lt;div class="hd"&gt;
+        &lt;h2&gt;Shipper&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class="bd"&gt;
+
+&lt;h3&gt;{{SHIPPER.company.name | capitalize}}&lt;/h3&gt;
+&lt;p class="address"&gt;
+	{{LOCATION.addr1}}{% if LOCATION.addr2 != empty%}, {{LOCATION.addr2}}{% endif %}&lt;br /&gt;
+	{{LOCATION.city.name}}, {{LOCATION.region.iso}}, {{LOCATION.country.iso}}{% if LOCATION.zip != empty %}, {{LOCATION.zip|upcase}}{% endif %}&lt;br /&gt;
+	{% if LOCATION.phone1 != empty %}&lt;strong&gt;Phone:&lt;/strong&gt; {{LOCATION.phone1}}{%endif%}{% if LOCATION.phone2 != empty %}, {{LOCATION.phone2}}{%endif%}{% if LOCATION.fax != empty %}, &lt;strong&gt;FAX:&lt;/strong&gt; {{LOCATION.fax}}{% endif %} &lt;br /&gt;
+	&lt;strong&gt;Contact:&lt;/strong&gt; {{CONTACT.first|capitalize}} {{CONTACT.last|capitalize}}&lt;br /&gt;
+	{% if CONTACT.phone != empty %}&lt;strong&gt;Phone:&lt;/strong&gt; {{CONTACT.phone}}{%endif%} {%if CONTACT.email != empty%}, &lt;strong&gt;Email:&lt;/strong&gt; {{CONTACT.email}}{%endif%} 
+&lt;/p&gt;
+       
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="consignee">
+        <template_type_id>3</template_type_id>
+        <label>Consignee</label>
+        <model></model>
+        <content>{% if order %}
+    {% assign CONSIGNEE = order.consignee %}
+{% elsif invoice %}
+    {% assign CONSIGNEE = invoice.order.consignee %}
+{% endif %}
+
+{% assign LOCATION = CONSIGNEE.location %}
+{% assign CONTACT = CONSIGNEE.account %}
+
+&lt;div class="box"&gt;
+    &lt;div class="hd"&gt;
+        &lt;h2&gt;Consignee&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class="bd"&gt;
+
+&lt;h3&gt;{{CONSIGNEE.company.name | capitalize}}&lt;/h3&gt;
+&lt;p class="address"&gt;
+	{{LOCATION.addr1}}{% if LOCATION.addr2 != empty%} {{LOCATION.addr2}}{% endif %} &lt;br /&gt;
+	{{LOCATION.city.name}}, {{LOCATION.region.iso}}, {{LOCATION.country.iso}}{% if LOCATION.zip %}, {{LOCATION.zip|upcase}}{% endif %}&lt;br /&gt;
+	{% if LOCATION.phone1 != empty %}&lt;strong&gt;Phone:&lt;/strong&gt; {{LOCATION.phone1}}{%endif%}{% if LOCATION.phone2 != empty %}, {{LOCATION.phone2}}{%endif%}{% if LOCATION.fax != empty %}, &lt;strong&gt;FAX:&lt;/strong&gt; {{LOCATION.fax}}&lt;br /&gt;{% endif %} 
+	&lt;strong&gt;Contact:&lt;/strong&gt; {{CONTACT.first|capitalize}} {{CONTACT.last|capitalize}}&lt;br /&gt;
+	{% if CONTACT.phone != empty %}&lt;strong&gt;Phone:&lt;/strong&gt; {{CONTACT.phone}}{%endif%} {%if CONTACT.email != empty%}, &lt;strong&gt;Email:&lt;/strong&gt; {{CONTACT.email}}{%endif%} 
+&lt;/p&gt;
+       
+    &lt;/div&gt;
+&lt;/div&gt;</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="pickup_delivery_dates">
+        <template_type_id>3</template_type_id>
+        <label>Pickup / Delivery dates</label>
+        <model>Order</model>
+        <content>{% assign SHIPPER = order.shipper %}
+{% assign CONSIGNEE = order.consignee %}
+
+&lt;strong&gt;Pickup date:&lt;/strong&gt; {{SHIPPER.date_out | date: "%x"}}&lt;br /&gt;
+&lt;strong&gt;Delivery date:&lt;/strong&gt; {{CONSIGNEE.date_in | date: "%x"}}
+</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="fax">
+        <template_type_id>1</template_type_id>
+        <label>Fax</label>
+        <model></model>
+        <content>{% assign LOCATION = corp.head_office %}
+
+&lt;html lang="en"&gt;    
+    &lt;body style="padding:0;margin:0;background:#fff;"&gt;
+
+&lt;table width="99%"&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table&gt;
+                &lt;tr&gt;
+                    &lt;td style="width:auto;"&gt;&lt;img id="logo" src="http://{{host}}/images/logo_small.gif" /&gt;&lt;/td&gt;
+                    &lt;td style="width:99%;padding:0;margin:0;"&gt;
+                        &lt;h2 style="margin-bottom:2px;"&gt;&lt;i&gt;{{corp.name|capitalize}}&lt;/i&gt;.&lt;/h2&gt;
+                        &lt;address&gt;
+                        &lt;small&gt;
+                            {{LOCATION.addr1}}&lt;br /&gt;
+                            {{LOCATION.city.name|capitalize}}, {{LOCATION.region.name|capitalize}}, {{LOCATION.zip}}&lt;br /&gt;
+                            {{LOCATION.phone1}}, FAX: {{corp.fax}}
+                       &lt;/small&gt;
+                       &lt;/address&gt;         
+                    &lt;/td&gt;
+                    {% if order || invoice %}
+                    &lt;td style="width:auto;white-space:nowrap" nowrap="true"&gt;
+                        {% include 'order_details' %}
+                    &lt;/td&gt;
+                    {% endif %}
+                &lt;/tr&gt;
+           &lt;/table&gt;          
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            {{content_for_layout}}
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+        </content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="email">
+        <template_type_id>1</template_type_id>
+        <label>Email</label>
+        <model></model>
+        <content>{% assign LOCATION = corp.head_office %}
+
+&lt;html lang="en"&gt;    
+
+&lt;head&gt;
+            &lt;link href="/stylesheets/reset-fonts-grids.css" media="screen" rel="stylesheet" type="text/css" /&gt;
+    &lt;/head&gt;
+    &lt;body style="padding:0;margin:0;background:#fff;"&gt;
+
+
+&lt;div class="yui-gb"&gt; 
+    &lt;div class="yui-u first"&gt;  
+        &lt;h1 class="foo"&gt;First&lt;/h1&gt;                       
+    &lt;/div&gt; 
+    &lt;div class="yui-u"&gt; 
+        &lt;h1&gt;Second&lt;/h1&gt;                 
+    &lt;/div&gt; 
+    &lt;div class="yui-u"&gt; 
+        &lt;h1&gt;Third&lt;/h1&gt;    	
+    &lt;/div&gt; 
+&lt;/div&gt;         
+
+&lt;table width="99%" border="0"&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table&gt;
+                &lt;tr&gt;
+                    &lt;td style="width:auto;"&gt;&lt;img id="logo" src="http://{{host}}/images/logo_small.gif" /&gt;&lt;/td&gt;
+                    &lt;td style="width:99%;padding:0;margin:0;"&gt;
+                        &lt;h2 style="margin-bottom:2px;"&gt;&lt;i&gt;{{corp.name|capitalize}}&lt;/i&gt;.&lt;/h2&gt;
+                        &lt;address&gt;
+                        &lt;small&gt;
+                            {{LOCATION.addr1}}&lt;br /&gt;
+                            {{LOCATION.city.name|capitalize}}, {{LOCATION.region.name|capitalize}}, {{LOCATION.zip}}&lt;br /&gt;
+                            {{LOCATION.phone1}}, FAX: {{corp.fax}}
+                       &lt;/small&gt;
+                       &lt;/address&gt;         
+                    &lt;/td&gt;
+                    {% if order || invoice %}
+                    &lt;td style="width:auto;white-space:nowrap" nowrap="true"&gt;
+                        {% include 'order_details' %}
+                    &lt;/td&gt;
+                    {% endif %}
+                &lt;/tr&gt;
+           &lt;/table&gt;          
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            {{content_for_layout}}
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+        </content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="shipment">
+        <template_type_id>3</template_type_id>
+        <label>Shipment</label>
+        <model></model>
+        <content>{% if order %} 
+    {% assign ORDER = order %}
+{% elsif invoice %} 
+    {% assign ORDER = invoice.order %}
+{% endif %}
+
+&lt;div class="grid-viewport order-shipment"&gt;                                               
+    &lt;table class="grid properties"&gt;
+    	&lt;tr&gt;
+    		&lt;th&gt;Pieces&lt;/th&gt;
+    		&lt;td&gt;{{ORDER.pieces}}&lt;/td&gt;
+    	&lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Commodity:&lt;/th&gt;
+            &lt;td&gt;{{ORDER.commodity.name}}&lt;/td&gt;
+        &lt;/tr&gt;
+        
+        &lt;tr&gt;
+        	&lt;th&gt;Chargable weight:&lt;/th&gt;
+        	&lt;td&gt;{{ORDER.chargeable_weight}}&lt;/td&gt;
+      	&lt;/tr&gt;
+      	&lt;tr&gt;
+      		&lt;th&gt;Declared value:&lt;/th&gt;
+      		&lt;td&gt;{{ORDER.declared_value}}&lt;/td&gt;
+      	&lt;/tr&gt;
+      	
+        
+    &lt;/table&gt;                        
+&lt;/div&gt;
+</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="items">
+        <template_type_id>3</template_type_id>
+        <label>Items</label>
+        <model></model>
+        <content>{% if order %}
+    {% assign ORDER = order %}
+{% elsif invoice %}
+    {% assign ORDER = invoice.order %}
+{% endif %}
+
+&lt;div id="order-items" class="box-plain"&gt;
+	&lt;div class="hd"&gt;&lt;h2&gt;Shipment&lt;/h2&gt;&lt;/div&gt;
+	&lt;div class="bd"&gt;
+		&lt;div class="grid-viewport order-items"&gt;
+		    &lt;table class="grid" style="width:100%"&gt;
+		    	&lt;tr class="grid-hd-row"&gt;
+		            &lt;td class="grid-hd grid-cell grid-td-description grid-cell-first"&gt;                            
+		                &lt;div style="" unselectable="on" class="grid-hd-inner grid-hd-description"&gt;
+		                    Pieces
+		                &lt;/div&gt;                                                                                        
+		            &lt;/td&gt;  
+		            &lt;td class="grid-hd grid-cell grid-td-description grid-cell-1"&gt;                            
+		                &lt;div style="" unselectable="on" class="grid-hd-inner grid-hd-description"&gt;
+		                    Description
+		                &lt;/div&gt;                                                                                        
+		            &lt;/td&gt;   
+		            &lt;td class="grid-hd grid-cell grid-td-description grid-cell-2"&gt;                            
+		                &lt;div style="" unselectable="on" class="grid-hd-inner grid-hd-description"&gt;
+		                    Length
+		                &lt;/div&gt;                                                                                        
+		            &lt;/td&gt;                        
+		            &lt;td class="grid-hd grid-cell grid-td-description grid-cell-3"&gt;                            
+		                &lt;div style="" unselectable="on" class="grid-hd-inner grid-hd-description"&gt;
+		                    Width
+		                &lt;/div&gt;                                                                                        
+		            &lt;/td&gt;   
+		            &lt;td class="grid-hd grid-cell grid-td-description grid-cell-last"&gt;                            
+		                &lt;div style="" unselectable="on" class="grid-hd-inner grid-hd-description"&gt;
+		                    Height
+		                &lt;/div&gt;                                                                                        
+		            &lt;/td&gt;                        
+		        &lt;/tr&gt;                    
+		     	                     
+		{% for i in ORDER.items %}
+				&lt;tr class="grid-row grid-row-{{forloop.index | even_or_odd}}"&gt;
+				    &lt;td tabindex="0" class="grid-col grid-cell grid-td-description grid-cell-first"&gt;
+				        &lt;div unselectable="on" class="grid-cell-inner grid-col-description grid-col-pieces"&gt;
+				            {{i.pieces}}
+				        &lt;/div&gt;
+				    &lt;/td&gt;    
+				    &lt;td tabindex="0" class="grid-col grid-col-1 grid-cell grid-td-description"&gt;
+				        &lt;div unselectable="on" class="grid-cell-inner grid-col-description"&gt;
+				            &amp;nbsp;
+				        &lt;/div&gt;
+				    &lt;/td&gt;
+				    &lt;td tabindex="0" class="grid-col grid-col-2 grid-cell grid-td-description"&gt;
+				        &lt;div unselectable="on" class="grid-cell-inner grid-col-length"&gt;
+				            {{i.length}}
+				        &lt;/div&gt;
+				    &lt;/td&gt;
+				    &lt;td tabindex="0" class="grid-col grid-col-3 grid-cell grid-td-description"&gt;
+				        &lt;div unselectable="on" class="grid-cell-inner grid-col-width"&gt;
+				            {{i.width}}
+				        &lt;/div&gt;
+				    &lt;/td&gt;
+				                        
+				    &lt;td tabindex="0" class="grid-col grid-cell grid-td-description grid-cell-last"&gt;
+				        &lt;div unselectable="on" class="grid-cell-inner grid-col-height"&gt;
+				            {{i.height}}
+				        &lt;/div&gt;
+				    &lt;/td&gt;
+				&lt;/tr&gt;
+				     
+		{% endfor %}   
+		
+				&lt;tr class="grid-row grid-row-last"&gt;
+				    &lt;td tabindex="0" class="grid-col grid-cell grid-td-description grid-cell-first"&gt;
+				        &lt;div unselectable="on" class="grid-cell-inner grid-col-description grid-col-pieces"&gt;
+				            {{ORDER.pieces}}
+				        &lt;/div&gt;
+				    &lt;/td&gt;    
+				    &lt;td tabindex="0" class="grid-col grid-col-1 grid-cell grid-td-description"&gt;
+				        &lt;div unselectable="on" class="grid-cell-inner grid-col-description"&gt;
+				            &amp;nbsp;
+				        &lt;/div&gt;
+				    &lt;/td&gt;
+				    &lt;td tabindex="0" class="grid-col grid-col-2 grid-cell grid-td-description"&gt;
+				        &lt;div unselectable="on" class="grid-cell-inner grid-col-length"&gt;
+				            {{ORDER.total_length}}
+				        &lt;/div&gt;
+				    &lt;/td&gt;
+				    &lt;td tabindex="0" class="grid-col grid-col-3 grid-cell grid-td-description"&gt;
+				        &lt;div unselectable="on" class="grid-cell-inner grid-col-width"&gt;
+				            {{ORDER.total_width}}
+				        &lt;/div&gt;
+				    &lt;/td&gt;
+				                        
+				    &lt;td tabindex="0" class="grid-col grid-cell grid-td-description grid-cell-last"&gt;
+				        &lt;div unselectable="on" class="grid-cell-inner grid-col-height"&gt;
+				            {{ORDER.total_height}}
+				        &lt;/div&gt;
+				    &lt;/td&gt;
+				&lt;/tr&gt;	
+			 &lt;/table&gt;   
+		 &lt;/div&gt;
+ 	&lt;/div&gt;
+ &lt;/div&gt;</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="tsa_form">
+        <template_type_id>3</template_type_id>
+        <label>TSA Form</label>
+        <model>Order</model>
+        <content>       
+&lt;div id="tsa-form-corp" class="box-plain tsa-form"&gt;
+    &lt;div class="hd"&gt;
+        &lt;h2&gt;{{corp.name|capitalize}}&lt;/h2&gt;    
+        
+    &lt;/div&gt;
+    &lt;div class="bd"&gt;            
+        &lt;table class="form"&gt;
+            &lt;tr&gt;
+                &lt;th class="col-first"&gt;
+                     Signature: 
+                &lt;/th&gt;
+                &lt;td class="col-1"&gt;
+                    &lt;p&gt;&lt;span class="x"&gt;x&lt;/span&gt;&lt;/p&gt;
+                &lt;/td&gt;
+                &lt;th class="col-2"&gt;
+                    Date:
+                &lt;/th&gt;
+                &lt;td class="col-last"&gt;
+                    &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+                &lt;/td&gt;                            
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th class="col-first"&gt;
+                     Name: 
+                &lt;/th&gt;
+                &lt;td colspan="3" class="col-last"&gt;
+                    &lt;p&gt;{{order.created_by.first|upcase}} {{order.created_by.last|upcase}}&lt;/p&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+
+            &lt;tr&gt;
+                &lt;th class="col-first"&gt;
+                     Shipments under 16 ounces (453.6 grams):
+                &lt;/th&gt;
+                &lt;td colspan="3"class="col-last"&gt;
+                    &lt;p&gt;&amp;nbsp;&lt;/p&gt;   
+                &lt;/td&gt;
+            &lt;/tr&gt;
+
+        &lt;/table&gt;
+    &lt;/div&gt;  
+&lt;/div&gt;
+
+&lt;div id="tsa-form-carrier" class="box-plain tsa-form"&gt;
+    &lt;div class="hd"&gt;&lt;h2&gt;Accepting Carrier Representative&lt;/h2&gt;&lt;/div&gt;
+    &lt;div class="bd"&gt;        
+        &lt;table class="form"&gt;
+            &lt;tr&gt;
+                &lt;th class="col-first"&gt;Carrier Name:&lt;/th&gt; 
+                &lt;td class="col-last" colspan="3"&gt;&lt;p&gt;{{order.children.first.carrier.company.name|upcase}}&lt;/p&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th class="col-first"&gt;Signature:&lt;/th&gt; 
+                &lt;td class="col-last" colspan="3"&gt;&lt;p&gt;&lt;span class="x"&gt;x&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;                                                             
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th class="col-first"&gt;Name:&lt;/th&gt; 
+                &lt;td class="col-1"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;                   
+                &lt;th class="col-2"&gt;ID Number:&lt;/th&gt;
+                &lt;td class="col-last"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;                         
+            &lt;/tr&gt;
+        &lt;/trable&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="billing">
+        <template_type_id>3</template_type_id>
+        <label>Billing</label>
+        <model></model>
+        <content>{% if order %}
+    {% assign BILL_TO = order.bill_to %}
+{% elsif invoice.order %}
+    {% assign BILL_TO = invoice.order.bill_to %}
+{% endif %}
+{% assign LOCATION = BILL_TO.billing_address %}
+{% assign CONTACT = BILL_TO.accountant %}
+ 
+
+&lt;div class="box"&gt;
+    &lt;div class="hd"&gt;
+        &lt;h2&gt;Billing&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class="bd"&gt;
+
+&lt;h3&gt;{{BILL_TO.name | capitalize}}&lt;/h3&gt;
+&lt;p class="address"&gt;
+	{{LOCATION.addr1}}&lt;br /&gt;
+	{% if LOCATION.addr2 != empty%} {{LOCATION.addr2}}&lt;br /&gt; {% endif %} 
+	{{LOCATION.city.name}}, {{LOCATION.region.iso}}, {{LOCATION.country.iso}}{% if LOCATION.zip != empty %}, {{LOCATION.zip|upcase}}{% endif %}&lt;br /&gt;
+	{% if LOCATION.phone1 != empty %}&lt;strong&gt;Phone:&lt;/strong&gt; {{LOCATION.phone1}}{%endif%}{% if LOCATION.phone2 != empty %}, {{LOCATION.phone2}}{%endif%}{% if LOCATION.fax != empty %}, &lt;strong&gt;FAX:&lt;/strong&gt; {{LOCATION.fax}}{% endif %} &lt;br /&gt;
+	&lt;strong&gt;Contact:&lt;/strong&gt; {{CONTACT.first|capitalize}} {{CONTACT.last|capitalize}}&lt;br /&gt;
+	{% if CONTACT.phone != empty %}&lt;strong&gt;Phone:&lt;/strong&gt; {{CONTACT.phone}}{%endif%} {%if CONTACT.email != empty%}, &lt;strong&gt;Email:&lt;/strong&gt; {{CONTACT.email}}{%endif%} 
+&lt;/p&gt;
+       
+    &lt;/div&gt;
+&lt;/div&gt;</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="invoice_line_items">
+        <template_type_id>3</template_type_id>
+        <label>Invoice Line-items</label>
+        <model></model>
+        <content>&lt;div class="box-plain"&gt;
+    &lt;div class="hd"&gt;&lt;h2&gt;Total Cost&lt;/h2&gt;&lt;/div&gt;
+    &lt;div class="bd" style="padding:0;"&gt;
+
+&lt;div class="grid-viewport"&gt;
+    &lt;table class="grid"&gt;
+    	&lt;tr class="grid-hd-row"&gt;
+            &lt;td class="grid-hd grid-cell grid-td-description grid-cell-first" style="width:90%"&gt;                            
+                &lt;div style="" unselectable="on" class="grid-hd-inner grid-hd-description"&gt;
+                    Description
+                &lt;/div&gt;                                                                                        
+            &lt;/td&gt;                        
+            &lt;td class="grid-hd grid-cell grid-td-description grid-cell-last" style="width:10%"&gt;                            
+                &lt;div style="" unselectable="on" class="grid-hd-inner grid-hd-description"&gt;
+                    Cost
+                &lt;/div&gt;                                                                                        
+            &lt;/td&gt;                        
+        &lt;/tr&gt;                    
+     	        
+        {% for i in invoice.items %}                 
+        &lt;tr class="grid-row grid-row-{{forloop.index|even_or_odd}}"&gt;
+            &lt;td tabindex="0" class="grid-col grid-cell grid-td-description grid-cell-first"&gt;
+                &lt;div unselectable="on" class="grid-cell-inner grid-col-description"&gt;
+                    {{i.name}}
+                &lt;/div&gt;
+            &lt;/td&gt;                        
+            &lt;td tabindex="0" class="grid-col grid-cell grid-td-description grid-cell-last"&gt;
+                &lt;div unselectable="on" class="grid-cell-inner grid-col-cost"&gt;
+                    ${{i.cost}}
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+		{% endfor %}  
+        
+        &lt;tr class="grid-row grid-row-last"&gt;
+            &lt;td tabindex="0" class="grid-col grid-cell grid-td-description grid-cell-first" style="text-align:right;"&gt;
+                &lt;div unselectable="on" class="grid-cell-inner grid-col-description"&gt;
+                    Amount due:
+                &lt;/div&gt;
+            &lt;/td&gt;                        
+            &lt;td tabindex="0" class="grid-col grid-cell grid-td-description grid-cell-last"&gt;
+                &lt;div unselectable="on" class="grid-cell-inner grid-col-cost"&gt;
+                    ${{invoice.total}}
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+                                                                                         
+    &lt;/table&gt;
+    &lt;/div&gt;
+
+    &lt;/div&gt;
+  
+&lt;/div&gt;</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="pickup_instructions">
+        <template_type_id>3</template_type_id>
+        <label>Pickup Instructions</label>
+        <model></model>
+        <content>{% if order.pickup_locations.size %}
+&lt;strong&gt;Multiple Pickup Locations:&lt;/strong&gt;
+    &lt;ul style="margin: 0pt;"&gt;  
+    {% for location in order.pickup_locations %}
+        &lt;li&gt;&lt;address&gt;&lt;small&gt;
+        Pick up &lt;strong&gt;{{location.count}}&lt;/strong&gt; items from {{location.location}}&lt;br&gt; 
+        {% if location.location != 'SHIPPER'g %}
+            {{location.address1}}
+            {% if location.address2 != empty %}, {{location.address2}}{% endif %}&lt;br&gt;
+            {{order.shipper.company.city.name}}, {{order.shipper.company.region.iso}}, {{order.shipper.company.country.iso}}, {{location.zip}}&lt;br&gt;
+        {% endif %}            
+        &lt;/small&gt;&lt;/address&gt;&lt;/li&gt;
+    {% endfor %}
+    &lt;/ul&gt;
+{% endif %}
+
+{% assign SHIPPER = order.shipper %}
+
+&lt;strong&gt;Pickup instructions:&lt;/strong&gt; {{SHIPPER.date_in | date: "%x"}} between {{SHIPPER.date_in | date: "%H:%M"}} and {{SHIPPER.date_out | date: "%H:%M"}}. {{SHIPPER.attn}}
+
+</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="delivery_instructions">
+        <template_type_id>3</template_type_id>
+        <label>Delivery Instructions</label>
+        <model></model>
+        <content>{% assign CONSIGNEE = order.consignee %}
+
+{% if CONSIGNEE %}
+    &lt;strong&gt;Delivery instructions:&lt;/strong&gt; {{CONSIGNEE.date_in | date: "%x"}} between {{CONSIGNEE.date_in | date: "%H:%M"}} and {{CONSIGNEE.date_out | date: "%H:%M"}}. {{CONSIGNEE.attn}}
+{% else %}
+    &lt;h1 style="color: rgb(204, 0, 0);"&gt;WARNING!&lt;/h1&gt;
+    &lt;h2&gt;This order has no consignee&lt;/h2&gt;
+{% endif %}
+
+</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="delivery_agent">
+        <template_type_id>3</template_type_id>
+        <label>Delivery Agent</label>
+        <model></model>
+        <content>{% if order.children.size &gt; 0 %}
+
+    {% assign AGENT = order.delivery_agent %}
+    {% assign LOCATION = AGENT.location %}     
+    {% assign CONTACT = AGENT.account %}
+&lt;div class="box"&gt;
+    &lt;div class="hd"&gt;
+        &lt;h2&gt;Dispatched-to&lt;/h2&gt;             
+    &lt;/div&gt;
+    &lt;div class="bd"&gt;
+        &lt;h3&gt;{{AGENT.company.name | capitalize}}&lt;/h3&gt;
+        &lt;p class="address"&gt;        
+            {% if LOCATION.addr1 != empty%}{{LOCATION.addr1}}&lt;br&gt;{%endif%}
+            {% if LOCATION.addr2 != empty%} {{LOCATION.addr2}}&lt;br&gt;{% endif %}                                                
+            {{LOCATION.city.name}}, {{LOCATION.region.iso}}, {{LOCATION.country.iso}}, {{LOCATION.zip | upcase}}&lt;br&gt;                        
+            {% if LOCATION.phone1 != empty %}&lt;strong&gt;Phone:&lt;/strong&gt; {{LOCATION.phone1}}{%endif%}{% if LOCATION.phone2 != empty %}, {{LOCATION.phone2}}{%endif%}{% if LOCATION.fax != empty %}, &lt;strong&gt;FAX:&lt;/strong&gt; {{LOCATION.fax}}&lt;br&gt;{% endif %}
+           {% if CONTACT %}
+            &lt;strong&gt;Contact:&lt;/strong&gt; {{CONTACT.first|capitalize}} {{CONTACT.last|capitalize}}&lt;br&gt;
+            {% if CONTACT.phone != empty %}&lt;strong&gt;Phone:&lt;/strong&gt; {{CONTACT.phone}}{%endif%} {%if CONTACT.email != empty%}, &lt;strong&gt;Email:&lt;/strong&gt; {{CONTACT.email}}{%endif%}
+            {% endif %}                       
+        &lt;/p&gt;       
+
+    &lt;/div&gt;
+&lt;/div&gt;     
+
+{% else %}
+    &lt;h1 style="color:#c00"&gt;WARNING!&lt;/h1&gt;  
+    &lt;h2&gt;This order has not been dispatched!&lt;/h2&gt;
+{% endif %}
+     </content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="routing">
+        <template_type_id>3</template_type_id>
+        <label>Routing</label>
+        <model></model>
+        <content>{% if order.children.size &amp;gt; 0 %}    
+    {% assign SHIPPER = order.shipper %}
+    {% assign CONSIGNEE = order.consignee %} 
+    {% assign CARRIER = order.routes.first %}
+    {% assign LOCATION = CARRIER.location %}    
+
+&lt;div class="box order-routing"&gt;
+    &lt;div class="hd"&gt;
+        &lt;h2&gt;Routing&lt;/h2&gt;
+    &lt;/div&gt;
+        
+    &lt;div class="bd"&gt;
+        {% for route in order.children %}
+            {% assign CARRIER = route.carrier %}
+            {% assign LOCATION = CARRIER.location %}
+            
+        &lt;div class="route{%if forloop.last %} route-last{%endif%}"&gt;
+            &lt;h3&gt;{{forloop.index}}. {{CARRIER.company.name|capitalize}} 
+            {% if route.type.name != 'local' %}
+                ( {{route.shipper.location.airport.iso}}-&gt; {{route.consignee.location.airport.iso}} )
+            {% else %}
+                (Local {{LOCATION.airport.iso}})
+            {% endif %}
+            &lt;/h3&gt;
+            &lt;p class="address"&gt;                  
+                {% if LOCATION.phone1 != empty %}&lt;strong&gt;Phone:&lt;/strong&gt; {{LOCATION.phone1}}{%endif%}{% if LOCATION.phone2 != empty %}, {{LOCATION.phone2}}{%endif%}{% if LOCATION.fax != empty %}, &lt;strong&gt;FAX:&lt;/strong&gt; {{LOCATION.fax}}{%endif%}                                              
+            &lt;/p&gt;
+            {% if route.type.name != 'local' %}
+            &lt;p&gt;
+                &lt;strong&gt;Depature:&lt;/strong&gt; {{CARRIER.date_in|date: "%x %H:%M"}}&lt;br&gt;                
+                &lt;strong&gt;Arrival:&lt;/strong&gt; {{CARRIER.date_out|date: "%x %H:%M"}}                
+            &lt;/p&gt;
+                {% if CARRIER.company.is_air_carrier %}            
+            &lt;p&gt;                
+                &lt;strong&gt;Flight info:&lt;/strong&gt;{{CARRIER.attn}}                
+            &lt;/p&gt;
+                {% endif %}
+            {% endif %}
+                
+        &lt;/div&gt;
+        {% endfor %}
+    &lt;/div&gt;
+&lt;/div&gt;
+      
+    
+{% else %}
+
+    &lt;h1 style="color: rgb(204, 0, 0);"&gt;WARNING!&lt;/h1&gt;  
+    &lt;h2&gt;This order has not been dispatched!&lt;/h2&gt;
+    
+{% endif %}
+     
+</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="charges">
+        <template_type_id>3</template_type_id>
+        <label>Charges</label>
+        <model></model>
+        <content>&lt;div id="order-costs" class="box-plain order-costs"&gt;
+    &lt;div class="hd"&gt;&lt;h2&gt;Costs&lt;/h2&gt;&lt;/div&gt;
+    &lt;div class="bd" style="padding:0;"&gt;
+
+&lt;div class="grid-viewport" style="margin:0"&gt;
+    &lt;table class="grid" style="width:100%"&gt;
+    	&lt;tr class="grid-hd-row"&gt;
+            &lt;td class="grid-hd grid-cell grid-td-description grid-cell-first"&gt;                            
+                &lt;div style="" unselectable="on" class="grid-hd-inner grid-hd-when"&gt;
+                    Date
+                &lt;/div&gt;                                                                                        
+            &lt;/td&gt;  
+            &lt;td class="grid-hd grid-cell grid-td-description grid-cell-1"&gt;                            
+                &lt;div style="" unselectable="on" class="grid-hd-inner grid-hd-name"&gt;
+                    Description
+                &lt;/div&gt;                                                                                        
+            &lt;/td&gt;                            
+            &lt;td class="grid-hd grid-cell grid-td-description grid-cell-last"&gt;                            
+                &lt;div style="" unselectable="on" class="grid-hd-inner grid-hd-name"&gt;
+                    Cost
+                &lt;/div&gt;                                                                                        
+            &lt;/td&gt;                        
+        &lt;/tr&gt;                    
+     	        
+{% for cost in order.costs %}
+        &lt;tr class="grid-row grid-row-{{forloop.index | even_or_odd}}"&gt;
+            &lt;td tabindex="0" class="grid-col grid-cell grid-td-description grid-cell-first"&gt;
+                &lt;div unselectable="on" class="grid-cell-inner grid-col-when"&gt;
+                    {{cost.when}}
+                &lt;/div&gt;
+            &lt;/td&gt;   
+            &lt;td tabindex="0" class="grid-col grid-cell grid-td-description grid-cell-1"&gt;
+                &lt;div unselectable="on" class="grid-cell-inner grid-col-name"&gt;
+                    {{cost.type.name}}
+                &lt;/div&gt;
+            &lt;/td&gt;                        
+            &lt;td tabindex="0" class="grid-col grid-cell grid-td-description grid-cell-last"&gt;
+                &lt;div unselectable="on" class="grid-cell-inner grid-col-cost"&gt;
+                    ${{cost.cost}}
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;	
+{% endfor %}
+        &lt;tr class="grid-row grid-row-last"&gt;            
+            &lt;td tabindex="0" class="grid-col grid-cell grid-td-description grid-cell-first" colspan="2"&gt;
+                &lt;div unselectable="on" class="grid-cell-inner grid-col-total"&gt;
+                    Total cost:
+                &lt;/div&gt;
+            &lt;/td&gt;                        
+            &lt;td tabindex="0" class="grid-col grid-cell grid-td-description grid-cell-last" style="text-align: right;"&gt;
+                &lt;div unselectable="on" class="grid-cell-inner grid-col-cost"&gt;
+                    ${{order.total_entity_cost}}
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;	
+    &lt;/table&gt;
+    &lt;/div&gt;
+
+    &lt;/div&gt;
+  
+&lt;/div&gt;
+
+</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="pod">
+        <template_type_id>3</template_type_id>
+        <label>Proof of Delivery</label>
+        <model></model>
+        <content>
+{% if order.pod_date &amp;&amp; order.pod_name %}
+    &lt;div id="pod" class="box-plain"&gt;
+        &lt;div class="hd"&gt;&lt;h2&gt;Proof of Delivery&lt;/h2&gt;&lt;/div&gt;
+        &lt;div class="bd"&gt;
+            &lt;div class="grid-viewport"&gt;
+                &lt;table id="proof-of-delivery" class="grid properties"&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Name:&lt;/th&gt;
+                        &lt;td&gt;{{order.pod_name}}&lt;/td&gt;                            
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Date:&lt;/th&gt;
+                        &lt;td&gt;{{order.pod_date | date:"%B %d, %Y, %H:%M"}}&lt;/td&gt;                                                        
+                    &lt;/tr&gt;    
+                &lt;/table&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+     &lt;/div&gt;    
+{% else %}
+    &lt;h1 style="color: rgb(204, 0, 0);"&gt;WARNING!&lt;/h1&gt;  
+    &lt;h2&gt;Proof-of-delivery not defined.&lt;/h2&gt;
+{% endif %}
+</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="quote">
+        <template_type_id>2</template_type_id>
+        <label>Order Quote</label>
+        <model>Order</model>
+        <content>&lt;h1 style="margin: 0pt 0pt 5pt; text-align: center;"&gt;Order Quote&lt;/h1&gt;               
+&lt;em&gt;
+    Thank you for allowing us the chance to gain your business, etc, etc, etc...
+    &lt;h3&gt;{{order.created_by.first|capitalize}} {{order.created_by.last|capitalize}}&lt;/h3&gt;
+&lt;/em&gt;
+&lt;/em&gt;
+    &lt;!-- start --&gt;
+    &lt;table width="100%"&gt;
+        &lt;tbody&gt;&lt;tr style=""&gt;
+            &lt;td valign="top" width="49%"&gt;
+                &lt;fieldset&gt;
+                    &lt;legend style="font-weight: bold; font-size: 14pt;"&gt;Shipper&lt;/legend&gt;
+                    {% include 'shipper' %}
+                &lt;/fieldset&gt;                  
+
+                &lt;fieldset&gt;
+                    &lt;legend style="font-weight: bold; font-size: 14pt;"&gt;Billing&lt;/legend&gt;
+                    {% include 'billing' %}
+                &lt;/fieldset&gt;                                   
+
+            &lt;/td&gt;
+            &lt;td valign="top" width="49%"&gt;
+                &lt;fieldset&gt;
+                    &lt;legend style="font-weight: bold; font-size: 14pt;"&gt;Consignee&lt;/legend&gt;
+                    {% include 'consignee' %}
+                &lt;/fieldset&gt;                 
+
+                &lt;fieldset&gt;
+                    &lt;legend style="font-weight: bold; font-size: 14pt;"&gt;Description of Charges&lt;/legend&gt;
+                    {% include 'charges' %}  
+                &lt;/fieldset&gt;                     
+            &lt;/td&gt;
+        &lt;/tr&gt;        
+        &lt;tr&gt;
+            &lt;td colspan="2"&gt;
+                &lt;fieldset&gt;              
+                    &lt;legend style="font-weight: bold; font-size: 14pt;"&gt;Shipment&lt;/legend&gt;                                       
+                    {% include 'shipment' %}
+                    {% include 'items' %}
+                &lt;/fieldset&gt;  
+            &lt;/td&gt;
+        &lt;/tr&gt;
+
+
+    &lt;/tbody&gt;&lt;/table&gt;</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="TSA_certificate">
+        <template_type_id>2</template_type_id>
+        <label>TSA Certificate</label>
+        <model>Order</model>
+        <content>&lt;p class="document-blurb" style="font-size: 14pt;"&gt;
+                &lt;strong&gt;{{corp.name}}&lt;/strong&gt; is in compliance with its TSA-approved security program and all
+                applicable security directives.  &lt;strong&gt;{{corp.company.name}}&lt;/strong&gt; has been assigned the number &lt;strong&gt;{{corp.iaccert_number}}&lt;/strong&gt;
+                by the &lt;strong&gt;TSA&lt;/strong&gt;.  The expiration date is {{corp.iaccert_expiration}}.  All cargo is from a &lt;strong&gt;Known Shipper&lt;/strong&gt;
+                or an unknown shipper in accordance with TSA requirements or from an entity operating under a TSA-approved or TSA-accepted security
+                program.  This certification is (i) made with the understanding that any intentional falsification may be subject to both civil and
+                criminal penalties under 49 CFG 1540.103 and Title 18 USC 1001, and (ii) subject to TSA record-keeping requirements approved by TSA.
+&lt;/p&gt;
+
+{% include 'tsa_form' %}
+</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="TSA_unknown_shipper_declaration">
+        <template_type_id>2</template_type_id>
+        <label>TSA Unknown Shipper Declaration</label>
+        <model>Order</model>
+        <content>&lt;p class="document-blurb" style="font-size: 14pt;"&gt;   
+    &lt;strong&gt;{{corp.name}}&lt;/strong&gt; is in compliance with its TSA-approved security program and all
+    applicable security directives.  &lt;strong&gt;{{corp.name}}&lt;/strong&gt; has been assigned the number &lt;strong&gt;{{corp.iaccert_number}}&lt;/strong&gt;
+    by the TSA.  The expiration date is {{corp.iaccert_expiration}}.  This shipment contains cargo originating
+    from an &lt;strong&gt;unknown shipper&lt;/strong&gt; not exempted by TSA.  This shipment must be transported on an &lt;strong style="border-bottom: 1px solid black;"&gt;ALL-CARGO AIRCRAFT ONLY&lt;/strong&gt;.
+    This certification is (i) made with the understanding that any intentional falsification may be subject to both civil and
+    criminal penalties under 49 CFG 1540.103 and Title 18 USC 1001, and (ii) subject to TSA record-keeping requirements approved by TSA        
+&lt;/p&gt;
+
+{% include 'tsa_form' %}
+</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="FCCOD_invoice">
+        <template_type_id>2</template_type_id>
+        <label>FCCOD Invoice</label>
+        <model>Order</model>
+        <content> &lt;div class="yui-g"&gt;
+     &lt;div class="yui-u first"&gt;
+         {% include 'shipper' %}
+         {% include 'billing' %}
+     &lt;/div&gt;
+     &lt;div class="yui-u"&gt;
+         {% include 'consignee' %}                  
+     &lt;/div&gt;
+&lt;/div&gt;
+{% include 'items' %}
+{% include 'charges' %}
+</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="order_details">
+        <template_type_id>3</template_type_id>
+        <label>Order Details</label>
+        <model>Order</model>
+        <content>{% if order %}
+    {% assign ORDER = order %}
+{% elsif invoice %}
+    {% assign ORDER = invoice.order %}
+{% endif %}
+
+&lt;div id="order-properties" class="box-plain grid-viewport"&gt;   
+    &lt;div class="hd"&gt;&lt;h2&gt;Order#: {{ORDER.bill_number}}&lt;/h2&gt;&lt;/div&gt;  
+    &lt;div class="bd"&gt;                                         
+        &lt;table class="grid properties"&gt;
+        	&lt;tr class="first"&gt;    	    
+    	    	&lt;th&gt;Date:&lt;/th&gt;
+                &lt;td&gt;{{'now' | date: "%x" }}&lt;/td&gt;
+            &lt;/tr&gt;                    
+    		&lt;tr&gt;
+    			&lt;th&gt;Service level:&lt;/th&gt;
+    			&lt;td&gt;{{ORDER.shipping_method.name}}&lt;/td&gt;
+    		&lt;/tr&gt;
+    		&lt;tr&gt;
+        		&lt;th&gt;Pieces&lt;/th&gt;
+        		&lt;td&gt;{{ORDER.pieces}}&lt;/td&gt;
+        	&lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Commodity:&lt;/th&gt;
+                &lt;td&gt;{{ORDER.commodity.name}}&lt;/td&gt;
+            &lt;/tr&gt;        
+            &lt;tr&gt;
+            	&lt;th&gt;Chargable weight:&lt;/th&gt;
+            	&lt;td&gt;{{ORDER.chargeable_weight}}&lt;/td&gt;
+          	&lt;/tr&gt;
+          	&lt;tr class="last"&gt;
+          		&lt;th&gt;Declared value:&lt;/th&gt;
+          		&lt;td&gt;{{ORDER.declared_value}}&lt;/td&gt;
+          	&lt;/tr&gt;
+        &lt;/table&gt;                        
+    &lt;/div&gt;
+&lt;/div&gt;</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="hwb_details">
+        <template_type_id>3</template_type_id>
+        <label>HWB Details</label>
+        <model>Order</model>
+        <content></content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="pickup_agent">
+        <template_type_id>3</template_type_id>
+        <label>Pickup Agent</label>
+        <model>Order</model>
+        <content>{% if order.children.size &gt; 0 %}
+
+    {% assign AGENT = order.pickup_agent %}
+    {% assign LOCATION = AGENT.location %}     
+    {% assign CONTACT = AGENT.account %}
+&lt;div class="box"&gt;
+    &lt;div class="hd"&gt;
+        &lt;h2&gt;Pickup&lt;/h2&gt;             
+    &lt;/div&gt;
+    &lt;div class="bd"&gt;
+        &lt;h3&gt;{{AGENT.company.name | capitalize}}&lt;/h3&gt;
+        &lt;p class="address"&gt;        
+            {% if LOCATION.addr1 != empty %}{{LOCATION.addr1}}{% if LOCATION.addr2 != empty %}, {{LOCATION.addr2}}{% endif %}&lt;br&gt;{% endif %}                                                            
+            {{LOCATION.city.name}}, {{LOCATION.region.iso}}, {{LOCATION.country.iso}}{% if LOCATION.zip != empty %}, {{LOCATION.zip | upcase}}{% endif %}&lt;br&gt;                        
+            {% if LOCATION.phone1 != empty %}&lt;strong&gt;Phone:&lt;/strong&gt; {{LOCATION.phone1}}{%endif%}{% if LOCATION.phone2 != empty %}, {{LOCATION.phone2}}{%endif%}{% if LOCATION.fax != empty %}, &lt;strong&gt;FAX:&lt;/strong&gt; {{LOCATION.fax}}&lt;br&gt;{% endif %}
+           {% if CONTACT %}
+            &lt;strong&gt;Contact:&lt;/strong&gt; {{CONTACT.first|capitalize}} {{CONTACT.last|capitalize}}&lt;br&gt;
+            {% if CONTACT.phone != empty %}&lt;strong&gt;Phone:&lt;/strong&gt; {{CONTACT.phone}}{%endif%} {%if CONTACT.email != empty%}, &lt;strong&gt;Email:&lt;/strong&gt; {{CONTACT.email}}{%endif%}
+            {% endif %}                       
+        &lt;/p&gt;       
+        
+    &lt;/div&gt;
+&lt;/div&gt;     
+
+{% else %}
+    &lt;h1 style="color:#c00"&gt;WARNING!&lt;/h1&gt;  
+    &lt;h2&gt;This order has not been dispatched!&lt;/h2&gt;
+{% endif %}
+     </content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="straight_bill_of_lading">
+        <template_type_id>2</template_type_id>
+        <label>Straight Bill of Lading</label>
+        <model>Order</model>
+        <content>&lt;p class="document-blurb"&gt;
+                Received, subject to the agreement betweent the &lt;strong&gt;Carrier&lt;/strong&gt; and &lt;strong&gt;{{corp.name|capitalize}}&lt;/strong&gt; in effect on the date
+                of shipment.  &lt;strong&gt;Carrier&lt;/strong&gt; agrees that {{corp.name|capitalize}} is the payer of the corresponding freight bill.  This Bill
+                of Lading is not subject to any tarrifs or classifications except as specially agreed-to in writing by {{corp.name|capitalize}}
+                and &lt;strong&gt;Carrier&lt;/strong&gt;
+
+&lt;/p&gt;     
+
+ &lt;div class="yui-g"&gt;
+     &lt;div class="yui-u first"&gt;
+         {% include 'shipper' %}
+         {% include 'billing' %}
+     &lt;/div&gt;
+     &lt;div class="yui-u"&gt;
+         {% include 'consignee' %}    
+&lt;div id="instructions" class="box-plain"&gt;
+    &lt;div class="hd"&gt;&lt;h2&gt;Instructions&lt;/h2&gt;&lt;/div&gt;
+    &lt;div class="bd"&gt;
+        &lt;p&gt;{% include 'pickup_instructions' %}&lt;/p&gt;
+        &lt;p&gt;{% include 'delivery_instructions' %}&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;              
+     &lt;/div&gt;
+&lt;/div&gt;
+
+{% include 'items' %}
+
+
+
+&lt;div class="box-plain"&gt;
+    &lt;div class="bd"&gt;             
+             &lt;p class="legalese"&gt;
+                    &lt;strong&gt;Shipper Certification:&lt;/strong&gt;&lt;em&gt;The Shipper certifies that the above named materials are properly classified, described,
+                    marked and labeled and are in proper condition for transport according to the applicable regulations of the 
+                    &lt;strong&gt;Department of Transporations&lt;/strong&gt;.&lt;/em&gt;
+&lt;/p&gt;
+
+&lt;table class="form shipper-driver-certification" width="100%"&gt;
+    &lt;tr&gt;
+        &lt;th class="col-first"&gt;
+             Shipper's Signature: 
+        &lt;/th&gt;
+        &lt;td class="col-1"&gt;
+             &lt;p&gt;x&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;th class="col-2"&gt;
+            Date:
+        &lt;/th&gt;
+        &lt;td class="col-3"&gt;
+             &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;th class="col-4"&gt;
+            Trailer #
+        &lt;/th&gt;
+        &lt;td class="col-5 col-last"&gt;
+             &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+
+&lt;tr&gt;
+                        &lt;th class="col-first"&gt;
+                             Driver Signature: 
+                        &lt;/th&gt;
+                        &lt;td class="col-1"&gt;
+             &lt;p&gt;x&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;th class="col-2"&gt;
+                            Date:
+                        &lt;/th&gt;
+                        &lt;td class="col-3"&gt;
+             &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;th class="col-4"&gt;
+                            Seal #
+                        &lt;/th&gt;
+                        &lt;td class="col-5 col-last"&gt;
+             &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;                  
+&lt;/table&gt;
+                                           
+ &lt;p class="legalese"&gt;&lt;strong&gt;Driver Certfication:&lt;/strong&gt;
+                &lt;em&gt;
+                    Carrier acknowledges receipt of packages in good order, condition and quality unless stated hereon.  Carrier certifies
+                    emergency response information and required placards were made available and/or carrier has the &lt;strong&gt;D.O.T.&lt;/strong&gt;
+                    emergency response guidebook or equivalent in the vehicle.    
+                &lt;/em&gt;&lt;/p&gt;
+                                        
+            &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class="box-attention"&gt;
+    &lt;div class="bd"&gt;
+    &lt;ul style="margin: 3pt;"&gt;
+                        &lt;li&gt;&lt;strong&gt;Any problems with order, Please call&lt;/strong&gt; {{corp.name|capitalize}} at {{corp.head_office.phone1}}&lt;/li&gt;
+                        &lt;li&gt;Mark with "X" to designate material as defined in Title 49 CFG&lt;/li&gt;
+                    &lt;/ul&gt;   
+    &lt;/div&gt;
+&lt;/div&gt;
+</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="invoice">
+        <template_type_id>2</template_type_id>
+        <label>Invoice</label>
+        <model>Invoice</model>
+        <content> &lt;div class="yui-g"&gt;
+     &lt;div class="yui-u first"&gt;
+         {% include 'shipper' %}
+         {% include 'billing' %}
+     &lt;/div&gt;
+     &lt;div class="yui-u"&gt;
+         {% include 'consignee' %}                  
+     &lt;/div&gt;
+&lt;/div&gt;
+{% include 'invoice_line_items' %}
+{% include 'items' %}
+
+</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="bill_of_lading_customer">
+        <template_type_id>2</template_type_id>
+        <label>Bill of Lading (Customer)</label>
+        <model>Order</model>
+        <content>{% for e in order.entities %}
+    {% if e.type.name == 'shipper' %} {% assign shipperr = e %} {% endif %}
+    {% if e.type.name == 'consignee' %} {% assign consigneee = e %} {% endif %}
+{% endfor %}
+
+ &lt;div class="yui-g"&gt;
+     &lt;div class="yui-u first"&gt;
+         {% include 'shipper' %}
+         {% include 'billing' %}
+     &lt;/div&gt;
+     &lt;div class="yui-u"&gt;
+         {% include 'consignee' %}                  
+     &lt;/div&gt;
+&lt;/div&gt;
+{% include 'charges' %}
+{% include 'items' %}
+
+
+&lt;div class="box-plain"&gt;
+    &lt;div class="bd"&gt;             
+            
+&lt;table class="form shipper-driver-certification" width="100%"&gt;
+    &lt;tr&gt;
+        &lt;th class="col-first"&gt;
+             Shipper's Signature: 
+        &lt;/th&gt;
+        &lt;td class="col-1"&gt;
+             &lt;p class="x"&gt;x&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;th class="col-2"&gt;
+            Date:
+        &lt;/th&gt;
+        &lt;td class="col-3"&gt;
+             &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;th class="col-4"&gt;
+            Trailer #
+        &lt;/th&gt;
+        &lt;td class="col-5 col-last"&gt;
+             &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+
+&lt;tr class="last"&gt;
+                        &lt;th class="col-first"&gt;
+                             Driver Signature: 
+                        &lt;/th&gt;
+                        &lt;td class="col-1"&gt;
+             &lt;p class="x"&gt;x&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;th class="col-2"&gt;
+                            Date:
+                        &lt;/th&gt;
+                        &lt;td class="col-3"&gt;
+             &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+                        &lt;/td&gt;
+                        &lt;th class="col-4"&gt;
+                            Seal #
+                        &lt;/th&gt;
+                        &lt;td class="col-5 col-last"&gt;
+             &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;                  
+&lt;/table&gt;
+                                                                                   
+            &lt;/div&gt;
+&lt;/div&gt;
+
+
+</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="pickup_slip">
+        <template_type_id>2</template_type_id>
+        <label>Pick-up Slip</label>
+        <model>Order</model>
+        <content> &lt;div class="yui-g"&gt;
+     &lt;div class="yui-u first"&gt;
+         {% include 'shipper' %}
+     &lt;/div&gt;
+     &lt;div class="yui-u"&gt;
+         {% include 'consignee' %}                  
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="yui-g"&gt;
+    &lt;div class="yui-u first"&gt;
+         {% include 'pickup_agent' %}
+&lt;div id="instructions" class="box-plain"&gt;
+            &lt;div class="hd"&gt;&lt;h2&gt;Instructions&lt;/h2&gt;&lt;/div&gt;
+            &lt;div class="bd"&gt;
+                 &lt;p&gt;{% include 'pickup_instructions' %}&lt;/p&gt;        
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="yui-u"&gt;
+         {% include 'routing' %}
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+{% include 'items' %}
+</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="delivery_alert">
+        <template_type_id>2</template_type_id>
+        <label>Delivery Alert</label>
+        <model>Order</model>
+        <content> &lt;div class="yui-g"&gt;
+     &lt;div class="yui-u first"&gt;
+         {% include 'shipper' %}
+     &lt;/div&gt;
+     &lt;div class="yui-u"&gt;
+         {% include 'consignee' %}                  
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="yui-g"&gt;
+    &lt;div class="yui-u first"&gt;
+         {% include 'routing' %}
+    &lt;/div&gt;
+    &lt;div class="yui-u"&gt;
+         {% include 'delivery_agent' %}
+&lt;div id="instructions" class="box-plain"&gt;
+            &lt;div class="hd"&gt;&lt;h2&gt;Instructions&lt;/h2&gt;&lt;/div&gt;
+            &lt;div class="bd"&gt;
+                 &lt;p&gt;{% include 'delivery_instructions' %}&lt;/p&gt;        
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+{% include 'items' %}
+
+&lt;div class="box-attention"&gt;
+    &lt;div class="bd"&gt;
+        &lt;ul&gt;
+                    &lt;li&gt;Please FAX or call with POD information&lt;/li&gt;
+                    &lt;li&gt;Please call &lt;strong&gt;IMMEDIATELY&lt;/strong&gt; if paper-work puch is missing.  We will send replacement D.R.s on demand.  Thank You.&lt;/li&gt;
+                    &lt;li&gt;All charges for additional services or special deliveries require a unique authorization number for payment.  Please
+                    call prior to performing a requested service&lt;/li&gt;                    
+                &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="re-weigh_and_dim">
+        <template_type_id>2</template_type_id>
+        <label>Re-weigh and DIM notification</label>
+        <model>Order</model>
+        <content>&lt;p class="document-blurb"&gt;
+This is a formal notification that your freight has been dimensioned or re-weighed to a greater amount than was specified on the below Waybill.  Please adjust your records.
+&lt;/p&gt;    
+
+ &lt;div class="yui-g"&gt;
+     &lt;div class="yui-u first"&gt;
+         {% include 'shipper' %}
+         {% include 'billing' %}
+     &lt;/div&gt;
+     &lt;div class="yui-u"&gt;
+         {% include 'consignee' %}                  
+     &lt;/div&gt;
+&lt;/div&gt;
+{% include 'items' %}
+
+
+      
+&lt;div id="consignee-form" class="box-plain tsa-form"&gt;
+    &lt;div class="hd"&gt;
+        &lt;h2&gt;Certification&lt;/h2&gt;            
+    &lt;/div&gt;
+    &lt;div class="bd"&gt;            
+        &lt;table class="form"&gt;
+            &lt;tr&gt;
+                &lt;th class="col-first"&gt;
+                     Consignee Signature: 
+                &lt;/th&gt;
+                &lt;td class="col-1"&gt;
+                    &lt;p&gt;&lt;span class="x"&gt;x&lt;/span&gt;&lt;/p&gt;
+                &lt;/td&gt;
+                &lt;th class="col-2"&gt;
+                    Date:
+                &lt;/th&gt;
+                &lt;td class="col-last"&gt;
+                    &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+                &lt;/td&gt;                            
+            &lt;/tr&gt;            
+        &lt;/table&gt;
+    &lt;/div&gt;  
+&lt;/div&gt;
+            </content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="POD_slip">
+        <template_type_id>2</template_type_id>
+        <label>POD Slip</label>
+        <model>Order</model>
+        <content>&lt;div class="yui-g"&gt;
+     &lt;div class="yui-u first"&gt;
+         {% include 'shipper' %}
+         {% include 'billing' %}
+     &lt;/div&gt;
+     &lt;div class="yui-u"&gt;
+         {% include 'consignee' %}    
+         {% include 'pod' %}              
+     &lt;/div&gt;
+&lt;/div&gt;
+{% include 'items' %}
+{% include 'charges' %}</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+    <template name="pl_report">
+        <template_type_id>2</template_type_id>
+        <label>P&amp;L Report</label>
+        <model>InvoicePayable</model>
+        <content>&lt;html&gt;
+&lt;style&gt;body { font-size: 200%; }&lt;/style&gt;
+
+  &lt;h1&gt;{{report.label}}&lt;/h1&gt;
+
+ {% for i in report.rows %}
+    {{i.invoice_payable_cost_cents}}
+{% endfor %}
+
+&lt;table border="1"&gt;
+{% tablerow item in report.rows cols: 2 %}
+    {{item.invoice_payable_cost_cents}}
+    {{item.company_name}}
+  {% endtablerow %}
+&lt;/table&gt;
+
+&lt;/html&gt;</content>
+        <created_by>1</created_by>
+        <updated_by>1</updated_by>
+    </template>
+</templates>

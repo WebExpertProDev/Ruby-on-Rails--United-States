@@ -1,0 +1,31 @@
+
+
+<%= javascript_tag "
+
+Apollo.Account = function() {
+
+};
+Apollo.Account.prototype = {
+	attributes : #{@account.on_edit.to_json}    
+};
+
+Apollo.AccountPage = Ext.extend(Apollo.Page, {
+	getRegions : function() {
+		return [	
+			new Apollo.Header(),
+			new Apollo.Footer()
+		];
+	}
+});
+
+var page = new Apollo.AccountPage({
+	items : [
+		new Apollo.account.View({
+			region: 'center'
+		})		
+	]
+});
+
+
+
+" %>

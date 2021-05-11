@@ -1,0 +1,53 @@
+---
+:admin:
+
+- :text: Application
+  :cls: x-btn-text-icon icon-application
+  :menu:
+  - :text: Company Manager
+    :path: company
+    :cls: icon-building
+
+  - :text: Orders
+    :path: order
+    :cls: icon-cart
+
+  - :text: Reports
+    :path: report
+    :cls: icon-report
+
+  - :text: Email
+    :path: email
+    :cls: icon-email
+
+  - :text: Permissions
+    :path: security
+    :cls: icon-key
+
+- '-'
+
+- :text: Test
+  :menu:
+    - :text: nested1
+      :path: company
+      :cls: icon-add
+      :menu:
+      - :text: nested11
+        :path: company
+        :cls: icon-add
+        :menu:
+        - :text: nested111
+          :path: company
+          :cls: icon-add
+
+    - :text: nested2
+      :path: company
+
+:client:
+- :text: c1
+- :text: c2
+- :text: cdd
+  :items:
+  - :text: cdd1
+  - :text: cdd2
+

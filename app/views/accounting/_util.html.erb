@@ -1,0 +1,56 @@
+<script>
+Apollo.invoice.Util = function() {
+    
+    return {
+        
+        /**
+         * getTransactionTypes
+         * returns a list of all available transaction types in teh system (eg: 'payment' || 'refund')
+         * @return {Array}
+         */
+        getTransactionTypes : function() {
+            return <%= TransactionType.find(:all).collect {|tt| tt.to_a }.to_json %>;
+        },
+        
+        /**
+         * getTransactionMethods
+         * returns a list of all available transaction methods in the system (eg: 'cheque', 'creditcard', etc)
+         * @return {Array}
+         */
+        getTransactionMethods : function() {
+            return <%= TransactionMethod.find(:all).collect { |tm| tm.to_a }.to_json %>;
+        },
+        
+        /***
+         * getDocs returns a list of order-document templates.
+         * @return {Array}
+         */
+        getDocs : function() {
+            return <%= Template.find_by_model('Invoice').collect {|t| t.to_h}.to_json %>;
+        },
+        
+        /**
+         * getAdjustmentReasons
+         * returns an array of adjust-reasons, encoded in model InvoiceAdjustment as @@reasons         
+         */               
+         getAdjustmentReasons : function() {
+             return <%= InvoiceItemAdjustment.reasons.to_a.to_json %>;
+         },
+         
+         /**
+          * getInvoiceStatus
+          */
+         getInvoiceStatus : function() {
+             return <%= InvoiceStatus.find(:all).collect { |is| is.to_a }.to_json %>;
+         },
+         
+         /**
+          * getReports
+          */
+         getReports : function() {
+             return <%= Report.accounting_reports.collect { |r| r.to_h }.to_json %>;
+         }
+    }    
+}();
+
+</script>

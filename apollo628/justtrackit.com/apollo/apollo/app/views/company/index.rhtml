@@ -1,0 +1,86 @@
+<!-- get templates -->
+<%= render(:partial => "templates") %>
+
+<!-- get order util -->
+<%= render(:partial => "order/util") %>
+
+<div id="company_manager"></div>
+
+<%= javascript_tag "
+
+// load domain-list into RExt.company.Util singleton.
+RExt.company.Util.addDomains(#{Domain.find(:all).collect { |d| {:id => d.id, :name => d.name, :label => d.label} }.to_json});
+
+// add domain data to singleton as menu.  see CompanyManager.js
+RExt.company.Util.addDomainMenu(#{Domain.to_menu.to_json});
+
+// instantiate the RegionManager, used for managing country/region/city Combos.
+new RExt.RegionManager({
+    countries : #{Country.find(:all).collect {|c| [c.id, c.name]}.to_json}
+});
+
+// create the Page viewport
+
+var mgr = new Apollo.company.Manager({
+    id: 'company_manager',
+    title: 'Company Tree',
+	region: 'west',
+	width: 200,
+    border: false,
+    autoScroll:true,
+    animate:true,
+    containerScroll: true,
+    loader: new Ext.tree.TreeLoader({
+        dataUrl:'/company/list'
+    })
+});
+
+
+// experimental new AccountForm
+new RExt.form.Popup({
+	id: 'account_popup',
+    shadow: false,
+	form: new Apollo.company.AccountForm({
+        iconCls: 'icon-user',
+		id: 'account_form',
+		labelWidth: 75, // label settings here cascade unless overridden
+	    labelAlign: 'right',
+		insertUrl: '/company/add_account',
+		width: 560,		
+		header: true,
+		title: 'New Contact',		
+		autoScroll: true,
+		defaultType: 'textfield',		
+		showCredentials: true		      
+	})
+});
+
+var page = new Apollo.Page({
+	items: [mgr]
+});
+
+
+// test new company manager
+var center = page.getComponent('page-center');
+       
+var fpanel = new Apollo.company.CompanyForm({
+    id: 'company_form',
+    title: 'CompanyForm',
+    monitorValid: false,
+    deletable: true,    
+    autoWidth: true,
+    useDialog: true,
+    modal: false,
+    shadow: false,
+    frame: true,
+    dialogConfig: {
+        height: 560,
+        width: 750
+    }         
+});
+
+
+
+
+
+" %>

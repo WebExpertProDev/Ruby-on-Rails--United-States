@@ -1,0 +1,125 @@
+/***
+ * @class RExt.LoginForm
+ * A form for user login.
+ * @param {Object} param
+ * @config {String} config test
+ */
+RExt.LoginForm = function(param) {
+	RExt.LoginForm.superclass.constructor.apply(this, arguments);
+
+	this.on('actioncomplete', this.onComplete, this, {});
+	this.on('actionfailed', this.onFailed, this, {});
+    
+    this.addEvents({
+        
+        /**
+         * @event clientvalidation
+         * If the monitorValid config option is true, this event fires repetitively to notify of valid state
+         * @param {Form} this
+         * @param {Boolean} valid true if the form has passed client-side validation
+         */
+        foo: true
+    })
+
+};
+Ext.extend(RExt.LoginForm, Ext.form.Form, {
+               
+    /***
+     * @cfg {Object} foo the description     
+     */
+    foo : 'bar',
+    
+    /***
+     * @cfg {Object} bar the description    
+     */
+    bar : 'bar',
+    
+    /***
+     * onComplete     
+     * @param {Object} action
+     * @param {Object} response
+     * @return {Object}     
+     */
+	onComplete : function(action, response) {
+		console.log('actioncomplete: ', response);
+		if (typeof(response.result) == 'object') {
+			Application.setAlert(response.result.msg, response.result.success);
+            var res = response.result;
+            if (res.success == true) {
+                alert('here');
+                window.location = 'http://www.google.com';
+                //window.location = res.data.url;
+            }
+		}
+	},
+    
+    /***
+     * onFailed
+     * @param {Object} action the action
+     * @param {Object} response
+     * @return {Boolean} [false]
+     */
+	onFailed : function(action, response) {
+		console.log('actioncomplete: ', response);
+		if (typeof(response.result) == 'object') {
+			Application.setAlert(response.result.msg, response.result.success);
+		}
+	},
+    
+    /***
+     * render
+     * override Panel::render in order to center the panel element on-screen
+     * @param {Object} el
+     */
+	render : function(el) {
+		this.fieldset({legend: 'Login'},
+			new Ext.form.TextField({
+				name: 'username',
+				fieldLabel: "Username",
+				allowBlank: false                
+			}),
+			new Ext.form.TextField({
+				name: 'password',
+				fieldLabel: 'password',
+				allowBlank: false,
+                inputType: 'password'
+			})
+		);
+		this.addButton({
+			id: 'login',
+			text: 'Login',
+			handler: function() {
+				this.submit();
+			},
+			scope: this
+		});
+		this.addButton({
+			id: 'logout',
+			text: 'Logout',
+			handler: function() {
+				this.submit({url: '/auth/logout'});
+			},
+			scope: this
+		});
+		this.addButton({
+			id: 'check',
+			text: 'Authenticated?',
+			handler : function() {
+				this.submit({url: '/auth/check_auth'});
+			},
+			scope: this
+		})
+		RExt.LoginForm.superclass.render.apply(this, arguments);
+
+		//login.render('login_form');
+		var ct = this.el;
+		var box = ct.boxWrap();
+		box.position('absolute');
+		box.setWidth(300);
+		box.center();
+		Ext.EventManager.onWindowResize(function(ev) {
+			box.center();
+		});
+
+	}
+});

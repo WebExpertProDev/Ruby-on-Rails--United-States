@@ -1,0 +1,84 @@
+<%
+	shipper, consignee = nil
+        
+    entities = order.entities
+    entities.each do |e|
+        case e.type.name
+            when "shipper"
+                shipper = e
+            when "consignee"
+                consignee = e
+        end
+    end
+
+	volume = 0 
+	order.items.each do |i| 
+		volume += i.pieces * i.length * i.width * i.height 
+	end
+	
+	dim_weight = (volume / order.dim_factor).ceil
+%>
+        
+<div class="yui-g top"> 
+    <div class="container">
+        <h1>Bill of Lading</h1>
+    </div>     
+</div> 
+
+<div class="yui-g middle"> 
+    <div class="yui-u first"> 
+        <div class="container">         
+            <h2>Shipper</h2>
+            <p><%= shipper.company.name%></p>
+            <p>Contact: <%=shipper.account.first.capitalize + ' ' + shipper.account.last.capitalize%></p>
+            <div class="address">
+                <p><%= shipper.company.addr1%></p>
+                <p><%= shipper.company.addr2%></p>
+                <p><%= shipper.company.city.name%>, <%=shipper.company.region.iso.upcase%>, <%=shipper.company.country.iso.upcase%></p>                   
+            </div>
+        </div>
+    </div> 
+    <div class="yui-u"> 
+        <div class="container">
+            <h2>Consignee</h2> 
+            <p><%= consignee.company.name%></p>
+            <p>Contact: <%=consignee.account.first.capitalize + ' ' + consignee.account.last.capitalize%></p>
+            <div class="address">
+                <p><%= consignee.company.addr1%></p>
+                <p><%= consignee.company.addr2%></p>
+                <p><%= consignee.company.city.name%>, <%=consignee.company.region.iso.upcase%>, <%=consignee.company.country.iso.upcase%></p>                   
+            </div>
+        </div>
+    </div> 
+</div> 
+
+<div class="yui-g bottom"> 
+    <div class="container">
+        <h2>Shipment</h2>
+        <p>Commodity: <%=order.commodity.name%></p>
+        <p>Pieces: <%=order.pieces%></p>
+        <p>Declared value: $<%= sprintf("%.2f", order.declared_value)%></p>
+        <p>Volume: <%=volume%> cubic inches</p>
+        <p>Dim Weight: <%=dim_weight%></p>
+        
+        <table>
+            <tr>
+                <th>Pieces</th>                
+                <th>Length</th>
+                <th>Width</th>
+                <th>Height</th>                
+            </tr>
+            <% order.items.each do |i|	%>
+                <tr>
+                    <td><%= i.pieces%></td>
+                    <td><%= i.length%></td>
+                    <td><%= i.width%></td>                    
+                    <td><%= i.height %></td>
+                </tr>
+            <% end %>    
+                <tr>
+                    
+                </tr>        
+        </table> 
+    </div>
+</div>

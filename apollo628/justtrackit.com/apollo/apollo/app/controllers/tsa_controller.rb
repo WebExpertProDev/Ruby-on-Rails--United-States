@@ -1,0 +1,2 @@
+class TsaController < ApplicationController
+end

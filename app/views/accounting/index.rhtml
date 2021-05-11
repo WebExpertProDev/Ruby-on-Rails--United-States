@@ -1,0 +1,69 @@
+<div id="accounting_tree"></div>
+
+<div id="foo"><%= @output %></div>
+
+
+<%= stylesheet_link_tag "order/order.css" %>
+
+<!-- include accounting templtaes -->
+<%= render(:partial => "templates") %>
+
+<!-- include common company templates -->
+<%= render(:partial => "company/templates") %>
+
+<!-- include accounting/util -->
+<%= render(:partial => "util") %>
+
+<!-- include company util -->
+<%= render(:partial => "company/util") %>
+
+<%= javascript_tag "
+
+    new Apollo.Page({
+		items : [
+			new Apollo.accounting.Manager({
+				region: 'west',
+				width: 250
+			})
+		]
+	});
+    
+
+	// create transaction popup.
+    new RExt.form.Popup({
+        id: 'transaction_popup',
+        form : new Apollo.invoice.TransactionForm({
+			id: 'transaction_form',
+            title: 'Form',
+            width: 400    
+        })    
+    });
+		
+	// adjustment form popup
+	new RExt.form.Popup({
+		id: 'adjustment_popup',
+		form: new Apollo.invoice.AdjustmentForm({
+			id: 'adjustment_form',            
+            monitorValid: false,
+            width: 250            
+        })
+	});
+	
+	// payable_adjustment_form
+	new Apollo.invoice.Adjustments({
+		id: 'adjustments'
+	});
+
+	//  build DocumentMgr
+	new RExt.template.DocumentMgr({
+		id: 'document_mgr',
+		controller: 'invoice',
+		previewAction: 'preview',
+		sendAction: 'transmit',
+		docs: Apollo.invoice.Util.getDocs()
+	});
+
+    	
+
+
+" %>          

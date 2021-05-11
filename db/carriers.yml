@@ -1,0 +1,2929 @@
+--- 
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: EXCLUSIVE USE VEHICLE
+  :locations: 
+  - :region: Arkansas
+    :addr1: 178 WEST VANBUREN
+    :city: Eureka Springs
+    :addr2: ""
+    :name: EXCLUSIVE USE VEHICLE
+    :zip: "72632"
+    :url: ""
+    :number: Excl7666
+    :phone: 800-959-1390
+    :city_state_zip: |
+      EUREKA SPRINGS , AR  .  72632
+
+    :country: US
+  :number: Excl7666
+- :accounting_code: "602"
+  :credit_limit: $100,000.00
+  :name: FORWARD AIR
+  :locations: 
+  - :region: Tennessee
+    :addr1: P.O. BOX 1058
+    :city: Greeneville
+    :addr2: ""
+    :name: FORWARD AIR
+    :zip: "37744"
+    :url: www.forwardair.com
+    :number: FORW37744
+    :phone: 800-726-6654
+    :city_state_zip: |
+      GREENEVILLE,  TN.  37744
+
+    :country: US
+  - :region: Illinois
+    :addr1: CARGO BUILDING 516 & 517
+    :city: Chicago Ridge
+    :addr2: ""
+    :name: ALLIANCE AIR
+    :zip: "60666"
+    :url: ""
+    :number: ALLI60666
+    :phone: 773-917-2008
+    :city_state_zip: |
+      CHICAGO , IL.  60666
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 109 MOKUEA PLACE
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: KAMA96819
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU , HI.  96819
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 144 PALEKONA ST
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: "3913"
+    :phone: 808-839-0946
+    :city_state_zip: |
+      HONOLULU, HI.  96819
+
+    :country: US
+  - :region: Manitoba
+    :addr1: "#1 AIRPORT RD"
+    :city: Winnipeg
+    :addr2: ""
+    :name: CALM AIR
+    :zip: "00000"
+    :url: ""
+    :number: CALM00000
+    :phone: 204-675-8843
+    :city_state_zip: |
+      WINNIPEG,  MB.  00000
+
+    :country: CA
+  :number: FORW37744
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: USF REDDAWAY
+  :locations: 
+  - :region: Oregon
+    :addr1: 4000 HAMRICK ROAD
+    :city: Central Point
+    :addr2: ""
+    :name: USF REDDAWAY
+    :zip: "97502"
+    :url: www.usfc.com
+    :number: USFR97502
+    :phone: 541-665-0841
+    :city_state_zip: |
+      CENTRAL POINT, OR.  97502
+
+    :country: US
+  :number: USFR97502
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: HAWAII AIR CARGO
+  :locations: 
+  - :region: Hawaii
+    :addr1: 2989 UALENA STREET
+    :city: Honolulu
+    :addr2: ""
+    :name: HAWAII AIR CARGO
+    :zip: "96819"
+    :url: www.hawaiiaircargo.com
+    :number: HAWA96819
+    :phone: 800-367-2646
+    :city_state_zip: |
+      HONOLULU, HI.  96819
+
+    :country: US
+  - :region: Illinois
+    :addr1: CARGO BUILDING 516 & 517
+    :city: Chicago Ridge
+    :addr2: ""
+    :name: ALLIANCE AIR
+    :zip: "60666"
+    :url: ""
+    :number: ALLI60666
+    :phone: 773-917-2008
+    :city_state_zip: |
+      CHICAGO , IL.  60666
+
+    :country: US
+  - :region: Tennessee
+    :addr1: P.O. BOX 1058
+    :city: Greeneville
+    :addr2: ""
+    :name: FORWARD AIR
+    :zip: "37744"
+    :url: www.forwardair.com
+    :number: FORW37744
+    :phone: 800-726-6654
+    :city_state_zip: |
+      GREENEVILLE,  TN.  37744
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 109 MOKUEA PLACE
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: KAMA96819
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU , HI.  96819
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 144 PALEKONA ST
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: "3913"
+    :phone: 808-839-0946
+    :city_state_zip: |
+      HONOLULU, HI.  96819
+
+    :country: US
+  - :region: Manitoba
+    :addr1: "#1 AIRPORT RD"
+    :city: Winnipeg
+    :addr2: ""
+    :name: CALM AIR
+    :zip: "00000"
+    :url: ""
+    :number: CALM00000
+    :phone: 204-675-8843
+    :city_state_zip: |
+      WINNIPEG,  MB.  00000
+
+    :country: CA
+  :number: HAWA96819
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: DELTA AIRLINES
+  :locations: 
+  - :region: Georgia
+    :addr1: P.O. BOX 920514
+    :city: Atlanta
+    :addr2: ""
+    :name: DELTA AIRLINES
+    :zip: 30392-0514
+    :url: www.delta.com/business_pr
+    :number: DELT30392
+    :phone: ""
+    :city_state_zip: |
+      ATLANTA, GA. 30392-0514
+
+    :country: US
+  - :region: Georgia
+    :addr1: P.O. BOX 105531
+    :city: Atlanta
+    :addr2: ""
+    :name: DELTA AIRLINES
+    :zip: "30348"
+    :url: www.delta.com
+    :number: DELT30320
+    :phone: 800-352-2746
+    :city_state_zip: |
+      ATLANTA, GA. 30348
+
+    :country: US
+  - :region: Hawaii
+    :addr1: P.O. BOX 30028
+    :city: Honolulu
+    :addr2: ""
+    :name: ALOHA AIRLINES INC.
+    :zip: "96820"
+    :url: www.alohaairlines.com
+    :number: ALOH96820
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU, HI.  96820
+
+    :country: US
+  - :region: Washington
+    :addr1: 19300 PACIFIC HIGHWAY SOUTH
+    :city: Seattle
+    :addr2: ""
+    :name: ALASKA AIRLINES INC
+    :zip: "98188"
+    :url: www.alaskaair.com
+    :number: ALAS98188
+    :phone: 206-433-3200
+    :city_state_zip: |
+      SEATTLE, WA. 98188
+
+    :country: US
+  :number: DELT30392
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: LYNDEN INTERNATIONAL
+  :locations: 
+  - :region: Washington
+    :addr1: 18000 INTERNATIONAL BLVD.
+    :city: Seattle
+    :addr2: ""
+    :name: LYNDEN INTERNATIONAL
+    :zip: "98188"
+    :url: ""
+    :number: LYND98188
+    :phone: 800-825-3255
+    :city_state_zip: |
+      SEATTLE, WA. 98188
+
+    :country: US
+  :number: LYND98188
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: CARGOLUX
+  :locations: 
+  - :region: California
+    :addr1: 238 LAWRENCE AVE.
+    :city: South San Francisco
+    :addr2: ""
+    :name: CARGOLUX
+    :zip: "94080"
+    :url: ""
+    :number: CARG94080
+    :phone: 310-215-8491
+    :city_state_zip: |
+      S. SAN FRANCISCO, CA.  94080
+
+    :country: US
+  - :region: California
+    :addr1: 5621 WEST IMPERIAL HWY
+    :city: Los Angeles
+    :addr2: ""
+    :name: CARGOLUX
+    :zip: "90045"
+    :url: www.cargolux.com
+    :number: CARG90189
+    :phone: 310-215-8491
+    :city_state_zip: |
+      LOS ANGELES, CA. 90045
+
+    :country: US
+  :number: CARG94080
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: SERVICE PLUS INTERNATIONA
+  :locations: 
+  - :region: Manitoba
+    :addr1: 1063 SHERWIN ROAD
+    :city: Winnipeg
+    :addr2: ""
+    :name: SERVICE PLUS INTERNATIONA
+    :zip: R3H0T8
+    :url: www.service-brokers.com
+    :number: SERV30811
+    :phone: 204-633-4830
+    :city_state_zip: |
+      WINNIPEG,  MANITOBA.   R3H0T8
+
+    :country: CA
+  :number: SERV30811
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: DAS AIR CARGO
+  :locations: 
+  - :region: Florida
+    :addr1: P.O. BOX 620876
+    :city: Orlando
+    :addr2: ""
+    :name: DAS AIR CARGO
+    :zip: "32862"
+    :url: www.dasair.com
+    :number: DASA11111
+    :phone: 404-366-9893
+    :city_state_zip: |
+      ORLANDO, FL. 32862
+
+    :country: US
+  - :region: Illinois
+    :addr1: CARGO BUILDING 516 & 517
+    :city: Chicago Ridge
+    :addr2: ""
+    :name: ALLIANCE AIR
+    :zip: "60666"
+    :url: ""
+    :number: ALLI60666
+    :phone: 773-917-2008
+    :city_state_zip: |
+      CHICAGO , IL.  60666
+
+    :country: US
+  - :region: Tennessee
+    :addr1: P.O. BOX 1058
+    :city: Greeneville
+    :addr2: ""
+    :name: FORWARD AIR
+    :zip: "37744"
+    :url: www.forwardair.com
+    :number: FORW37744
+    :phone: 800-726-6654
+    :city_state_zip: |
+      GREENEVILLE,  TN.  37744
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 109 MOKUEA PLACE
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: KAMA96819
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU , HI.  96819
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 144 PALEKONA ST
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: "3913"
+    :phone: 808-839-0946
+    :city_state_zip: |
+      HONOLULU, HI.  96819
+
+    :country: US
+  - :region: Manitoba
+    :addr1: "#1 AIRPORT RD"
+    :city: Winnipeg
+    :addr2: ""
+    :name: CALM AIR
+    :zip: "00000"
+    :url: ""
+    :number: CALM00000
+    :phone: 204-675-8843
+    :city_state_zip: |
+      WINNIPEG,  MB.  00000
+
+    :country: CA
+  :number: DASA11111
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: WINGS OF ALASKA
+  :locations: 
+  - :region: Alaska
+    :addr1: 8421 LIVINGSTON WAY
+    :city: Juneau
+    :addr2: ""
+    :name: WINGS OF ALASKA
+    :zip: 99801-9375
+    :url: www.wingsofalaska.com
+    :number: WING99801
+    :phone: 907 789-0790
+    :city_state_zip: |
+      JUNEAU, AK. 99801-9375
+
+    :country: US
+  :number: WING99801
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: LAND AIR EXPRESS, INC
+  :locations: 
+  - :region: Kentucky
+    :addr1: PO BOX 2250
+    :city: Bowling Green
+    :addr2: ""
+    :name: LAND AIR EXPRESS, INC
+    :zip: "42102"
+    :url: www.landairexpress.com
+    :number: LAND42102
+    :phone: 270-781-0655
+    :city_state_zip: |
+      BOWLING GREEN ,  KY.  42102
+
+    :country: US
+  - :region: Illinois
+    :addr1: CARGO BUILDING 516 & 517
+    :city: Chicago Ridge
+    :addr2: ""
+    :name: ALLIANCE AIR
+    :zip: "60666"
+    :url: ""
+    :number: ALLI60666
+    :phone: 773-917-2008
+    :city_state_zip: |
+      CHICAGO , IL.  60666
+
+    :country: US
+  - :region: Tennessee
+    :addr1: P.O. BOX 1058
+    :city: Greeneville
+    :addr2: ""
+    :name: FORWARD AIR
+    :zip: "37744"
+    :url: www.forwardair.com
+    :number: FORW37744
+    :phone: 800-726-6654
+    :city_state_zip: |
+      GREENEVILLE,  TN.  37744
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 109 MOKUEA PLACE
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: KAMA96819
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU , HI.  96819
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 144 PALEKONA ST
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: "3913"
+    :phone: 808-839-0946
+    :city_state_zip: |
+      HONOLULU, HI.  96819
+
+    :country: US
+  - :region: Manitoba
+    :addr1: "#1 AIRPORT RD"
+    :city: Winnipeg
+    :addr2: ""
+    :name: CALM AIR
+    :zip: "00000"
+    :url: ""
+    :number: CALM00000
+    :phone: 204-675-8843
+    :city_state_zip: |
+      WINNIPEG,  MB.  00000
+
+    :country: CA
+  :number: LAND42102
+- :accounting_code: "101"
+  :credit_limit: $2,000.00
+  :name: CANADIAN NORTH
+  :locations: 
+  - :region: Northwest Territories
+    :addr1: 300, 5201 - 50 AVENUE
+    :city: Yellowknife
+    :addr2: ""
+    :name: CANADIAN NORTH
+    :zip: X1A3S9
+    :url: www.canadiannorth.ca
+    :number: CANA13911
+    :phone: 867-669-4011
+    :city_state_zip: |
+      YELLOWKNIFE, NT.  X1A3S9
+
+    :country: CA
+  :number: CANA13911
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: NORSEMEN TRANSPORTATION
+  :locations: 
+  - :region: Wisconsin
+    :addr1: 418 172ND AVENUE
+    :city: Somerset
+    :addr2: ""
+    :name: NORSEMEN TRANSPORTATION
+    :zip: "54025"
+    :url: www.gonorsemen.com
+    :number: NORS54025
+    :phone: 715-247-2037
+    :city_state_zip: |
+      SOMERSET,  WI.  54025
+
+    :country: US
+  :number: NORS54025
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: AIR CONTAINER TRANSPORT
+  :locations: 
+  - :region: Washington
+    :addr1: 2345 SOUTH 156TH STREET
+    :city: Seattle
+    :addr2: ""
+    :name: AIR CONTAINER TRANSPORT
+    :zip: "98158"
+    :url: ""
+    :number: AIRC98158
+    :phone: 206-246-2000
+    :city_state_zip: |
+      SEATTLE, WA. 98158
+
+    :country: US
+  - :region: California
+    :addr1: PO BOX 281226
+    :city: South San Francisco
+    :addr2: ""
+    :name: AIR CONTAINER TRANSPORT
+    :zip: "94128"
+    :url: www.aircontainertransport
+    :number: AERO94128
+    :phone: 650-244-4267
+    :city_state_zip: |
+      SAN FRANCISCO, CA.  94128
+
+    :country: US
+  :number: AIRC98158
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: FRONTIER AIRLINES
+  :locations: 
+  - :region: Florida
+    :addr1: P.O. BOX 620606
+    :city: Orlando
+    :addr2: ""
+    :name: FRONTIER AIRLINES
+    :zip: "32862"
+    :url: www.frontierairlines.com
+    :number: FRON80239
+    :phone: 800-394-2158
+    :city_state_zip: |
+      ORLANDO, FL. 32862
+
+    :country: US
+  - :region: Hawaii
+    :addr1: P.O. BOX 30028
+    :city: Honolulu
+    :addr2: ""
+    :name: ALOHA AIRLINES INC.
+    :zip: "96820"
+    :url: www.alohaairlines.com
+    :number: ALOH96820
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU, HI.  96820
+
+    :country: US
+  - :region: Washington
+    :addr1: 19300 PACIFIC HIGHWAY SOUTH
+    :city: Seattle
+    :addr2: ""
+    :name: ALASKA AIRLINES INC
+    :zip: "98188"
+    :url: www.alaskaair.com
+    :number: ALAS98188
+    :phone: 206-433-3200
+    :city_state_zip: |
+      SEATTLE, WA. 98188
+
+    :country: US
+  :number: FRON80239
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: CARGO JET
+  :locations: 
+  - :region: Ontario
+    :addr1: 350 BRITANNIA RD. EAST
+    :city: Mississauga
+    :addr2: ""
+    :name: CARGO JET
+    :zip: L4Z  1X9
+    :url: www.cargojet.com
+    :number: "3912"
+    :phone: 800-753-1051
+    :city_state_zip: |
+      MISSISSAUGA, ONTARIO. L4Z  1X9
+
+    :country: CA
+  - :region: Ontario
+    :addr1: PO BOX 41127
+    :city: Mississauga
+    :addr2: ""
+    :name: CARGO JET
+    :zip: "41127"
+    :url: ""
+    :number: CARG41127
+    :phone: 800-753-1051
+    :city_state_zip: |
+      MISSISSAUGA, ONTARIO.  41127
+
+    :country: CA
+  :number: "3912"
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: ECONOMY TRANSPORT
+  :locations: 
+  - :region: Tennessee
+    :addr1: P.O. BOX 1000 DEPT. 164
+    :city: Memphis
+    :addr2: ""
+    :name: ECONOMY TRANSPORT
+    :zip: "38148"
+    :url: ""
+    :number: ECON38148
+    :phone: ""
+    :city_state_zip: |
+      MEMPHIS ,  TN.  38148
+
+    :country: US
+  :number: ECON38148
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: DALLAS & MAVIS SPECIALIZE
+  :locations: 
+  - :region: Georgia
+    :addr1: PO BOX 933567
+    :city: Atlanta
+    :addr2: ""
+    :name: DALLAS & MAVIS SPECIALIZE
+    :zip: 31193-3567
+    :url: ""
+    :number: "3910"
+    :phone: ""
+    :city_state_zip: |
+      ATLANTA , GA. 31193-3567
+
+    :country: US
+  :number: "3910"
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: AIR TRUCK EXPRESS
+  :locations: 
+  - :region: Nevada
+    :addr1: 1410 PAMA LN.
+    :city: North Las Vegas
+    :addr2: ""
+    :name: AIR TRUCK EXPRESS
+    :zip: "89101"
+    :url: ""
+    :number: AIRT89101
+    :phone: ""
+    :city_state_zip: |
+      LAS VEGAS, NV. 89101
+
+    :country: US
+  - :region: Nevada
+    :addr1: PO BOX 11023
+    :city: North Las Vegas
+    :addr2: ""
+    :name: AIR TRUCK EXPRESS
+    :zip: "89111"
+    :url: ""
+    :number: AIRT89111
+    :phone: 702-263-5571
+    :city_state_zip: |
+      LAS VEGAS, NV. 89111
+
+    :country: US
+  :billing_location: AIRT89111
+  :number: AIRT89101
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: AIR CANADA CARGO
+  :locations: 
+  - :region: Manitoba
+    :addr1: P.O. BOX/CP966
+    :city: Winnipeg
+    :addr2: ""
+    :name: AIR CANADA CARGO
+    :zip: R3C  2V6
+    :url: www.aircanada.com
+    :number: "3911"
+    :phone: 800-387-4865
+    :city_state_zip: |
+      WINNIPEG,  MANITOBA.  R3C  2V6
+
+    :country: CA
+  :number: "3911"
+- :accounting_code: "602"
+  :credit_limit: $5,000.00
+  :name: LAN CARGO
+  :locations: 
+  - :region: Florida
+    :addr1: P.O. BOX 520336
+    :city: Miami
+    :addr2: ""
+    :name: LAN CARGO
+    :zip: "33152"
+    :url: www.lancargo.com
+    :number: LANC33152
+    :phone: 786-265-6000
+    :city_state_zip: |
+      MIAMI, FL.  33152
+
+    :country: US
+  :number: LANC33152
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: AUSTRALIAN AIR EXPRESS
+  :locations: 
+  - :region: California
+    :addr1: 401 N. OAK STREET
+    :city: Inglewood
+    :addr2: ""
+    :name: AUSTRALIAN AIR EXPRESS
+    :zip: "90302"
+    :url: www.aae.com.au
+    :number: AUST90302
+    :phone: 310-674-6784
+    :city_state_zip: |
+      INGLEWOOD, CA.  90302
+
+    :country: US
+  - :region: Illinois
+    :addr1: CARGO BUILDING 516 & 517
+    :city: Chicago Ridge
+    :addr2: ""
+    :name: ALLIANCE AIR
+    :zip: "60666"
+    :url: ""
+    :number: ALLI60666
+    :phone: 773-917-2008
+    :city_state_zip: |
+      CHICAGO , IL.  60666
+
+    :country: US
+  - :region: Tennessee
+    :addr1: P.O. BOX 1058
+    :city: Greeneville
+    :addr2: ""
+    :name: FORWARD AIR
+    :zip: "37744"
+    :url: www.forwardair.com
+    :number: FORW37744
+    :phone: 800-726-6654
+    :city_state_zip: |
+      GREENEVILLE,  TN.  37744
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 109 MOKUEA PLACE
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: KAMA96819
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU , HI.  96819
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 144 PALEKONA ST
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: "3913"
+    :phone: 808-839-0946
+    :city_state_zip: |
+      HONOLULU, HI.  96819
+
+    :country: US
+  - :region: Manitoba
+    :addr1: "#1 AIRPORT RD"
+    :city: Winnipeg
+    :addr2: ""
+    :name: CALM AIR
+    :zip: "00000"
+    :url: ""
+    :number: CALM00000
+    :phone: 204-675-8843
+    :city_state_zip: |
+      WINNIPEG,  MB.  00000
+
+    :country: CA
+  :number: AUST90302
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: AIR FRANCE CARGO
+  :locations: 
+  - :region: Illinois
+    :addr1: 618 SOUTH ACCESS RD
+    :city: Chicago Ridge
+    :addr2: ""
+    :name: AIR FRANCE CARGO
+    :zip: "60666"
+    :url: ""
+    :number: AIRF60666
+    :phone: 800-556-9000
+    :city_state_zip: |
+      CHICAGO, IL.  60666
+
+    :country: US
+  :number: AIRF60666
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: NORTHWEST AIRLINES
+  :locations: 
+  - :region: Minnesota
+    :addr1: NW 8887
+    :city: Minneapolis
+    :addr2: ""
+    :name: NORTHWEST AIRLINES
+    :zip: "55485"
+    :url: www.cargo.nwa.com
+    :number: NORT55485
+    :phone: 612-727-8153
+    :city_state_zip: |
+      MINNEAPOLIS,,  MN.  55485
+
+    :country: US
+  - :region: Minnesota
+    :addr1: 2700 LONE OAK PARKWAY
+    :city: Eagan
+    :addr2: ""
+    :name: NORTHWEST AIRLINES
+    :zip: "55121"
+    :url: www.nwacargo.com
+    :number: NORT55121
+    :phone: 800-692-2746
+    :city_state_zip: |
+      EAGAN, MN. 55121
+
+    :country: US
+  - :region: Hawaii
+    :addr1: P.O. BOX 30028
+    :city: Honolulu
+    :addr2: ""
+    :name: ALOHA AIRLINES INC.
+    :zip: "96820"
+    :url: www.alohaairlines.com
+    :number: ALOH96820
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU, HI.  96820
+
+    :country: US
+  - :region: Minnesota
+    :addr1: PO BOX 1450
+    :city: Minneapolis
+    :addr2: ""
+    :name: NORTHWEST AIRLINES
+    :zip: 55485-8887
+    :url: ""
+    :number: NORT55486
+    :phone: 800-692-2746
+    :city_state_zip: |
+      MINNEAPOLIS,  MN.  55485-8887
+
+    :country: US
+  - :region: Washington
+    :addr1: 19300 PACIFIC HIGHWAY SOUTH
+    :city: Seattle
+    :addr2: ""
+    :name: ALASKA AIRLINES INC
+    :zip: "98188"
+    :url: www.alaskaair.com
+    :number: ALAS98188
+    :phone: 206-433-3200
+    :city_state_zip: |
+      SEATTLE, WA. 98188
+
+    :country: US
+  :number: NORT55485
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: YELLOW FREIGHT
+  :locations: 
+  - :region: Texas
+    :addr1: PO BOX 730333
+    :city: Lake Dallas
+    :addr2: ""
+    :name: YELLOW FREIGHT
+    :zip: 75373-0333
+    :url: ""
+    :number: YELL75373
+    :phone: 800-610-6500
+    :city_state_zip: |
+      DALLAS, TX. 75373-0333
+
+    :country: US
+  - :region: Virginia
+    :addr1: 1313 CAVALIER BLVD
+    :city: Chesapeake
+    :addr2: ""
+    :name: YELLOW FREIGHT
+    :zip: "23320"
+    :url: ""
+    :number: YELL23320
+    :phone: 800-610-6500
+    :city_state_zip: |
+      CHESAPEAKE, VA.  23320
+
+    :country: US
+  :billing_location: YELL75373
+  :number: YELL75373
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: SOUTHWEST AIRLINES
+  :locations: 
+  - :region: Texas
+    :addr1: P.O. BOX 97390
+    :city: Lake Dallas
+    :addr2: ""
+    :name: SOUTHWEST AIRLINES
+    :zip: "75397"
+    :url: www.swacargo.com
+    :number: SOUT75397
+    :phone: 800-533-1222
+    :city_state_zip: |
+      DALLAS, TX. 75397
+
+    :country: US
+  - :region: Illinois
+    :addr1: PO BOX 36611
+    :city: Dallas City
+    :addr2: ""
+    :name: SOUTHWEST AIRLINES
+    :zip: "75235"
+    :url: www.swacargo.com
+    :number: SOUT75235
+    :phone: 800-533-1222
+    :city_state_zip: |
+      DALLAS , TEXAS. 75235
+
+    :country: US
+  - :region: Hawaii
+    :addr1: P.O. BOX 30028
+    :city: Honolulu
+    :addr2: ""
+    :name: ALOHA AIRLINES INC.
+    :zip: "96820"
+    :url: www.alohaairlines.com
+    :number: ALOH96820
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU, HI.  96820
+
+    :country: US
+  - :region: Washington
+    :addr1: 19300 PACIFIC HIGHWAY SOUTH
+    :city: Seattle
+    :addr2: ""
+    :name: ALASKA AIRLINES INC
+    :zip: "98188"
+    :url: www.alaskaair.com
+    :number: ALAS98188
+    :phone: 206-433-3200
+    :city_state_zip: |
+      SEATTLE, WA. 98188
+
+    :country: US
+  :number: SOUT75397
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: AVIENT AIR CARGO
+  :locations: 
+  - :region: Texas
+    :addr1: 1639 W. 23RD, SUITE 330
+    :city: Lake Dallas
+    :addr2: ""
+    :name: AVIENT AIR CARGO
+    :zip: "75261"
+    :url: www.avient.aero
+    :number: AVIE75261
+    :phone: 469-224-6300
+    :city_state_zip: |
+      DALLAS, TX. 75261
+
+    :country: US
+  - :region: Illinois
+    :addr1: CARGO BUILDING 516 & 517
+    :city: Chicago Ridge
+    :addr2: ""
+    :name: ALLIANCE AIR
+    :zip: "60666"
+    :url: ""
+    :number: ALLI60666
+    :phone: 773-917-2008
+    :city_state_zip: |
+      CHICAGO , IL.  60666
+
+    :country: US
+  - :region: Tennessee
+    :addr1: P.O. BOX 1058
+    :city: Greeneville
+    :addr2: ""
+    :name: FORWARD AIR
+    :zip: "37744"
+    :url: www.forwardair.com
+    :number: FORW37744
+    :phone: 800-726-6654
+    :city_state_zip: |
+      GREENEVILLE,  TN.  37744
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 109 MOKUEA PLACE
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: KAMA96819
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU , HI.  96819
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 144 PALEKONA ST
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: "3913"
+    :phone: 808-839-0946
+    :city_state_zip: |
+      HONOLULU, HI.  96819
+
+    :country: US
+  - :region: Manitoba
+    :addr1: "#1 AIRPORT RD"
+    :city: Winnipeg
+    :addr2: ""
+    :name: CALM AIR
+    :zip: "00000"
+    :url: ""
+    :number: CALM00000
+    :phone: 204-675-8843
+    :city_state_zip: |
+      WINNIPEG,  MB.  00000
+
+    :country: CA
+  :number: AVIE75261
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: CTX, INC.
+  :locations: 
+  - :region: Michigan
+    :addr1: PO BOX 860
+    :city: Dearborn Heights
+    :addr2: ""
+    :name: CTX, INC.
+    :zip: "48127"
+    :url: www.ctx-inc.com
+    :number: CTXI48127
+    :phone: 800-447-5173
+    :city_state_zip: |
+      DEARBORN HEIGHTS  ,  MI.  48127
+
+    :country: US
+  :number: CTXI48127
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: TOWNE AIR FREIGHT
+  :locations: 
+  - :region: Indiana
+    :addr1: 24805 U.S. 20 WEST
+    :city: South Bend
+    :addr2: ""
+    :name: TOWNE AIR FREIGHT
+    :zip: "46628"
+    :url: www.towneair.com
+    :number: TOWN46628
+    :phone: 574-233-3183
+    :city_state_zip: |
+      SOUTH BEND,  IN.  46628
+
+    :country: US
+  - :region: Illinois
+    :addr1: CARGO BUILDING 516 & 517
+    :city: Chicago Ridge
+    :addr2: ""
+    :name: ALLIANCE AIR
+    :zip: "60666"
+    :url: ""
+    :number: ALLI60666
+    :phone: 773-917-2008
+    :city_state_zip: |
+      CHICAGO , IL.  60666
+
+    :country: US
+  - :region: Tennessee
+    :addr1: P.O. BOX 1058
+    :city: Greeneville
+    :addr2: ""
+    :name: FORWARD AIR
+    :zip: "37744"
+    :url: www.forwardair.com
+    :number: FORW37744
+    :phone: 800-726-6654
+    :city_state_zip: |
+      GREENEVILLE,  TN.  37744
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 109 MOKUEA PLACE
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: KAMA96819
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU , HI.  96819
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 144 PALEKONA ST
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: "3913"
+    :phone: 808-839-0946
+    :city_state_zip: |
+      HONOLULU, HI.  96819
+
+    :country: US
+  - :region: Manitoba
+    :addr1: "#1 AIRPORT RD"
+    :city: Winnipeg
+    :addr2: ""
+    :name: CALM AIR
+    :zip: "00000"
+    :url: ""
+    :number: CALM00000
+    :phone: 204-675-8843
+    :city_state_zip: |
+      WINNIPEG,  MB.  00000
+
+    :country: CA
+  :number: TOWN46628
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: PANTHER II TRANSPORTATION
+  :locations: 
+  - :region: Ohio
+    :addr1: PO BOX 713 P.M.B. 208
+    :city: Medina
+    :addr2: ""
+    :name: PANTHER II TRANSPORTATION
+    :zip: "44256"
+    :url: www.pantherii.com
+    :number: PANT44256
+    :phone: 800-685-0657
+    :city_state_zip: |
+      MEDINA , OH.  44256
+
+    :country: US
+  :number: PANT44256
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: AIRBRIDGE CARGO
+  :locations: 
+  - :region: Texas
+    :addr1: 1639 W. 23RD, SUITE 330
+    :city: Lake Dallas
+    :addr2: ""
+    :name: AIRBRIDGE CARGO
+    :zip: "75261"
+    :url: www.airbridgecargo.com
+    :number: AIRB75261
+    :phone: 469-224-6300
+    :city_state_zip: |
+      DALLAS, TX. 75261
+
+    :country: US
+  :number: AIRB75261
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: CAL SIERRA EXPRESS
+  :locations: 
+  - :region: California
+    :addr1: 2975 OATES STREET
+    :city: West Sacramento
+    :addr2: ""
+    :name: CAL SIERRA EXPRESS
+    :zip: "95691"
+    :url: www.calsierraexpress.com
+    :number: CALS95691
+    :phone: 916-375-7070
+    :city_state_zip: |
+      WEST SACRAMENTO, CA.  95691
+
+    :country: US
+  :number: CALS95691
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: WEST JET CARGO
+  :locations: 
+  - :region: Alberta
+    :addr1: 5055 11TH STREET NE
+    :city: Calgary
+    :addr2: ""
+    :name: WEST JET CARGO
+    :zip: T2E8N4
+    :url: ""
+    :number: WEST28411
+    :phone: 866-952-2746
+    :city_state_zip: |
+      CALGARY, AB. T2E8N4
+
+    :country: CA
+  - :region: Ontario
+    :addr1: PO BOX 41127
+    :city: Mississauga
+    :addr2: ""
+    :name: CARGO JET
+    :zip: "41127"
+    :url: ""
+    :number: CARG41127
+    :phone: 800-753-1051
+    :city_state_zip: |
+      MISSISSAUGA, ONTARIO.  41127
+
+    :country: CA
+  - :region: Ontario
+    :addr1: 350 BRITANNIA RD. EAST
+    :city: Mississauga
+    :addr2: ""
+    :name: CARGO JET
+    :zip: L4Z  1X9
+    :url: www.cargojet.com
+    :number: "3912"
+    :phone: 800-753-1051
+    :city_state_zip: |
+      MISSISSAUGA, ONTARIO. L4Z  1X9
+
+    :country: CA
+  :number: WEST28411
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: DHX
+  :locations: 
+  - :region: California
+    :addr1: 19201 SUSANA RD.
+    :city: Rancho dominguez
+    :addr2: ""
+    :name: DHX
+    :zip: "90221"
+    :url: www.dhx.com
+    :number: "3916"
+    :phone: 800-488-4888
+    :city_state_zip: |
+      Rancho dominguez, CA.  90221
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 703 N. NIMITZ HWY.
+    :city: Honolulu
+    :addr2: ""
+    :name: DHX
+    :zip: "96817"
+    :url: www.dhx.com
+    :number: "3917"
+    :phone: 808-841-7311
+    :city_state_zip: |
+      HONOLULU, HI.  96817
+
+    :country: US
+  :number: "3916"
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: CON-WAY NOW
+  :locations: 
+  - :region: Michigan
+    :addr1: 4840 VENTURE DRIVE
+    :city: Ann Arbor
+    :addr2: ""
+    :name: CON-WAY NOW
+    :zip: "48108"
+    :url: www.con-waynow.com
+    :number: CONW48108
+    :phone: 800-763-2222
+    :city_state_zip: |
+      ANN ARBOR , MI.  48108
+
+    :country: US
+  :number: CONW48108
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: CWE
+  :locations: 
+  - :region: Alabama
+    :addr1: 450 MURRAY CIRCLE
+    :city: Ashville
+    :addr2: ""
+    :name: CWE
+    :zip: "35953"
+    :url: ""
+    :number: CWE00111
+    :phone: 205-680-9946
+    :city_state_zip: |
+      ASHVILLE, AL. 35953
+
+    :country: US
+  :number: CWE00111
+- :accounting_code: "602"
+  :credit_limit: $5,000.00
+  :name: MAS AIR CARGO
+  :locations: 
+  - :region: Georgia
+    :addr1: P.O. BOX 45856
+    :city: Atlanta
+    :addr2: ""
+    :name: MAS AIR CARGO
+    :zip: "30320"
+    :url: www.masair.com
+    :number: MASA30320
+    :phone: 786-265-6000
+    :city_state_zip: |
+      ATLANTA, GA. 30320
+
+    :country: US
+  - :region: Illinois
+    :addr1: CARGO BUILDING 516 & 517
+    :city: Chicago Ridge
+    :addr2: ""
+    :name: ALLIANCE AIR
+    :zip: "60666"
+    :url: ""
+    :number: ALLI60666
+    :phone: 773-917-2008
+    :city_state_zip: |
+      CHICAGO , IL.  60666
+
+    :country: US
+  - :region: Tennessee
+    :addr1: P.O. BOX 1058
+    :city: Greeneville
+    :addr2: ""
+    :name: FORWARD AIR
+    :zip: "37744"
+    :url: www.forwardair.com
+    :number: FORW37744
+    :phone: 800-726-6654
+    :city_state_zip: |
+      GREENEVILLE,  TN.  37744
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 109 MOKUEA PLACE
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: KAMA96819
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU , HI.  96819
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 144 PALEKONA ST
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: "3913"
+    :phone: 808-839-0946
+    :city_state_zip: |
+      HONOLULU, HI.  96819
+
+    :country: US
+  - :region: Manitoba
+    :addr1: "#1 AIRPORT RD"
+    :city: Winnipeg
+    :addr2: ""
+    :name: CALM AIR
+    :zip: "00000"
+    :url: ""
+    :number: CALM00000
+    :phone: 204-675-8843
+    :city_state_zip: |
+      WINNIPEG,  MB.  00000
+
+    :country: CA
+  :number: MASA30320
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: YOUNGBROTHERS
+  :locations: 
+  - :region: Hawaii
+    :addr1: P.O. BOX 6288
+    :city: Honolulu
+    :addr2: ""
+    :name: YOUNGBROTHERS
+    :zip: "96801"
+    :url: www.htbyb.com
+    :number: YOUN96801
+    :phone: 808-543-9311
+    :city_state_zip: |
+      HONOLULU, HI.  96801
+
+    :country: US
+  :number: YOUN96801
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: EVERGREEN INTERNATIONAL
+  :locations: 
+  - :region: Oregon
+    :addr1: 3850 THREE MILES LANE
+    :city: McMinnville
+    :addr2: ""
+    :name: EVERGREEN INTERNATIONAL
+    :zip: "97128"
+    :url: www.evergreenavaition.com
+    :number: EVER97128
+    :phone: 503-472-9361
+    :city_state_zip: |
+      MCMINNVILLE,  OR.  97128
+
+    :country: US
+  :number: EVER97128
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: RCT EXPRESS
+  :locations: 
+  - :region: California
+    :addr1: 230 SHAW ROAD
+    :city: South San Francisco
+    :addr2: ""
+    :name: RCT EXPRESS
+    :zip: "94080"
+    :url: ""
+    :number: RCTE94080
+    :phone: 650-871-4335
+    :city_state_zip: |
+      SAN FRANCISCO, CA.  94080
+
+    :country: US
+  :number: RCTE94080
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: CENTURION AIR CARGO
+  :locations: 
+  - :region: Florida
+    :addr1: 1751 N.W. 68TH AVE
+    :city: Miami
+    :addr2: ""
+    :name: CENTURION AIR CARGO
+    :zip: "33126"
+    :url: www.centurioncargo.com
+    :number: CENT33126
+    :phone: 786-265-5959
+    :city_state_zip: |
+      MIAMI, FL.  33126
+
+    :country: US
+  - :region: Illinois
+    :addr1: CARGO BUILDING 516 & 517
+    :city: Chicago Ridge
+    :addr2: ""
+    :name: ALLIANCE AIR
+    :zip: "60666"
+    :url: ""
+    :number: ALLI60666
+    :phone: 773-917-2008
+    :city_state_zip: |
+      CHICAGO , IL.  60666
+
+    :country: US
+  - :region: Tennessee
+    :addr1: P.O. BOX 1058
+    :city: Greeneville
+    :addr2: ""
+    :name: FORWARD AIR
+    :zip: "37744"
+    :url: www.forwardair.com
+    :number: FORW37744
+    :phone: 800-726-6654
+    :city_state_zip: |
+      GREENEVILLE,  TN.  37744
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 109 MOKUEA PLACE
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: KAMA96819
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU , HI.  96819
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 144 PALEKONA ST
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: "3913"
+    :phone: 808-839-0946
+    :city_state_zip: |
+      HONOLULU, HI.  96819
+
+    :country: US
+  - :region: Manitoba
+    :addr1: "#1 AIRPORT RD"
+    :city: Winnipeg
+    :addr2: ""
+    :name: CALM AIR
+    :zip: "00000"
+    :url: ""
+    :number: CALM00000
+    :phone: 204-675-8843
+    :city_state_zip: |
+      WINNIPEG,  MB.  00000
+
+    :country: CA
+  :number: CENT33126
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: LANDSTAR EXPRESS AMERICA
+  :locations: 
+  - :region: Utah
+    :addr1: 2500 S. DECKER LAKE BLVD
+    :city: Salt Lake City
+    :addr2: ""
+    :name: LANDSTAR EXPRESS AMERICA
+    :zip: "84119"
+    :url: www.landstarexpslc.com
+    :number: LAND84119
+    :phone: 800-745-5594
+    :city_state_zip: |
+      SALT LAKE CITY, UT. 84119
+
+    :country: US
+  - :region: North Carolina
+    :addr1: PO BOX 651434
+    :city: Charlotte
+    :addr2: ""
+    :name: LANDSTAR EXPRESS AMERICA
+    :zip: 28265-1434
+    :url: ""
+    :number: LAND19178
+    :phone: 800-745-5594
+    :city_state_zip: |
+      CHARLOTTE, NC.  28265-1434
+
+    :country: US
+  - :region: Nevada
+    :addr1: 4540 EAST BOSTON
+    :city: North Las Vegas
+    :addr2: ""
+    :name: LANDSTAR EXPRESS AMERICA
+    :zip: "89109"
+    :url: www.landstar.com
+    :number: LAND89109
+    :phone: 800-300-7861
+    :city_state_zip: |
+      LAS VEGAS, NV. 89109
+
+    :country: US
+  - :region: Pennsylvania
+    :addr1: 600 ROUNDHOUSE RD.
+    :city: Lewistown
+    :addr2: ""
+    :name: LANDSTAR EXPRESS AMERICA
+    :zip: "17044"
+    :url: ""
+    :number: LAND17044
+    :phone: 866-343-0661
+    :city_state_zip: |
+      Lewistown, PA.  17044
+
+    :country: US
+  - :region: Washington
+    :addr1: 304 HANSEN RD.
+    :city: Port Angeles
+    :addr2: ""
+    :name: LANDSTAR EXPRESS AMERICA
+    :zip: "96363"
+    :url: ""
+    :number: LAND96363
+    :phone: 800-208-2261
+    :city_state_zip: |
+      Port Angeles, WA.  96363
+
+    :country: US
+  :number: LAND84119
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: TOTAL QUALITY LOGISTICS
+  :locations: 
+  - :region: Ohio
+    :addr1: P.O. BOX 799
+    :city: Cincinnati
+    :addr2: ""
+    :name: TOTAL QUALITY LOGISTICS
+    :zip: "45150"
+    :url: ""
+    :number: TOTA45150
+    :phone: 800-580-3101
+    :city_state_zip: |
+      CINCINNATI,  OH.  45150
+
+    :country: US
+  :number: TOTA45150
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: ECONOCARIBE
+  :locations: 
+  - :region: Florida
+    :addr1: 2401 N.W. 69TH STREET
+    :city: Miami
+    :addr2: ""
+    :name: ECONOCARIBE
+    :zip: "33147"
+    :url: www.econocaribe.com
+    :number: ECON33147
+    :phone: 305-693-5133
+    :city_state_zip: |
+      MIAMI, FL.  33147
+
+    :country: US
+  :number: ECON33147
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: AIRNET
+  :locations: 
+  - :region: Ohio
+    :addr1: 7250 STAR CHECK DRIVE
+    :city: Columbus
+    :addr2: ""
+    :name: AIRNET
+    :zip: "43217"
+    :url: www.ansy.com
+    :number: AIRN43217A
+    :phone: 888-888-8463
+    :city_state_zip: |
+      COLUMBUS, OH.  43217
+
+    :country: US
+  - :region: Ohio
+    :addr1: L2562
+    :city: Columbus
+    :addr2: ""
+    :name: AIRNET SYSTEMS INC.
+    :zip: 43260-2562
+    :url: ""
+    :number: AIRN43217
+    :phone: ""
+    :city_state_zip: |
+      COLUMBUS, OH.  43260-2562
+
+    :country: US
+  - :region: Ohio
+    :addr1: L2562
+    :city: Columbus
+    :addr2: ""
+    :name: AIRNET SYSTEMS INC.
+    :zip: 43260-2562
+    :url: ""
+    :number: AIRN43260
+    :phone: 888-888-8463
+    :city_state_zip: |
+      COLUMBUS, OH.  43260-2562
+
+    :country: US
+  :number: AIRN43217A
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: PACIFIC AIR CARGO
+  :locations: 
+  - :region: California
+    :addr1: 5761 WEST IMPERIAL HIGHWAY
+    :city: Los Angeles
+    :addr2: ""
+    :name: PACIFIC AIR CARGO
+    :zip: "90045"
+    :url: www.pacificaircargo.com
+    :number: PACI90045
+    :phone: 310-645-2178
+    :city_state_zip: |
+      LOS ANGELES, CA. 90045
+
+    :country: US
+  - :region: Illinois
+    :addr1: CARGO BUILDING 516 & 517
+    :city: Chicago Ridge
+    :addr2: ""
+    :name: ALLIANCE AIR
+    :zip: "60666"
+    :url: ""
+    :number: ALLI60666
+    :phone: 773-917-2008
+    :city_state_zip: |
+      CHICAGO , IL.  60666
+
+    :country: US
+  - :region: Tennessee
+    :addr1: P.O. BOX 1058
+    :city: Greeneville
+    :addr2: ""
+    :name: FORWARD AIR
+    :zip: "37744"
+    :url: www.forwardair.com
+    :number: FORW37744
+    :phone: 800-726-6654
+    :city_state_zip: |
+      GREENEVILLE,  TN.  37744
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 109 MOKUEA PLACE
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: KAMA96819
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU , HI.  96819
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 144 PALEKONA ST
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: "3913"
+    :phone: 808-839-0946
+    :city_state_zip: |
+      HONOLULU, HI.  96819
+
+    :country: US
+  - :region: Manitoba
+    :addr1: "#1 AIRPORT RD"
+    :city: Winnipeg
+    :addr2: ""
+    :name: CALM AIR
+    :zip: "00000"
+    :url: ""
+    :number: CALM00000
+    :phone: 204-675-8843
+    :city_state_zip: |
+      WINNIPEG,  MB.  00000
+
+    :country: CA
+  :number: PACI90045
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: POWERSOURCE TRANSPORTA
+  :locations: 
+  - :region: Indiana
+    :addr1: 2023 N. LAFAYETTE COURT
+    :city: Griffith
+    :addr2: ""
+    :name: POWERSOURCE TRANSPORTA
+    :zip: "46319"
+    :url: ""
+    :number: POWE46319
+    :phone: 800-438-8789
+    :city_state_zip: |
+      GRIFFITH,  IN.  46319
+
+    :country: US
+  :number: POWE46319
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: ETIHAD CRYSTAL CARGO
+  :locations: 
+  - :region: Texas
+    :addr1: 1639 W. 23RD, SUITE 330
+    :city: Lake Dallas
+    :addr2: ""
+    :name: ETIHAD CRYSTAL CARGO
+    :zip: "75261"
+    :url: www.etihadcrystalcargo.co
+    :number: ETIH75261
+    :phone: 469-224-6300
+    :city_state_zip: |
+      DALLAS, TX. 75261
+
+    :country: US
+  :number: ETIH75261
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: DOUBLE R TRANSPORT AND FREIGHT
+  :locations: 
+  - :region: Texas
+    :addr1: PO BOX 2381
+    :city: Grapevine
+    :addr2: ""
+    :name: DOUBLE R TRANSPORT AND FREIGHT
+    :zip: "76099"
+    :url: ""
+    :number: DOUB76099
+    :phone: 817-481-5656
+    :city_state_zip: |
+      GRAPEVINE , TX.  76099
+
+    :country: US
+  :number: DOUB76099
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: HAWAIIAN AIRLINES
+  :locations: 
+  - :region: Hawaii
+    :addr1: P.O. BOX 30008
+    :city: Honolulu
+    :addr2: ""
+    :name: HAWAIIAN AIRLINES
+    :zip: "96820"
+    :url: www.hawaiianair.com
+    :number: HAWA96820
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU, HI.  96820
+
+    :country: US
+  - :region: Hawaii
+    :addr1: P.O. BOX 30028
+    :city: Honolulu
+    :addr2: ""
+    :name: ALOHA AIRLINES INC.
+    :zip: "96820"
+    :url: www.alohaairlines.com
+    :number: ALOH96820
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU, HI.  96820
+
+    :country: US
+  - :region: Washington
+    :addr1: 19300 PACIFIC HIGHWAY SOUTH
+    :city: Seattle
+    :addr2: ""
+    :name: ALASKA AIRLINES INC
+    :zip: "98188"
+    :url: www.alaskaair.com
+    :number: ALAS98188
+    :phone: 206-433-3200
+    :city_state_zip: |
+      SEATTLE, WA. 98188
+
+    :country: US
+  :number: HAWA96820
+- :accounting_code: "601"
+  :credit_limit: $0.00
+  :name: D & M EXPRESS, INC.
+  :locations: 
+  - :region: Pennsylvania
+    :addr1: 20886 ROUTE 19
+    :city: Cranberry Twp
+    :addr2: ""
+    :name: D & M EXPRESS, INC.
+    :zip: "16066"
+    :url: ""
+    :number: DMEX16066
+    :phone: 800-666-1114
+    :city_state_zip: |
+      CRANBERRY Twp,  PA.  16066
+
+    :country: US
+  :number: DMEX16066
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: WEST COAST CONNECTION
+  :locations: 
+  - :region: California
+    :addr1: 5140 W. 104TH STREET
+    :city: Inglewood
+    :addr2: ""
+    :name: WEST COAST CONNECTION
+    :zip: "90304"
+    :url: www.wcclax.com
+    :number: WEST90304
+    :phone: 310-216-6382
+    :city_state_zip: |
+      INGLEWOOD, CA.  90304
+
+    :country: US
+  :number: WEST90304
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: GARDEWINE NORTH
+  :locations: 
+  - :region: Manitoba
+    :addr1: 60 EAGLE DRIVE
+    :city: Winnipeg
+    :addr2: ""
+    :name: GARDEWINE NORTH
+    :zip: R2R1V5
+    :url: ""
+    :number: GARD21511
+    :phone: 204-631-3709
+    :city_state_zip: |
+      WINNIPEG,  MB.  R2R1V5
+
+    :country: CA
+  :number: GARD21511
+- :accounting_code: "602"
+  :credit_limit: $5,000.00
+  :name: UNITED AIRLINES, INC
+  :locations: 
+  - :region: Illinois
+    :addr1: 22897 NETWORK PLACE
+    :city: Chicago Ridge
+    :addr2: ""
+    :name: UNITED AIRLINES, INC
+    :zip: 60673-1228
+    :url: www.ualcargo.com
+    :number: UNIT60666
+    :phone: 800-822-2746
+    :city_state_zip: |
+      CHICAGO, IL. 60673-1228
+
+    :country: US
+  - :region: Hawaii
+    :addr1: P.O. BOX 30028
+    :city: Honolulu
+    :addr2: ""
+    :name: ALOHA AIRLINES INC.
+    :zip: "96820"
+    :url: www.alohaairlines.com
+    :number: ALOH96820
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU, HI.  96820
+
+    :country: US
+  - :region: Washington
+    :addr1: 19300 PACIFIC HIGHWAY SOUTH
+    :city: Seattle
+    :addr2: ""
+    :name: ALASKA AIRLINES INC
+    :zip: "98188"
+    :url: www.alaskaair.com
+    :number: ALAS98188
+    :phone: 206-433-3200
+    :city_state_zip: |
+      SEATTLE, WA. 98188
+
+    :country: US
+  :number: UNIT60666
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: SUNTECK TRANSPORT
+  :locations: 
+  - :region: North Carolina
+    :addr1: PO BOX 601123
+    :city: Charlotte
+    :addr2: ""
+    :name: SUNTECK TRANSPORT
+    :zip: 28260-1123
+    :url: www.mysunteck.com
+    :number: SUNT28134
+    :phone: 800-583-1390
+    :city_state_zip: |
+      CHARLOTTE, NC.  28260-1123
+
+    :country: US
+  :number: SUNT28134
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: BEAR TRANSPORTATION
+  :locations: 
+  - :region: Arkansas
+    :addr1: 2901 E. ZION ROAD
+    :city: Fayetteville
+    :addr2: ""
+    :name: BEAR TRANSPORTATION
+    :zip: "72703"
+    :url: 1-479-442-6571
+    :number: BEAR72703
+    :phone: 800-501-9107
+    :city_state_zip: |
+      FAYETTEVILLE, AR.  72703
+
+    :country: US
+  - :region: Texas
+    :addr1: 8850 BOEDEKER
+    :city: Lake Dallas
+    :addr2: ""
+    :name: BEAR TRANSPORTATION
+    :zip: "75225"
+    :url: ""
+    :number: BEAR75225
+    :phone: 800-501-9107
+    :city_state_zip: |
+      DALLAS, TX. 75225
+
+    :country: US
+  - :region: Texas
+    :addr1: PO BOX 802326
+    :city: Lake Dallas
+    :addr2: ""
+    :name: BEAR TRANSPORTATION
+    :zip: "75380"
+    :url: ""
+    :number: BEAR75380
+    :phone: 800-527-5380
+    :city_state_zip: |
+      DALLAS, TX. 75380
+
+    :country: US
+  :billing_location: BEAR75380
+  :number: BEAR72703
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: CONTINENTAL AIRLINES
+  :locations: 
+  - :region: Texas
+    :addr1: P.O. BOX 201974
+    :city: South Houston
+    :addr2: ""
+    :name: CONTINENTAL AIRLINES
+    :zip: "77216"
+    :url: www.continental.com
+    :number: CONT77210
+    :phone: 800-421-2456
+    :city_state_zip: |
+      HOUSTON, TX.  77216
+
+    :country: US
+  - :region: Hawaii
+    :addr1: P.O. BOX 30028
+    :city: Honolulu
+    :addr2: ""
+    :name: ALOHA AIRLINES INC.
+    :zip: "96820"
+    :url: www.alohaairlines.com
+    :number: ALOH96820
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU, HI.  96820
+
+    :country: US
+  - :region: Washington
+    :addr1: 19300 PACIFIC HIGHWAY SOUTH
+    :city: Seattle
+    :addr2: ""
+    :name: ALASKA AIRLINES INC
+    :zip: "98188"
+    :url: www.alaskaair.com
+    :number: ALAS98188
+    :phone: 206-433-3200
+    :city_state_zip: |
+      SEATTLE, WA. 98188
+
+    :country: US
+  :number: CONT77210
+- :accounting_code: "602"
+  :credit_limit: $2,000.00
+  :name: US AIRWAYS CARGO
+  :locations: 
+  - :region: Pennsylvania
+    :addr1: P.O. BOX 640163
+    :city: West Pittsburg
+    :addr2: ""
+    :name: US AIRWAYS CARGO
+    :zip: "15264"
+    :url: www.usairways.com
+    :number: USAI15264
+    :phone: 888-300-0099
+    :city_state_zip: |
+      PITTSBURG, PA.  15264
+
+    :country: US
+  - :region: Arizona
+    :addr1: P.O. BOX 29641
+    :city: Phoenix
+    :addr2: ""
+    :name: US AIRWAYS CARGO
+    :zip: 85038-9641
+    :url: ""
+    :number: USAI152641
+    :phone: 888-300-0099
+    :city_state_zip: |
+      PHOENIX, AZ. 85038-9641
+
+    :country: US
+  :billing_location: USAI152641
+  :number: USAI15264
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: DAVIS TRUCKING
+  :locations: 
+  - :region: California
+    :addr1: .
+    :city: Los Angeles
+    :addr2: ""
+    :name: DAVIS TRUCKING
+    :zip: ""
+    :url: ""
+    :number: DAVI00001
+    :phone: ""
+    :city_state_zip: |
+      LOS ANGELES, CA.  .
+
+    :country: US
+  :number: DAVI00001
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: RETRIEVER AIR FREIGHT
+  :locations: 
+  - :region: Colorado
+    :addr1: 2815 LANDING VIEW LANE
+    :city: Grand Junction
+    :addr2: ""
+    :name: RETRIEVER AIR FREIGHT
+    :zip: "81507"
+    :url: ""
+    :number: RETR81507
+    :phone: 970-242-5439
+    :city_state_zip: |
+      GRAND JUNCTION,  CO.  81507
+
+    :country: US
+  - :region: Illinois
+    :addr1: CARGO BUILDING 516 & 517
+    :city: Chicago Ridge
+    :addr2: ""
+    :name: ALLIANCE AIR
+    :zip: "60666"
+    :url: ""
+    :number: ALLI60666
+    :phone: 773-917-2008
+    :city_state_zip: |
+      CHICAGO , IL.  60666
+
+    :country: US
+  - :region: Tennessee
+    :addr1: P.O. BOX 1058
+    :city: Greeneville
+    :addr2: ""
+    :name: FORWARD AIR
+    :zip: "37744"
+    :url: www.forwardair.com
+    :number: FORW37744
+    :phone: 800-726-6654
+    :city_state_zip: |
+      GREENEVILLE,  TN.  37744
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 109 MOKUEA PLACE
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: KAMA96819
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU , HI.  96819
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 144 PALEKONA ST
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: "3913"
+    :phone: 808-839-0946
+    :city_state_zip: |
+      HONOLULU, HI.  96819
+
+    :country: US
+  - :region: Manitoba
+    :addr1: "#1 AIRPORT RD"
+    :city: Winnipeg
+    :addr2: ""
+    :name: CALM AIR
+    :zip: "00000"
+    :url: ""
+    :number: CALM00000
+    :phone: 204-675-8843
+    :city_state_zip: |
+      WINNIPEG,  MB.  00000
+
+    :country: CA
+  :number: RETR81507
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: GLOBAL LINK LOGISTICS
+  :locations: 
+  - :region: Virginia
+    :addr1: PO BOX 17366
+    :city: University of Richmond
+    :addr2: ""
+    :name: GLOBAL LINK LOGISTICS
+    :zip: "23226"
+    :url: ""
+    :number: GOBA23226
+    :phone: 804-285-4819
+    :city_state_zip: |
+      RICHMOND, VA.  23226
+
+    :country: US
+  :number: GOBA23226
+- :accounting_code: "601"
+  :credit_limit: $2,000.00
+  :name: PACIFIC COASTAL AIRLINES
+  :locations: 
+  - :region: British Columbia
+    :addr1: 117-4440 COWLEY CRESCENT
+    :city: Richmond
+    :addr2: ""
+    :name: PACIFIC COASTAL AIRLINES
+    :zip: V7B  1B8
+    :url: www.pacific-coastal.com
+    :number: PACI71811
+    :phone: 604-214-2358
+    :city_state_zip: |
+      RICHMOND, BC.  V7B  1B8
+
+    :country: CA
+  :number: PACI71811
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: AMERIJET INTERNATIONAL
+  :locations: 
+  - :region: Florida
+    :addr1: 3401 A. NW 72ND AVE.
+    :city: Miami
+    :addr2: ""
+    :name: AMERIJET INTERNATIONAL
+    :zip: "33122"
+    :url: www.amerijet.com
+    :number: "3915"
+    :phone: 404-761-3350
+    :city_state_zip: |
+      MIAMI, FL.  33122
+
+    :country: US
+  :number: "3915"
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: LYNDEN TRANSPORT
+  :locations: 
+  - :region: Washington
+    :addr1: 5410 12TH ST EAST
+    :city: Fife
+    :addr2: ""
+    :name: LYNDEN TRANSPORT
+    :zip: "98424"
+    :url: www.lynden.com
+    :number: LYND98424
+    :phone: 800-366-5702
+    :city_state_zip: |
+      FIFE, WA. 98424
+
+    :country: US
+  :number: LYND98424
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: AMERICAN TRANS AIR CARGO
+  :locations: 
+  - :region: Indiana
+    :addr1: P.O. BOX 51570
+    :city: Indianapolis
+    :addr2: ""
+    :name: AMERICAN TRANS AIR CARGO
+    :zip: 46251-0570
+    :url: www.ata.com
+    :number: AMER46251
+    :phone: 317-282-8308
+    :city_state_zip: |
+      INDIANAPOLIS, IN.  46251-0570
+
+    :country: US
+  :number: AMER46251
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: DUKE TRANSPORTATION
+  :locations: 
+  - :region: Texas
+    :addr1: 11506 CRAIGHEAD
+    :city: South Houston
+    :addr2: ""
+    :name: DUKE TRANSPORTATION
+    :zip: "77025"
+    :url: ""
+    :number: DUKE77025
+    :phone: 713-664-7272
+    :city_state_zip: |
+      HOUSTON, TX.  77025
+
+    :country: US
+  :number: DUKE77025
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: DHL EXPRESS
+  :locations: 
+  - :region: Florida
+    :addr1: 1200 SOUTH PINE ISLAND ROAD
+    :city: Plantation Acres
+    :addr2: ""
+    :name: DHL EXPRESS
+    :zip: "33324"
+    :url: www.dhl.com
+    :number: DHLE33324
+    :phone: 800-225-5345
+    :city_state_zip: |
+      PLANTATION , FL.  33324
+
+    :country: US
+  :number: DHLE33324
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: AMERICA WEST AIRLINES
+  :locations: 
+  - :region: Arizona
+    :addr1: 4000 SKYHARBOR BLVD
+    :city: Phoenix
+    :addr2: ""
+    :name: AMERICA WEST AIRLINES
+    :zip: "85034"
+    :url: www.americawest.com
+    :number: AMER85281
+    :phone: 480-693-0800
+    :city_state_zip: |
+      PHOENIX, AZ.  85034
+
+    :country: US
+  :number: AMER85281
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: MIDWEST AIRLINES
+  :locations: 
+  - :region: Wisconsin
+    :addr1: PO BOX 1451
+    :city: South Milwaukee
+    :addr2: ""
+    :name: MIDWEST AIRLINES
+    :zip: 53201-1451
+    :url: www.midwestairlines.com
+    :number: MIDW53201
+    :phone: 414-570-4024
+    :city_state_zip: |
+      MILWAUKEE, WI.  53201-1451
+
+    :country: US
+  - :region: Hawaii
+    :addr1: P.O. BOX 30028
+    :city: Honolulu
+    :addr2: ""
+    :name: ALOHA AIRLINES INC.
+    :zip: "96820"
+    :url: www.alohaairlines.com
+    :number: ALOH96820
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU, HI.  96820
+
+    :country: US
+  - :region: Washington
+    :addr1: 19300 PACIFIC HIGHWAY SOUTH
+    :city: Seattle
+    :addr2: ""
+    :name: ALASKA AIRLINES INC
+    :zip: "98188"
+    :url: www.alaskaair.com
+    :number: ALAS98188
+    :phone: 206-433-3200
+    :city_state_zip: |
+      SEATTLE, WA. 98188
+
+    :country: US
+  :number: MIDW53201
+- :accounting_code: "602"
+  :credit_limit: $5,000.00
+  :name: ABSA CARGO AIRLINE
+  :locations: 
+  - :region: Florida
+    :addr1: P.O. BOX 520336
+    :city: Miami
+    :addr2: ""
+    :name: ABSA CARGO AIRLINE
+    :zip: "33152"
+    :url: www.absacargo.com.br/en/
+    :number: ABSA33152
+    :phone: 786-265-6000
+    :city_state_zip: |
+      MIAMI, FL.  33152
+
+    :country: US
+  :number: ABSA33152
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: UPS
+  :locations: 
+  - :region: Georgia
+    :addr1: 55 GLENLAKE PARKWAY, NE
+    :city: Atlanta
+    :addr2: ""
+    :name: UPS
+    :zip: "30328"
+    :url: www.ups.com
+    :number: UPSC30328
+    :phone: 800-742-5877
+    :city_state_zip: |
+      ATLANTA , GA. 30328
+
+    :country: US
+  - :region: Pennsylvania
+    :addr1: "PO BOX #371232"
+    :city: East Pittsburgh
+    :addr2: ""
+    :name: UPS
+    :zip: "15250"
+    :url: www.forwarding.ups-scs
+    :number: UPSS15250
+    :phone: 800-328-7808
+    :city_state_zip: |
+      PITTSBURGH ,  PA.  15250
+
+    :country: US
+  :billing_location: UPSC30328
+  :number: UPSC30328
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: KITTY HAWK CARGO
+  :locations: 
+  - :region: Texas
+    :addr1: 1535 W 20TH STREET
+    :city: Lake Dallas
+    :addr2: ""
+    :name: KITTY HAWK CARGO
+    :zip: "75261"
+    :url: www.khcargo.com
+    :number: KITT75261
+    :phone: 800-486-3780
+    :city_state_zip: |
+      Dallas, TX.  75261
+
+    :country: US
+  - :region: Texas
+    :addr1: PO BOX 676196
+    :city: Lake Dallas
+    :addr2: ""
+    :name: KITTY HAWK CARGO
+    :zip: 75267-6196
+    :url: ""
+    :number: KITT75267
+    :phone: 800-486-3780
+    :city_state_zip: |
+      DALLAS, TX. 75267-6196
+
+    :country: US
+  :number: KITT75261
+- :accounting_code: "602"
+  :credit_limit: $1,250.00
+  :name: AMERICAN AIRLINES
+  :locations: 
+  - :region: Illinois
+    :addr1: P.O. BOX 75195
+    :city: Chicago Ridge
+    :addr2: ""
+    :name: AMERICAN AIRLINES
+    :zip: 60675-5195
+    :url: www.aacargo.com
+    :number: AMER60675
+    :phone: 800-227-4622
+    :city_state_zip: |
+      CHICAGO, IL. 60675-5195
+
+    :country: US
+  - :region: Illinois
+    :addr1: PO BOX 2994
+    :city: Carol Stream
+    :addr2: ""
+    :name: AMERICAN AIRLINES
+    :zip: 60132-2994
+    :url: ""
+    :number: AMER60132
+    :phone: 800-227-4622
+    :city_state_zip: |
+      CAROL STREAM, IL.  60132-2994
+
+    :country: US
+  - :region: Hawaii
+    :addr1: P.O. BOX 30028
+    :city: Honolulu
+    :addr2: ""
+    :name: ALOHA AIRLINES INC.
+    :zip: "96820"
+    :url: www.alohaairlines.com
+    :number: ALOH96820
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU, HI.  96820
+
+    :country: US
+  - :region: Washington
+    :addr1: 19300 PACIFIC HIGHWAY SOUTH
+    :city: Seattle
+    :addr2: ""
+    :name: ALASKA AIRLINES INC
+    :zip: "98188"
+    :url: www.alaskaair.com
+    :number: ALAS98188
+    :phone: 206-433-3200
+    :city_state_zip: |
+      SEATTLE, WA. 98188
+
+    :country: US
+  :number: AMER60675
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: BAX GLOBAL
+  :locations: 
+  - :region: California
+    :addr1: 440 EXCHANGE
+    :city: Irvine
+    :addr2: ""
+    :name: BAX GLOBAL
+    :zip: "92602"
+    :url: www.baxglobal.com
+    :number: BAXG92602
+    :phone: 800-225-5229
+    :city_state_zip: |
+      IRVINE, CA.  92602
+
+    :country: US
+  :number: BAXG92602
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: AIR CHARTER SERVICE
+  :locations: 
+  - :region: New York
+    :addr1: 803 W. BEECH ST.
+    :city: Long Beach
+    :addr2: ""
+    :name: AIR CHARTER SERVICE
+    :zip: "11561"
+    :url: www.aircharterserviceusa.
+    :number: AIRC11561
+    :phone: 516-432-5901
+    :city_state_zip: |
+      LONG BEACH, NY. 11561
+
+    :country: US
+  :number: AIRC11561
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: FEDERAL EXPRESS
+  :locations: 
+  - :region: Arizona
+    :addr1: 3237 E. SAN REMO AVE
+    :city: Gilbert
+    :addr2: ""
+    :name: FEDERAL EXPRESS
+    :zip: "85234"
+    :url: www.fedex.com
+    :number: FEDE85234
+    :phone: 800-463-3339
+    :city_state_zip: |
+      GILBERT, AZ. 85234
+
+    :country: US
+  :number: FEDE85234
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: I.T.A.C. INC.
+  :locations: 
+  - :region: Florida
+    :addr1: ---------------------
+    :city: Tampa
+    :addr2: ""
+    :name: I.T.A.C. INC.
+    :zip: "33629"
+    :url: ""
+    :number: ITAC33629
+    :phone: 813-839-6745
+    :city_state_zip: |
+      TAMPA , FL. 33629
+
+    :country: US
+  :number: ITAC33629
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: AMERICAN WEST WORLDWIDE
+  :locations: 
+  - :region: California
+    :addr1: 4700 GREGG RD
+    :city: Pico Rivera
+    :addr2: ""
+    :name: AMERICAN WEST WORLDWIDE
+    :zip: "90660"
+    :url: ""
+    :number: AMER90660
+    :phone: ""
+    :city_state_zip: |
+      PICO RIVERA, CA.  90660
+
+    :country: US
+  :number: AMER90660
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: ACTION CARGO
+  :locations: 
+  - :region: Pennsylvania
+    :addr1: 850 SANS SOUCI PARKWAY, SUITE
+    :city: Hanover
+    :addr2: ""
+    :name: ACTION CARGO
+    :zip: "18706"
+    :url: www.actioncargo.com
+    :number: "3919"
+    :phone: 856-939-0900
+    :city_state_zip: |
+      HANOVER,  PA.  18706
+
+    :country: US
+  :number: "3919"
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: CHAMPION LOGISTICS-HOME
+  :locations: 
+  - :region: Illinois
+    :addr1: 200 CHAMPION WAY
+    :city: Northlake
+    :addr2: ""
+    :name: CHAMPION LOGISTICS-HOME
+    :zip: "60164"
+    :url: www.championlogisticsgrou
+    :number: "3914"
+    :phone: 800-323-5401
+    :city_state_zip: |
+      NORTHLAKE, IL.  60164
+
+    :country: US
+  :number: "3914"
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: R M K TRUCKING SERVICES
+  :locations: 
+  - :region: Florida
+    :addr1: 429 POINSETTIA AVENUE
+    :city: Clearwater Beach
+    :addr2: ""
+    :name: R M K TRUCKING SERVICES
+    :zip: "33767"
+    :url: www.rmktrucking.com
+    :number: RMKT33767
+    :phone: 727-446-2452
+    :city_state_zip: |
+      CLEARWATER BEACH ,  FL.  33767
+
+    :country: US
+  :number: RMKT33767
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: POLAR AIR CARGO
+  :locations: 
+  - :region: Georgia
+    :addr1: 4500 ASR ROAD
+    :city: Atlanta
+    :addr2: ""
+    :name: POLAR AIR CARGO
+    :zip: "30320"
+    :url: www.polaraircargo.com
+    :number: POLA30320
+    :phone: 281-468-2499
+    :city_state_zip: |
+      ATLANTA, GA. 30320
+
+    :country: US
+  - :region: Illinois
+    :addr1: CARGO BUILDING 516 & 517
+    :city: Chicago Ridge
+    :addr2: ""
+    :name: ALLIANCE AIR
+    :zip: "60666"
+    :url: ""
+    :number: ALLI60666
+    :phone: 773-917-2008
+    :city_state_zip: |
+      CHICAGO , IL.  60666
+
+    :country: US
+  - :region: Tennessee
+    :addr1: P.O. BOX 1058
+    :city: Greeneville
+    :addr2: ""
+    :name: FORWARD AIR
+    :zip: "37744"
+    :url: www.forwardair.com
+    :number: FORW37744
+    :phone: 800-726-6654
+    :city_state_zip: |
+      GREENEVILLE,  TN.  37744
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 109 MOKUEA PLACE
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: KAMA96819
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU , HI.  96819
+
+    :country: US
+  - :region: Hawaii
+    :addr1: 144 PALEKONA ST
+    :city: Honolulu
+    :addr2: ""
+    :name: KAMAKA AIR
+    :zip: "96819"
+    :url: www.kamakaair.com
+    :number: "3913"
+    :phone: 808-839-0946
+    :city_state_zip: |
+      HONOLULU, HI.  96819
+
+    :country: US
+  - :region: Manitoba
+    :addr1: "#1 AIRPORT RD"
+    :city: Winnipeg
+    :addr2: ""
+    :name: CALM AIR
+    :zip: "00000"
+    :url: ""
+    :number: CALM00000
+    :phone: 204-675-8843
+    :city_state_zip: |
+      WINNIPEG,  MB.  00000
+
+    :country: CA
+  :number: POLA30320
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: REDHAWK GLOBAL
+  :locations: 
+  - :region: Ohio
+    :addr1: P.O. BOX 2946
+    :city: Columbus
+    :addr2: ""
+    :name: REDHAWK GLOBAL
+    :zip: "43216"
+    :url: www.efreightline.com
+    :number: REDH43216
+    :phone: 866-411-4295
+    :city_state_zip: |
+      COLUMBUS, OH.  43216
+
+    :country: US
+  :number: REDH43216
+- :accounting_code: "602"
+  :credit_limit: $3,000.00
+  :name: MARTINAIR
+  :locations: 
+  - :region: Florida
+    :addr1: 5550 GLADES RD, SUITE 500
+    :city: Boca Raton
+    :addr2: ""
+    :name: MARTINAIR
+    :zip: "33431"
+    :url: www.martinaircargo.com
+    :number: MART33431
+    :phone: 281-345-6315
+    :city_state_zip: |
+      BOCA RATON, FL. 33431
+
+    :country: US
+  :number: MART33431
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: SKYWEST AIRLINES
+  :locations: 
+  - :region: Utah
+    :addr1: 444 SOUTH RIVER ROAD
+    :city: Saint George
+    :addr2: ""
+    :name: SKYWEST AIRLINES
+    :zip: 84770-2086
+    :url: www.skywest.com
+    :number: SKYW84770
+    :phone: ""
+    :city_state_zip: |
+      ST. GEORGE, UT.  84770-2086
+
+    :country: US
+  - :region: Hawaii
+    :addr1: P.O. BOX 30028
+    :city: Honolulu
+    :addr2: ""
+    :name: ALOHA AIRLINES INC.
+    :zip: "96820"
+    :url: www.alohaairlines.com
+    :number: ALOH96820
+    :phone: ""
+    :city_state_zip: |
+      HONOLULU, HI.  96820
+
+    :country: US
+  - :region: Washington
+    :addr1: 19300 PACIFIC HIGHWAY SOUTH
+    :city: Seattle
+    :addr2: ""
+    :name: ALASKA AIRLINES INC
+    :zip: "98188"
+    :url: www.alaskaair.com
+    :number: ALAS98188
+    :phone: 206-433-3200
+    :city_state_zip: |
+      SEATTLE, WA. 98188
+
+    :country: US
+  :number: SKYW84770
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: MAERSK LINE
+  :locations: 
+  - :region: Kansas
+    :addr1: 10985 CODY SUITE 130
+    :city: Overland Park
+    :addr2: ""
+    :name: MAERSK LINE
+    :zip: "66210"
+    :url: www.maerskline.com
+    :number: "3918"
+    :phone: 770-399-2070
+    :city_state_zip: |
+      OVERLAND PARK, KS.  66210
+
+    :country: US
+  :number: "3918"
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: SYNERGY TRANSPORTATION
+  :locations: 
+  - :region: Oregon
+    :addr1: P.O. BOX 7196
+    :city: North Bend
+    :addr2: ""
+    :name: SYNERGY TRANSPORTATION
+    :zip: "97708"
+    :url: ""
+    :number: SYNE97708
+    :phone: 800-807-8734
+    :city_state_zip: |
+      BEND, OR.  97708
+
+    :country: US
+  :number: SYNE97708
+- :accounting_code: "602"
+  :credit_limit: $0.00
+  :name: FREIGHTQUOTE.COM
+  :locations: 
+  - :region: Kansas
+    :addr1: 16025 W. 113TH STREET
+    :city: Lenexa
+    :addr2: ""
+    :name: FREIGHTQUOTE.COM
+    :zip: "66219"
+    :url: www.freightquuote.com
+    :number: FREI66219
+    :phone: 800-323-5441
+    :city_state_zip: |
+      LENEXA, KS. 66219
+
+    :country: US
+  :number: FREI66219

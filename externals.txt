@@ -1,0 +1,4 @@
+lib/resistor svn+ssh://chris@crcw.mb.ca/svnroot/public/ruby/lib/resistor/trunk
+public/javascripts/resistor-ext svn+ssh://chris@crcw.mb.ca/svnroot/public/resistor-ext/trunk
+vendor/plugins/extonrails svn+ssh://chris@crcw.mb.ca/svnroot/public/ruby/plugins/extonrails/trunk
+
